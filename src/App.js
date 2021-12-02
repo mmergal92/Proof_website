@@ -4,6 +4,7 @@ import './App.css';
 //IMPORT ROUTE and COMPONENTS
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/home";
+import Spanish from './pages/spanish';
 // import Nav from "./components/Nav"
 // import {Redirect} from 'react-router';
 import Footer from "./components/footer";
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/spanish' element={<Spanish/>}/>
       </Routes>
       {/* <Footer /> */}
     </div>
