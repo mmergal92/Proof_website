@@ -115,16 +115,12 @@ a:hover{
   font-weight: 500;
   font-style: italic;
 }
-@media screen and (max-width: 1040){
-  .app{
-    overflow-y: visible !important;
-  }
-}
+
 @media screen and (max-width: 600px){
-  .App{
-    overflow-y: visible !important;
+  .App{    
     min-height: auto !important;
     max-height: 100% !important;
+    overflow-x: hidden;
   }
   .home{
     /* border: 1px solid black; */
@@ -139,13 +135,12 @@ a:hover{
   }
   .video-style{
     display: flex;
-    overflow-y: visible !important;
     width: 100%;
     height: 100% !important;
     /* width="100%" height="100%" */
   }
   .middle-container{
     top: 350px !important;
-    right: 0px !important;
+    right: 5px !important;
   }
 }
