@@ -5,7 +5,7 @@ const Video = (props) =>{
       return ( 
         // <div className= 'home'>
               <div className = "left-container">
-                  <video autoPlay loop muted className="video-style">
+                  <video autoPlay loop muted playsInline className="video-style">
                     <source src={pexels_mart_production} type="video/mp4" />
                 </video>
               </div>
