@@ -1,13 +1,17 @@
 import React, {useState} from 'react';
-import Pexels_eva_elijas from "../assets/pexels_eva_elijas.mp4";
 import Home from './home';
 import Video from '../components/video'
 import { Link } from 'react-router-dom';
+import pexels_mart_production from "../assets/pexels_mart_production.mp4";
+import circletext_logo from "../assets/circletext_logo.png"
 
 const Spanish = () =>{
       return ( 
         <div className= 'home'>
               <Video />
+        <div className = "middle-container">
+            <a href="mailto:maria@itsproof.co" target="_blank" rel="noreferrer noopener" ><img src={circletext_logo}  /></a>
+        </div>
         <div className = "right-container">
         <div className ="home-text">
           <h2>Proof es una agencia creativa que elabora experiencias innovadoras e inclusivas para el mundo digital.</h2> <br/>

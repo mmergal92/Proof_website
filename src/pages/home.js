@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import Pexels_eva_elijas from "../assets/pexels_eva_elijas.mp4";
 import Video from '../components/video'
 import Spanish from './spanish'
 import Rotation from '../components/rotation'
+import circletext_logo from '../assets/circletext_logo.png'
+import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
 const Home = () =>{
       return ( 
         <div className= 'home'>
               <Video />
-              {/* <div className = "middle-container">
-                <Rotation />
-              </div> */}
+              <div className = "middle-container">
+                <a href="mailto:maria@itsproof.co" target="_blank" rel="noreferrer noopener" ><img src={circletext_logo}  /></a>
+              </div>
               <div className = "right-container">
                   <div className ="home-text">
                     <h2>Proof is a creative agency crafting innovative and inclusive experiences for the digital world.</h2> <br/>
