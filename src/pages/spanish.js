@@ -16,9 +16,9 @@ const Spanish = () =>{
         <div className ="home-text">
           <h2>pr<i>oo</i>f</h2>
           <br/>
-          <br/><p>Proof es una agencia creativa que elabora experiencias innovadoras e inclusivas para el mundo digital.</p> <br/>
+          <br/><p>proof es una agencia creativa que elabora experiencias innovadoras e inclusivas para el mundo digital.</p> <br/>
           <br/>
-          <p>Proof fue cofundada por <span className ="link"><a href="https://www.segacyroberts.com/" target="_blank" rel="noreferrer noopener" >Segacy</a></span> y <span className ="link"><a href="https://mariamergal.dev/" target="_blank" rel="noreferrer noopener" >Maria,</a></span> dos neoyorquinas de primera generación y amigas de la infancia, para amplificar las historias de las mujeres de color y transformar el mundo a través del diseño y tecnología. Trabajamos con emprendedores y empresas de todos tamaños para contar sus historias a través de <span className="italics_p">estrategia, diseño</span> y <span className="italics_p">desarrollo.</span></p>
+          <p>proof fue cofundada por <span className ="link"><a href="https://www.segacyroberts.com/" target="_blank" rel="noreferrer noopener" >Segacy</a></span> y <span className ="link"><a href="https://mariamergal.dev/" target="_blank" rel="noreferrer noopener" >Maria,</a></span> dos neoyorquinas de primera generación y amigas de la infancia, para amplificar las historias de las mujeres de color y transformar el mundo a través del diseño y tecnología. Trabajamos con emprendedores y empresas de todos tamaños para contar sus historias a través de <span className="italics_p">estrategia, diseño</span> y <span className="italics_p">desarrollo.</span></p>
           <br/>
           <br/>
           <p><Link to="/">in english</Link></p>
