@@ -16,7 +16,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/spanish' element={<Spanish/>}/>
-        <Route path='/loremipsum' element={<LoremIpsum/>}/>
       </Routes>
       {/* <Footer /> */}
     </div>
