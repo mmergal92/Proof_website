@@ -5,6 +5,7 @@ import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/home";
 import Spanish from './pages/spanish';
+import LoremIpsum from './pages/loremipsum';
 // import Nav from "./components/Nav"
 // import {Redirect} from 'react-router';
 import Footer from "./components/footer";
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/spanish' element={<Spanish/>}/>
+        <Route path='/loremipsum' element={<LoremIpsum/>}/>
       </Routes>
       {/* <Footer /> */}
     </div>
