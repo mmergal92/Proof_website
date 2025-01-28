@@ -25,6 +25,9 @@ const Home = () =>{
                     <br/>
                     <p><Link to="/spanish">en español</Link></p>
                   </div>
+                  <div className ="home-bottom">
+                    <p><Link to="/loremipsum">lorem</Link></p>
+                  </div>
               </div>
         </div>  
         )

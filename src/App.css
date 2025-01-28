@@ -90,6 +90,10 @@
   top: -87px !important;
   left: 43px !important;
 }
+.home-bottom p{
+  color: lightgrey !important;
+  font-size: 8px !important;
+}
 .middle-container h1:hover{
 color: black;
 }
