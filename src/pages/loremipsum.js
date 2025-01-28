@@ -54,13 +54,12 @@ const Loremipsum = () => {
         <div>
   
           <div className="main-content">
-            <h1 className="title">
-              <img className="title-image" src="stranger-ipsum-title.png" alt="Stranger Ipsum" />
+            <h1 className="title">Lorem Site
             </h1>
             <p className="description">
               Specify the number of paragraphs of text you would like to generate.
             </p>
-            <form action="/" method="POST" onSubmit={this.handleSubmit}>
+            <form action="/" method="POST" onSubmit={handleSubmit}>
               <input
                 type="number"
                 className="paragraph-number"
