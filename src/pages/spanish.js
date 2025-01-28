@@ -14,7 +14,7 @@ const Spanish = () =>{
         </div>
         <div className = "right-container">
         <div className ="home-text">
-          <h2>pr<i>oo</i>f</h2>
+          <h2>testpr<i>oo</i>f</h2>
           <br/>
           <br/><p>proof es una agencia creativa que elabora experiencias innovadoras e inclusivas para el mundo digital.</p> <br/>
           <br/>

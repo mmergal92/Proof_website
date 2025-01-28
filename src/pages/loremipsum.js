@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 import circletext_nologo from "../assets/circletext_nologo.png"
 
-const LoremIpsum = () =>{
+const Loremipsum = () =>{
       return ( 
         <div className= 'home'>
         <div className = "right-container">
@@ -18,4 +18,4 @@ const LoremIpsum = () =>{
         )
 }
 
-export default LoremIpsum;
+export default Loremipsum;
