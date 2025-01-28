@@ -11,7 +11,7 @@ const Loremipsum = () =>{
         <div className = "right-container">
         <div className ="home-text">
           <br/>
-          
+          <p>testing</p>
         </div>
     </div>
     </div>
