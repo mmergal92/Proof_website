@@ -90,7 +90,7 @@
   top: -87px !important;
   left: 43px !important;
 }
-.home-bottom p{
+.home-bottom p, a{
   color: white !important;
   font-size: 8px !important;
 }
