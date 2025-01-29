@@ -102,7 +102,7 @@ const Loremipsum = () => {
                     <div
                     id="targetText"
                     className="generated-text"
-                    dangerouslySetInnerHTML={text.split('</p><p>').join('</p><br><p>')}
+                    dangerouslySetInnerHTML={{ __html: text }}
                     />
                 
                 </>
