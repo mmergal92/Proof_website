@@ -224,6 +224,8 @@ a:hover{
 
 .main-content {
   z-index: 10;
+  color: #FFFEE3 !important;
+  
 }
 
 .title-image {
