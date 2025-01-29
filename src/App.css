@@ -205,6 +205,18 @@ a:hover{
   z-index: 100;
   transition: opacity 1.5s linear;
 }
+/* Copy Modal */
+.copy-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+}
 
 .modal--show {
     visibility: visible;
@@ -231,44 +243,84 @@ a:hover{
 .loremsite{
   display: flex;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
+  background-color: #FFFEE3;
+  font-family: 'Poppins', sans-serif;
 }
 .main-content {
-  z-index: 10;
-  display: flex !important;
+  display: flex;
+  width: 100%;
 
 }
 .left-lorem-container{
-  height: 100vh;
+  width: 40%;
   background-color: #EA6200 !important;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
 }
 .left-lorem-container .title{
   color: #FFFEE3 !important;
   font-family: 'Vulf Sans Demo';
-  font-weight: black !important;
+  font-weight: bold !important;
   align-content: center !important;
-  padding: 100px !important;
   font-size: 56pt !important;
 }
-.right-lorem-container{
-  display: block;
-  align-content: center !important;
-  padding: 100px !important;
-  height: 100vh;
-  background-color: #FFFEE3 !important;
-}
-
 .description {
-  font-family: 'Poppins';
-  font-weight: 700;
+  font-weight: 400;
   font-family: 'Vulf Sans Demo';
   color: #FFFEE3;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.language-button {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.plaintain-button, .platano-button {
+  background-color: transparent;
+  border: 2px solid #FFFEE3;
+  color: #FFFEE3;
   font-size: 16px;
-  word-spacing: 3px;
-  letter-spacing: 1px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
+.plaintain-button:hover, .platano-button:hover {
+  background-color: #FFFEE3;
+  color: #EA6200;
+}
+
+.paragraph-number {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #FFFEE3;
+  background: transparent;
+  color: #FFFEE3;
+  font-size: 16px;
+}
+
+.generate-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #FFFEE3;
+  color: #EA6200;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.generate-button:hover {
+  background-color: #000;
+  color: #FFFEE3;
+}
+
+
+/* 
 .paragraph-number {
   max-width: 80px;
   margin: 0;
@@ -277,24 +329,31 @@ a:hover{
   padding-bottom: 6px;
   height: 37px;
   transition: box-shadow 500ms;
-}
+} */
 
-.paragraph-number:focus {
+/* .paragraph-number:focus {
   box-shadow: 0px 0px 50px 5px #f61b1b;
+} */
+
+.right-lorem-container{
+  width: 60%;
+  padding: 80px !important;
+  text-align: center;
+  background-color: #FFFEE3 !important;
 }
 
-.generate-button,
 .copy-button {
-  font-family: 'Poppins', Helvetica, serif;
-  border-width: 0px;
-  padding: 6px 12px;
-  background-color: #f61b1b;
-  color: #fff;
-  transition: background-color 500ms, color 500ms, box-shadow 500ms;
+  background-color: #EA6200;
+  color: #FFFEE3;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .copy-button:hover {
-    cursor: pointer;
+  background-color: #000;
+  color: #FFFEE3;
 }
 
 .generate-button:hover,
@@ -307,18 +366,14 @@ a:hover{
   outline: none;
 }
 
-.copy-button {
-  display: flex;
-  text-decoration: none;
-  margin-top: -20px;
-}
-
 .generated-text {
-  padding: 20px;
+  margin-top: 20px;
+  font-size: 16px;
   color: #EA6200;
-  font-family: 'Vulf Sans Demo';
-  margin-top: 40px;
-  margin-bottom: 40px;
+  text-align: left;
+  padding: 20px;
+  background: #FFFEE3;
+  border: 1px solid #EA6200;
 }
 
 .generated-text p {

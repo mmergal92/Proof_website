@@ -52,32 +52,31 @@ const Loremipsum = () => {
 
       return (
         <div className ="loremsite">
-  
           <div className="main-content ">
-          <div className="left-lorem-container">
+            <div className="left-lorem-container">
                 <div className ="language-button">
                     <button className="plaintain-button" >
-                            Plaintain
+                        Plaintain
                     </button>
                     <button className="platano-button" >
-                            Platano
+                        Plátano
                     </button>
                 </div>
-            <h1 className="title">Riddims
-            </h1>
-            <p className="description">
-              Specify the number of paragraphs of text you would like to generate.
-            </p>
-            <form action="/" method="POST" onSubmit={handleSubmit}>
-              <input
-                type="number"
-                className="paragraph-number"
-                name="numberOfParagraphs"
-                onChange={(e) => setNumberOfParagraphs(e.target.value)}
-                value={numberOfParagraphs}
-              />
-              <input type="submit" value="Enter" className="generate-button" />
-            </form>
+                <h1 className="title">Riddims
+                </h1>
+                <p className="description">
+                Specify the number of paragraphs of text you would like to generate.
+                </p>
+                <form action="/" method="POST" onSubmit={handleSubmit}>
+                <input
+                    type="number"
+                    className="paragraph-number"
+                    name="numberOfParagraphs"
+                    onChange={(e) => setNumberOfParagraphs(e.target.value)}
+                    value={numberOfParagraphs}
+                />
+                <input type="submit" value="Enter" className="generate-button" />
+                </form>
             </div>
             <div className="right-lorem-container">
                 {text && (
@@ -96,17 +95,18 @@ const Loremipsum = () => {
                 </>
                 
                 )}
-                    </div>
-                    <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
+                    
+                <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
 
-                        <div id="copyText">
-                        <p>Copied!</p>
-                        </div>
+                    <div id="copyText">
+                    <p>Copied!</p>
                     </div>
+                </div>
             </div>
+        </div>
   
           
-        </div>
+    </div>
       );
 
 }
