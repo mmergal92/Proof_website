@@ -222,10 +222,14 @@ a:hover{
   color: #fff;
 }
 
+.loremsite{
+  background-color: #FFFEE3 !important;
+
+}
 .main-content {
   z-index: 10;
-  color: #FFFEE3 !important;
-  
+  background-color: #EA6200 !important;
+
 }
 
 .title-image {
