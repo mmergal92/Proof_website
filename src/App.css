@@ -438,3 +438,63 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .loremsite {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-lorem-container, .right-lorem-container {
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .left-lorem-container {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .left-lorem-container .title,
+  .description {
+    text-align: center !important;
+  }
+
+  .language-button {
+    justify-content: center;
+  }
+
+  .paragraph-number,
+  .generate-button {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .right-lorem-container {
+    text-align: center;
+    overflow-y: visible;
+  }
+
+  .copy-button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .generated-text {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .made-by {
+    position: relative;
+    bottom: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
