@@ -239,6 +239,9 @@ a:hover{
 }
 .left-lorem-container .title{
   color: #FFFEE3 !important;
+  font-family: 'Vulf Sans Demo';
+  font-weight: black !important;
+  font-size: 56pt !important;
 }
 .right-lorem-container{
   display: block;
@@ -249,7 +252,7 @@ a:hover{
 .description {
   font-family: 'Poppins';
   font-weight: 700;
-  text-transform: uppercase;
+  font-family: 'Vulf Sans Demo';
   color: #FFFEE3;
   font-size: 16px;
   word-spacing: 3px;
@@ -303,6 +306,7 @@ a:hover{
 .generated-text {
   padding: 20px;
   color: #EA6200;
+  font-family: 'Vulf Sans Demo';
   margin-top: 40px;
   margin-bottom: 40px;
 }

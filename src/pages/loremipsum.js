@@ -72,31 +72,32 @@ const Loremipsum = () => {
             </form>
             </div>
             <div className="right-lorem-container">
-            {text && (
-          <>
-            <button className="copy-button" onClick={handleCopy}>
-              Copy Text
-            </button>
-          
-          
-            <div
-              id="targetText"
-              className="generated-text"
-              dangerouslySetInnerHTML={{ __html: text }}
-            />
-          
-          </>
-           
-        )}
-         </div>
-          </div>
-  
-          <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
+                {text && (
+                <>
+                    <button className="copy-button" onClick={handleCopy}>
+                    Copy Text
+                    </button>
+                
+                
+                    <div
+                    id="targetText"
+                    className="generated-text"
+                    dangerouslySetInnerHTML={{ __html: text }}
+                    />
+                
+                </>
+                
+                )}
+                    </div>
+                    <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
 
-            <div id="copyText">
-              <p>Copied!</p>
+                        <div id="copyText">
+                        <p>Copied!</p>
+                        </div>
+                    </div>
             </div>
-          </div>
+  
+          
         </div>
       );
 
