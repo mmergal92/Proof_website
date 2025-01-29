@@ -19,7 +19,7 @@ const Loremipsum = () => {
       e.preventDefault();
       const number = parseFloat(numberOfParagraphs);
       const selectedText = language === 'english' ? loremText : loremTextEs;
-      const HTMLParagraphs = loremText.getAllParagraphs(number);
+      const HTMLParagraphs = selectedText.getAllParagraphs(number);
       setText(HTMLParagraphs);
     };
   
