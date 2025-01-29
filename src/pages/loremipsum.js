@@ -82,7 +82,7 @@ const Loremipsum = () => {
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by Segacy and Maria <br/>
+                        Made by <a href="https://segacyroberts.com/" target="_blank" >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" >Maria</a> <br/>
                         Vulf Sans Font by the Oh No Type Foundry @ohnotypeco
                     </p>
                 </div>
