@@ -297,7 +297,7 @@ a:hover{
   color: #EA6200;
 }
 .form{
-  align-items: start !important;
+  text-align: left !important;
 }
 .paragraph-number {
   width: 300px;
