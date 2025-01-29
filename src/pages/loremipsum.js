@@ -55,7 +55,7 @@ const Loremipsum = () => {
   
           <div className="main-content left-lorem-container">
           <div className="left-container">
-            <h1 className="title">Lorem Site
+            <h1 className="title">Riddims
             </h1>
             <p className="description">
               Specify the number of paragraphs of text you would like to generate.
@@ -68,7 +68,7 @@ const Loremipsum = () => {
                 onChange={(e) => setNumberOfParagraphs(e.target.value)}
                 value={numberOfParagraphs}
               />
-              <input type="submit" value="Generate" className="generate-button" />
+              <input type="submit" value="Enter" className="generate-button" />
             </form>
             </div>
             <div className="right-lorem-container">
