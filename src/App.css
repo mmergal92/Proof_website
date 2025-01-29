@@ -319,6 +319,16 @@ a:hover{
   color: #FFFEE3;
 }
 
+.made-by{
+  border: 1px solid white;
+  align-items: bottom;
+}
+.credit{
+  font-weight: 400;
+  font-family: 'Vulf Sans Demo';
+  color: #FFFEE3;
+  font-size: 14px;
+}
 
 /* 
 .paragraph-number {

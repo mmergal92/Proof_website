@@ -62,22 +62,30 @@ const Loremipsum = () => {
                         Plátano
                     </button>
                 </div>
-                <h1 className="title">Riddims
-                </h1>
-                <p className="description">
-                    any text about this lorem?
-                </p>
-                <form action="/" method="POST" onSubmit={handleSubmit}>
-                <input
-                    type="number"
-                    className="paragraph-number"
-                    name="numberOfParagraphs"
-                    onChange={(e) => setNumberOfParagraphs(e.target.value)}
-                    placeholder="How many paragraphs?"
-                    value={numberOfParagraphs}
-                />
-                <input type="submit" value="Enter" className="generate-button" />
-                </form>
+                <div className="riddims">
+                    <h1 className="title">Riddims
+                    </h1>
+                    <p className="description">
+                        any text about this lorem?
+                    </p>
+                    <form action="/" method="POST" onSubmit={handleSubmit}>
+                    <input
+                        type="number"
+                        className="paragraph-number"
+                        name="numberOfParagraphs"
+                        onChange={(e) => setNumberOfParagraphs(e.target.value)}
+                        placeholder="How many paragraphs?"
+                        value={numberOfParagraphs}
+                    />
+                    <input type="submit" value="Enter" className="generate-button" />
+                    </form>
+                </div>
+                <div className="made-by">
+                <p className="credit">
+                        Made by Segacy and Maria <br/>
+                        Vulf Sans Font by the Oh No Type Foundry @ohnotypeco
+                    </p>
+                </div>
             </div>
             <div className="right-lorem-container">
                 {text && (
