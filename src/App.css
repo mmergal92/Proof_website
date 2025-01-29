@@ -229,10 +229,10 @@ a:hover{
 }
 .main-content {
   z-index: 10;
+  display: flex !important;
+
 }
 .left-lorem-container{
-  display: flex;
-  width: 50% !important;
   height: 100vh;
   background-color: #EA6200 !important;
   
@@ -242,10 +242,8 @@ a:hover{
 }
 .right-lorem-container{
   display: block;
-  flex: auto;
   height: 100vh;
   background-color: #FFFEE3 !important;
-  width: 50% !important;
 }
 
 .description {
