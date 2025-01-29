@@ -324,8 +324,12 @@ a:hover{
 }
 
 .made-by{
-  border: 1px solid white;
-  align-items: bottom;
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
 }
 .credit{
   font-weight: 400;
