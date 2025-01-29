@@ -442,7 +442,9 @@ input[type=number]::-webkit-outer-spin-button {
 .plaintain-button.active, .platano-button.active {
   background-color: #FFFEE3;
   color: #EA6200;
-  border: #FFFEE3;
+  border:  2px solid #FFFEE3;
+  font-size: 16px;
+  padding: 5px 16px;
 }
 /* Default selected */
 /* .plaintain-button {
