@@ -73,9 +73,10 @@ const Loremipsum = () => {
                     className="paragraph-number"
                     name="numberOfParagraphs"
                     onChange={(e) => setNumberOfParagraphs(e.target.value)}
+                    placeholder="How many paragraphs?"
                     value={numberOfParagraphs}
                 />
-                <input type="submit" value="Enter" placeholder="How many paragraphs?" className="generate-button" />
+                <input type="submit" value="Enter" className="generate-button" />
                 </form>
             </div>
             <div className="right-lorem-container">
