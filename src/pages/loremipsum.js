@@ -51,7 +51,7 @@ const Loremipsum = () => {
 
 
       return (
-        <div>
+        <div className ="loremsite">
   
           <div className="main-content">
             <h1 className="title">Lorem Site
