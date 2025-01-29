@@ -27,7 +27,7 @@ const Loremipsum = () => {
       tmp.innerHTML = text;
       el.innerHTML = tmp.textContent || tmp.innerText || ''; // Set the <textarea> value to the string to be copied
   
-      el.setAttribute('readonly', ''); // Make it readonly to be tamper-proof
+    //   el.setAttribute('readonly', ''); // Make it readonly to be tamper-proof
       el.style.position = 'absolute';
       el.style.left = '-9999px'; // Move outside the screen to make it invisible
       document.body.appendChild(el); // Append the <textarea> element to the HTML document
