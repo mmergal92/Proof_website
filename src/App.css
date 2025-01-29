@@ -444,6 +444,7 @@ input[type=number]::-webkit-outer-spin-button {
   .loremsite {
     flex-direction: column;
     height: auto;
+    background-color: #FFFEE3;
   }
   
   .main-content {
@@ -452,21 +453,21 @@ input[type=number]::-webkit-outer-spin-button {
 
   .left-lorem-container, .right-lorem-container {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
   }
   
   .left-lorem-container {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
   
   .left-lorem-container .title,
   .description {
-    text-align: center !important;
+    text-align: left !important;
   }
 
   .language-button {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .paragraph-number,
@@ -476,25 +477,26 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .right-lorem-container {
-    text-align: center;
+    text-align: left;
     overflow-y: visible;
+    background-color: #EA6200;
   }
 
   .copy-button {
     display: block;
-    margin: 10px auto;
+    margin: 10px 0;
   }
 
   .generated-text {
-    text-align: center;
-    padding: 15px;
+    text-align: left;
+    padding: 10px;
     font-size: 14px;
   }
 
   .made-by {
-    position: relative;
-    bottom: auto;
-    text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    text-align: left;
   }
 }
