@@ -247,7 +247,7 @@ a:hover{
   height: 100vh;
   width: 100vw;
   background-color: #FFFEE3;
-  font-family: 'VulfSansDemo', sans-serif;
+  font-family: 'VulfSansDemo';
 }
 .main-content {
   display: flex;
@@ -265,7 +265,7 @@ a:hover{
 }
 .left-lorem-container .title{
   color: #FFFEE3 !important;
-  font-family: 'VulfSansDemo', sans-serif;
+  font-family: 'VulfSansDemo';
   font-weight: normal !important;
   align-content: start !important;
   text-align: left !important;
@@ -342,6 +342,9 @@ a:hover{
   font-family: 'VulfSansDemo';
   color: #FFFEE3;
   font-size: 14px;
+}
+.credit a{
+  color: white !important;
 }
 
 /* 
