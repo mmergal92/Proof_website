@@ -444,12 +444,12 @@ input[type=number]::-webkit-outer-spin-button {
   color: #EA6200;
   border: #EA6200;
 }
-
-.plaintain-button {
-  background-color: FFFEE3; /* Default selected */
+/* Default selected */
+/* .plaintain-button {
+  background-color: #FFFEE3; 
   color: #EA6200;
   border: #EA6200;
-}
+} */
 
 
 /* Responsive adjustments */
