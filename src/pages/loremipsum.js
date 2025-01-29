@@ -53,8 +53,8 @@ const Loremipsum = () => {
       return (
         <div className ="loremsite">
   
-          <div className="main-content left-lorem-container">
-          <div className="left-container">
+          <div className="main-content ">
+          <div className="left-lorem-container">
             <h1 className="title">Riddims
             </h1>
             <p className="description">

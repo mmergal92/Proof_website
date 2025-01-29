@@ -241,7 +241,7 @@ a:hover{
   color: #FFFEE3 !important;
 }
 .right-lorem-container{
-  display: flex;
+  display: block;
   flex: auto;
   height: 100vh;
   background-color: #FFFEE3 !important;
