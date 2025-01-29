@@ -231,9 +231,16 @@ a:hover{
 .main-content {
   z-index: 10;
   background-color: #EA6200 !important;
-
 }
-
+.left-lorem-container{
+  display: flex;
+  width: 50% !important;
+}
+.right-lorem-container{
+  display: flex;
+  flex: auto;
+  width: 50% !important;
+}
 .title-image {
   max-width: 100%;
   width: 500px;

@@ -53,7 +53,7 @@ const Loremipsum = () => {
       return (
         <div className ="loremsite">
   
-          <div className="main-content left-container">
+          <div className="main-content left-lorem-container">
           <div className="left-container">
             <h1 className="title">Lorem Site
             </h1>
@@ -71,7 +71,7 @@ const Loremipsum = () => {
               <input type="submit" value="Generate" className="generate-button" />
             </form>
             </div>
-            <div className="right-container">
+            <div className="right-lorem-container">
             {text && (
           <>
             <button className="copy-button" onClick={handleCopy}>
