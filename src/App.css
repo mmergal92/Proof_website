@@ -224,8 +224,8 @@ a:hover{
 
 .loremsite{
   display: flex;
-  height: 100%;
-  justify-content: center;
+  height: 100vh;
+  width: 100vh;
 }
 .main-content {
   z-index: 10;
@@ -233,6 +233,7 @@ a:hover{
 .left-lorem-container{
   display: flex;
   width: 50% !important;
+  height: 100vh;
   background-color: #EA6200 !important;
   
 }
@@ -242,6 +243,7 @@ a:hover{
 .right-lorem-container{
   display: flex;
   flex: auto;
+  height: 100vh;
   background-color: #FFFEE3 !important;
   width: 50% !important;
 }
@@ -295,7 +297,7 @@ a:hover{
 }
 
 .copy-button {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   margin-top: -20px;
 }
@@ -303,7 +305,6 @@ a:hover{
 .generated-text {
   padding: 20px;
   color: #EA6200;
-  box-shadow: #fff 0px 0px 5px 4px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
