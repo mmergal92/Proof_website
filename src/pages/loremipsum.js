@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { loremText } from '../components/loremtext';
+import { loremTextEs } from '../components/loremtextes';
 import Home from './home';
 import Video from '../components/video'
 import { Link } from 'react-router-dom';
@@ -11,10 +12,13 @@ const Loremipsum = () => {
     const [showCopyModal, setShowCopyModal] = useState(false);
     const [numberOfParagraphs, setNumberOfParagraphs] = useState('');
     const [text, setText] = useState('');
+    const [language, setLanguage] = useState('english');
+
   
     const handleSubmit = (e) => {
       e.preventDefault();
       const number = parseFloat(numberOfParagraphs);
+      const selectedText = language === 'english' ? loremText : loremTextEs;
       const HTMLParagraphs = loremText.getAllParagraphs(number);
       setText(HTMLParagraphs);
     };
@@ -55,12 +59,12 @@ const Loremipsum = () => {
           <div className="main-content ">
             <div className="left-lorem-container">
                 <div className ="language-button">
-                    <button className="plaintain-button" >
-                        plaintain
-                    </button>
-                    <button className="platano-button" >
-                        plátano
-                    </button>
+                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')}>
+                      plaintain
+                  </button>
+                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => setLanguage('spanish')}>
+                      plátano
+                  </button>
                 </div>
                 <div className="riddims">
                     <h1 className="title">Riddims
