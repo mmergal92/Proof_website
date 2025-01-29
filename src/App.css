@@ -265,7 +265,7 @@ a:hover{
 }
 .left-lorem-container .title{
   color: #FFFEE3 !important;
-  font-family: 'VulfSansDemo';
+  font-family: 'VulfSansDemo', sans-serif;
   font-weight: normal !important;
   align-content: start !important;
   text-align: left !important;
@@ -339,7 +339,7 @@ a:hover{
 }
 .credit{
   font-weight: 400;
-  font-family: 'Vulf Sans Demo';
+  font-family: 'VulfSansDemo';
   color: #FFFEE3;
   font-size: 14px;
 }
