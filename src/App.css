@@ -505,7 +505,9 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: left;
     color: #EA6200;
   }
-  
+  .credit{
+    color: #EA6200;
+  }
   .made-by a {
     color: #EA6200 !important;
   }
