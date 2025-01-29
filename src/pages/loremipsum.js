@@ -60,7 +60,7 @@ const Loremipsum = () => {
             <div className="left-lorem-container">
                 <div className ="language-button">
                 <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')}>
-                      plaintain
+                      plantain
                   </button>
                   <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => setLanguage('spanish')}>
                       plátano
