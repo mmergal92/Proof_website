@@ -108,7 +108,7 @@ const Loremipsum = () => {
                 <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
 
                     <div id="copyText">
-                    <p>Copied!</p>
+                    {/* <p>Copied!</p> */}
                     </div>
                 </div>
             </div>
