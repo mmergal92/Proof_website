@@ -224,7 +224,9 @@ a:hover{
 
 .loremsite{
   background-color: #FFFEE3 !important;
-
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 .main-content {
   z-index: 10;
