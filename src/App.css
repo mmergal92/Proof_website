@@ -241,10 +241,14 @@ a:hover{
   color: #FFFEE3 !important;
   font-family: 'Vulf Sans Demo';
   font-weight: black !important;
+  align-content: center !important;
+  padding: 100px !important;
   font-size: 56pt !important;
 }
 .right-lorem-container{
   display: block;
+  align-content: center !important;
+  padding: 100px !important;
   height: 100vh;
   background-color: #FFFEE3 !important;
 }
