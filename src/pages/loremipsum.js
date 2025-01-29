@@ -56,10 +56,10 @@ const Loremipsum = () => {
             <div className="left-lorem-container">
                 <div className ="language-button">
                     <button className="plaintain-button" >
-                        Plaintain
+                        plaintain
                     </button>
                     <button className="platano-button" >
-                        Plátano
+                        plátano
                     </button>
                 </div>
                 <div className="riddims">
@@ -68,7 +68,7 @@ const Loremipsum = () => {
                     <p className="description">
                         any text about this lorem?
                     </p>
-                    <form action="/" method="POST" onSubmit={handleSubmit}>
+                    <form className="form" action="/" method="POST" onSubmit={handleSubmit}>
                     <input
                         type="number"
                         className="paragraph-number"

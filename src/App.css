@@ -288,7 +288,7 @@ a:hover{
   border-radius: 20px !important;;
   color: #FFFEE3;
   font-size: 16px;
-  padding: 10px 16px;
+  padding: 5px 16px;
   cursor: pointer;
 }
 
@@ -296,15 +296,18 @@ a:hover{
   background-color: #FFFEE3;
   color: #EA6200;
 }
-
+.form{
+  align-items: start !important;
+}
 .paragraph-number {
-  width: 200px;
-  padding: 10px;
-  text-align: center;
+  width: 300px;
+  padding: 10px 16px;
+  text-align: left;
   border: 2px solid #FFFEE3;
   background: transparent;
   color: #FFFEE3;
   font-size: 16px;
+  margin-bottom: 0 !important;
 }
 .paragraph-number::placeholder {
   color: #FFFEE3;
@@ -312,6 +315,7 @@ a:hover{
 }
 
 .generate-button {
+  width: 300px;
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #FFFEE3;
@@ -366,7 +370,7 @@ a:hover{
   background-color: #EA6200;
   color: #FFFEE3;
   border-radius: 20px !important;;
-  padding: 10px 16px;
+  padding: 5px 16px;
   border: 2px solid #EA6200;
   cursor: pointer;
   font-size: 16px;
