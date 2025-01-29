@@ -53,7 +53,8 @@ const Loremipsum = () => {
       return (
         <div className ="loremsite">
   
-          <div className="main-content middle-container">
+          <div className="main-content left-container">
+          <div className="left-container">
             <h1 className="title">Lorem Site
             </h1>
             <p className="description">
@@ -69,21 +70,28 @@ const Loremipsum = () => {
               />
               <input type="submit" value="Generate" className="generate-button" />
             </form>
+            </div>
+            <div className="right-container">
             {text && (
           <>
             <button className="copy-button" onClick={handleCopy}>
               Copy Text
             </button>
+          
+          
             <div
               id="targetText"
               className="generated-text"
               dangerouslySetInnerHTML={{ __html: text }}
             />
+          
           </>
+           
         )}
+         </div>
           </div>
   
-          <div id="copyOverlay right-container" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
+          <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
 
             <div id="copyText">
               <p>Copied!</p>
