@@ -53,7 +53,7 @@ const Loremipsum = () => {
       return (
         <div className ="loremsite">
   
-          <div className="main-content">
+          <div className="main-content middle-container">
             <h1 className="title">Lorem Site
             </h1>
             <p className="description">
@@ -83,7 +83,7 @@ const Loremipsum = () => {
         )}
           </div>
   
-          <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
+          <div id="copyOverlay right-container" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
 
             <div id="copyText">
               <p>Copied!</p>
