@@ -497,7 +497,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 14px;
   }
 
-  .made-by {
+  /* .made-by {
     margin-top: auto;
     padding: 20px;
     bottom: 10px;
@@ -510,5 +510,8 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .made-by a {
     color: #EA6200 !important;
+  } */
+  .made-by {
+    display: none !important;
   }
 }
