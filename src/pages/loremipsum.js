@@ -55,6 +55,14 @@ const Loremipsum = () => {
   
           <div className="main-content ">
           <div className="left-lorem-container">
+                <div className ="language-button">
+                    <button className="plaintain-button" >
+                            Plaintain
+                    </button>
+                    <button className="platano-button" >
+                            Platano
+                    </button>
+                </div>
             <h1 className="title">Riddims
             </h1>
             <p className="description">
