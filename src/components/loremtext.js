@@ -8,8 +8,8 @@ function GenerateNewText() {
   // Add property to the object
   this.sentences =
     [
-      'testing this Friends don\'t lie.',
-      'testing thisIt\'s just, sometimes... people don\'t really say what they\'re really thinking. But when you capture the right moment, it says more.',
+      'Piece of ginger and thyme don’t forget pimento seeds. I mix everything together. Grace and Maggi of course. Now we’re going to wash the chicken. Do what you please in your house but as for us in this house? As for Deddy and fi him house? Lawd ah mercy, tek back yuhself and bring back yuhself inna one peace. She’s as good as gold and scotch bonnet peppers know who fi frighten.',
+      'Whatever I said whatever I did I didn’t mean it scotchies highgate saint mary. Small up yuhself! Edna Leroy and Everton remember the songs used to make you rock away. Tastee or juici or golden krust jerk ribs and rice and peas where is the oxtail gravy. We have food at home.',
       'testing thisThis is not yours to fix alone. You act like you’re all alone out there in the world, but you’re not. You’re not alone.',
       'testing thisWhy are you keeping this curiosity door lock?',
       'testing thisDo you know anything about sensory deprivation tanks? Specifically how to build one?',
