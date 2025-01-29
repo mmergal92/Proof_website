@@ -440,14 +440,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .plaintain-button.active, .platano-button.active {
-  background-color: orange;
-  color: white;
-  border: none;
+  background-color: #FFFEE3;
+  color: #EA6200;
+  border: #EA6200;
 }
 
 .plaintain-button {
-  background-color: orange; /* Default selected */
-  color: white;
+  background-color: FFFEE3; /* Default selected */
+  color: #EA6200;
+  border: #EA6200;
 }
 
 
