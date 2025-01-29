@@ -18,7 +18,7 @@
   font-family: 'VulfSansDemo';
   font-style: normal;
   font-weight: normal;
-  src: local('VulfSansDemo-Regular'), url(/assets/VulfSansDemo-Regular.otf) format('otf');
+  src: local('VulfSansDemo-Regular'), url(./assets/VulfSansDemo-Regular.otf) format('otf');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
