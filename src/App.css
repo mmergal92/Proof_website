@@ -353,7 +353,12 @@ a:hover{
   -moz-text-decoration-style: wavy !important;
   text-decoration-style: wavy !important;
 }
-
+.linkwave a {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy !important;
+  -moz-text-decoration-style: wavy !important;
+  text-decoration-style: wavy !important;
+}
 /* 
 .paragraph-number {
   max-width: 80px;
