@@ -13,10 +13,12 @@ const Loremipsum = () => {
     const [numberOfParagraphs, setNumberOfParagraphs] = useState('');
     const [text, setText] = useState('');
     const [language, setLanguage] = useState('english');
+    const [bgColor, setBgColor] = useState('#FFF')
 
   
     const handleSubmit = (e) => {
       e.preventDefault();
+      setBgColor('#EA6200');
       const number = parseFloat(numberOfParagraphs);
       const selectedText = language === 'english' ? loremText : loremTextEs;
       const HTMLParagraphs = selectedText.getAllParagraphs(number);
@@ -57,7 +59,7 @@ const Loremipsum = () => {
       return (
         <div className ="loremsite">
           <div className="main-content ">
-            <div className="left-lorem-container">
+            <div className="left-lorem-container" style={{ backgroundColor: bgColor}}>
                 <div className ="language-button">
                 <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')}>
                       plantain
@@ -70,7 +72,7 @@ const Loremipsum = () => {
                     <h1 className="title">Riddims
                     </h1>
                     <p className="description">
-                        any text about this lorem?
+                       
                     </p>
                     <form className="form" action="/" method="POST" onSubmit={handleSubmit}>
                     <input
