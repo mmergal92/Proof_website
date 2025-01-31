@@ -346,6 +346,11 @@ a:hover{
 .credit a{
   color: white !important;
 }
+.linkwave{
+  -webkit-text-decoration-style: wavy !important;
+  -moz-text-decoration-style: wavy !important;
+  text-decoration-style: wavy !important;
+}
 
 /* 
 .paragraph-number {
