@@ -84,13 +84,14 @@ const Loremipsum = () => {
                         onChange={(e) => setNumberOfParagraphs(e.target.value)}
                         placeholder="How many paragraphs?"
                         value={numberOfParagraphs}
+                        style={{ color: fontColor}}
                     />
-                    <input type="submit" value="Enter" className="generate-button" />
+                    <input type="submit" value="Enter" className="generate-button"  style={{ border: fontColor}}/>
                     </form>
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by <a href="https://segacyroberts.com/" target="_blank" className="linkwave" >Segacy</a> <span className="linkwave">and</span> <a href="https://mariamergal.dev/" target="_blank" className="linkwave">Maria</a> <br/>
+                        Made by <a href="https://segacyroberts.com/" target="_blank" className="linkwave" >Segacy</a><span className="linkwave"> and </span><a href="https://mariamergal.dev/" target="_blank" className="linkwave">Maria</a> <br/>
                         Vulf Sans Font by the Oh No Type Foundry @ohnotypeco
                     </p>
                 </div>
