@@ -347,18 +347,25 @@ a:hover{
   color: #FFFEE3 !important;
   text-decoration: none;
 }
-.linkwave{
+/* .linkwave{
   text-decoration: underline; 
   -webkit-text-decoration-style: wavy !important;
   -moz-text-decoration-style: wavy !important;
   text-decoration-style: wavy !important;
+} */
+.linkwave {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="5"><path d="M0,3 Q2,6 4,3 T8,3 T12,3" stroke="white" stroke-width="1" fill="transparent"/></svg>');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  text-decoration: none !important;
+  padding-bottom: 3px;
 }
-.linkwave a {
+/* .linkwave a {
   text-decoration: underline;
   -webkit-text-decoration-style: wavy !important;
   -moz-text-decoration-style: wavy !important;
   text-decoration-style: wavy !important;
-}
+} */
 /* 
 .paragraph-number {
   max-width: 80px;
