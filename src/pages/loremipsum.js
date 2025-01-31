@@ -13,14 +13,16 @@ const Loremipsum = () => {
     const [numberOfParagraphs, setNumberOfParagraphs] = useState('');
     const [text, setText] = useState('');
     const [language, setLanguage] = useState('english');
-    const [bgColor, setBgColor] = useState('#FFFEE3')
-    const [fontColor, setFontColor] = useState('#EA6200')
+    const [bgColor, setBgColor] = useState('#FFFEE3');
+    const [fontColor, setFontColor] = useState('#EA6200');
+    const [isActive, setIsActive] = useState(false);
 
   
     const handleSubmit = (e) => {
       e.preventDefault();
       setBgColor('#EA6200');
       setFontColor('#FFFEE3');
+      setIsActive(true);
       const number = parseFloat(numberOfParagraphs);
       const selectedText = language === 'english' ? loremText : loremTextEs;
       const HTMLParagraphs = selectedText.getAllParagraphs(number);
@@ -59,9 +61,9 @@ const Loremipsum = () => {
 
 
       return (
-        <div className ="loremsite">
+        <div className ={`loremsite ${isActive ? 'active' : ''}`}>
           <div className="main-content ">
-            <div className="left-lorem-container" style={{ backgroundColor: bgColor}}>
+            <div className="left-lorem-container" style={{ backgroundColor: bgColor, color: fontColor}}>
                 <div className ="language-button">
                 <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')}>
                       plantain
