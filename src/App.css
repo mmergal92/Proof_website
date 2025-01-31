@@ -256,7 +256,7 @@ a:hover{
 }
 .left-lorem-container{
   width: 40%;
-  background-color: #EA6200 !important;
+  /* background-color: #EA6200 !important; */
   padding: 80px;
   display: flex;
   flex-direction: column;
