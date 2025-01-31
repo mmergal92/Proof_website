@@ -18,7 +18,7 @@ const Loremipsum = () => {
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      setBgColor('#fff');
+      setBgColor('#EA6200');
       const number = parseFloat(numberOfParagraphs);
       const selectedText = language === 'english' ? loremText : loremTextEs;
       const HTMLParagraphs = selectedText.getAllParagraphs(number);
