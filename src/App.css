@@ -344,7 +344,8 @@ a:hover{
   font-size: 14px;
 }
 .credit a{
-  color: white !important;
+  color: #FFFEE3 !important;
+  text-decoration: none;
 }
 .linkwave{
   text-decoration: underline; 

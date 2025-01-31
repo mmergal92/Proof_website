@@ -92,7 +92,7 @@ const Loremipsum = () => {
                 <div className="made-by">
                 <p className="credit">
                         Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank">Maria</a></span><br/>
-                        Vulf Sans Font by the Oh No Type Foundry @ohnotypeco
+                        Colophon: Vulf Sans by Oh No Type Foundry
                     </p>
                 </div>
             </div>
