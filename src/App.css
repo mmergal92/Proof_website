@@ -264,7 +264,7 @@ a:hover{
   
 }
 .left-lorem-container .title{
-  color: #FFFEE3 !important;
+  /* color: #FFFEE3 !important; */
   font-family: 'VulfSansDemo';
   font-weight: normal !important;
   align-content: start !important;

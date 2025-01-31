@@ -13,12 +13,14 @@ const Loremipsum = () => {
     const [numberOfParagraphs, setNumberOfParagraphs] = useState('');
     const [text, setText] = useState('');
     const [language, setLanguage] = useState('english');
-    const [bgColor, setBgColor] = useState('#FFF')
+    const [bgColor, setBgColor] = useState('#FFFEE3')
+    const [fontColor, setFontColor] = useState('#EA6200')
 
   
     const handleSubmit = (e) => {
       e.preventDefault();
       setBgColor('#EA6200');
+      setFontColor('#FFFEE3');
       const number = parseFloat(numberOfParagraphs);
       const selectedText = language === 'english' ? loremText : loremTextEs;
       const HTMLParagraphs = selectedText.getAllParagraphs(number);
@@ -68,7 +70,7 @@ const Loremipsum = () => {
                       plátano
                   </button>
                 </div>
-                <div className="riddims">
+                <div className="riddims" style={{ color: fontColor}}>
                     <h1 className="title">Riddims
                     </h1>
                     <p className="description">
