@@ -11,7 +11,7 @@ const colorOptions = [
     { primary: "#FFE3F1", secondary: "#DD0051" },
     { primary: "#EFF2AC", secondary: "#175B32" },
     { primary: "#FFFEE3", secondary: "#EA6200" },
-    { primary: "#729BA0", secondary: "#00283C" },
+    { primary: "#BDCCCF", secondary: "#00283C" },
     { primary: "#211B47", secondary: "#D3E1E7" }
   ];
 function getRandomColors() {
