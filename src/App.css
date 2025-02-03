@@ -200,10 +200,10 @@ a:hover{
 #copyOverlay {
   position: fixed;
   top: 0;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100vw;
   left: 0;
+  width: 100vw;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
   z-index: 100;
   transition: opacity 1.5s linear;
 }
@@ -242,11 +242,10 @@ a:hover{
   color: #fff;
 }
 
-.loremsite{
+.loremsite {
   display: flex;
   height: 100vh;
   width: 100vw;
-  /* background-color: #FFFEE3; */
   font-family: 'VulfSansDemo';
 }
 .main-content {
@@ -260,14 +259,14 @@ a:hover{
   padding: 80px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   
 }
 .left-lorem-container .title{
   /* color: #FFFEE3 !important; */
   font-family: 'VulfSansDemo';
   font-weight: normal !important;
-  align-content: start !important;
+  /* align-content: start !important; */
   text-align: left !important;
   font-size: 56px !important;
 }
@@ -286,18 +285,18 @@ a:hover{
 }
 .plaintain-button, .platano-button {
   background-color: transparent;
-  border: 2px solid #FFFEE3;
+  border: 2px solid;
   border-radius: 20px !important;;
-  color: #FFFEE3;
+  /* color: #FFFEE3; */
   font-size: 16px;
   padding: 5px 16px;
   cursor: pointer;
 }
 
-.plaintain-button:hover, .platano-button:hover {
+/* .plaintain-button:hover, .platano-button:hover {
   background-color: #FFFEE3;
   color: #EA6200;
-}
+} */
 .form{
   text-align: left !important;
 }
@@ -305,14 +304,14 @@ a:hover{
   width: 300px;
   padding: 10px 16px;
   text-align: left;
-  border: 2px solid #FFFEE3;
+  border: 2px solid;
   background: transparent;
   /* color: #FFFEE3; */
   font-size: 16px;
   margin-bottom: 0 !important;
 }
 .paragraph-number::placeholder {
-  color: #FFFEE3;
+  /* color: #FFFEE3; */
   opacity: 1; /* Ensures full color visibility */
 }
 
@@ -321,16 +320,16 @@ a:hover{
   margin-top: 10px;
   padding: 10px 20px;
   /* background-color: #FFFEE3; */
-  color: #EA6200;
+  /* color: #EA6200; */
   border: 2px solid ;
   cursor: pointer;
   font-size: 16px;
 }
 
-.generate-button:hover {
+/* .generate-button:hover {
   background-color: #000;
   color: #FFFEE3;
-}
+} */
 
 .made-by{
   position: absolute;
@@ -392,30 +391,30 @@ a:hover{
 }
 
 .copy-button {
-  background-color: #EA6200;
+  /* background-color: #EA6200; */
   /* color: #FFFEE3; */
   border-radius: 20px !important;;
   padding: 5px 16px;
-  border: 2px solid #EA6200;
+  border: 2px solid;
   cursor: pointer;
   font-size: 16px;
 }
 
-.copy-button:hover, .copy-button:focus {
-  /* background-color: #FFFEE3; */
+/* .copy-button:hover, .copy-button:focus {
+  background-color: #FFFEE3;
   color: #EA6200;
-}
+} */
 
-.generate-button:hover,
+/* .generate-button:hover,
 .generate-button:focus {
   background-color: #EA6200;
   color: #FFFEE3;
-}
+} */
 
 .generated-text {
   margin-top: 20px;
   font-size: 16px;
-  color: #EA6200;
+  /* color: #EA6200; */
   text-align: left;
   padding: 20px;
   /* background: #FFFEE3; */
@@ -461,9 +460,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .plaintain-button.active, .platano-button.active {
-  background-color: #FFFEE3;
+  /* background-color: #FFFEE3;
   color: #EA6200;
-  border:  2px solid #FFFEE3;
+  border:  2px solid #FFFEE3; */
   font-size: 16px;
   padding: 5px 16px;
 }
@@ -480,7 +479,7 @@ input[type=number]::-webkit-outer-spin-button {
   .loremsite {
     flex-direction: column;
     height: 100vh;
-    background-color: #FFFEE3;
+    /* background-color: #FFFEE3; */
   }
   
   .main-content {
@@ -518,7 +517,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: left;
     padding: 20px !important;
     overflow-y: auto;
-    background-color: #FFFEE3;
+    /* background-color: #FFFEE3; */
   }
 
   .copy-button {
