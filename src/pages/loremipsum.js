@@ -79,10 +79,10 @@ const Loremipsum = () => {
           <div className="main-content ">
             <div className="left-lorem-container" style={{ backgroundColor: bgColor, color: fontColor}}>
                 <div className ="language-button">
-                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')}>
+                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')} style={{ backgroundColor: bgColor, color: fontColor}}>
                       plantain
                   </button>
-                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => setLanguage('spanish')}>
+                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => setLanguage('spanish')} style={{ backgroundColor: fontColor, color: bgColor}}>
                       plátano
                   </button>
                 </div>
