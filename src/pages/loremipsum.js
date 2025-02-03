@@ -27,6 +27,7 @@ const Loremipsum = () => {
     const [primaryColor, setPrimaryColor] = useState('');
     const [secondaryColor, setSecondaryColor] = useState('');
     const [isActive, setIsActive] = useState(false);
+    const [buttonColor, setButtonColor] = useState('primary');
 
     useEffect(() => {
         const { primary, secondary } = getRandomColors();
@@ -34,6 +35,11 @@ const Loremipsum = () => {
         setSecondaryColor(secondary);
       }, []);
   
+      const toggleButtonColor = () => {
+        setButtonColor(buttonColor === 'primary' ? 'secondary' : 'primary');
+    };
+    
+
     const handleSubmit = (e) => {
       e.preventDefault();
       setIsActive(true);
@@ -74,16 +80,16 @@ const Loremipsum = () => {
     };
 
 
+
       return (
         <div className ={`loremsite ${isActive ? 'active' : ''}`}>
           <div className="main-content ">
-            <div className="left-lorem-container" style={{ backgroundColor: secondaryColor, color: primaryColor}}>
+            <div className="left-lorem-container" style={{ backgroundColor: primaryColor, color: secondaryColor}}>
                 <div className ="language-button">
-                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')} style={{  backgroundColor: language === 'english' ? primaryColor.secondary : 'transparent', 
-    color: language === 'english' ? secondaryColor.primary : primaryColor.secondary, borderColor: primaryColor.secondary}}>
+                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => { setLanguage('english'); toggleButtonColor(); }} >
                       plantain
                   </button>
-                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => setLanguage('spanish')} style={{ backgroundColor: secondaryColor, color: primaryColor, borderColor: primaryColor}}>
+                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => { setLanguage('spanish'); toggleButtonColor(); }} style={{ backgroundColor: secondaryColor, color: primaryColor, borderColor: primaryColor}}>
                       plátano
                   </button>
                 </div>
