@@ -115,7 +115,7 @@ const Loremipsum = () => {
             <div className="right-lorem-container" style={{ backgroundColor: bgColor, color: fontColor}}>
                 {text && (
                 <>
-                    <button className="copy-button" onClick={handleCopy} style={{ backgroundColor: bgColor, color: fontColor}} >
+                    <button className="copy-button" onClick={handleCopy} style={{ backgroundColor: fontColor, color: bgColor, borderColor: fontColor}} >
                     copy
                     </button>
                 
