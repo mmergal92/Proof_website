@@ -246,7 +246,7 @@ a:hover{
   display: flex;
   height: 100vh;
   width: 100vw;
-  background-color: #FFFEE3;
+  /* background-color: #FFFEE3; */
   font-family: 'VulfSansDemo';
 }
 .main-content {
@@ -274,7 +274,7 @@ a:hover{
 .description {
   font-weight: 400;
   font-family: 'VulfSansDemo';
-  color: #FFFEE3;
+  /* color: #FFFEE3; */
   text-align: left !important;
   font-size: 18px;
   margin-bottom: 20px;
@@ -307,7 +307,7 @@ a:hover{
   text-align: left;
   border: 2px solid #FFFEE3;
   background: transparent;
-  color: #FFFEE3;
+  /* color: #FFFEE3; */
   font-size: 16px;
   margin-bottom: 0 !important;
 }
@@ -320,7 +320,7 @@ a:hover{
   width: 300px;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #FFFEE3;
+  /* background-color: #FFFEE3; */
   color: #EA6200;
   border: 2px solid ;
   cursor: pointer;
@@ -340,11 +340,11 @@ a:hover{
 .credit{
   font-weight: 400;
   font-family: 'VulfSansDemo';
-  color: #FFFEE3;
+  /* color: #FFFEE3; */
   font-size: 14px;
 }
 .credit a{
-  color: #FFFEE3 !important;
+  /* color: #FFFEE3 !important; */
   text-decoration: none;
 }
 /* .linkwave{
@@ -386,14 +386,14 @@ a:hover{
   width: 60%;
   padding: 80px !important;
   text-align: right;
-  background-color: #FFFEE3 !important;
+  /* background-color: #FFFEE3 !important; */
   overflow-y: scroll;
   scroll-behavior: auto;;
 }
 
 .copy-button {
   background-color: #EA6200;
-  color: #FFFEE3;
+  /* color: #FFFEE3; */
   border-radius: 20px !important;;
   padding: 5px 16px;
   border: 2px solid #EA6200;
@@ -402,7 +402,7 @@ a:hover{
 }
 
 .copy-button:hover, .copy-button:focus {
-  background-color: #FFFEE3;
+  /* background-color: #FFFEE3; */
   color: #EA6200;
 }
 
@@ -418,7 +418,7 @@ a:hover{
   color: #EA6200;
   text-align: left;
   padding: 20px;
-  background: #FFFEE3;
+  /* background: #FFFEE3; */
 }
 
 .generated-text p {
