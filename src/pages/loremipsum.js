@@ -102,7 +102,7 @@ const Loremipsum = () => {
                         value={numberOfParagraphs}
                         style={{ color: fontColor}}
                     />
-                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: fontColor}}/>
+                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: fontColor, color: bgColor, backgroundColor: fontColor }}/>
                     </form>
                 </div>
                 <div className="made-by">
@@ -112,7 +112,7 @@ const Loremipsum = () => {
                     </p>
                 </div>
             </div>
-            <div className="right-lorem-container">
+            <div className="right-lorem-container" style={{ backgroundColor: bgColor, color: fontColor}}>
                 {text && (
                 <>
                     <button className="copy-button" onClick={handleCopy}>
