@@ -35,7 +35,7 @@ const Loremipsum = () => {
         setSecondaryColor(secondary);
       }, []);
   
-      const toggleButtonColor = () => {
+const toggleButtonColor = () => {
         setButtonColor(buttonColor === 'primary' ? 'secondary' : 'primary');
     };
     
@@ -89,11 +89,11 @@ const Loremipsum = () => {
                 <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => { setLanguage('english'); toggleButtonColor(); }} >
                       plantain
                   </button>
-                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => { setLanguage('spanish'); toggleButtonColor(); }} style={{ backgroundColor: secondaryColor, color: primaryColor, borderColor: primaryColor}}>
+                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => { setLanguage('spanish'); toggleButtonColor(); }} style={{ backgroundColor: secondaryColor, color: primaryColor, borderColor: secondaryColor}}>
                       plátano
                   </button>
                 </div>
-                <div className="riddims" style={{ color: primaryColor}}>
+                <div className="riddims" style={{ color: secondaryColor}}>
                     <h1 className="title">Riddims
                     </h1>
                     <p className="description">
@@ -107,21 +107,22 @@ const Loremipsum = () => {
                         onChange={(e) => setNumberOfParagraphs(e.target.value)}
                         placeholder="How many paragraphs?"
                         value={numberOfParagraphs}
+                        style={{borderColor: secondaryColor, color: secondaryColor}}
                     />
-                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: primaryColor, color: secondaryColor, backgroundColor: primaryColor }}/>
+                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: secondaryColor, color: secondaryColor, backgroundColor: primaryColor }}/>
                     </form>
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" style={{color: primaryColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: primaryColor}} >Maria</a></span><br/>
+                        Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} >Maria</a></span><br/>
                         Colophon: Vulf Sans by Oh No Type Foundry
                     </p>
                 </div>
             </div>
-            <div className="right-lorem-container" style={{ backgroundColor: secondaryColor, color: primaryColor}}>
+            <div className="right-lorem-container" style={{ backgroundColor: primaryColor, color: secondaryColor}}>
                 {text && (
                 <>
-                    <button className="copy-button" onClick={handleCopy} style={{ backgroundColor: secondaryColor, color: secondaryColor, borderColor: primaryColor}} >
+                    <button className="copy-button" onClick={handleCopy} style={{ backgroundColor: primaryColor, color: secondaryColor, borderColor: secondaryColor}} >
                     copy
                     </button>
                 
