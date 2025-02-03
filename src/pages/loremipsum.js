@@ -7,21 +7,33 @@ import { Link } from 'react-router-dom';
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 import circletext_nologo from "../assets/circletext_nologo.png"
 
+const colorOptions = [
+    { primary: "#FFE3F1", secondary: "#DD0051" },
+    { primary: "#EFF2AC", secondary: "#175B32" },
+    { primary: "#FFFEE3", secondary: "#EA6200" }
+  ];
+function getRandomColors() {
+    return colorOptions[Math.floor(Math.random() * colorOptions.length)];
+
+}
 
 const Loremipsum = () => {
     const [showCopyModal, setShowCopyModal] = useState(false);
     const [numberOfParagraphs, setNumberOfParagraphs] = useState('');
     const [text, setText] = useState('');
     const [language, setLanguage] = useState('english');
-    const [bgColor, setBgColor] = useState('#FFFEE3');
-    const [fontColor, setFontColor] = useState('#EA6200');
+    const [bgColor, setBgColor] = useState('');
+    const [fontColor, setFontColor] = useState('');
     const [isActive, setIsActive] = useState(false);
 
+    useEffect(() => {
+        const { primary, secondary } = getRandomColors();
+        setBgColor(primary);
+        setFontColor(secondary);
+      }, []);
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      setBgColor('#EA6200');
-      setFontColor('#FFFEE3');
       setIsActive(true);
       const number = parseFloat(numberOfParagraphs);
       const selectedText = language === 'english' ? loremText : loremTextEs;
@@ -88,7 +100,7 @@ const Loremipsum = () => {
                         value={numberOfParagraphs}
                         style={{ color: fontColor}}
                     />
-                    <input type="submit" value="Enter" className="generate-button"  style={{ border: fontColor}}/>
+                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: fontColor}}/>
                     </form>
                 </div>
                 <div className="made-by">
