@@ -24,14 +24,14 @@ const Loremipsum = () => {
     const [numberOfParagraphs, setNumberOfParagraphs] = useState('');
     const [text, setText] = useState('');
     const [language, setLanguage] = useState('english');
-    const [bgColor, setBgColor] = useState('');
-    const [fontColor, setFontColor] = useState('');
+    const [primaryColor, setPrimaryColor] = useState('');
+    const [secondaryColor, setSecondaryColor] = useState('');
     const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
         const { primary, secondary } = getRandomColors();
-        setBgColor(primary);
-        setFontColor(secondary);
+        setPrimaryColor(primary);
+        setSecondaryColor(secondary);
       }, []);
   
     const handleSubmit = (e) => {
@@ -77,16 +77,17 @@ const Loremipsum = () => {
       return (
         <div className ={`loremsite ${isActive ? 'active' : ''}`}>
           <div className="main-content ">
-            <div className="left-lorem-container" style={{ backgroundColor: bgColor, color: fontColor}}>
+            <div className="left-lorem-container" style={{ backgroundColor: secondaryColor, color: primaryColor}}>
                 <div className ="language-button">
-                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')} style={{ backgroundColor: fontColor, color: bgColor, borderColor: fontColor}}>
+                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => setLanguage('english')} style={{  backgroundColor: language === 'english' ? primaryColor.secondary : 'transparent', 
+    color: language === 'english' ? secondaryColor.primary : primaryColor.secondary, borderColor: primaryColor.secondary}}>
                       plantain
                   </button>
-                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => setLanguage('spanish')} style={{ backgroundColor: bgColor, color: fontColor, borderColor: fontColor}}>
+                  <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => setLanguage('spanish')} style={{ backgroundColor: secondaryColor, color: primaryColor, borderColor: primaryColor}}>
                       plátano
                   </button>
                 </div>
-                <div className="riddims" style={{ color: fontColor}}>
+                <div className="riddims" style={{ color: primaryColor}}>
                     <h1 className="title">Riddims
                     </h1>
                     <p className="description">
@@ -100,22 +101,21 @@ const Loremipsum = () => {
                         onChange={(e) => setNumberOfParagraphs(e.target.value)}
                         placeholder="How many paragraphs?"
                         value={numberOfParagraphs}
-                        style={{ color: fontColor}}
                     />
-                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: fontColor, color: bgColor, backgroundColor: fontColor }}/>
+                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: primaryColor, color: secondaryColor, backgroundColor: primaryColor }}/>
                     </form>
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" style={{color: fontColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: fontColor}} >Maria</a></span><br/>
+                        Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" style={{color: primaryColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: primaryColor}} >Maria</a></span><br/>
                         Colophon: Vulf Sans by Oh No Type Foundry
                     </p>
                 </div>
             </div>
-            <div className="right-lorem-container" style={{ backgroundColor: bgColor, color: fontColor}}>
+            <div className="right-lorem-container" style={{ backgroundColor: secondaryColor, color: primaryColor}}>
                 {text && (
                 <>
-                    <button className="copy-button" onClick={handleCopy} style={{ backgroundColor: fontColor, color: bgColor, borderColor: fontColor}} >
+                    <button className="copy-button" onClick={handleCopy} style={{ backgroundColor: secondaryColor, color: secondaryColor, borderColor: primaryColor}} >
                     copy
                     </button>
                 
