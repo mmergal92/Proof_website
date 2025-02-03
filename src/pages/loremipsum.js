@@ -107,7 +107,7 @@ const Loremipsum = () => {
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank">Maria</a></span><br/>
+                        Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" style={{color: fontColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: fontColor}} >Maria</a></span><br/>
                         Colophon: Vulf Sans by Oh No Type Foundry
                     </p>
                 </div>
@@ -115,7 +115,7 @@ const Loremipsum = () => {
             <div className="right-lorem-container" style={{ backgroundColor: bgColor, color: fontColor}}>
                 {text && (
                 <>
-                    <button className="copy-button" onClick={handleCopy}>
+                    <button className="copy-button" onClick={handleCopy} style={{ backgroundColor: bgColor, color: fontColor}} >
                     copy
                     </button>
                 
