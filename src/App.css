@@ -243,7 +243,7 @@ a:hover{
   display: flex;
   height: 100vh;
   width: 100vw;
-  font-family: 'VulfSansDemo';
+  font-family: "Space Grotesk", serif;
 }
 .main-content {
   display: flex;
@@ -269,7 +269,7 @@ a:hover{
 }
 .description {
   font-weight: 400;
-  font-family: 'VulfSansDemo';
+  font-family: "Space Grotesk", serif;
   /* color: #FFFEE3; */
   text-align: left !important;
   font-size: 18px;
@@ -392,7 +392,8 @@ a:hover{
 .copy-button {
   /* background-color: #EA6200; */
   /* color: #FFFEE3; */
-  border-radius: 20px !important;;
+  border-radius: 20px !important;
+  text-transform: uppercase !important;
   padding: 5px 16px;
   border: 2px solid;
   cursor: pointer;
