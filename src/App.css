@@ -293,6 +293,10 @@ a:hover{
   border-radius: 20px !important;;
   /* color: #FFFEE3; */
   font-size: 16px;
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   padding: 5px 16px;
   cursor: pointer;
 }
@@ -311,6 +315,10 @@ a:hover{
   border: 2px solid;
   background: transparent;
   /* color: #FFFEE3; */
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   margin-bottom: 0 !important;
 }
@@ -329,6 +337,10 @@ a:hover{
   border: 2px solid ;
   cursor: pointer;
   font-size: 16px;
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* .generate-button:hover {
@@ -346,6 +358,10 @@ a:hover{
   font-family: 'VulfSansDemo';
   /* color: #FFFEE3; */
   font-size: 14px;
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .credit a{
   /* color: #FFFEE3 !important; */
@@ -402,6 +418,10 @@ a:hover{
   text-transform: uppercase !important;
   padding: 5px 16px;
   border: 2px solid;
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   cursor: pointer;
   font-size: 16px;
 }
@@ -420,6 +440,10 @@ a:hover{
 .generated-text {
   margin-top: 20px;
   font-size: 16px;
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   /* color: #EA6200; */
   text-align: left;
   padding: 20px;
@@ -429,6 +453,10 @@ a:hover{
 .generated-text p {
   font-size: 16px;
   text-align: left;
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   animation: fadein 2s;
   margin-bottom: 1em; /* Adds space below each paragraph */
 }
