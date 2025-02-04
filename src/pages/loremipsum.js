@@ -86,7 +86,7 @@ const toggleButtonColor = () => {
           <div className="main-content ">
             <div className="left-lorem-container" style={{ backgroundColor: primaryColor, color: secondaryColor}}>
                 <div className ="language-button">
-                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => { setLanguage('english'); toggleButtonColor(); }} >
+                <button className={`plaintain-button ${language === 'english' ? 'active' : ''}`} onClick={() => { setLanguage('english'); toggleButtonColor(); }} style={{ backgroundColor: primaryColor, color: secondaryColor, borderColor: secondaryColor}}>
                       plantain
                   </button>
                   <button className={`platano-button ${language === 'spanish' ? 'active' : ''}`} onClick={() => { setLanguage('spanish'); toggleButtonColor(); }} style={{ backgroundColor: secondaryColor, color: primaryColor, borderColor: secondaryColor}}>
