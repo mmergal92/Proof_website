@@ -283,7 +283,7 @@ a:hover{
 }
 .language-button {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 20px;
 }
 .plaintain-button, .platano-button {
@@ -292,7 +292,7 @@ a:hover{
   text-transform: uppercase !important;
   border-radius: 20px !important;;
   /* color: #FFFEE3; */
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -336,7 +336,7 @@ a:hover{
   /* color: #EA6200; */
   border: 2px solid ;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -357,7 +357,7 @@ a:hover{
   font-weight: 400;
   font-family: 'VulfSansDemo';
   /* color: #FFFEE3; */
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -423,7 +423,7 @@ a:hover{
   font-weight: 700;
   font-style: normal;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* .copy-button:hover, .copy-button:focus {
