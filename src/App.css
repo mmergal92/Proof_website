@@ -244,6 +244,9 @@ a:hover{
   height: 100vh;
   width: 100vw;
   font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .main-content {
   display: flex;
@@ -261,15 +264,18 @@ a:hover{
 }
 .left-lorem-container .title{
   /* color: #FFFEE3 !important; */
-  font-family: '"roc-grotesk", sans-serif;';
-  font-weight: normal !important;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   /* align-content: start !important; */
   text-align: left !important;
   font-size: 56px !important;
 }
 .description {
-  font-weight: 400;
   font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   /* color: #FFFEE3; */
   text-align: left !important;
   font-size: 18px;
