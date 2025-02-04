@@ -115,7 +115,6 @@ const toggleButtonColor = () => {
                 <div className="made-by">
                 <p className="credit">
                         Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} >Maria</a></span><br/>
-                        Colophon: Vulf Sans by Oh No Type Foundry
                     </p>
                 </div>
             </div>
