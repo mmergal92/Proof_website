@@ -245,7 +245,7 @@ a:hover{
   width: 100vw;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 .main-content {
@@ -274,7 +274,7 @@ a:hover{
 .description {
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   /* color: #FFFEE3; */
   text-align: left !important;
@@ -295,7 +295,7 @@ a:hover{
   font-size: 16px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   padding: 5px 16px;
   cursor: pointer;
@@ -317,7 +317,7 @@ a:hover{
   /* color: #FFFEE3; */
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-size: 16px;
   margin-bottom: 0 !important;
@@ -339,7 +339,7 @@ a:hover{
   font-size: 16px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -360,7 +360,7 @@ a:hover{
   font-size: 14px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 .credit a{
@@ -420,7 +420,7 @@ a:hover{
   border: 2px solid;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   cursor: pointer;
   font-size: 16px;
@@ -442,7 +442,7 @@ a:hover{
   font-size: 16px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   /* color: #EA6200; */
   text-align: left;
@@ -455,7 +455,7 @@ a:hover{
   text-align: left;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   animation: fadein 2s;
   margin-bottom: 1em; /* Adds space below each paragraph */
