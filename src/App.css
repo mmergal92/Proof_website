@@ -14,14 +14,11 @@
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family: 'VulfSansDemo';
-  font-style: normal;
-  font-weight: normal;
-  src: local('VulfSansDemo-Regular'), url(./assets/VulfSansDemo-Regular.otf) format('otf');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
+/* @font-face {
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+} */
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -264,7 +261,7 @@ a:hover{
 }
 .left-lorem-container .title{
   /* color: #FFFEE3 !important; */
-  font-family: 'VulfSansDemo';
+  font-family: '"roc-grotesk", sans-serif;';
   font-weight: normal !important;
   /* align-content: start !important; */
   text-align: left !important;
@@ -286,6 +283,7 @@ a:hover{
 .plaintain-button, .platano-button {
   background-color: transparent;
   border: 2px solid;
+  text-transform: uppercase !important;
   border-radius: 20px !important;;
   /* color: #FFFEE3; */
   font-size: 16px;
@@ -319,6 +317,7 @@ a:hover{
   width: 300px;
   margin-top: 10px;
   padding: 10px 20px;
+  text-transform: uppercase !important;
   /* background-color: #FFFEE3; */
   /* color: #EA6200; */
   border: 2px solid ;
