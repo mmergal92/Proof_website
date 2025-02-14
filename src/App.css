@@ -69,7 +69,7 @@
 }
 .middle-container{
   display: inline-block;
-  /* border: 1px red solid; */
+  border: 1px red solid;
   top: 15px !important;
   height: 130px !important;
   text-align: center;
