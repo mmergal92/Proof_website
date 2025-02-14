@@ -351,6 +351,7 @@ a:hover{
 .made-by{
   position: absolute;
   bottom: 20px; /* Adjust as needed */
+  left: 20px;
   text-align: left;
 }
 .credit{
@@ -414,6 +415,9 @@ a:hover{
 .copy-button {
   /* background-color: #EA6200; */
   /* color: #FFFEE3; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
   border-radius: 20px !important;
   text-transform: uppercase !important;
   padding: 5px 16px;
@@ -438,7 +442,7 @@ a:hover{
 } */
 
 .generated-text {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 16px;
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
@@ -446,7 +450,9 @@ a:hover{
   font-style: normal;
   /* color: #EA6200; */
   text-align: left;
-  padding: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
   /* background: #FFFEE3; */
 }
 
