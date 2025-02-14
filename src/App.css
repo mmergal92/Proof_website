@@ -503,7 +503,7 @@ input[type=number]::-webkit-outer-spin-button {
   /* background-color: #FFFEE3;
   color: #EA6200;
   border:  2px solid #FFFEE3; */
-  font-size: 16px;
+  /* font-size: 14px; */
   padding: 5px 16px;
 }
 /* Default selected */
