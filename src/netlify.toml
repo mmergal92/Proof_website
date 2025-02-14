@@ -1,4 +1,9 @@
 [[redirects]]
+
+from = "/loremipsum"
+to = "/islandipsum"
+status = 301 
+
 from = "/*"
 to = "/index.html"
 status = 200
