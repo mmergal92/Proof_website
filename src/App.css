@@ -521,7 +521,10 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100vh;
     /* background-color: #FFFEE3; */
   }
-  
+  .plaintain-button, .platano-button  {
+    padding: 5px 45px !important;
+  }
+
   .main-content {
     flex-direction: column;
     height: 100vh;
@@ -530,7 +533,7 @@ input[type=number]::-webkit-outer-spin-button {
   .left-lorem-container, .right-lorem-container {
     width: 100%;
     padding: 20px !important;
-    height: 50vh;
+    /* height: 50vh; */
   }
   
   .left-lorem-container {
@@ -540,17 +543,20 @@ input[type=number]::-webkit-outer-spin-button {
   
   .left-lorem-container .title,
   .description {
-    text-align: left !important;
+    text-align: center !important;
   }
 
   .language-button {
     justify-content: flex-start;
   }
+  .description{
+    margin-bottom: 0px;
+  }
 
   .paragraph-number,
   .generate-button {
-    width: 90%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .right-lorem-container {
@@ -562,7 +568,10 @@ input[type=number]::-webkit-outer-spin-button {
 
   .copy-button {
     display: block;
-    margin: 10px 0;
+    margin:  0;
+    bottom: 20px;
+    left: 0px;
+    width: 90% !important;
   }
 
   .generated-text {
