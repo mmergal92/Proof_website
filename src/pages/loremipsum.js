@@ -29,6 +29,9 @@ const Loremipsum = () => {
     const [isActive, setIsActive] = useState(false);
     const [buttonColor, setButtonColor] = useState('primary');
     const [hoveredButton, setHoveredButton] = useState(null);
+    const [hoveredPButton, setHoveredPButton] = useState(null);
+    const [hoveredSButton, setHoveredSButton] = useState(null);
+
 
     useEffect(() => {
         const { primary, secondary } = getRandomColors();
@@ -90,22 +93,22 @@ const toggleButtonColor = () => {
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
                 onClick={() => { setLanguage('english'); toggleButtonColor(); }} 
-                onMouseEnter={() => setHoveredButton('plantain')}
-                onMouseLeave={() => setHoveredButton(null)}
+                onMouseEnter={() => setHoveredPButton('plantain')}
+                onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
-                  backgroundColor: hoveredButton ? secondaryColor : primaryColor, 
-                  color: hoveredButton ? primaryColor :secondaryColor , 
+                  backgroundColor: hoveredPButton ? secondaryColor : primaryColor, 
+                  color: hoveredPButton ? primaryColor :secondaryColor , 
                   borderColor: secondaryColor }}>
                       plantain
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
                   onClick={() => { setLanguage('spanish'); toggleButtonColor(); }} 
-                  onMouseEnter={() => setHoveredButton('platano')}
-                  onMouseLeave={() => setHoveredButton(null)}
+                  onMouseEnter={() => setHoveredSButton('platano')}
+                  onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
-                    bbackgroundColor: hoveredButton ? primaryColor : secondaryColor, 
-                    color:  hoveredButton ? secondaryColor : primaryColor, 
+                    bbackgroundColor: hoveredSButton ? primaryColor : secondaryColor, 
+                    color:  hoveredSButton ? secondaryColor : primaryColor, 
                     borderColor: secondaryColor}}>
                       plátano
                   </button>
