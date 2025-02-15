@@ -28,7 +28,7 @@ const Loremipsum = () => {
     const [secondaryColor, setSecondaryColor] = useState('');
     const [isActive, setIsActive] = useState(false);
     const [buttonColor, setButtonColor] = useState('primary');
-    const [isHovered, setIsHovered] = useState(false);
+    const [hoveredButton, setHoveredButton] = useState(null);
 
     useEffect(() => {
         const { primary, secondary } = getRandomColors();
@@ -90,22 +90,22 @@ const toggleButtonColor = () => {
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
                 onClick={() => { setLanguage('english'); toggleButtonColor(); }} 
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                onMouseEnter={() => setHoveredButton('plantain')}
+                onMouseLeave={() => setHoveredButton(null)}
                 style={{ 
                   backgroundColor: isHovered ? secondaryColor : primaryColor, 
-                  color: secondaryColor, 
-                  borderColor: secondaryColor}}>
+                  color: isHovered ? primaryColor :secondaryColor , 
+                  borderColor: secondaryColor }}>
                       plantain
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
                   onClick={() => { setLanguage('spanish'); toggleButtonColor(); }} 
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
+                  onMouseEnter={() => setHoveredButton('platano')}
+                  onMouseLeave={() => setHoveredButton(null)}
                   style={{ 
                     bbackgroundColor: isHovered ? primaryColor : secondaryColor, 
-                    color: primaryColor, 
+                    color:  isHovered ? secondaryColor : primaryColor, 
                     borderColor: secondaryColor}}>
                       plátano
                   </button>
@@ -141,11 +141,11 @@ const toggleButtonColor = () => {
                     <button 
                     className="copy-button" 
                     onClick={handleCopy} 
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
+                    onMouseEnter={() => setHoveredButton('copy')}
+                    onMouseLeave={() => setHoveredButton(null)}
                     style={{ 
                       backgroundColor:  isHovered ? secondaryColor : primaryColor, 
-                      color: secondaryColor, 
+                      color: isHovered ? primaryColor :secondaryColor , 
                       borderColor: secondaryColor}} >
                     copy
                     </button>
