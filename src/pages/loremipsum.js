@@ -92,7 +92,7 @@ const toggleButtonColor = () => {
                 <div className ="language-button">
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
-                onClick={() => { setLanguage('english'); toggleButtonColor(); setHoveredPButton('plantain')}} 
+                onClick={() => { setLanguage('english'); toggleButtonColor(); hoveredPButton('plantain')}} 
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
@@ -103,11 +103,11 @@ const toggleButtonColor = () => {
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
-                  onClick={() => { setLanguage('spanish'); toggleButtonColor(); setHoveredSButton('platano')}} 
+                  onClick={() => { setLanguage('spanish'); toggleButtonColor(); hoveredSButton('platano')}} 
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
-                    bbackgroundColor: hoveredSButton ? secondaryColor : primaryColor, 
+                    backgroundColor: hoveredSButton ? secondaryColor : primaryColor, 
                     color:  hoveredSButton ? primaryColor :secondaryColor, 
                     borderColor: secondaryColor}}>
                       plátano
