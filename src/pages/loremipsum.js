@@ -93,8 +93,8 @@ const toggleButtonColor = () => {
                 onMouseEnter={() => setHoveredButton('plantain')}
                 onMouseLeave={() => setHoveredButton(null)}
                 style={{ 
-                  backgroundColor: isHovered ? secondaryColor : primaryColor, 
-                  color: isHovered ? primaryColor :secondaryColor , 
+                  backgroundColor: hoveredButton ? secondaryColor : primaryColor, 
+                  color: hoveredButton ? primaryColor :secondaryColor , 
                   borderColor: secondaryColor }}>
                       plantain
                   </button>
@@ -104,8 +104,8 @@ const toggleButtonColor = () => {
                   onMouseEnter={() => setHoveredButton('platano')}
                   onMouseLeave={() => setHoveredButton(null)}
                   style={{ 
-                    bbackgroundColor: isHovered ? primaryColor : secondaryColor, 
-                    color:  isHovered ? secondaryColor : primaryColor, 
+                    bbackgroundColor: hoveredButton ? primaryColor : secondaryColor, 
+                    color:  hoveredButton ? secondaryColor : primaryColor, 
                     borderColor: secondaryColor}}>
                       plátano
                   </button>
@@ -144,8 +144,8 @@ const toggleButtonColor = () => {
                     onMouseEnter={() => setHoveredButton('copy')}
                     onMouseLeave={() => setHoveredButton(null)}
                     style={{ 
-                      backgroundColor:  isHovered ? secondaryColor : primaryColor, 
-                      color: isHovered ? primaryColor :secondaryColor , 
+                      backgroundColor:  hoveredButton ? secondaryColor : primaryColor, 
+                      color: hoveredButton ? primaryColor :secondaryColor , 
                       borderColor: secondaryColor}} >
                     copy
                     </button>
