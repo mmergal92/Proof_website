@@ -92,7 +92,7 @@ const toggleButtonColor = () => {
                 <div className ="language-button">
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
-                onClick={() => { setLanguage('english'); hoveredPButton('plantain')}} 
+                onClick={() => { setLanguage('english'); hoveredPButton}} 
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
@@ -103,7 +103,7 @@ const toggleButtonColor = () => {
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
-                  onClick={() => { setLanguage('spanish'); hoveredSButton('platano')}} 
+                  onClick={() => { setLanguage('spanish'); hoveredSButton}} 
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
