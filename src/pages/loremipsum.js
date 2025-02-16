@@ -92,7 +92,7 @@ const toggleButtonColor = () => {
                 <div className ="language-button">
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
-                onClick={() => { setLanguage('english'); toggleButtonColor(); hoveredPButton('plantain')}} 
+                onClick={() => { setLanguage('english'); hoveredPButton('plantain')}} 
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
@@ -103,7 +103,7 @@ const toggleButtonColor = () => {
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
-                  onClick={() => { setLanguage('spanish'); toggleButtonColor(); hoveredSButton('platano')}} 
+                  onClick={() => { setLanguage('spanish'); hoveredSButton('platano')}} 
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
@@ -143,7 +143,7 @@ const toggleButtonColor = () => {
                 <>
                     <button 
                     className="copy-button" 
-                    onClick={handleCopy} 
+                    onClick={() => { handleCopy; hoveredButton('copy')}}
                     onMouseEnter={() => setHoveredButton('copy')}
                     onMouseLeave={() => setHoveredButton(null)}
                     style={{ 
