@@ -143,9 +143,9 @@ const Loremipsum = () => {
                     onMouseEnter={() => setHoveredEButton('enter')}
                     onMouseLeave={() => setHoveredEButton(null)}
                     style={{ 
-                      borderColor:  hoveredEButton ? primaryColor :  secondaryColor, 
-                      color: hoveredEButton ? secondaryColor :primaryColor, 
-                      backgroundColor: secondaryColor  }}/>
+                      backgroundColor:  hoveredEButton ? secondaryColor :primaryColor, 
+                      color: hoveredEButton ? primaryColor: secondaryColor, 
+                      borderColor: secondaryColor  }}/>
                     </form>
                 </div>
                 <div className="made-by">
