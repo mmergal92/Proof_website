@@ -143,7 +143,7 @@ const toggleButtonColor = () => {
                 <>
                     <button 
                     className="copy-button" 
-                    onClick={() => { handleCopy; hoveredButton('copy')}}
+                    onClick={handleCopy} 
                     onMouseEnter={() => setHoveredButton('copy')}
                     onMouseLeave={() => setHoveredButton(null)}
                     style={{ 
