@@ -31,7 +31,7 @@ const Loremipsum = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [hoveredPButton, setHoveredPButton] = useState(null);
     const [hoveredSButton, setHoveredSButton] = useState(null);
-    const [activeButton, setActiveButton] = useState(null);
+    const [clickedButton, setClickedButton] = useState(null);
 
 
 
@@ -42,9 +42,9 @@ const Loremipsum = () => {
       }, []);
   
   
-    const handleButtonClick = (button) => {
-      setActiveButton(button);
-  };
+      const handleButtonClick = (button) => {
+        setClickedButton(button);
+    };
 
     
 
@@ -96,12 +96,12 @@ const Loremipsum = () => {
                 <div className ="language-button">
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
-                onClick={() => { setLanguage('english'); handleButtonClick('plantain')}} 
+                onClick={() =>{setLanguage('english'); handleButtonClick('plantain')}}
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
-                  backgroundColor: 'hoveredPButton' ? secondaryColor : primaryColor, 
-                  color: 'plantain' ? primaryColor :secondaryColor , 
+                  backgroundColor:  clickedButton === 'plantain'  ? secondaryColor : primaryColor, 
+                  color:  clickedButton === 'plantain'  ? primaryColor :secondaryColor , 
                   borderColor: secondaryColor }}>
                       plantain
                   </button>
