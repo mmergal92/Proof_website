@@ -93,7 +93,7 @@ const Loremipsum = () => {
 
 
       return (
-        <div className ={`loremsite ${isActive ? 'active' : ''}`}>
+        <div className ={`loremsite ${isActive ? 'active' : ''}`} style={{ backgroundColor: primaryColor }}>
           <div className="main-content ">
             <div className="left-lorem-container" style={{ backgroundColor: primaryColor, color: secondaryColor}}>
                 <div className ="language-button">
