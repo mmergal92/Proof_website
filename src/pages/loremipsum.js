@@ -32,6 +32,9 @@ const Loremipsum = () => {
     const [hoveredPButton, setHoveredPButton] = useState(null);
     const [hoveredSButton, setHoveredSButton] = useState(null);
     const [clickedButton, setClickedButton] = useState(null);
+    const [hoveredEButton, setHoveredEButton] = useState(null);
+
+    
 
 
 
@@ -133,7 +136,16 @@ const Loremipsum = () => {
                         value={numberOfParagraphs}
                         style={{borderColor: secondaryColor, color: secondaryColor}}
                     />
-                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: secondaryColor, color: primaryColor, backgroundColor: secondaryColor  }}/>
+                    <input 
+                    type="submit" 
+                    value="Enter" 
+                    className="generate-button"  
+                    onMouseEnter={() => setHoveredEButton('enter')}
+                    onMouseLeave={() => setHoveredEButton(null)}
+                    style={{ 
+                      borderColor:  hoveredEButton ? primaryColor :  secondaryColor, 
+                      color: hoveredEButton ? secondaryColor :primaryColor, 
+                      backgroundColor: secondaryColor  }}/>
                     </form>
                 </div>
                 <div className="made-by">
