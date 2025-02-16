@@ -111,8 +111,8 @@ const Loremipsum = () => {
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
-                    backgroundColor: hoveredSButton ? secondaryColor : primaryColor, 
-                    color:  hoveredSButton ? primaryColor :secondaryColor, 
+                    backgroundColor: clickedButton === 'platano' ? secondaryColor : primaryColor, 
+                    color:  clickedButton === 'platano' ? primaryColor :secondaryColor, 
                     borderColor: secondaryColor}}>
                       plátano
                   </button>
