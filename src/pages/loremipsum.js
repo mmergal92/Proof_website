@@ -31,6 +31,8 @@ const Loremipsum = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [hoveredPButton, setHoveredPButton] = useState(null);
     const [hoveredSButton, setHoveredSButton] = useState(null);
+    const [activeButton, setActiveButton] = useState(null);
+
 
 
     useEffect(() => {
@@ -39,12 +41,10 @@ const Loremipsum = () => {
         setSecondaryColor(secondary);
       }, []);
   
-      const toggleButtonColor = (button) => {
-        setActiveButtons((prev) => ({
-            ...prev,
-            [button]: !prev[button]
-        }));
-    };
+  
+    const handleButtonClick = (button) => {
+      setActiveButton(button);
+  };
 
     
 
@@ -96,18 +96,18 @@ const Loremipsum = () => {
                 <div className ="language-button">
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
-                onClick={() => { setLanguage('english'); setHoveredPButton}} 
+                onClick={() => { setLanguage('english'); handleButtonClick('plantain')}} 
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
-                  backgroundColor: hoveredPButton ? secondaryColor : primaryColor, 
-                  color: hoveredPButton ? primaryColor :secondaryColor , 
+                  backgroundColor: 'hoveredPButton' ? secondaryColor : primaryColor, 
+                  color: 'plantain' ? primaryColor :secondaryColor , 
                   borderColor: secondaryColor }}>
                       plantain
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
-                  onClick={() => { setLanguage('spanish'); setHoveredSButton}} 
+                  onClick={() => { setLanguage('spanish'); handleButtonClick('platano')}} 
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
