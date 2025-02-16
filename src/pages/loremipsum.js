@@ -143,8 +143,8 @@ const Loremipsum = () => {
                     onMouseEnter={() => setHoveredEButton('enter')}
                     onMouseLeave={() => setHoveredEButton(null)}
                     style={{ 
-                      backgroundColor:  hoveredEButton ? secondaryColor :primaryColor, 
-                      color: hoveredEButton ? primaryColor: secondaryColor, 
+                      backgroundColor:  hoveredEButton ? primaryColor: secondaryColor, 
+                      color: hoveredEButton ? secondaryColor :primaryColor, 
                       borderColor: secondaryColor  }}/>
                     </form>
                 </div>
