@@ -133,7 +133,7 @@ const Loremipsum = () => {
                         value={numberOfParagraphs}
                         style={{borderColor: secondaryColor, color: secondaryColor}}
                     />
-                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: secondaryColor, color: secondaryColor, backgroundColor: primaryColor }}/>
+                    <input type="submit" value="Enter" className="generate-button"  style={{ borderColor: secondaryColor, color: primaryColor, backgroundColor: secondaryColor  }}/>
                     </form>
                 </div>
                 <div className="made-by">
@@ -151,8 +151,8 @@ const Loremipsum = () => {
                     onMouseEnter={() => setHoveredButton('copy')}
                     onMouseLeave={() => setHoveredButton(null)}
                     style={{ 
-                      backgroundColor:  hoveredButton ? secondaryColor : primaryColor, 
-                      color: hoveredButton ? primaryColor :secondaryColor , 
+                      backgroundColor:  hoveredButton ? primaryColor :  secondaryColor, 
+                      color: hoveredButton ? secondaryColor :primaryColor , 
                       borderColor: secondaryColor}} >
                     copy
                     </button>
