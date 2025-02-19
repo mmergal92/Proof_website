@@ -51,9 +51,8 @@ const Loremipsum = () => {
 
         // If text has already been generated, update it immediately
         if (text) {
-          const selectedText = language === 'english' ? loremText : loremTextEs;
-          const HTMLParagraphs = selectedText.getAllParagraphs(parseFloat(numberOfParagraphs));
-          setText(HTMLParagraphs);
+          const selectedText = language === 'english' ? loremText.getAllParagraphs(parseFloat(numberOfParagraphs)) : loremTextEs.getAllParagraphs(parseFloat(numberOfParagraphs));
+          setText(selectedText);
         }
     };
 
