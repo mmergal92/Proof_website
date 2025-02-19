@@ -108,13 +108,11 @@ const Loremipsum = () => {
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
-                  backgroundColor: hoveredPButton 
-                          ? primaryColor  // When hovered
-                          : clickedButton === 'plantain'  
-                            ? secondaryColor  // When clicked
+                  backgroundColor: hoveredPButton ? secondaryColor  // When hovered
+                          : clickedButton === 'plantain' ? secondaryColor  // When clicked
                             : primaryColor,  // Default
                         color: hoveredPButton 
-                          ? secondaryColor  // When hovered
+                          ? primaryColor  // When hovered
                           : clickedButton === 'plantain'  
                             ? primaryColor  // When clicked
                             : secondaryColor,  // Default
@@ -128,12 +126,12 @@ const Loremipsum = () => {
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
                     backgroundColor: hoveredSButton 
-                        ? primaryColor  // When hovered
+                        ? secondaryColor  // When hovered
                         : clickedButton === 'platano'  
                           ? secondaryColor  // When clicked
                           : primaryColor,  // Default
                       color: hoveredSButton 
-                        ? secondaryColor  // When hovered
+                        ? primaryColor  // When hovered
                         : clickedButton === 'platano'  
                           ? primaryColor  // When clicked
                           : secondaryColor,  // Default
