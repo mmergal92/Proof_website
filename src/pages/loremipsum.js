@@ -33,7 +33,7 @@ const Loremipsum = () => {
     const [hoveredSButton, setHoveredSButton] = useState(null);
     const [clickedButton, setClickedButton] = useState(null);
     const [hoveredEButton, setHoveredEButton] = useState(null);
-
+    const [buttonText, setButtonText] = useState("copy");
     
 
 
@@ -87,7 +87,12 @@ const Loremipsum = () => {
       }
   
       setShowCopyModal(true);
-      setTimeout(() => setShowCopyModal(false), 1000);
+      setButtonText("copied"); // Change button text
+
+      setTimeout(() => {
+        setShowCopyModal(false);
+        setButtonText("copy"); // Revert button text after a delay
+      }, 1000);
     };
 
 
@@ -166,7 +171,7 @@ const Loremipsum = () => {
                       backgroundColor:  hoveredButton ? primaryColor :  secondaryColor, 
                       color: hoveredButton ? secondaryColor :primaryColor , 
                       borderColor: secondaryColor}} >
-                    copy
+                    {buttonText}
                     </button>
                 
                 
@@ -180,12 +185,12 @@ const Loremipsum = () => {
                 
                 )}
                     
-                <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
+                {/* <div id="copyOverlay" className={`${showCopyModal ? 'modal--show' : 'modal--hidden'}`}>
 
                     <div id="copyText">
-                    {/* <p>Copied!</p> */}
+                    <p>Copied!</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
   
