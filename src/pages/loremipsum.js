@@ -47,6 +47,14 @@ const Loremipsum = () => {
   
       const handleButtonClick = (button) => {
         setClickedButton(button);
+        setLanguage(lang);
+
+        // If text has already been generated, update it immediately
+        if (text) {
+          const selectedText = lang === 'english' ? loremText : loremTextEs;
+          const HTMLParagraphs = selectedText.getAllParagraphs(parseFloat(numberOfParagraphs));
+          setText(HTMLParagraphs);
+        }
     };
 
     
@@ -108,7 +116,7 @@ const Loremipsum = () => {
                 <div className ="language-button">
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
-                onClick={() =>{setLanguage('english'); handleButtonClick('plantain')}}
+                onClick={() =>{setLanguage('english'); handleButtonClick('plantain', 'english')}}
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
@@ -125,7 +133,7 @@ const Loremipsum = () => {
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
-                  onClick={() => { setLanguage('spanish'); handleButtonClick('platano')}} 
+                  onClick={() => { setLanguage('spanish'); handleButtonClick('platano', 'spanish')}} 
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
