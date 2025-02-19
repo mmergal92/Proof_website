@@ -105,12 +105,20 @@ const Loremipsum = () => {
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
                 onClick={() =>{setLanguage('english'); handleButtonClick('plantain')}}
-                onMouseEnter={() => handleButtonClick('plantain')}
-                onMouseLeave={() => handleButtonClick(null)}
+                onMouseEnter={() => sethoveredPButton('plantain')}
+                onMouseLeave={() => sethoveredPButton(null)}
                 style={{ 
-                  backgroundColor:  clickedButton === 'plantain'  ? secondaryColor : primaryColor, 
-                  color:  clickedButton === 'plantain'  ? primaryColor :secondaryColor , 
-                  borderColor: secondaryColor }}>
+                  backgroundColor: hoveredPButton 
+                          ? primaryColor  // When hovered
+                          : clickedButton === 'plantain'  
+                            ? secondaryColor  // When clicked
+                            : primaryColor,  // Default
+                        color: hoveredPButton 
+                          ? secondaryColor  // When hovered
+                          : clickedButton === 'plantain'  
+                            ? primaryColor  // When clicked
+                            : secondaryColor,  // Default
+                        borderColor: secondaryColor }}>
                       plantain
                   </button>
                   <button 
@@ -119,11 +127,18 @@ const Loremipsum = () => {
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
-                    backgroundColor:  hoveredSButton ? primaryColor: secondaryColor, 
-                    backgroundColor: clickedButton === 'platano' ? secondaryColor : primaryColor, 
-                    color:  clickedButton === 'platano' ? primaryColor :secondaryColor, 
-                    borderColor: secondaryColor}}>
-                      plátano
+                    backgroundColor: hoveredSButton 
+                        ? primaryColor  // When hovered
+                        : clickedButton === 'platano'  
+                          ? secondaryColor  // When clicked
+                          : primaryColor,  // Default
+                      color: hoveredSButton 
+                        ? secondaryColor  // When hovered
+                        : clickedButton === 'platano'  
+                          ? primaryColor  // When clicked
+                          : secondaryColor,  // Default
+                      borderColor: secondaryColor}}>
+                                        plátano
                   </button>
                 </div>
                 <div className="riddims" style={{ color: secondaryColor}}>
