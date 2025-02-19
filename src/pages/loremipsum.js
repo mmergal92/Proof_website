@@ -47,11 +47,11 @@ const Loremipsum = () => {
   
       const handleButtonClick = (button) => {
         setClickedButton(button);
-        setLanguage(lang);
+        setLanguage(language);
 
         // If text has already been generated, update it immediately
         if (text) {
-          const selectedText = lang === 'english' ? loremText : loremTextEs;
+          const selectedText = language === 'english' ? loremText : loremTextEs;
           const HTMLParagraphs = selectedText.getAllParagraphs(parseFloat(numberOfParagraphs));
           setText(HTMLParagraphs);
         }
