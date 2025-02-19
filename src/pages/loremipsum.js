@@ -24,6 +24,7 @@ const Loremipsum = () => {
     const [numberOfParagraphs, setNumberOfParagraphs] = useState('');
     const [text, setText] = useState('');
     const [language, setLanguage] = useState('english');
+    const [lang, setLang] = useState('english');
     const [primaryColor, setPrimaryColor] = useState('');
     const [secondaryColor, setSecondaryColor] = useState('');
     const [isActive, setIsActive] = useState(false);
