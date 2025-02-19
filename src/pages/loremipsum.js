@@ -140,7 +140,7 @@ const Loremipsum = () => {
                         onChange={(e) => setNumberOfParagraphs(e.target.value)}
                         placeholder="How many paragraphs?"
                         value={numberOfParagraphs}
-                        style={{borderColor: secondaryColor, color: secondaryColor}}
+                        style={{borderColor: secondaryColor, color: secondaryColor, "--placeholder-color": secondaryColor}}
                     />
                     <input 
                     type="submit" 
