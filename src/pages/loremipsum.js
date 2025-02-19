@@ -46,7 +46,7 @@ const Loremipsum = () => {
       }, []);
   
   
-      const handleButtonClick = (button) => {
+      const handleButtonClick = (button, lang) => {
         setClickedButton(button);
         setLanguage(lang);
 
@@ -71,6 +71,7 @@ const Loremipsum = () => {
       // If no button was clicked before, default to "plantain" (English)
       if (!clickedButton) {
         setClickedButton('plantain');
+        setLanguage('english'); 
       }
     };
   
@@ -118,7 +119,7 @@ const Loremipsum = () => {
                 <div className ="language-button">
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
-                onClick={() =>{ handleButtonClick('plantain', 'english')}}
+                onClick={() => handleButtonClick('plantain', 'english')}
                 onMouseEnter={() => setHoveredPButton('plantain')}
                 onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
@@ -135,7 +136,7 @@ const Loremipsum = () => {
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
-                  onClick={() => {handleButtonClick('platano', 'spanish')}} 
+                  onClick={() => handleButtonClick('platano', 'spanish')} 
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
