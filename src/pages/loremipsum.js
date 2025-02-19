@@ -58,6 +58,10 @@ const Loremipsum = () => {
       const selectedText = language === 'english' ? loremText : loremTextEs;
       const HTMLParagraphs = selectedText.getAllParagraphs(number);
       setText(HTMLParagraphs);
+      // If no button was clicked before, default to "plantain" (English)
+      if (!clickedButton) {
+        setClickedButton('plantain');
+      }
     };
   
     const handleCopy = () => {
