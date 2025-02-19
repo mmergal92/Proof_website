@@ -18,6 +18,9 @@ function getRandomColors() {
     return colorOptions[Math.floor(Math.random() * colorOptions.length)];
 
 }
+const linkWaveColor = encodeURIComponent(secondaryColor); // Encode the color for use in the data URL
+
+const waveSvg = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='5'><path d='M0,3 Q2,6 4,3 T8,3 T12,3' stroke='${linkWaveColor}' stroke-width='1' fill='transparent'/></svg>`;
 
 const Loremipsum = () => {
     const [showCopyModal, setShowCopyModal] = useState(false);
@@ -184,7 +187,9 @@ const Loremipsum = () => {
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by <span className ="linkwave"><a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} >Maria</a></span><br/>
+                        Made by 
+                        <span className ="linkwave" style={{ backgroundImage: `url(${waveSvg})` }}>
+                          <a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} >Maria</a></span><br/>
                     </p>
                 </div>
             </div>

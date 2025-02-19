@@ -375,6 +375,7 @@ a:hover{
   text-decoration-style: wavy !important;
 } */
 .linkwave {
+  --linkwave-color: white; /* Default color */
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="5"><path d="M0,3 Q2,6 4,3 T8,3 T12,3" stroke="white" stroke-width="1" fill="transparent"/></svg>');
   background-repeat: repeat-x;
   background-position: bottom;
