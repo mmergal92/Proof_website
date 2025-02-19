@@ -105,8 +105,8 @@ const Loremipsum = () => {
                 <button 
                 className={`plaintain-button ${language === 'english' ? 'active' : ''}`} 
                 onClick={() =>{setLanguage('english'); handleButtonClick('plantain')}}
-                onMouseEnter={() => sethoveredPButton('plantain')}
-                onMouseLeave={() => sethoveredPButton(null)}
+                onMouseEnter={() => setHoveredPButton('plantain')}
+                onMouseLeave={() => setHoveredPButton(null)}
                 style={{ 
                   backgroundColor: hoveredPButton 
                           ? primaryColor  // When hovered
