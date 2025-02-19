@@ -87,7 +87,7 @@ const Loremipsum = () => {
       }
   
       setShowCopyModal(true);
-      setButtonText("copied"); // Change button text
+      setButtonText("copied!"); // Change button text
 
       setTimeout(() => {
         setShowCopyModal(false);
