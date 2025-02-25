@@ -35,7 +35,7 @@ const Loremipsum = () => {
     const [clickedButton, setClickedButton] = useState(null);
     const [hoveredEButton, setHoveredEButton] = useState(null);
     const [buttonText, setButtonText] = useState("copy");
-    
+    const [isMobile, setIsMobile] = useState(false);
 
 
 
@@ -43,6 +43,11 @@ const Loremipsum = () => {
         const { primary, secondary } = getRandomColors();
         setPrimaryColor(primary);
         setSecondaryColor(secondary);
+
+        const checkMobile = () => setIsMobile(window.innerWidth <= 940);
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
       }, []);
   
   
@@ -185,8 +190,8 @@ const Loremipsum = () => {
                     type="submit" 
                     value="Enter" 
                     className="generate-button"  
-                    onMouseEnter={() => setHoveredEButton('enter')}
-                    onMouseLeave={() => setHoveredEButton(null)}
+                    onMouseEnter={!isMobile ? () => setHoveredEButton("enter") : undefined}
+                    onMouseLeave={!isMobile ? () => setHoveredEButton(null) : undefined}
                     style={{ 
                       backgroundColor:  hoveredEButton ? primaryColor: secondaryColor, 
                       color: hoveredEButton ? secondaryColor :primaryColor, 
