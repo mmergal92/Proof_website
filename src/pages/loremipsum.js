@@ -210,8 +210,8 @@ const Loremipsum = () => {
                     <button 
                     className="copy-button" 
                     onClick={handleCopy} 
-                    onMouseEnter={() => setHoveredButton('copy')}
-                    onMouseLeave={() => setHoveredButton(null)}
+                    onMouseEnter={!isMobile ? () => setHoveredButton("copy") : undefined}
+                    onMouseLeave={!isMobile ? () => setHoveredButton(null) : undefined}
                     style={{ 
                       backgroundColor:  hoveredButton ? primaryColor :  secondaryColor, 
                       color: hoveredButton ? secondaryColor :primaryColor , 
