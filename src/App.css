@@ -536,7 +536,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100vh;
   }
 
-  .left-lorem-container, .right-lorem-container {
+  .left-lorem-container{
     width: 100%;
     padding: 20px !important;
     /* height: 50vh; */
@@ -568,7 +568,8 @@ input[type=number]::-webkit-outer-spin-button {
 
   .right-lorem-container {
     text-align: left;
-    padding: 20px !important;
+    width: 100%;
+    padding: 0px 20px !important;
     overflow-y: auto;
     /* background-color: #FFFEE3; */
   }
