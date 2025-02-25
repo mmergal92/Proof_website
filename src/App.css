@@ -343,10 +343,6 @@ a:hover{
   font-style: normal;
 }
 
-/* .generate-button:hover {
-  background-color: #000;
-  color: #FFFEE3;
-} */
 
 .made-by{
   position: absolute;
@@ -588,6 +584,11 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: initial !important;
     color: initial !important;;
   }
+
+  .generate-button:hover {
+    background-color: initial !important;
+    color: initial !important;;
+}
 
   .generated-text {
     text-align: left;
