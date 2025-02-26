@@ -8,19 +8,30 @@ function GenerateNewText() {
   // Add property to the object
   this.sentences =
     [
-      'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
-      'Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.',
-      'No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.',
-      'Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.',
-      'Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles.',
-      'Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet.?',
-      'Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.',
-      'Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).',
-      'Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad.',
-      'Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).',
-      'El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".',
-      'Estos textos hacen parecerlo un español que se puede leer.',
-      'Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.',
+      'No hables así de mi broki.',
+      'Deja ya de gufear, y ponte a trabajar.',
+      'Subo a El Yunque porque quiero ver el mundo desde arriba, rodeado de verdes intensos y la calma de las cascadas.',
+      'Nos invitaron a un bembé.',
+      'No tengo chavos para el taxi.',
+      'Hoy se bebe, hoy se celebra.',
+      'Hay mucho tapón y voy a llegar tarde.',
+      'Esto en un mamey.',
+      'Estoy bregando con algo de última hora en el trabajando.',
+      'Mira ese revolú que tienes en tu cuarto.',
+      'Nos vemos en Culebra, donde Flamenco Beach parece sacado de un sueño, con su arena suave y aguas cristalinas.',
+      'Cállate, eso es embuste.',
+      'Vamos a la disco que quiero perrear.',
+      'En La Factoría, una buena piña colada y una conversación me hacen pensar que en Puerto Rico todo es mejor con sazón.',
+      'Vamos a janguear esta noche en la placita.',
+      'Chacho, hace un calor brutal hoy.',
+      'Mi nene quiere un helado de parcha.',
+      'Aquí se vive con alma, estilo, y esa chispa que hace que el corazón se sienta en casa.',
+      'La nena se compró unos tenis nuevos bien duros.',
+      'No puedo ahora, estoy bregando con un problemita en el carro.',
+      'El bembé en casa de Luisa estuvo encendido.',
+      'Wepa, llegó el corillo, ahora sí que empieza la fiesta.',
+      'Anoche nos fuimos de perreo hasta que cerraron el club.',
+      'En Piñones, unas alcapurrias bien crujientes y un jugo de parcha me recuerdan que la comida aquí siempre trae alegría.'
    ];
 }
 
