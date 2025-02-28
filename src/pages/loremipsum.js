@@ -37,6 +37,8 @@ const Loremipsum = () => {
     const [buttonText, setButtonText] = useState("copy");
     const [isMobile, setIsMobile] = useState(false);
     const [hovered, setHovered] = useState(null);
+    const [displayText, setDisplayText] = useState("Riddims");
+
     // const [oHovered, setOHovered] = useState(null);
 
 
@@ -57,6 +59,8 @@ const Loremipsum = () => {
       const handleButtonClick = (button, lang) => {
         setClickedButton(button);
         setLanguage(lang);
+        setDisplayText("Ritmo");
+
 
         // If text has already been generated, update it immediately
         if (text) {
@@ -66,8 +70,6 @@ const Loremipsum = () => {
           setText(selectedText);
         }
     };
-
-    
 
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -156,7 +158,7 @@ const Loremipsum = () => {
                   </button>
                   <button 
                   className={`platano-button ${language === 'spanish' ? 'active' : ''}`} 
-                  onClick={() => handleButtonClick('platano', 'spanish')} 
+                  onClick={() => handleButtonClick('platano', 'spanish')}
                   onMouseEnter={() => setHoveredSButton('platano')}
                   onMouseLeave={() => setHoveredSButton(null)}
                   style={{ 
@@ -175,7 +177,7 @@ const Loremipsum = () => {
                   </button>
                 </div>
                 <div className="riddims" style={{ color: secondaryColor}}>
-                    <h1 className="title">Riddims
+                    <h1 className="title">{displayText}
                     </h1>
                     <p className="description">
                        
