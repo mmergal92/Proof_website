@@ -67,8 +67,8 @@ const Loremipsum = () => {
 
         // Change display text based on language selection
         setDisplayText(lang === 'spanish' ? "Ritmo" : "Riddims");
-        setDisplayTextTwo(lang === 'spanish' ? "Cuantos parafros?" : "How many paragraphs?");
-        setDisplayTextThree(lang === 'spanish' ? "Entre" : "Enter");
+        setDisplayTextTwo(lang === 'spanish' ? "¿Cuantos párrafos?" : "How many paragraphs?");
+        setDisplayTextThree(lang === 'spanish' ? "ingresar" : "Enter");
         setDisplayTextFour(lang === 'spanish' ? "Hecho por" : "Made by");
         setDisplayTextFive(lang === 'spanish' ? "y" : "and");
 
@@ -198,13 +198,13 @@ const Loremipsum = () => {
                         className="paragraph-number"
                         name="numberOfParagraphs"
                         onChange={(e) => setNumberOfParagraphs(e.target.value)}
-                        placeholder="{displayTextTwo}"
+                        placeholder={displayTextTwo}
                         value={numberOfParagraphs}
                         style={{borderColor: secondaryColor, color: secondaryColor, "--placeholder-color": secondaryColor}}
                     />
                     <input 
                     type="submit" 
-                    value="{displayTextThree}" 
+                    value={displayTextThree} 
                     className="generate-button"  
                     onMouseEnter={!isMobile ? () => setHoveredEButton("enter") : undefined}
                     onMouseLeave={!isMobile ? () => setHoveredEButton(null) : undefined}
