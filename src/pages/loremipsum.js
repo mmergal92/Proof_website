@@ -113,7 +113,7 @@ const Loremipsum = () => {
       // Convert HTML string to text to remove the <p></p> elements
       const tmp = document.createElement('DIV');
       tmp.innerHTML = text;
-      el.innerHTML = tmp.textContent || tmp.innerText || ''; // Set the <textarea> value to the string to be copied
+      el.value = tmp.innerHTML.replace(/<p>/g, '\n').replace(/<\/p>/g, ''); // Preserve paragraph breaks
   
     //   el.setAttribute('readonly', ''); // Make it readonly to be tamper-proof
       el.style.position = 'absolute';
