@@ -59,7 +59,9 @@ const Loremipsum = () => {
       const handleButtonClick = (button, lang) => {
         setClickedButton(button);
         setLanguage(lang);
-        setDisplayText("Ritmo");
+
+        // Change display text based on language selection
+        setDisplayText(lang === 'spanish' ? "Ritmo" : "Riddims");
 
 
         // If text has already been generated, update it immediately
