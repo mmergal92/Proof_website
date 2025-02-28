@@ -212,12 +212,12 @@ const Loremipsum = () => {
                         style={{ backgroundImage: `url(${waveBackground})`, 
                                   backgroundRepeat: "repeat-x", 
                                   backgroundPosition: "bottom", 
-                                  backgroundSize: "8px 3px" }}>Segacy</span></a><span 
+                                  backgroundSize: "8px 3px" }}>Segacy</span></a><span className ="linkwave" 
                                   style={{ backgroundImage: `url(${waveBackgroundand})`, 
                                             backgroundRepeat: "repeat-x", 
                                             backgroundPosition: "bottom", 
                                             backgroundSize: "8px 3px" }}> and </span>
-                          <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} ><span 
+                          <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} ><span className ="linkwave" 
                         onMouseEnter={() => setOHovered("madeby")} 
                         onMouseLeave={() => setOHovered(null)} 
                         style={{ backgroundImage: `url(${waveBackgroundme})`, 
@@ -271,3 +271,25 @@ const Loremipsum = () => {
   
   export default Loremipsum;
 
+//  <p className="credit">
+// Made by&nbsp;
+//   <a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >
+//   <span className ="linkwave" 
+// onMouseEnter={() => setHovered("made")} 
+// onMouseLeave={() => setHovered(null)} 
+// style={{ backgroundImage: `url(${waveBackground})`, 
+//           backgroundRepeat: "repeat-x", 
+//           backgroundPosition: "bottom", 
+//           backgroundSize: "8px 3px" }}>Segacy</span></a><span 
+//           style={{ backgroundImage: `url(${waveBackgroundand})`, 
+//                     backgroundRepeat: "repeat-x", 
+//                     backgroundPosition: "bottom", 
+//                     backgroundSize: "8px 3px" }}> and </span>
+//   <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} ><span 
+// onMouseEnter={() => setOHovered("madeby")} 
+// onMouseLeave={() => setOHovered(null)} 
+// style={{ backgroundImage: `url(${waveBackgroundme})`, 
+//           backgroundRepeat: "repeat-x", 
+//           backgroundPosition: "bottom", 
+//           backgroundSize: "8px 3px" }}>Maria</span></a><br/>
+// </p>
