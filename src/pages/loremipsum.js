@@ -202,7 +202,26 @@ const Loremipsum = () => {
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by <span className ="linkwave" onMouseEnter={() => setHovered("made")} onMouseLeave={() => setHovered(null)} style={{ backgroundImage: `url(${waveBackground})`, backgroundRepeat: "repeat-x", backgroundPosition: "bottom", backgroundSize: "8px 3px" }}><a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} >Maria</a></span><br/>
+                        Made by 
+                          <a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >
+                          <span className ="linkwave" 
+                        onMouseEnter={() => setHovered("made")} 
+                        onMouseLeave={() => setHovered(null)} 
+                        style={{ backgroundImage: `url(${waveBackground})`, 
+                                  backgroundRepeat: "repeat-x", 
+                                  backgroundPosition: "bottom", 
+                                  backgroundSize: "8px 3px" }}>Segacy</span></a> <span className ="linkwave" 
+                                  style={{ backgroundImage: `url(${waveBackground})`, 
+                                            backgroundRepeat: "repeat-x", 
+                                            backgroundPosition: "bottom", 
+                                            backgroundSize: "8px 3px" }}>and </span>
+                          <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} ><span className ="linkwave" 
+                        onMouseEnter={() => setHovered("made")} 
+                        onMouseLeave={() => setHovered(null)} 
+                        style={{ backgroundImage: `url(${waveBackground})`, 
+                                  backgroundRepeat: "repeat-x", 
+                                  backgroundPosition: "bottom", 
+                                  backgroundSize: "8px 3px" }}>Maria</span></a><br/>
                     </p>
                 </div>
             </div>
