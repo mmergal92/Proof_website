@@ -37,6 +37,7 @@ const Loremipsum = () => {
     const [buttonText, setButtonText] = useState("copy");
     const [isMobile, setIsMobile] = useState(false);
     const [hovered, setHovered] = useState(null);
+    const [oHovered, setOHovered] = useState(null);
 
 
 
@@ -91,7 +92,8 @@ const Loremipsum = () => {
     };
     
     const waveBackground = generateWaveSvg(hovered ? primaryColor : secondaryColor); // Change color on hover
-
+    const waveBackgroundand = generateWaveSvg(secondaryColor); // 
+    const waveBackgroundme = generateWaveSvg( oHovered ? primaryColor : secondaryColor); // Change color on hover
   
     const handleCopy = () => {
       const el = document.createElement('textarea'); // Create a <textarea> element
@@ -202,7 +204,7 @@ const Loremipsum = () => {
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by 
+                        Made by&nbsp;
                           <a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >
                           <span className ="linkwave" 
                         onMouseEnter={() => setHovered("made")} 
@@ -210,15 +212,15 @@ const Loremipsum = () => {
                         style={{ backgroundImage: `url(${waveBackground})`, 
                                   backgroundRepeat: "repeat-x", 
                                   backgroundPosition: "bottom", 
-                                  backgroundSize: "8px 3px" }}>Segacy</span></a> <span className ="linkwave" 
-                                  style={{ backgroundImage: `url(${waveBackground})`, 
+                                  backgroundSize: "8px 3px" }}>Segacy</span></a><span 
+                                  style={{ backgroundImage: `url(${waveBackgroundand})`, 
                                             backgroundRepeat: "repeat-x", 
                                             backgroundPosition: "bottom", 
-                                            backgroundSize: "8px 3px" }}>and </span>
-                          <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} ><span className ="linkwave" 
-                        onMouseEnter={() => setHovered("made")} 
-                        onMouseLeave={() => setHovered(null)} 
-                        style={{ backgroundImage: `url(${waveBackground})`, 
+                                            backgroundSize: "8px 3px" }}> and </span>
+                          <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} ><span 
+                        onMouseEnter={() => setOHovered("madeby")} 
+                        onMouseLeave={() => setOHovered(null)} 
+                        style={{ backgroundImage: `url(${waveBackgroundme})`, 
                                   backgroundRepeat: "repeat-x", 
                                   backgroundPosition: "bottom", 
                                   backgroundSize: "8px 3px" }}>Maria</span></a><br/>
