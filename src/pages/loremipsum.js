@@ -71,7 +71,7 @@ const Loremipsum = () => {
         setDisplayTextThree(lang === 'spanish' ? "ingresar" : "Enter");
         setDisplayTextFour(lang === 'spanish' ? "Hecho por" : "Made by");
         setDisplayTextFive(lang === 'spanish' ? "y" : "and");
-
+        setButtonText(lang === "spanish" ? "copiar" : "copy");
         // If text has already been generated, update it immediately
         if (text) {
           const selectedText = lang === 'english' 
@@ -134,11 +134,11 @@ const Loremipsum = () => {
       }
   
       setShowCopyModal(true);
-      setButtonText("copied!"); // Change button text
+      setButtonText(lang === "spanish" ? "¡copiado!" : "copied!");// Change button text
 
       setTimeout(() => {
         setShowCopyModal(false);
-        setButtonText("copy"); // Revert button text after a delay
+        setButtonText(lang === "spanish" ? "copiar" : "copy"); // Revert button text after a delay
       }, 1000);
     };
 
