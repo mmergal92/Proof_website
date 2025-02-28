@@ -134,11 +134,11 @@ const Loremipsum = () => {
       }
   
       setShowCopyModal(true);
-      setButtonText(lang === "spanish" ? "¡copiado!" : "copied!");// Change button text
+      setButtonText(clickedButton === "platano" ? "¡copiado!" : "copied!");// Change button text
 
       setTimeout(() => {
         setShowCopyModal(false);
-        setButtonText(lang === "spanish" ? "copiar" : "copy"); // Revert button text after a delay
+        setButtonText(clickedButton === "platano" ? "copiar" : "copy"); // Revert button text after a delay
       }, 1000);
     };
 
@@ -271,26 +271,3 @@ const Loremipsum = () => {
 
   
   export default Loremipsum;
-
-//  <p className="credit">
-// Made by&nbsp;
-//   <a href="https://segacyroberts.com/" target="_blank" style={{color: secondaryColor}} >
-//   <span className ="linkwave" 
-// onMouseEnter={() => setHovered("made")} 
-// onMouseLeave={() => setHovered(null)} 
-// style={{ backgroundImage: `url(${waveBackground})`, 
-//           backgroundRepeat: "repeat-x", 
-//           backgroundPosition: "bottom", 
-//           backgroundSize: "8px 3px" }}>Segacy</span></a><span 
-//           style={{ backgroundImage: `url(${waveBackgroundand})`, 
-//                     backgroundRepeat: "repeat-x", 
-//                     backgroundPosition: "bottom", 
-//                     backgroundSize: "8px 3px" }}> and </span>
-//   <a href="https://mariamergal.dev/" target="_blank" style={{color: secondaryColor}} ><span 
-// onMouseEnter={() => setOHovered("madeby")} 
-// onMouseLeave={() => setOHovered(null)} 
-// style={{ backgroundImage: `url(${waveBackgroundme})`, 
-//           backgroundRepeat: "repeat-x", 
-//           backgroundPosition: "bottom", 
-//           backgroundSize: "8px 3px" }}>Maria</span></a><br/>
-// </p>
