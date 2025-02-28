@@ -38,6 +38,11 @@ const Loremipsum = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [hovered, setHovered] = useState(null);
     const [displayText, setDisplayText] = useState("Riddims");
+    const [displayTextTwo, setDisplayTextTwo] = useState("How many paragraphs?");
+    const [displayTextThree, setDisplayTextThree] = useState("Enter");
+    const [displayTextFour, setDisplayTextFour] = useState("Made by");
+    const [displayTextFive, setDisplayTextFive] = useState("and");
+
 
     // const [oHovered, setOHovered] = useState(null);
 
@@ -62,7 +67,10 @@ const Loremipsum = () => {
 
         // Change display text based on language selection
         setDisplayText(lang === 'spanish' ? "Ritmo" : "Riddims");
-
+        setDisplayTextTwo(lang === 'spanish' ? "Cuantos parafros?" : "How many paragraphs?");
+        setDisplayTextThree(lang === 'spanish' ? "Entre" : "Enter");
+        setDisplayTextFour(lang === 'spanish' ? "Hecho por" : "Made by");
+        setDisplayTextFive(lang === 'spanish' ? "y" : "and");
 
         // If text has already been generated, update it immediately
         if (text) {
@@ -190,13 +198,13 @@ const Loremipsum = () => {
                         className="paragraph-number"
                         name="numberOfParagraphs"
                         onChange={(e) => setNumberOfParagraphs(e.target.value)}
-                        placeholder="How many paragraphs?"
+                        placeholder="{displayTextTwo}"
                         value={numberOfParagraphs}
                         style={{borderColor: secondaryColor, color: secondaryColor, "--placeholder-color": secondaryColor}}
                     />
                     <input 
                     type="submit" 
-                    value="Enter" 
+                    value="{displayTextThree}" 
                     className="generate-button"  
                     onMouseEnter={!isMobile ? () => setHoveredEButton("enter") : undefined}
                     onMouseLeave={!isMobile ? () => setHoveredEButton(null) : undefined}
@@ -208,7 +216,7 @@ const Loremipsum = () => {
                 </div>
                 <div className="made-by">
                 <p className="credit">
-                        Made by&nbsp;<span className ="linkwave" 
+                      {displayTextFour}&nbsp;<span className ="linkwave" 
                         onMouseEnter={() => setHovered("made")} 
                         onMouseLeave={() => setHovered(null)} 
                         style={{ backgroundImage: `url(${waveBackground})`, 
@@ -216,7 +224,7 @@ const Loremipsum = () => {
                                   backgroundPosition: "bottom", 
                                   backgroundSize: "8px 3px" }}>
                           <a href="https://www.itsproof.co/" target="_blank" style={{color: secondaryColor}} >
-                         Segacy and Maria</a></span><br/>
+                         Segacy {displayTextFive} Maria</a></span><br/>
                     </p>
                 </div>
             </div>
