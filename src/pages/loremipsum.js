@@ -189,9 +189,6 @@ const Loremipsum = () => {
                 <div className="riddims" style={{ color: secondaryColor}}>
                     <h1 className="title">{displayText}
                     </h1>
-                    <p className="description">
-                       
-                    </p>
                     <form className="form" action="/" method="POST" onSubmit={handleSubmit}>
                     <input
                         type="number"
