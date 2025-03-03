@@ -16,7 +16,7 @@ function GenerateNewText() {
       'Hoy se bebe, hoy se celebra.',
       'Hay mucho tapón y voy a llegar tarde.',
       'Esto en un mamey.',
-      'Estoy bregando con algo de última hora en el trabajando.',
+      'Estoy bregando ccon algo de última hora en el trabajando.',
       'Mira ese revolú que tienes en tu cuarto.',
       'Nos vemos en Culebra, donde Flamenco Beach parece sacado de un sueño, con su arena suave y aguas cristalinas.',
       'Cállate, eso es embuste.',
@@ -36,9 +36,12 @@ function GenerateNewText() {
 }
 
 // Method to the GenerateNewText constructor function that generates a random sentence
-GenerateNewText.prototype.getRandomSentence = function() {
-  let randomSentence = this.sentences[Math.floor(Math.random() * this.sentences.length)];
-	return randomSentence;
+GenerateNewText.prototype.getRandomSentence = function(lastSentence = null) {
+  let newSentence;
+  do {
+    newSentence = this.sentences[Math.floor(Math.random() * this.sentences.length)];
+  } while (newSentence === lastSentence); // Ensure it's not the same as the last one
+  return newSentence;
 };
 
 // Method to the GenerateNewText constructor function that generates a paragraph from random sentences
@@ -48,11 +51,14 @@ GenerateNewText.prototype.getParagraph = function() {
   let minimumCharacterLength = 250;
   let firstSentence = true;
   while (paragraph.length < minimumCharacterLength) {
+    let newSentence = this.getRandomSentence(lastSentence);
+    lastSentence = newSentence; // Update last sentence reference
+
     if (firstSentence) {
-      paragraph = paragraph.concat(this.getRandomSentence());
+      paragraph = newSentence;
       firstSentence = false;
     } else {
-      paragraph = paragraph.concat(' ' + this.getRandomSentence());
+      paragraph = paragraph.concat(' ' + newSentence);
     }
   }
   return paragraph;
