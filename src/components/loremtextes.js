@@ -50,6 +50,7 @@ GenerateNewText.prototype.getParagraph = function() {
   // Set the minimum number of words
   let minimumCharacterLength = 250;
   let firstSentence = true;
+  let lastSentence = null;
   while (paragraph.length < minimumCharacterLength) {
     let newSentence = this.getRandomSentence(lastSentence);
     lastSentence = newSentence; // Update last sentence reference
