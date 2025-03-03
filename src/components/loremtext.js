@@ -38,8 +38,11 @@ function GenerateNewText() {
 
 // Method to the GenerateNewText constructor function that generates a random sentence
 GenerateNewText.prototype.getRandomSentence = function() {
-  let randomSentence = this.sentences[Math.floor(Math.random() * this.sentences.length)];
-	return randomSentence;
+  let newSentence;
+  do {
+    newSentence = this.sentences[Math.floor(Math.random() * this.sentences.length)];
+  } while (newSentence === lastSentence); // Ensure it's not the same as the last one
+  return newSentence;
 };
 
 // Method to the GenerateNewText constructor function that generates a paragraph from random sentences
@@ -48,12 +51,16 @@ GenerateNewText.prototype.getParagraph = function() {
   // Set the minimum number of words
   let minimumCharacterLength = 250;
   let firstSentence = true;
+  let lastSentence = null;
   while (paragraph.length < minimumCharacterLength) {
+    let newSentence = this.getRandomSentence(lastSentence);
+    lastSentence = newSentence; // Update last sentence reference
+
     if (firstSentence) {
-      paragraph = paragraph.concat(this.getRandomSentence());
+      paragraph = newSentence;
       firstSentence = false;
     } else {
-      paragraph = paragraph.concat(' ' + this.getRandomSentence());
+      paragraph = paragraph.concat(' ' + newSentence);
     }
   }
   return paragraph;

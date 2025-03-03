@@ -31,7 +31,18 @@ function GenerateNewText() {
       'El bembé en casa de Luisa estuvo encendido.',
       'Wepa, llegó el corillo, ahora sí que empieza la fiesta.',
       'Anoche nos fuimos de perreo hasta que cerraron el club.',
-      'En Piñones, unas alcapurrias bien crujientes y un jugo de parcha me recuerdan que la comida aquí siempre trae alegría.'
+      'En Piñones, unas alcapurrias bien crujientes y un jugo de parcha me recuerdan que la comida aquí siempre trae alegría.',
+      'Voy pa\' Vieques, quiero ver el atardecer en Playa Escondida.',
+      'Mañana hay chinchorreo por toda la isla, así que prepárate.',
+      'Ay bendito, se fue la luz otra vez.',
+      'Dame un café con leche y un quesito, que necesito energía.',
+      'Tira pa\' casa que vamos a hacer un sancocho.',
+      'Este sitio tiene el mejor mofongo de camarones en salsa criolla, te lo juro.',
+      'Nada como un domingo de playa en Luquillo con una piña colada en mano.',
+      'El reggaetón es el ritmo del barrio, el sonido de nuestra historia.',
+      'El güiro y la pandereta marcan el ritmo de la Navidad en la isla.',
+      'Cuando la pandereta suena, sabes que la parranda va pa\' largo.',
+      'El bongó y las congas se combinan para darle sabor a la salsa.',
    ];
 }
 
