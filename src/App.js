@@ -22,7 +22,7 @@ const usePageTracking = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log("Tracking page view:", location.pathname); // Debug log
+    // console.log("Tracking page view:", location.pathname); // Debug log
 
     ReactGA.send({ hitType: "pageview", page: location.pathname });
   }, [location.pathname]); // Only track when pathname changes
