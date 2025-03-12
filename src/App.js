@@ -8,7 +8,6 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./pages/home";
 import { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Spanish from './pages/spanish';
 import Loremipsum from './pages/loremipsum';
 // import Nav from "./components/Nav"
