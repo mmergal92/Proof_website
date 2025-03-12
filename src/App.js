@@ -6,29 +6,23 @@ import './assets/VulfSansDemo-Regular.otf';
 //IMPORT ROUTE and COMPONENTS
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/home";
+import { useEffect } from "react";
 import Spanish from './pages/spanish';
 import Loremipsum from './pages/loremipsum';
 // import Nav from "./components/Nav"
 // import {Redirect} from 'react-router';
 import Footer from "./components/footer";
 import { useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import usePageTracking from "./components/analytics"; 
 
 
 const MEASUREMENT_ID = 'G-4ZV4YCN0DD';
 ReactGA.initialize(MEASUREMENT_ID);
 
-// const usePageTracking = () => {
-//   const location = useLocation();
-
-//   useEffect(() => {
-//     ReactGA.send({ hitType: "pageview", page: location.pathname });
-//   }, [location]);
-// };
-
-// In your component where routes are defined (e.g., App.js)
-// usePageTracking();
 
 function App() {
+  usePageTracking(); 
   return (
     <div className="App">
       <Routes>
