@@ -11,22 +11,22 @@ import Loremipsum from './pages/loremipsum';
 // import Nav from "./components/Nav"
 // import {Redirect} from 'react-router';
 import Footer from "./components/footer";
+import { useLocation } from 'react-router-dom';
+
 
 const MEASUREMENT_ID = 'G-4ZV4YCN0DD';
 ReactGA.initialize(MEASUREMENT_ID);
 
-import { useLocation } from 'react-router-dom';
+// const usePageTracking = () => {
+//   const location = useLocation();
 
-const usePageTracking = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, [location]);
-};
+//   useEffect(() => {
+//     ReactGA.send({ hitType: "pageview", page: location.pathname });
+//   }, [location]);
+// };
 
 // In your component where routes are defined (e.g., App.js)
-usePageTracking();
+// usePageTracking();
 
 function App() {
   return (
