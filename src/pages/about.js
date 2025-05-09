@@ -68,7 +68,7 @@ const About = () =>{
 
       <footer>
         <nav>
-          <a href="mailto:hello@itsproof.co">email us</a>
+          <a href="mailto:hello@itsproof.co">email us</a>&nbsp;&nbsp;
           <a href="/">instagram</a>
         </nav>
         <p>2025. All Rights Reserved.</p>
