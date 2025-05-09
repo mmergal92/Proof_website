@@ -622,7 +622,8 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .top-nav {
@@ -646,6 +647,8 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 700px;
   margin: 3rem auto;
   flex-grow: 1;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .underline {
@@ -664,12 +667,14 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1rem;
   font-style: italic;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .about-services ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 .wellness-note {
