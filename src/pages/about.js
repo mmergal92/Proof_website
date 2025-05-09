@@ -11,18 +11,23 @@ const About = () =>{
   return ( 
     <div className="about-page">
       <header className="top-nav">
-        <nav>
+        <nav className="right-nav">
           <a href="/">work</a>
           <a href="/about">about</a>
           <a href="mailto:hello@itsproof.co">email us</a>
+        </nav>
+        <nav className="center-nav">
+          <h1>Proof</h1>
+        </nav>
+        <nav className="left-nav">
           <a href="/" className="lang">en español</a>
         </nav>
       </header>
 
       <main className="about-content">
-        <h1>
+        <h3>
           Proof is the design and technology practice of <span className="underline">Segacy</span> and <span className="underline">Maria</span>, two childhood friends from NYC.
-        </h1>
+        </h3>
         <p>
           Thanks for stopping by! In our independent careers, we’ve had the pleasure of working for companies like <a href="/">Spotify</a>, <a href="/">Book of the Month</a>, and <a href="/">This One</a>. We love building things for thoughtful and imaginative people looking to make an impact.
         </p>
@@ -32,7 +37,7 @@ const About = () =>{
 
         <div className="about-services">
           <div>
-            <h2>Services</h2>
+            <h4>Services</h4>
             <ul>
               <li>Strategy</li>
               <li>Web Design & Development</li>
@@ -43,7 +48,7 @@ const About = () =>{
             </ul>
           </div>
           <div>
-            <h2>Capabilities</h2>
+            <h4>Capabilities</h4>
             <ul>
               <li>Informational websites</li>
               <li>Editorial platforms</li>
