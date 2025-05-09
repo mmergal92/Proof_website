@@ -25,9 +25,9 @@ const About = () =>{
       </header>
 
       <main className="about-content">
-        <h3>
+        <h4>
           Proof is the design and technology practice of <span className="underline">Segacy</span> and <span className="underline">Maria</span>, two childhood friends from NYC.
-        </h3>
+        </h4>
         <p>
           Thanks for stopping by! In our independent careers, we’ve had the pleasure of working for companies like <a href="/">Spotify</a>, <a href="/">Book of the Month</a>, and <a href="/">This One</a>. We love building things for thoughtful and imaginative people looking to make an impact.
         </p>
