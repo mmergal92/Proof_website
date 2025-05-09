@@ -698,7 +698,6 @@ footer {
 .newhome-page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   padding: 1rem;
 }
 .home-content {
@@ -732,6 +731,8 @@ footer {
 .testimonial {
   text-align: center;
   margin: 4rem 0;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
 }
 
 .label {
@@ -758,4 +759,10 @@ footer {
   margin-top: 1rem;
   font-size: 0.85rem;
   font-style: normal;
+}
+.App.newhome-page{
+  min-height: 100vh;
+  max-height: auto;
+  position: relative;
+  overflow-y: auto;
 }
