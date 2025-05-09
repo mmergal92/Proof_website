@@ -6,8 +6,6 @@ import Rotation from '../components/rotation'
 import circletext_nologo from '../assets/circletext_nologo.png'
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
-import React from "react";
-
 
 const About = () =>{
   return ( 
