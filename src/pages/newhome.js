@@ -30,10 +30,10 @@ const Newhome = () =>{
         </h1>
 
         <section className="work-grid">
-          <div className="project"><img src="/images/annalise.jpg" alt="Annalise Lockhart" /></div>
-          <div className="project"><img src="/images/ballyhac.jpg" alt="Ballyhac" /></div>
-          <div className="project"><img src="/images/riddims.jpg" alt="Riddims" /></div>
-          <div className="project"><img src="/images/enclaves.jpg" alt="Enclaves" /></div>
+          <div className="project"><img src="/assets/annalise.png" alt="Annalise Lockhart" /></div>
+          <div className="project"><img src="/assets/ballyhac.png" alt="Ballyhac" /></div>
+          <div className="project"><img src="/assets/riddims.png" alt="Riddims" /></div>
+          <div className="project"><img src="/assets/enclaves.png" alt="Enclaves" /></div>
         </section>
 
         <section className="testimonial">

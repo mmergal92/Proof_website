@@ -705,6 +705,8 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   flex-grow: 1;
+  align-content: center;
+  vertical-align: middle;
 }
 
 .headline {
