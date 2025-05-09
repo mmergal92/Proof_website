@@ -42,7 +42,7 @@ const Newhome = () =>{
             <button>&lt;</button>
             <blockquote>
               Can you mix sorrel with wray and neph? Half way tree and devon house on sunday with rum raisin ice cream, but small up yuhself.
-              <footer>— Alexia Arthurs, author of <em>How to Love a Jamaican</em></footer>
+              <p className="quotation-attr">— Alexia Arthurs, author of <em>How to Love a Jamaican</em></p>
             </blockquote>
             <button>&gt;</button>
           </div>
