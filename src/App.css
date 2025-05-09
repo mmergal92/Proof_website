@@ -617,7 +617,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: none !important;
   }
 }
-
+/* New About page */
 .about-page {
   display: flex;
   flex-direction: column;
@@ -693,4 +693,67 @@ footer {
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+/* New Home page */
+.newhome-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.home-content {
+  max-width: 900px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.headline {
+  font-size: 1.8rem;
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  line-height: 1.3;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.testimonial {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.quote-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.quote-nav blockquote {
+  max-width: 600px;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.quote-nav footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-style: normal;
 }

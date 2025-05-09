@@ -11,6 +11,7 @@ import { useLocation } from 'react-router-dom';
 import Spanish from './pages/spanish';
 import Loremipsum from './pages/loremipsum';
 import About from './pages/about';
+import Newhome from './pages/newhome'
 
 // import Nav from "./components/Nav"
 // import {Redirect} from 'react-router';
@@ -37,6 +38,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/newhome' element={<Newhome/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/spanish' element={<Spanish/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
