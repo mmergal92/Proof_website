@@ -10,6 +10,8 @@ import { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import Spanish from './pages/spanish';
 import Loremipsum from './pages/loremipsum';
+import About from './pages/about';
+
 // import Nav from "./components/Nav"
 // import {Redirect} from 'react-router';
 import Footer from "./components/footer";
@@ -35,6 +37,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='/spanish' element={<Spanish/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
       </Routes>
