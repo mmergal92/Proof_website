@@ -762,7 +762,7 @@ footer {
 }
 .App.newhome-page{
   min-height: 100vh;
-  max-height: auto;
+  max-height: auto !important;
   position: relative;
-  overflow-y: auto;
+  overflow-y: auto !important;
 }

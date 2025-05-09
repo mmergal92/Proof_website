@@ -38,7 +38,7 @@ const Newhome = () =>{
           <div className="project"><img src={annalise} alt="Annalise Lockhart" /></div>
           <div className="project"><img src={ballyhac} alt="Ballyhac" /></div>
           <div className="project"><img src={riddims} alt="Riddims" /></div>
-          <div className="project"><img ssrc={enclaves} alt="Enclaves" /></div>
+          <div className="project"><img src={enclaves} alt="Enclaves" /></div>
         </section>
 
         <section className="testimonial">
