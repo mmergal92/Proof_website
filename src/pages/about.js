@@ -8,12 +8,9 @@ import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
 const About = () =>{
       return ( 
-        <div className= 'about'>
-              <Video />
-              <div className = "middle-container">
-              </div>
-              <div className = "right-container">
-                  <div className ="home-text">
+        <div className=  "about">
+              <div className = "container">
+                  <div className ="text">
                     <h2>ABOUT</h2>
                     <br/>
                     <br/>
