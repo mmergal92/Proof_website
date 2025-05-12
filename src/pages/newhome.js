@@ -166,15 +166,16 @@ const { quote, author, work } = testimonials[currentIndex];
               <p className="quote-text">
               {quote}              
               </p>
-              <p className="quotation-attr">
-                — {author}, <em>{work}</em>
-              </p>
             </blockquote>
 
             <button onClick={handleNext}>
               <img src={next} alt="Next" />
             </button>
           </div>
+
+          <p className="quotation-attr">
+                — {author}, <em>{work}</em>
+              </p>
 
         </section>
       </main>
