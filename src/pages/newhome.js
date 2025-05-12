@@ -41,6 +41,39 @@ const projects = [
   },
 ];
 
+const testimonials = [
+  {
+    quote:
+      "Can you mix sorrel with wray and neph? Half way tree and devon house on sunday with rum raisin ice cream, but small up yuhself.",
+    author: "Alexia Arthurs",
+    work: "How to Love a Jamaican",
+  },
+  {
+    quote:
+      "Me tell you say coconut drops still sweet when di sun tun up? Jamaican mornings nice, but nutten beat Friday fish fry.",
+    author: "Marlon James",
+    work: "A Brief History of Seven Killings",
+  },
+  // Add more testimonials here...
+];
+
+const TestimonialSlider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+const { quote, author, work } = testimonials[currentIndex];
+
 function WorkTile({ img, video, overlayImg}) {
   return (
     <div
@@ -121,18 +154,24 @@ const Newhome = () =>{
 
         <section className="testimonial">
           <p className="label">Testimonials</p>
+         
           <div className="quote-nav">
-          <button>
-            <img src={previous} alt="Previous" />
-          </button>
-                <blockquote>
-              Can you mix sorrel with wray and neph? Half way tree and devon house on sunday with rum raisin ice cream, but small up yuhself.
-              <p className="quotation-attr">— Alexia Arthurs, author of <em>How to Love a Jamaican</em></p>
+            <button onClick={handlePrevious}>
+              <img src={previous} alt="Previous" />
+            </button>
+
+            <blockquote>
+              {quote}
+              <p className="quotation-attr">
+                — {author}, <em>{work}</em>
+              </p>
             </blockquote>
-            <button>
+
+            <button onClick={handleNext}>
               <img src={next} alt="Next" />
             </button>
-              </div>
+          </div>
+
         </section>
       </main>
 

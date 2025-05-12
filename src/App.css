@@ -725,3 +725,14 @@ footer {
   line-height: 115%;
   font-family: "soleil", sans-serif;
 }
+.quote-nav button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.quote-nav img {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
