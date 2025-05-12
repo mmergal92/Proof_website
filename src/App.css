@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
   font-weight: 400;
   background: var(--white);
   color: var(--black);
@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
 }
-.home{
+.old-home{
   display: flex;
   height: 100%;
   justify-content: center;
@@ -52,10 +52,6 @@
   top: -87px !important;
   left: 43px !important;
 }
-.home-bottom a{
-  color: white !important;
-  font-size: 8px !important;
-}
 .middle-container h1:hover{
 color: black;
 }
@@ -77,7 +73,7 @@ color: black;
   left: -150px !important;
   width: 40% !important;
 }
-.home-text{
+.old-home-text{
   max-height: 100vh;
   justify-content: center;
   display: flex;
@@ -85,28 +81,28 @@ color: black;
   text-align: left;
   padding-right: min(81px);
 }
-h2{
+.old-home-text h2{
   font-family: plantin-condensed, sans-serif;
   font-stretch: ultra-condensed !important;
   font-size: 700%;
 }
-h2 i{
+.old-home-text h2 i{
   font-family: plantin, sans-serif;
 }
-p{
+.old-home-text p{
   font-family: IBM plex sans, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: clamp(0.8rem, 1.15vw, 1.15rem);
 }
-a {
+.old-home-text a {
   text-decoration: underline;
   color: black;
 }
-a:hover{
+.old-home-text a:hover{
   color: #B83C58;
 }
-.italics_p{
+.old-home-text .italics_p{
   font-weight: 500;
   font-style: italic;
 }
@@ -193,7 +189,7 @@ a:hover{
   display: flex;
   height: 100vh;
   width: 100vw;
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -236,7 +232,7 @@ a:hover{
   text-transform: uppercase !important;
   border-radius: 20px !important;;
   font-size: 14px;
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -253,7 +249,7 @@ a:hover{
   text-align: left;
   border: 2px solid;
   background: transparent;
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -272,7 +268,7 @@ a:hover{
   border: 2px solid ;
   cursor: pointer;
   font-size: 14px;
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -289,7 +285,7 @@ a:hover{
   font-weight: 400;
   font-family: 'VulfSansDemo';
   font-size: 12px;
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -331,7 +327,7 @@ a:hover{
 
 .generated-text {
   font-size: 16px;
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -344,7 +340,7 @@ a:hover{
 .generated-text p {
   font-size: 16px;
   text-align: left;
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;

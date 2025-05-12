@@ -8,13 +8,13 @@ import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
 const Home = () =>{
       return ( 
-        <div className= 'home'>
+        <div className= 'old-home'>
               <Video />
               <div className = "middle-container">
                 <a href="mailto:maria@itsproof.co" target="_blank" rel="noreferrer noopener" ><img src={circletext_nologo} /><h1>P</h1> </a>
               </div>
               <div className = "right-container">
-                  <div className ="home-text">
+                  <div className ="old-home-text">
                     <h2>pr<i>oo</i>f</h2>
                     <br/>
                     <br/>
