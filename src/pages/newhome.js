@@ -15,6 +15,9 @@ import enclavesVideo from '../assets/enclaves.mp4';
 import riddimsVideo from '../assets/riddims.mp4';
 import browserImg from '../assets/browser.png';
 
+import previous from '../assets/previous.png';
+import next from '../assets/next.png';
+
 const projects = [
   {
     img: annaliseImg,
@@ -119,13 +122,17 @@ const Newhome = () =>{
         <section className="testimonial">
           <p className="label">Testimonials</p>
           <div className="quote-nav">
-            <button>&lt;</button>
-            <blockquote>
+          <button>
+            <img src={previous} alt="Previous" />
+          </button>
+                <blockquote>
               Can you mix sorrel with wray and neph? Half way tree and devon house on sunday with rum raisin ice cream, but small up yuhself.
               <p className="quotation-attr">— Alexia Arthurs, author of <em>How to Love a Jamaican</em></p>
             </blockquote>
-            <button>&gt;</button>
-          </div>
+            <button>
+              <img src={next} alt="Next" />
+            </button>
+              </div>
         </section>
       </main>
 
