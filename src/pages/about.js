@@ -7,23 +7,50 @@ import circletext_nologo from '../assets/circletext_nologo.png'
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
 
+const menuToggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.getElementById('mobileNav');
+  const closeMenu = document.querySelector('.close-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.add('active');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+  });
+
 const About = () =>{
   return ( 
     <div className="about-page">
-      <header className="top-nav">
-        <nav className="right-nav">
-        <a href="/">Work</a>
-          <a href="/about">About</a>
-          <a href="mailto:hello@itsproof.co">Email us</a>
-        </nav>
-        <nav className="center-nav logo">
-          <h1>Proof</h1>
-        </nav>
-        <nav className="left-nav">
-          <a href="/" className="lang">En español</a>
-        </nav>
-      </header>
+       <header class="site-header">
+          <div className="nav-container">
+            <nav className="nav-left">
+              <a href="#work">Work</a>
+              <a href="#about">About</a>
+              <a href="mailto:hello@itsproof.co">Email us</a>
+            </nav>
 
+            <div className="logo">PROOF</div>
+
+            <nav className="nav-right">
+              <a href="/" className="lang">En español</a>
+            </nav>
+
+            <button className="menu-toggle" aria-label="Open menu">&#9776;</button>
+          </div>
+
+          <nav className="mobile-nav" id="mobileNav">
+            <button className="close-menu" aria-label="Close menu">&times;</button>
+            <ul>s
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#email">Email us</a></li>
+              <li className="social"><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        
       <main className="about-content">
         <h4 className="about-header">
           &nbsp;&nbsp;&nbsp;&nbsp;Proof is the design and technology practice of <span className="underline">Segacy</span> and <span className="underline">Maria</span>, two childhood friends from NYC.

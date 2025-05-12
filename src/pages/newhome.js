@@ -18,6 +18,18 @@ import browserImg from '../assets/browser.png';
 import previous from '../assets/previous.png';
 import next from '../assets/next.png';
 
+const menuToggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.getElementById('mobileNav');
+  const closeMenu = document.querySelector('.close-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.add('active');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+  });
+  
 const projects = [
   {
     img: annaliseImg,
@@ -139,19 +151,33 @@ const { quote, author, work } = testimonials[currentIndex];
 
   return (
     <div className="newhome-page">
-       <header className="top-nav">
-        <nav className="right-nav">
-          <a href="/">Work</a>
-          <a href="/about">About</a>
-          <a href="mailto:hello@itsproof.co">Email us</a>
-        </nav>
-        <nav className="center-nav logo">
-          <h1>Proof</h1>
-        </nav>
-        <nav className="left-nav">
-          <a href="/" className="lang">En español</a>
-        </nav>
-      </header>
+       <header class="site-header">
+          <div className="nav-container">
+            <nav className="nav-left">
+              <a href="#work">Work</a>
+              <a href="#about">About</a>
+              <a href="mailto:hello@itsproof.co">Email us</a>
+            </nav>
+
+            <div className="logo">PROOF</div>
+
+            <nav className="nav-right">
+              <a href="/" className="lang">En español</a>
+            </nav>
+
+            <button className="menu-toggle" aria-label="Open menu">&#9776;</button>
+          </div>
+
+          <nav className="mobile-nav" id="mobileNav">
+            <button className="close-menu" aria-label="Close menu">&times;</button>
+            <ul>s
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#email">Email us</a></li>
+              <li className="social"><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+          </nav>
+        </header>
 
       <main className="home-content">
         <h1 className="headline">

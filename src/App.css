@@ -503,35 +503,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-.top-nav {
-  display: flex;
-  font-family: "soleil", sans-serif;
-  font-size: 14px;
-  letter-spacing: 1%;
-  line-height: 115%;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  padding-left:20px;
-  padding-right: 20px;
-}
-
-.logo{
-  font-family: "Alegreya", serif;
-  font-weight: 400;
-  font-size: 28px;
-  letter-spacing: -1%;
-  line-height: 130%;
-}
-.top-nav nav {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.top-nav .lang {
-  margin-left: auto;
-}
-
 .about-content {
   max-width: 560px;
   margin: 3rem auto;
@@ -737,4 +708,119 @@ blockquote {
   width: 24px;
   height: auto;
   cursor: pointer;
+}
+
+
+/* Header */
+.site-header {
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-family: "soleil", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1%;
+  line-height: 115%;
+  font-size: 0.9rem;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+/* Left & right navs */
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+/* Centered logo */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -1%;
+  line-height: 130%;
+}
+
+/* Hide menu button on desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav li {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.mobile-nav .social {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
