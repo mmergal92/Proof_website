@@ -109,11 +109,11 @@ color: black;
 
 @media screen and (max-width: 992px){
   .App{    
-    min-height: auto !important;
-    max-height: 100% !important;
+    /* min-height: auto !important;
+    max-height: 100% !important; */
     /* overflow-x: hidden; */
   }
-  .home{
+  .old-home{
     display: flex;
     height: auto !important;
     flex-direction: column-reverse;
@@ -617,7 +617,7 @@ footer {
 /* New Home page */
 
 .newhome-page{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative !important;
   overflow-y: auto !important;
   display: flex;
