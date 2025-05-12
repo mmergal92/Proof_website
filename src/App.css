@@ -629,6 +629,10 @@ footer {
   position: relative;
   border-radius: 10px;
   background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
 }
 
 /* .overlay-video {
