@@ -5,11 +5,13 @@ import Spanish from './spanish'
 import Rotation from '../components/rotation'
 import circletext_nologo from '../assets/circletext_nologo.png'
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
-import annaliseImg from '../assets/annalise.png';
-import ballyhacImg from '../assets/ballyhac.png';
-import enclavesImg from '../assets/enclaves.png';
-import riddimsImg from '../assets/riddims.png';
+import annaliseImg from '../assets/annalisenew.png';
+import ballyhacImg from '../assets/ballyhacfull.png';
+import enclavesImg from '../assets/enclavesnew.png';
+import riddimsImg from '../assets/loremnew.png';
 import annaliseVideo from '../assets/annalise.mp4';
+import enclavesVideo from '../assets/enclaves.mp4';
+import riddimsVideo from '../assets/riddims.mp4';
 import browserImg from '../assets/browser.png';
 
 const projects = [
@@ -20,17 +22,17 @@ const projects = [
   },
   {
     img: ballyhacImg,
-    video: annaliseVideo,
+    video: null,
     overlayImg: null,
   },
   {
     img: enclavesImg,
-    video: annaliseVideo,
+    video: enclavesVideo,
     overlayImg: browserImg,
   },
   {
     img: riddimsImg,
-    video: annaliseVideo,
+    video: riddimsVideo,
     overlayImg: browserImg,
   },
 ];
@@ -43,6 +45,12 @@ function WorkTile({ img, video, overlayImg}) {
         backgroundImage: `url(${img})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        position: 'relative',
+        aspectRatio: '16 / 9',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden',
       }}
     >
      <div style={{ textAlign: 'center' }}>
@@ -51,23 +59,27 @@ function WorkTile({ img, video, overlayImg}) {
             src={overlayImg}
             alt=""
             style={{
+              maxWidth: '80%',
               display: 'block',
               margin: '0 auto',
               padding: 0,
             }}
           />
         )}
-        <video
-          src={video}
-          autoPlay
-          muted
-          loop
-          playsInline
-          style={{
-            display: 'block',
-            margin: 0,
-          }}
-        />
+        {video && (
+          <video
+            src={video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{
+              maxWidth: '80%',
+              display: 'block',
+              margin: 0,
+            }}
+          />
+        )}
       </div>
     </div>
   );
