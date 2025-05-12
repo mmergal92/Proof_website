@@ -613,10 +613,11 @@ footer {
   margin-bottom: 48px;
   line-height:130%;
 }
-/* .work-grid-wrapper {
-  padding: 2rem;
+.work-grid-wrapper {
   margin: 0 auto;
-} */
+  overflow: hidden; /* prevent accidental overflow */
+
+}
 
 .work-grid {
   display: grid;
