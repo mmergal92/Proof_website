@@ -5,12 +5,47 @@ import Spanish from './spanish'
 import Rotation from '../components/rotation'
 import circletext_nologo from '../assets/circletext_nologo.png'
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
-import annalise from '../assets/annalise.png'
-import ballyhac from '../assets/ballyhac.png'
-import enclaves from '../assets/enclaves.png'
-import riddims from '../assets/riddims.png'
 
+const projects = [
+  {
+    img: '../assets/annalise.png',
+    video: '../assets/annalise.mp4',
+  },
+  {
+    img: '../assets/ballyhac.png',
+    video: '../assets/annalise.mp4',
+  },
+  {
+    img: '../assets/enclaves.png',
+    video: '../assets/annalise.mp4',
+  },
+  {
+    img: '../assets/riddims.png',
+    video: '../assets/annalise.mp4',
+  },
+];
 
+function WorkTile({ img, video }) {
+  return (
+    <div
+      className="work-tile"
+      style={{
+        backgroundImage: `url(${img})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <video
+        className="overlay-video"
+        src={video}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+    </div>
+  );
+}
 
 const Newhome = () =>{
   return (
@@ -34,12 +69,13 @@ const Newhome = () =>{
           Fresh and imaginative experiences for the internet and elsewhere.
         </h1>
 
-        <section className="work-grid">
-          <div className="project"><img src={annalise} alt="Annalise Lockhart" /></div>
-          <div className="project"><img src={ballyhac} alt="Ballyhac" /></div>
-          <div className="project"><img src={riddims} alt="Riddims" /></div>
-          <div className="project"><img src={enclaves} alt="Enclaves" /></div>
-        </section>
+        <section className="work-grid-wrapper">
+          <div className="work-grid">
+            {projects.map((p, idx) => (
+              <WorkTile key={idx} img={p.img} video={p.video} />
+            ))}
+          </div>
+        </section>       
 
         <section className="testimonial">
           <p className="label">Testimonials</p>
