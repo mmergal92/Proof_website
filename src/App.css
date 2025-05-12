@@ -521,6 +521,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .logo{
   font-family: "Alegreya", serif;
+  font-weight: 400;
   font-size: 28px;
   letter-spacing: -1%;
   line-height: 130%;
@@ -544,6 +545,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .about-header{
   font-family: "Alegreya", serif;
+  font-weight: 400;
   font-size: 36px;
   letter-spacing: -1%;
   line-height: 130%;
@@ -634,6 +636,7 @@ footer {
 
 .headline {
   font-family: "Alegreya", serif;
+  font-weight: 400;
   font-size: 36px;
   letter-spacing: -1%;
   max-width: 500px;
@@ -706,13 +709,14 @@ footer {
 .quote-nav blockquote {
   max-width: 600px;
   font-family: "Alegreya", serif;
+  font-weight: 400;
   font-size: 36px;
   letter-spacing: -1%;
   line-height: 130%;
   margin: 0;
 }
 
-.quote-nav footer {
+.quotation-attr {
   margin-top: 20px;
   font-size: 14px;
   letter-spacing: 1%;
