@@ -8,11 +8,11 @@ import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
 const projects = [
   {
-    img: '../assets/annalise.png',
+    img: './assets/annalise.png',
     video: '../assets/annalise.mp4',
   },
   {
-    img: '../assets/ballyhac.png',
+    img: 'src/assets/ballyhac.png',
     video: '../assets/annalise.mp4',
   },
   {
