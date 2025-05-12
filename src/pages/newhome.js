@@ -57,23 +57,7 @@ const testimonials = [
   // Add more testimonials here...
 ];
 
-const TestimonialSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-const { quote, author, work } = testimonials[currentIndex];
-
+  
 function WorkTile({ img, video, overlayImg}) {
   return (
     <div
@@ -123,6 +107,24 @@ function WorkTile({ img, video, overlayImg}) {
 }
 
 const Newhome = () =>{
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+const { quote, author, work } = testimonials[currentIndex];
+
+
   return (
     <div className="newhome-page">
        <header className="top-nav">
