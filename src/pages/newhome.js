@@ -10,27 +10,32 @@ import ballyhacImg from '../assets/ballyhac.png';
 import enclavesImg from '../assets/enclaves.png';
 import riddimsImg from '../assets/riddims.png';
 import annaliseVideo from '../assets/annalise.mp4';
+import browserImg from '../assets/browser.png';
 
 const projects = [
   {
     img: annaliseImg,
     video: annaliseVideo,
+    overlayImg: browserImg,
   },
   {
     img: ballyhacImg,
     video: annaliseVideo,
+    overlayImg: null,
   },
   {
     img: enclavesImg,
     video: annaliseVideo,
+    overlayImg: browserImg,
   },
   {
     img: riddimsImg,
     video: annaliseVideo,
+    overlayImg: browserImg,
   },
 ];
 
-function WorkTile({ img, video }) {
+function WorkTile({ img, video, overlayImg}) {
   return (
     <div
       className="work-tile"
@@ -40,14 +45,30 @@ function WorkTile({ img, video }) {
         backgroundPosition: 'center',
       }}
     >
-      <video
-        className="overlay-video"
-        src={video}
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
+     <div style={{ textAlign: 'center' }}>
+        {overlayImg && (
+          <img
+            src={overlayImg}
+            alt=""
+            style={{
+              display: 'block',
+              margin: '0 auto',
+              padding: 0,
+            }}
+          />
+        )}
+        <video
+          src={video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            display: 'block',
+            margin: 0,
+          }}
+        />
+      </div>
     </div>
   );
 }
