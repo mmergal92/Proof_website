@@ -18,18 +18,8 @@ import browserImg from '../assets/browser.png';
 import previous from '../assets/previous.png';
 import next from '../assets/next.png';
 
-const menuToggle = document.querySelector('.menu-toggle');
-  const mobileNav = document.getElementById('mobileNav');
-  const closeMenu = document.querySelector('.close-menu');
 
-  menuToggle.addEventListener('click', () => {
-    mobileNav.classList.add('active');
-  });
 
-  closeMenu.addEventListener('click', () => {
-    mobileNav.classList.remove('active');
-  });
-  
 const projects = [
   {
     img: annaliseImg,

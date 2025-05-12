@@ -7,18 +7,6 @@ import circletext_nologo from '../assets/circletext_nologo.png'
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
 
-const menuToggle = document.querySelector('.menu-toggle');
-  const mobileNav = document.getElementById('mobileNav');
-  const closeMenu = document.querySelector('.close-menu');
-
-  menuToggle.addEventListener('click', () => {
-    mobileNav.classList.add('active');
-  });
-
-  closeMenu.addEventListener('click', () => {
-    mobileNav.classList.remove('active');
-  });
-
 const About = () =>{
   return ( 
     <div className="about-page">
@@ -50,7 +38,7 @@ const About = () =>{
           </nav>
         </header>
 
-        
+
       <main className="about-content">
         <h4 className="about-header">
           &nbsp;&nbsp;&nbsp;&nbsp;Proof is the design and technology practice of <span className="underline">Segacy</span> and <span className="underline">Maria</span>, two childhood friends from NYC.
