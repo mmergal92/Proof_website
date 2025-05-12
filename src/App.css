@@ -698,10 +698,10 @@ footer {
 .newhome-page {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .home-content {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   flex-grow: 1;
   align-content: center;
   vertical-align: middle;
@@ -762,7 +762,6 @@ footer {
 }
 .App .newhome-page{
   min-height: 100vh;
-  max-height: auto !important;
-  position: relative;
+  position: relative !important;
   overflow-y: auto !important;
 }
