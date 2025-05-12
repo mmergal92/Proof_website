@@ -57,5 +57,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileNav = document.getElementById('mobileNav');
+      const closeMenu = document.querySelector('.close-menu');
+  
+      menuToggle.addEventListener('click', () => {
+        mobileNav.classList.add('active');
+      });
+  
+      closeMenu.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+      });
+    </script>
   </body>
 </html>
