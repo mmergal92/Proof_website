@@ -585,15 +585,11 @@ footer {
 
 .work-tile {
   position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
-  background-color: #000;
   border-radius: 10px;
-  overflow: hidden;
   background-repeat: no-repeat;
 }
 
-.overlay-video {
+/* .overlay-video {
   position: absolute;
   bottom: 10%;
   left: 50%;
@@ -601,7 +597,7 @@ footer {
   width: 60%;
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-}
+} */
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {

@@ -59,9 +59,9 @@ function WorkTile({ img, video, overlayImg}) {
             src={overlayImg}
             alt=""
             style={{
-              maxWidth: '80%',
+              maxWidth: '65%',
               display: 'block',
-              margin: '0 auto',
+              margin: 'auto',
               padding: 0,
             }}
           />
@@ -74,9 +74,9 @@ function WorkTile({ img, video, overlayImg}) {
             loop
             playsInline
             style={{
-              maxWidth: '80%',
+              maxWidth: '65%',
               display: 'block',
-              margin: 0,
+              margin: 'auto',
             }}
           />
         )}
@@ -110,7 +110,7 @@ const Newhome = () =>{
         <section className="work-grid-wrapper">
           <div className="work-grid">
             {projects.map((p, idx) => (
-              <WorkTile key={idx} img={p.img} video={p.video} />
+              <WorkTile key={idx} img={p.img} overlayImg={p.overlayImg} video={p.video} />
             ))}
           </div>
         </section>       
