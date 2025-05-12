@@ -91,15 +91,15 @@ const Newhome = () =>{
     <div className="newhome-page">
        <header className="top-nav">
         <nav className="right-nav">
-          <a href="/">work</a>
-          <a href="/about">about</a>
-          <a href="mailto:hello@itsproof.co">email us</a>
+          <a href="/">Work</a>
+          <a href="/about">About</a>
+          <a href="mailto:hello@itsproof.co">Email us</a>
         </nav>
-        <nav className="center-nav">
+        <nav className="center-nav logo">
           <h1>Proof</h1>
         </nav>
         <nav className="left-nav">
-          <a href="/" className="lang">en español</a>
+          <a href="/" className="lang">En español</a>
         </nav>
       </header>
 
@@ -131,11 +131,13 @@ const Newhome = () =>{
 
       <footer>
         <nav>
-          <a href="mailto:hello@itsproof.co">email us</a>&nbsp;&nbsp;
-          <a href="/">instagram</a>
+          <a href="mailto:hello@itsproof.co">Email us</a>&nbsp;&nbsp;
+          <a href="/">Instagram</a>
         </nav>
-        <div className="logo">PROOF</div>
-        <p>2025. All Rights Reserved.</p>
+        <nav className="center-nav logo">
+          <h1>Proof</h1>
+        </nav>
+        <nav className="footer-right-nav">2025. All Rights Reserved.</nav>
       </footer>
     </div>
   );

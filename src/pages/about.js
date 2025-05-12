@@ -12,26 +12,25 @@ const About = () =>{
     <div className="about-page">
       <header className="top-nav">
         <nav className="right-nav">
-          <a href="/">work</a>
-          <a href="/about">about</a>
-          <a href="mailto:hello@itsproof.co">email us</a>
+        <a href="/">Work</a>
+          <a href="/about">About</a>
+          <a href="mailto:hello@itsproof.co">Email us</a>
         </nav>
-        <nav className="center-nav">
+        <nav className="center-nav logo">
           <h1>Proof</h1>
         </nav>
         <nav className="left-nav">
-          <a href="/" className="lang">en español</a>
+          <a href="/" className="lang">En español</a>
         </nav>
       </header>
 
       <main className="about-content">
-        <h4>
-          Proof is the design and technology practice of <span className="underline">Segacy</span> and <span className="underline">Maria</span>, two childhood friends from NYC.
+        <h4 className="about-header">
+          &nbsp;&nbsp;&nbsp;&nbsp;Proof is the design and technology practice of <span className="underline">Segacy</span> and <span className="underline">Maria</span>, two childhood friends from NYC.
         </h4>
-        <p>
+        <p className="about-text">
           Thanks for stopping by! In our independent careers, we’ve had the pleasure of working for companies like <a href="/">Spotify</a>, <a href="/">Book of the Month</a>, and <a href="/">This One</a>. We love building things for thoughtful and imaginative people looking to make an impact.
-        </p>
-        <p>
+       <br/>
           When we’re not at our desks, we love traveling, reading, and hanging out without purpose. We’d love to work together! Get in touch by emailing us at <a href="mailto:hello@itsproof.co">hello@itsproof.co</a>.
         </p>
 
@@ -68,10 +67,13 @@ const About = () =>{
 
       <footer>
         <nav>
-          <a href="mailto:hello@itsproof.co">email us</a>&nbsp;&nbsp;
-          <a href="/">instagram</a>
+          <a href="mailto:hello@itsproof.co">Email us</a>&nbsp;&nbsp;
+          <a href="/">Instagram</a>
         </nav>
-        <p>2025. All Rights Reserved.</p>
+        <nav className="center-nav logo">
+          <h1>Proof</h1>
+        </nav>
+        <nav className="footer-right-nav">2025. All Rights Reserved.</nav>
       </footer>
     </div>
   );
