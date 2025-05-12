@@ -6,7 +6,8 @@ import Rotation from '../components/rotation'
 import circletext_nologo from '../assets/circletext_nologo.png'
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 import annaliseImg from '../assets/annalisenew.png';
-import ballyhacImg from '../assets/ballyhacfull.png';
+import ballyhacImg from '../assets/ballyhacbg.png';
+import ballyhacTitle from '../assets/ballyhactitle.png';
 import enclavesImg from '../assets/enclavesnew.png';
 import riddimsImg from '../assets/loremnew.png';
 import annaliseVideo from '../assets/annalise.mp4';
@@ -23,16 +24,16 @@ const projects = [
   {
     img: ballyhacImg,
     video: null,
-    overlayImg: null,
-  },
-  {
-    img: enclavesImg,
-    video: enclavesVideo,
-    overlayImg: browserImg,
+    overlayImg: ballyhacTitle,
   },
   {
     img: riddimsImg,
     video: riddimsVideo,
+    overlayImg: browserImg,
+  },
+  {
+    img: enclavesImg,
+    video: enclavesVideo,
     overlayImg: browserImg,
   },
 ];
