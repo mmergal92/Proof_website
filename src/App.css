@@ -500,9 +500,9 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 20px;
   padding-bottom: 20px;
   min-height: 100vh;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   position: relative;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 
@@ -537,7 +537,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .about-content {
-  max-width: 522px;
+  max-width: 560px;
   margin: 3rem auto;
   flex-grow: 1;
   align-content: center;

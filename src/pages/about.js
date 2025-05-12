@@ -30,6 +30,7 @@ const About = () =>{
         </h4>
         <p className="about-text">
           Thanks for stopping by! In our independent careers, we’ve had the pleasure of working for companies like <a href="/">Spotify</a>, <a href="/">Book of the Month</a>, and <a href="/">This One</a>. We love building things for thoughtful and imaginative people looking to make an impact.
+       <br/>&nbsp;
        <br/>
           When we’re not at our desks, we love traveling, reading, and hanging out without purpose. We’d love to work together! Get in touch by emailing us at <a href="mailto:hello@itsproof.co">hello@itsproof.co</a>.
         </p>
