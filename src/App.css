@@ -589,10 +589,9 @@ footer {
 
 .newhome-page{
   /* min-height: 100vh; */
-  position: relative !important;
-  overflow-x: hidden !important;
+  /* position: relative !important;
   display: flex;
-  flex-direction: column
+  flex-direction: column */
 }
 
 .home-content {
