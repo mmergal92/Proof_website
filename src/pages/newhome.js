@@ -46,13 +46,25 @@ const testimonials = [
     quote:
       "Can you mix sorrel with wray and neph? Half way tree and devon house on sunday with rum raisin ice cream, but small up yuhself.",
     author: "Alexia Arthurs",
-    work: "How to Love a Jamaican",
+    work: "Author of How to Love a Jamaican",
   },
   {
     quote:
-      "Me tell you say coconut drops still sweet when di sun tun up? Jamaican mornings nice, but nutten beat Friday fish fry.",
-    author: "Marlon James",
-    work: "A Brief History of Seven Killings",
+"Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with and made the project experience efficient and enjoyable. They were responsive to our ideas and were proactive in identifying additional opportunities to improve our web environment on the back-end.",
+author: "Maia Dillane",
+work: "Director of Research and Evaluation at AAFSC",
+},
+{
+quote:
+"After taking a look at their work and talking a bit, it was a no brainer. I’m so glad to have them on my team.",
+author: "Annalise Lockhart",
+work: "Film Director & Writer (repeat client)",
+},
+{
+  quote:
+"It was such a pleasure working together to bring this project to life.", 
+ author: "Sierra Van Ryck deGroot",
+  work: "Deputy Director at Museum Hue",
   },
   // Add more testimonials here...
 ];
