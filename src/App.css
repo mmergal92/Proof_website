@@ -773,6 +773,10 @@ blockquote {
   color: black;
   font-size: 0.9rem;
 }
+.nav-left a:hover,
+.nav-right a:hover {
+  text-decoration: underline;
+}
 
 /* Centered logo */
 .logo {
@@ -830,18 +834,27 @@ blockquote {
 }
 
 .mobile-nav li {
-  margin: 1.5rem 0;
+  margin-bottom: 8px;
   font-size: 48px;
   font-family: "alegreya", serif;
+  letter-spacing: -0.36px;
+  line-height: 130%;
 }
 .mobile-nav li a{
   text-decoration: none;
 }
-
+.mobile-nav li a:hover{
+  text-decoration: underline;
+}
+.mobile-nav .social-first {
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
 .mobile-nav .social {
   font-size: 14px;
   font-family: "soleil", sans-serif;
-  margin-top: 2rem;
+  letter-spacing: 0.14px;
+
 }
 
 .close-menu {
@@ -920,7 +933,10 @@ footer {
   color: black;
   font-size: 0.9rem;
 }
-
+.footer-left a:hover,
+.footer-right a:hover {
+  text-decoration: underline;
+}
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
