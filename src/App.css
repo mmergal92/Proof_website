@@ -671,6 +671,10 @@ input[type=number]::-webkit-outer-spin-button {
     width: 80%;
     bottom: 8%;
   }
+  .about-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
 .testimonial {
