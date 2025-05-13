@@ -144,7 +144,7 @@ const { quote, author, work } = testimonials[currentIndex];
               <a href="mailto:hello@itsproof.co">Email us</a>
             </nav>
 
-            <div className="logo">PROOF</div>
+            <div className="logo"><a href="/newhome">PROOF</a></div>
 
             <nav className="nav-right">
               <a href="/" className="lang">En español</a>
@@ -209,9 +209,11 @@ const { quote, author, work } = testimonials[currentIndex];
           <nav className="footer-left footer-links">
               <a href="mailto:hello@itsproof.co">Email us</a>
               <a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a>
+              <a href="/islandipsum" target="_blank">Riddim Ipsum</a>
+
             </nav>
 
-            <div className="footer-logo">PROOF</div>
+            <div className="footer-logo"><a href="/newhome">PROOF</a></div>
 
             <nav className="footer-right footer-rights">
               <p className="footer-right-nav">2025. All Rights Reserved.</p>

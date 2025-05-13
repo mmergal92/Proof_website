@@ -836,6 +836,12 @@ blockquote {
   letter-spacing: -0.36px;
   line-height: 130%;
 }
+.logo a{
+  text-decoration: none !important;
+}
+.footer-logo a{
+  text-decoration: none !important;
+}
 
 
 /* Hide menu button on desktop */
