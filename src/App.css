@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Alegreya';
   src: url('./assets/Alegreya-Regular.ttf') format('ttf');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SpaceGrotesk';
   src: url('./assets/SpaceGrotesk-Regular.ttf') format('tff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -203,7 +203,7 @@ color: black;
   display: flex;
   height: 100vh;
   width: 100vw;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -220,14 +220,14 @@ color: black;
   align-items: flex-start;
 }
 .left-lorem-container .title{
-  font-family: "roc-grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-align: left !important;
   font-size: 56px !important;
 }
 .description {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -246,7 +246,7 @@ color: black;
   text-transform: uppercase !important;
   border-radius: 20px !important;;
   font-size: 14px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -263,7 +263,7 @@ color: black;
   text-align: left;
   border: 2px solid;
   background: transparent;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -298,7 +298,7 @@ color: black;
 .credit{
   font-weight: 400;
   font-size: 12px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -330,7 +330,7 @@ color: black;
   text-transform: uppercase !important;
   padding: 5px 16px;
   border: 2px solid;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -340,7 +340,7 @@ color: black;
 
 .generated-text {
   font-size: 16px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -353,7 +353,7 @@ color: black;
 .generated-text p {
   font-size: 16px;
   text-align: left;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
