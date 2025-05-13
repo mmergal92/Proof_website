@@ -51,10 +51,7 @@ const About = () =>{
           Thanks for stopping by! In our independent careers, we’ve had the pleasure of working for companies like <a href="http://www.spotify.com/" target="_blank" >Spotify</a>, <a href="https://www.bookofthemonth.com/" target="_blank">Book of the Month</a>, and <a href="https://academiccme.com/" target="_blank">AcademicCME</a>. We love building things for thoughtful and imaginative people looking to make an impact.
        <br/>&nbsp;
        <br/>
-          When we’re not at our desks, we love traveling, reading, and hanging out without purpose. 
-        <br/>&nbsp;
-        <br/>
-        We’d love to work together! Get in touch by emailing us at <a href="mailto:hello@itsproof.co">hello@itsproof.co</a>.
+          When we’re not at our desks, we love traveling, reading, and hanging out without purpose. We’d love to work together! Get in touch by emailing us at <a href="mailto:hello@itsproof.co">hello@itsproof.co</a>.
         </p>
 
         <div className="about-services">
