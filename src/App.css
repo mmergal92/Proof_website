@@ -591,7 +591,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .headline {
   font-family: "alegreya", serif;
-  padding: 32px;
+  padding: 40px;
   font-weight: 400;
   font-size: 36px;
   letter-spacing: -0.36px;
@@ -603,8 +603,8 @@ input[type=number]::-webkit-outer-spin-button {
 .work-grid-wrapper {
   margin: 0 auto;
   overflow: hidden; /* prevent accidental overflow */
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .work-grid {
@@ -653,6 +653,18 @@ input[type=number]::-webkit-outer-spin-button {
   .work-grid {
     grid-template-columns: 1fr;
   }
+  .headline {
+    padding: 12px;
+  }
+  .work-grid-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .testimonial {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
   .about-content {
     margin-top: 64px;
     margin-bottom: 57px;
@@ -676,8 +688,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 48px;
   border-top: 1px solid #eee;
   padding-top: 80px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .label {
@@ -747,6 +759,12 @@ blockquote {
   .quote-nav img {
     width: 15px;
   }
+  .nav-container {
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
 }
 
 
@@ -765,9 +783,9 @@ blockquote {
   letter-spacing: 0.14px;
   line-height: 115%;
   font-size: 0.9rem;
-  padding-top: 20px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Left & right navs */
@@ -809,7 +827,7 @@ blockquote {
   cursor: pointer;
   position: absolute;
   top: 5px;
-  right: 32px;
+  right: 20px;
 }
 .menu-toggle img{
   width: 32px;
@@ -871,7 +889,7 @@ blockquote {
 .close-menu {
   position: absolute;
   top: 5px;
-  right: 32px;
+  right: 20px;
   background: none;
   border: none;
   font-size: 2rem;
@@ -914,9 +932,9 @@ footer {
   line-height: 115%;
   font-size: 0.9rem;
   padding-top: 20px;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-bottom: 32px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 .footer-container {
@@ -981,7 +999,11 @@ footer {
   .footer-logo {
     bottom: 40px;
   }
- 
+  .footer-container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  
   .menu-toggle {
     display: block;
     text-align: right;
