@@ -171,8 +171,8 @@ const { quote, author, work } = testimonials[currentIndex];
 
       <main className="home-content">
         <h1 className="headline">
-          Fresh and imaginative experiences for the internet and elsewhere.
-        </h1>
+        Fresh and imaginative experiences for the internet and elsewhere lorem ipsum dolor.
+                </h1>
 
         <section className="work-grid-wrapper">
           <div className="work-grid">
