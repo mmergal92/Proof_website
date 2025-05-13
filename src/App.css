@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Alegreya';
-  src: url('../assets/Alegreya-Regular.ttf') format('ttf');
+  src: url('./assets/Alegreya-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SpaceGrotesk';
-  src: url('../assets/SpaceGrotesk-Regular.ttf') format('tff');
+  src: url('./assets/SpaceGrotesk-Regular.ttf') format('tff');
   font-weight: normal;
   font-style: normal;
 }
