@@ -10,7 +10,7 @@ import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 const About = () =>{
   return ( 
     <div className="about-page">
-       <header class="site-header">
+        <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
               <a href="#work">Work</a>
@@ -81,15 +81,20 @@ const About = () =>{
         </p>
       </main>
 
-      <footer>
-        <nav>
-          <a href="mailto:hello@itsproof.co">Email us</a>&nbsp;&nbsp;
-          <a href="/">Instagram</a>
-        </nav>
-        <nav className="center-nav logo">
-          <h1>Proof</h1>
-        </nav>
-        <nav className="footer-right-nav">2025. All Rights Reserved.</nav>
+      <footer class="site-header">
+          <div className="nav-container">
+            <nav className="nav-left">
+            <a href="mailto:hello@itsproof.co">Email us</a>
+            <a href="/">Instagram</a>
+            </nav>
+
+            <div className="logo">PROOF</div>
+
+            <nav className="nav-right">
+              <p className="footer-right-nav">2025. All Rights Reserved.</p>
+            </nav>
+          </div>
+
       </footer>
     </div>
   );
