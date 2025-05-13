@@ -926,12 +926,7 @@ footer {
     align-items: center;
     text-align: left;
   }
-  .footer-left {
-    padding-bottom: 80px;
-  }
-  .footer-logo {
-    top: 40px;
-  }
+ 
   .footer-links {
     display: flex;
     gap: 1.5rem;
@@ -947,6 +942,12 @@ footer {
   .nav-left,
   .nav-right {
     display: none;
+  }
+  .footer-left {
+    padding-bottom: 80px;
+  }
+  .footer-logo {
+    top: 40px;
   }
 
   .menu-toggle {
