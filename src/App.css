@@ -698,6 +698,17 @@ blockquote {
   height: auto;
   cursor: pointer;
 }
+/* Mobile styles */
+@media (max-width: 768px) {
+  .quote-text{
+    font-size: 28px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .headline {
+    font-size: 28px;
+  }
+}
 
 
 /* Header and Footer */
@@ -813,6 +824,7 @@ footer {
 
   .menu-toggle {
     display: block;
+    text-align: right;
   }
 
   .logo {
