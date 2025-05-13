@@ -215,7 +215,7 @@ const { quote, author, work } = testimonials[currentIndex];
               <a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a>
             </nav>
 
-            <div className="logo">PROOF</div>
+            <div className="footer-logo">PROOF</div>
 
             <nav className="footer-right footer-rights">
               <p className="footer-right-nav">2025. All Rights Reserved.</p>
