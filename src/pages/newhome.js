@@ -19,6 +19,7 @@ import previous from '../assets/previous.png';
 import next from '../assets/next.png';
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -184,7 +185,7 @@ const Newhome = () =>{
           <div className="nav-container">
             <nav className="nav-left">
               <a href="/newhome">{t[language].work}</a>
-              <a href="/about">{t[language].about}</a>
+              <a href={`/about?lang=${language}`}>{t[language].about}</a>
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
             </nav>
 

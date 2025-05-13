@@ -8,6 +8,7 @@ import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
+import { useLocation } from 'react-router-dom';
 
 const t = {
   en: {
@@ -88,7 +89,9 @@ const t = {
 
 const About = () =>{
     const [language, setLanguage] = useState('en');
-  
+    const location = useLocation();
+    const params = new URLSearchParams(location.search);
+    const lang = params.get('lang') || 'en';
 
   return ( 
     <div className="about-page">
