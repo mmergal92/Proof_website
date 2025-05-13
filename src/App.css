@@ -806,12 +806,20 @@ blockquote {
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
   top: 5px;
   right: 20px;
 }
+.menu-toggle img{
+  width: 32px;
+  height: auto;
+}
+.close-menu img{
+  width: 32px;
+  height: auto;
+}
+
 
 /* Mobile nav */
 .mobile-nav {

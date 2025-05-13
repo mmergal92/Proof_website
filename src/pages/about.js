@@ -6,6 +6,9 @@ import Rotation from '../components/rotation'
 import circletext_nologo from '../assets/circletext_nologo.png'
 import pexels_mart_production from "../assets/pexels_mart_production.mp4";
 
+import menu from '../assets/menu.png';
+import close from '../assets/close.png';
+
 
 const About = () =>{
   return ( 
@@ -24,12 +27,12 @@ const About = () =>{
               <a href="/" className="lang">En español</a>
             </nav>
 
-            <button className="menu-toggle" aria-label="Open menu">&#9776;</button>
+            <button className="menu-toggle" aria-label="Open menu"><img src={menu} alt="Menu" /></button>
           </div>
 
           <nav className="mobile-nav" id="mobileNav">
-            <button className="close-menu" aria-label="Close menu">&times;</button>
-            <ul>
+            <button className="close-menu" aria-label="Close menu"><img src={close} alt="Close" /></button>
+          <ul>
               <li><a href="/newhome">Work</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="mailto:hello@itsproof.co">Email us</a></li>
