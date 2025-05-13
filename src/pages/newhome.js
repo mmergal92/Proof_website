@@ -53,7 +53,7 @@ const testimonials = [
   },
   {
     quote:
-"Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with and made the project experience efficient and enjoyable. They were responsive to our ideas and were proactive in identifying additional opportunities to improve our web environment on the back-end.",
+"Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with and made the project experience efficient and enjoyable.",
 author: "Maia Dillane",
 work: "Director of Research and Evaluation at AAFSC",
 },
