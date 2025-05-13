@@ -41,10 +41,10 @@ const About = () =>{
 
       <main className="about-content">
         <h4 className="about-header">
-          &nbsp;&nbsp;&nbsp;&nbsp;Proof is the design and technology practice of <span className="underline">Segacy</span> and <span className="underline">Maria</span>, two childhood friends from NYC.
+          &nbsp;&nbsp;&nbsp;&nbsp;Proof is the design and technology practice of <a href="https://segacyroberts.com/" target="_blank" className="underline">Segacy</a> and <a href="https://mariamergal.dev/" target="_blank" className="underline">Maria</a>, two childhood friends from NYC.
         </h4>
         <p className="about-text">
-          Thanks for stopping by! In our independent careers, we’ve had the pleasure of working for companies like <a href="/">Spotify</a>, <a href="/">Book of the Month</a>, and <a href="/">This One</a>. We love building things for thoughtful and imaginative people looking to make an impact.
+          Thanks for stopping by! In our independent careers, we’ve had the pleasure of working for companies like <a href="http://www.spotify.com/" target="_blank" >Spotify</a>, <a href="https://www.bookofthemonth.com/" target="_blank">Book of the Month</a>, and <a href="https://academiccme.com/" target="_blank">AcademicCME</a>. We love building things for thoughtful and imaginative people looking to make an impact.
        <br/>&nbsp;
        <br/>
           When we’re not at our desks, we love traveling, reading, and hanging out without purpose. We’d love to work together! Get in touch by emailing us at <a href="mailto:hello@itsproof.co">hello@itsproof.co</a>.
@@ -77,7 +77,7 @@ const About = () =>{
         </div>
 
         <p className="wellness-note">
-          <em>As a part of the Proof family, we’ve created Sunday Lighthouse, dedicated to projects in the wellness space.</em>
+          <em>As a part of the Proof family, we’ve created <a href="https://sundaylighthouse.itsproof.co/" target="_blank" className="underline">Sunday Lighthouse</a>, dedicated to projects in the wellness space.</em>
         </p>
       </main>
 
