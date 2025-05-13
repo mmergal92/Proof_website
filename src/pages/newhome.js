@@ -47,12 +47,6 @@ const projects = [
 const testimonials = [
   {
     quote:
-      "Can you mix sorrel with wray and neph? Half way tree and devon house on sunday with rum raisin ice cream, but small up yuhself.",
-    author: "Alexia Arthurs",
-    work: "Author of How to Love a Jamaican",
-  },
-  {
-    quote:
 "Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with and made the project experience efficient and enjoyable.",
 author: "Maia Dillane",
 work: "Director of Research and Evaluation at AAFSC",
