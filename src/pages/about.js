@@ -81,16 +81,16 @@ const About = () =>{
         </p>
       </main>
 
-      <footer class="site-header">
-          <div className="nav-container">
-          <nav className="nav-left">
+      <footer class="site-footer">
+          <div className="footer-container">
+          <nav className="footer-left footer-links">
               <a href="mailto:hello@itsproof.co">Email us</a>
               <a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a>
             </nav>
 
             <div className="logo">PROOF</div>
 
-            <nav className="nav-right">
+            <nav className="footer-right footer-rights">
               <p className="footer-right-nav">2025. All Rights Reserved.</p>
             </nav>
           </div>
