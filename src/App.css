@@ -571,20 +571,6 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 130%;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8rem;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.footer-right-nav{
-  color: black;
-  opacity: 0.5;
-}
 /* New Home page */
 
 .newhome-page{
@@ -715,10 +701,18 @@ blockquote {
 }
 
 
-/* Header */
+/* Header and Footer */
 .site-header {
   position: relative;
-  border-bottom: 1px solid #eee;
+}
+
+
+footer {
+  border-top: 1px solid #eee;
+}
+.footer-right-nav{
+  color: black;
+  opacity: 0.5;
 }
 
 .nav-container {
@@ -731,8 +725,7 @@ blockquote {
   letter-spacing: 1%;
   line-height: 115%;
   font-size: 0.9rem;
-  padding-left:20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 /* Left & right navs */
