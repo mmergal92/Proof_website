@@ -59,7 +59,7 @@ work: "Director of Research and Evaluation at AAFSC",
 },
 {
 quote:
-"After taking a look at their work and talking a bit, it was a no brainer. I/'m so glad to have them on my team.",
+"After taking a look at their work and talking a bit, it was a no brainer. I'm so glad to have them on my team.",
 author: "Annalise Lockhart",
 work: "Film Director & Writer (repeat client)",
 },
@@ -203,7 +203,7 @@ const { quote, author, work } = testimonials[currentIndex];
           </div>
 
           <p className="quotation-attr">
-                — {author}, <em>{work}</em>
+                {author}, <em>{work}</em>
               </p>
 
         </section>

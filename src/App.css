@@ -875,6 +875,7 @@ footer {
 .footer-right-nav{
   color: black;
   opacity: 0.5;
+  font-size: 12px; 
 }
 /* Centered logo */
 .footer-logo {
