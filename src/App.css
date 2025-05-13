@@ -540,7 +540,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .about-services h4 {
   font-style: italic;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   margin-bottom: 16px;
   text-align: left;
   font-family: "alegreya", serif;
@@ -563,7 +563,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 44px;
   font-size: 0.9rem;
   font-style: italic;
-  font-weight: medium;
+  font-weight: 600;
   text-align: left;
   font-family: "alegreya", serif;
   font-size: 16px;
