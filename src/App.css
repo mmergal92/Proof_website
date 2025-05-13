@@ -583,7 +583,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .home-content {
   /* margin: 0 auto; */
-  padding: 80px 20px;
+  padding: 60px 0px;
   flex-grow: 1;
   align-content: center;
   vertical-align: middle;
@@ -591,18 +591,20 @@ input[type=number]::-webkit-outer-spin-button {
 
 .headline {
   font-family: "Alegreya", serif;
+  padding: 20px;
   font-weight: 400;
   font-size: 36px;
   letter-spacing: -1%;
   max-width: 800px;
   text-align: left;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
   line-height:130%;
 }
 .work-grid-wrapper {
   margin: 0 auto;
   overflow: hidden; /* prevent accidental overflow */
-
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .work-grid {
