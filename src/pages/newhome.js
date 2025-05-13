@@ -17,7 +17,8 @@ import browserImg from '../assets/browser.png';
 
 import previous from '../assets/previous.png';
 import next from '../assets/next.png';
-
+import menu from '../assets/menu.png';
+import close from '../assets/close.png';
 
 
 const projects = [
@@ -58,7 +59,7 @@ work: "Director of Research and Evaluation at AAFSC",
 },
 {
 quote:
-"After taking a look at their work and talking a bit, it was a no brainer. I’m so glad to have them on my team.",
+"After taking a look at their work and talking a bit, it was a no brainer. I/'m so glad to have them on my team.",
 author: "Annalise Lockhart",
 work: "Film Director & Writer (repeat client)",
 },
@@ -155,11 +156,11 @@ const { quote, author, work } = testimonials[currentIndex];
               <a href="/" className="lang">En español</a>
             </nav>
 
-            <button className="menu-toggle" aria-label="Open menu">&#9776;</button>
+            <button className="menu-toggle" aria-label="Open menu"><img src={menu} alt="Menu" /></button>
           </div>
 
           <nav className="mobile-nav" id="mobileNav">
-            <button className="close-menu" aria-label="Close menu">&times;</button>
+            <button className="close-menu" aria-label="Close menu"><img src={close} alt="Close" /></button>
             <ul>
               <li><a href="/newhome">Work</a></li>
               <li><a href="/about">About</a></li>
