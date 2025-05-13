@@ -20,7 +20,34 @@ import next from '../assets/next.png';
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
 
+const [language, setLanguage] = useState('en');
 
+const toggleLanguage = () => {
+  setLanguage(prevLang => (prevLang === 'en' ? 'es' : 'en'));
+};
+
+const t = {
+  en: {
+    work: "Work",
+    about: "About",
+    email: "Email us",
+    headline: "Fresh and imaginative experiences for the internet and elsewhere.",
+    testimonials: "Testimonials",
+    rights: "2025. All Rights Reserved.",
+    lang: "En español",
+    // ...
+  },
+  es: {
+    work: "Trabajo",
+    about: "Acerca de",
+    email: "Contáctanos",
+    headline: "Experiencias frescas e imaginativas para el internet y más allá.",
+    testimonials: "Testimonios",
+    rights: "2025. Todos los derechos reservados.",
+    lang:"In english",
+    // ...
+  }
+}
 const projects = [
   {
     img: annaliseImg,
@@ -139,15 +166,15 @@ const { quote, author, work } = testimonials[currentIndex];
        <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
-              <a href="/newhome">Work</a>
-              <a href="/about">About</a>
-              <a href="mailto:hello@itsproof.co">Email us</a>
+              <a href="/newhome">{t[language].work}</a>
+              <a href="/about">{t[language].about}</a>
+              <a href="mailto:hello@itsproof.co">{t[language].email}</a>
             </nav>
 
             <div className="logo"><a href="/newhome">PROOF</a></div>
 
             <nav className="nav-right">
-              <a href="/" className="lang">En español</a>
+              <a href="/" className="lang">{t[language].lang}</a>
             </nav>
 
             <button className="menu-toggle" aria-label="Open menu"><img src={menu} alt="Menu" /></button>
@@ -156,18 +183,18 @@ const { quote, author, work } = testimonials[currentIndex];
           <nav className="mobile-nav" id="mobileNav">
             <button className="close-menu" aria-label="Close menu"><img src={close} alt="Close" /></button>
             <ul>
-              <li><a href="/newhome">Work</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="mailto:hello@itsproof.co">Email us</a></li>
+              <li><a href="/newhome">{t[language].work}</a></li>
+              <li><a href="/about">{t[language].about}</a></li>
+              <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
               <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
-              <li className="social"><a href="/" className="lang">En español</a></li>
+              <li className="social"><a href="/" className="lang">{t[language].lang}</a></li>
             </ul>
           </nav>
         </header>
 
       <main className="home-content">
         <h1 className="headline">
-        Fresh and imaginative experiences for the internet and elsewhere.
+        {t[language].headline}
                 </h1>
 
         <section className="work-grid-wrapper">
@@ -179,7 +206,7 @@ const { quote, author, work } = testimonials[currentIndex];
         </section>       
 
         <section className="testimonial">
-          <p className="label">Testimonials</p>
+          <p className="label">{t[language].testimonials}</p>
          
           <div className="quote-nav">
             <button onClick={handlePrevious}>
@@ -207,16 +234,15 @@ const { quote, author, work } = testimonials[currentIndex];
       <footer class="site-footer">
           <div className="footer-container">
           <nav className="footer-left footer-links">
-              <a href="mailto:hello@itsproof.co">Email us</a>
+              <a href="mailto:hello@itsproof.co">{t[language].email}</a>
               <a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a>
               <a href="/islandipsum" target="_blank">Riddim Ipsum</a>
-
             </nav>
 
             <div className="footer-logo"><a href="/newhome">PROOF</a></div>
 
             <nav className="footer-right footer-rights">
-              <p className="footer-right-nav">2025. All Rights Reserved.</p>
+              <p className="footer-right-nav">{t[language].rights}</p>
             </nav>
           </div>
 
