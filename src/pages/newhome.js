@@ -71,27 +71,45 @@ const projects = [
   },
 ];
 
-const testimonials = [
+const testimonials = {
+  en: [
+    {
+      quote:
+  "Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with and made the project experience efficient and enjoyable.",
+  author: "Maia Dillane",
+  work: "Director of Research and Evaluation at AAFSC",
+  },
+  {
+  quote:
+  "After taking a look at their work and talking a bit, it was a no brainer. I'm so glad to have them on my team.",
+  author: "Annalise Lockhart",
+  work: "Film Director & Writer (repeat client)",
+  },
   {
     quote:
-"Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with and made the project experience efficient and enjoyable.",
-author: "Maia Dillane",
-work: "Director of Research and Evaluation at AAFSC",
-},
-{
-quote:
-"After taking a look at their work and talking a bit, it was a no brainer. I'm so glad to have them on my team.",
-author: "Annalise Lockhart",
-work: "Film Director & Writer (repeat client)",
-},
-{
-  quote:
-"It was such a pleasure working together to bring this project to life.", 
- author: "Sierra Van Ryck deGroot",
-  work: "Deputy Director at Museum Hue",
-  },
-  // Add more testimonials here...
-];
+  "It was such a pleasure working together to bring this project to life.", 
+   author: "Sierra Van Ryck deGroot",
+    work: "Deputy Director at Museum Hue",
+    },
+  ],
+  es: [
+    {
+      quote: "... (translated)",
+      author: "Maia Dillane",
+      work: "Directora de Investigación y Evaluación en AAFSC",
+    },
+    {
+      quote: "... (translated)",    
+      author: "Annalise Lockhart",
+      work: "Film Director & Writer (cliente)",
+      },
+      {
+        quote: "... (translated)",
+         author: "Sierra Van Ryck deGroot",
+        work: "Deputy Director en Museum Hue",
+        },
+  ],
+}
 
   
 function WorkTile({ img, video, overlayImg}) {
@@ -158,7 +176,7 @@ const Newhome = () =>{
     );
   };
 
-const { quote, author, work } = testimonials[currentIndex];
+  const { quote, author, work } = testimonials[language][currentIndex];
 
 
   return (
@@ -174,7 +192,9 @@ const { quote, author, work } = testimonials[currentIndex];
             <div className="logo"><a href="/newhome">PROOF</a></div>
 
             <nav className="nav-right">
-              <a href="/" className="lang">{t[language].lang}</a>
+              <button onClick={() => setLanguage(language === "en" ? "es" : "en")} className="lang">
+                {t[language].lang}
+              </button>
             </nav>
 
             <button className="menu-toggle" aria-label="Open menu"><img src={menu} alt="Menu" /></button>
@@ -187,7 +207,9 @@ const { quote, author, work } = testimonials[currentIndex];
               <li><a href="/about">{t[language].about}</a></li>
               <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
               <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
-              <li className="social"><a href="/" className="lang">{t[language].lang}</a></li>
+              <li className="social"> <button onClick={() => setLanguage(language === "en" ? "es" : "en")} className="lang">
+                {t[language].lang}
+              </button></li>
             </ul>
           </nav>
         </header>
