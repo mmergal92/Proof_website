@@ -20,7 +20,6 @@ import next from '../assets/next.png';
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
 
-const [language, setLanguage] = useState('en');
 
 
 const t = {
@@ -160,6 +159,7 @@ function WorkTile({ img, video, overlayImg}) {
 const Newhome = () =>{
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [language, setLanguage] = useState('en');
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
