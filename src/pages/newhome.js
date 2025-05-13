@@ -31,6 +31,7 @@ const t = {
     testimonials: "Testimonials",
     rights: "2025. All Rights Reserved.",
     lang: "En español",
+    lorem:"Riddim Ipsum",
     // ...
   },
   es: {
@@ -41,6 +42,7 @@ const t = {
     testimonials: "Testimonios",
     rights: "2025. Todos los derechos reservados.",
     lang:"In english",
+    lorem:"Ritmo Ipsum",
     // ...
   }
 }
