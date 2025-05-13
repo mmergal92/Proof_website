@@ -78,7 +78,6 @@ const About = () =>{
               <li>Pitch & tone decks</li>
               <li>Online shops</li>
               <li>Third-party integrations</li>
-              <li>Strategic tktk</li>
             </ul>
           </div>
         </div>
