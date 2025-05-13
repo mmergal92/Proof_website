@@ -144,8 +144,8 @@ const { quote, author, work } = testimonials[currentIndex];
        <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
-              <a href="#work">Work</a>
-              <a href="#about">About</a>
+              <a href="/newhome">Work</a>
+              <a href="/about">About</a>
               <a href="mailto:hello@itsproof.co">Email us</a>
             </nav>
 
@@ -160,11 +160,11 @@ const { quote, author, work } = testimonials[currentIndex];
 
           <nav className="mobile-nav" id="mobileNav">
             <button className="close-menu" aria-label="Close menu">&times;</button>
-            <ul>s
-              <li><a href="#work">Work</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#email">Email us</a></li>
-              <li className="social"><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <ul>
+              <li><a href="/newhome">Work</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="mailto:hello@itsproof.co">Email us</a></li>
+              <li className="social"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
             </ul>
           </nav>
         </header>
@@ -211,8 +211,8 @@ const { quote, author, work } = testimonials[currentIndex];
       <footer class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
-            <a href="mailto:hello@itsproof.co">Email us</a>
-            <a href="/">Instagram</a>
+              <a href="mailto:hello@itsproof.co">Email us</a>
+              <a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a>
             </nav>
 
             <div className="logo">PROOF</div>
