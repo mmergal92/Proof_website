@@ -848,12 +848,13 @@ blockquote {
 }
 .mobile-nav .social-first {
   margin-bottom: 16px;
-  margin-top: 20px;
+  margin-top: 28px;
 }
 .mobile-nav .social {
   font-size: 14px;
   font-family: "soleil", sans-serif;
-  letter-spacing: 0.14px;
+  letter-spacing: 0.28px;
+  line-height: 115%;
 
 }
 
