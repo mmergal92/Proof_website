@@ -642,10 +642,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .testimonial {
   text-align: center;
-  margin: 0;
+  margin-top: 48px;
   border-top: 1px solid #eee;
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .label {
@@ -675,6 +674,8 @@ blockquote {
   font-weight: 400;
   font-size: 36px;
   letter-spacing: -1%;
+  padding-right: 40px;
+  padding-left: 40px;
   line-height: 130%;
   margin: 0;
 }
