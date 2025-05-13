@@ -2,7 +2,7 @@
 import './App.css';
 import ReactGA from 'react-ga';
 import './App.css';
-import './assets/VulfSansDemo-Regular.otf';
+// import './assets/VulfSansDemo-Regular.otf';
 //IMPORT ROUTE and COMPONENTS
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/home";
