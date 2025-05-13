@@ -951,9 +951,9 @@ footer {
     padding-bottom: 80px;
   }
   .footer-logo {
-    top: 40px;
+    bottom: 40px;
   }
-
+ 
   .menu-toggle {
     display: block;
     text-align: right;
