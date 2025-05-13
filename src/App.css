@@ -519,14 +519,14 @@ input[type=number]::-webkit-outer-spin-button {
   font-family: "alegreya", serif;
   font-weight: 400;
   font-size: 36px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.36px;
   line-height: 130%;
   margin-bottom: 16px;
 } 
 .about-text{
   font-family: "soleil", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.1px;  
+  letter-spacing: 0.14px;
   line-height: 160%;
 } 
 
@@ -552,7 +552,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
   font-family: "alegreya", serif;
   font-size: 16px;
-  letter-spacing: -0.1px;  
+  letter-spacing: -0.36px;
   line-height: 130%;
 }
 
@@ -563,7 +563,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
   font-family: "soleil", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.1px;  
+  letter-spacing: 0.14px;
   line-height: 130%;
 }
 .wellness-note {
@@ -574,7 +574,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
   font-family: "alegreya", serif;
   font-size: 16px;
-  letter-spacing: -0.1px;  
+  letter-spacing: -0.36px;
   line-height: 130%;
 }
 
@@ -600,7 +600,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 20px;
   font-weight: 400;
   font-size: 36px;
-  letter-spacing: -0.1px;  
+  letter-spacing: -0.36px;
   max-width: 860px;
   text-align: left;
   margin-bottom: 28px;
@@ -681,7 +681,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .label {
   font-size: 14px;
-  letter-spacing: 0.1px;  
+  letter-spacing: 0.14px;
   line-height: 115%;
   font-family: "soleil", sans-serif;
   margin-bottom: 20px;
@@ -705,7 +705,7 @@ blockquote {
   font-family: "alegreya", serif;
   font-weight: 400;
   font-size: 36px;
-  letter-spacing: -0.1px;  
+  letter-spacing: -0.36px;
   padding-right: 40px;
   padding-left: 40px;
   line-height: 130%;
@@ -715,7 +715,7 @@ blockquote {
 .quotation-attr {
   margin-top: 20px;
   font-size: 14px;
-  letter-spacing: 0.1px;  
+  letter-spacing: 0.14px; 
   line-height: 115%;
   font-family: "soleil", sans-serif;
 }
@@ -761,7 +761,7 @@ blockquote {
   position: relative;
   font-family: "soleil", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.14px;
   line-height: 115%;
   font-size: 0.9rem;
   padding: 20px;
@@ -789,7 +789,7 @@ blockquote {
   font-family: "alegreya", serif;
   font-weight: 400;
   font-size: 28px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.36px;
   line-height: 130%;
 }
 
@@ -878,7 +878,7 @@ footer {
   font-family: "alegreya", serif;
   font-weight: 400;
   font-size: 28px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.36px;
   line-height: 130%;
 }
 .site-footer {
@@ -893,7 +893,7 @@ footer {
   position: relative; */
   font-family: "soleil", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.14px;
   line-height: 115%;
   font-size: 0.9rem;
   padding: 20px;
