@@ -493,8 +493,6 @@ input[type=number]::-webkit-outer-spin-button {
 .about-page {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
   min-height: 100vh;
   /* max-height: 100vh; */
   position: relative;
