@@ -747,6 +747,9 @@ blockquote {
   .headline {
     font-size: 28px;
   }
+  .logo{
+    top: 5px;
+  }
   .quote-nav img {
     width: 15px;
   }
