@@ -166,6 +166,7 @@ const { quote, author, work } = testimonials[currentIndex];
               <li><a href="/about">About</a></li>
               <li><a href="mailto:hello@itsproof.co">Email us</a></li>
               <li className="social"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
+              <li className="social"><a href="/" className="lang">En español</a></li>
             </ul>
           </nav>
         </header>
