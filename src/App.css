@@ -585,7 +585,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .home-content {
   /* margin: 0 auto; */
-  padding: 60px 0px;
+  /* padding: 60px 0px; */
   flex-grow: 1;
   align-content: center;
   vertical-align: middle;
@@ -593,7 +593,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .headline {
   font-family: "alegreya", serif;
-  padding: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 46px;
+  padding-top: 144px;
   font-weight: 400;
   font-size: 36px;
   letter-spacing: -0.36px;
@@ -612,7 +615,7 @@ input[type=number]::-webkit-outer-spin-button {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Force 2 across */
-  gap: 2rem;
+  gap: 24px;
 }
 
 .work-tile {
@@ -656,15 +659,24 @@ input[type=number]::-webkit-outer-spin-button {
     grid-template-columns: 1fr;
   }
   .headline {
-    padding: 12px;
+      padding-right: 12px;
+      padding-left: 12px;
+      padding-bottom: 16px;
+      padding-top: 59px;
   }
   .work-grid-wrapper {
     padding-left: 12px;
     padding-right: 12px;
   }
+  .work-grid {
+    gap: 8px;
+  }
   .testimonial {
     padding-left: 12px;
     padding-right: 12px;
+    margin-top: 28px;
+    padding-top: 66px;
+    padding-bottom: 74px;
   }
   
   .about-content {
@@ -692,6 +704,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 80px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 65px;
 }
 
 .label {
