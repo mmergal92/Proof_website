@@ -22,9 +22,6 @@ import close from '../assets/close.png';
 
 const [language, setLanguage] = useState('en');
 
-const toggleLanguage = () => {
-  setLanguage(prevLang => (prevLang === 'en' ? 'es' : 'en'));
-};
 
 const t = {
   en: {
