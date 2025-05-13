@@ -678,6 +678,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 48px;
   border-top: 1px solid #eee;
   padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .label {
@@ -791,6 +793,7 @@ blockquote {
   line-height: 130%;
 }
 
+
 /* Hide menu button on desktop */
 .menu-toggle {
   display: none;
@@ -858,7 +861,17 @@ footer {
   color: black;
   opacity: 0.5;
 }
-
+/* Centered logo */
+.footer-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -1%;
+  line-height: 130%;
+}
 .site-footer {
   position: relative;
 }
@@ -913,7 +926,12 @@ footer {
     align-items: center;
     text-align: left;
   }
-
+  .footer-left {
+    padding-bottom: 80px;
+  }
+  .footer-logo {
+    top: 40px;
+  }
   .footer-links {
     display: flex;
     gap: 1.5rem;
