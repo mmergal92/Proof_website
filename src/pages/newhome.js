@@ -165,14 +165,14 @@ const Newhome = () =>{
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
+      prevIndex === 0 ? testimonials[language].length - 1 : prevIndex - 1
+  );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
+      prevIndex === testimonials[language].length - 1 ? 0 : prevIndex + 1
+  );
   };
 
   const { quote, author, work } = testimonials[language][currentIndex];
