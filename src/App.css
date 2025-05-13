@@ -608,7 +608,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 400;
   font-size: 36px;
   letter-spacing: -0.1px;  
-  max-width: 800px;
+  max-width: 860px;
   text-align: left;
   margin-bottom: 28px;
   line-height:130%;
@@ -706,7 +706,7 @@ blockquote {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 800px;
+  max-width: 860px;
 }
 .quote-text {
   font-family: "Alegreya", serif;
