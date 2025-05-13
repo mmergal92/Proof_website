@@ -92,19 +92,19 @@ const testimonials = {
   ],
   es: [
     {
-      quote: "... (translated)",
+      quote: "Proof se destacó por su profesionalismo, capacidad de respuesta, y su comprensión y compromiso únicos con las organizaciones comunitarias. Fue un placer trabajar con Maria y Segacy; hicieron que la experiencia del proyecto fuera eficiente y agradable.",
       author: "Maia Dillane",
       work: "Directora de Investigación y Evaluación en AAFSC",
     },
     {
-      quote: "... (translated)",    
+      quote: "Después de ver su trabajo y conversar un poco, fue una decisión obvia. Me alegra muchísimo tenerlas en mi equipo.",    
       author: "Annalise Lockhart",
-      work: "Film Director & Writer (cliente)",
+      work: "Directora y Guionista (cliente recurrente)",
       },
       {
-        quote: "... (translated)",
+        quote: "Fue un verdadero placer colaborar para dar vida a este proyecto.",
          author: "Sierra Van Ryck deGroot",
-        work: "Deputy Director en Museum Hue",
+        work: "Subdirectora en Museum Hue",
         },
   ],
 }
@@ -257,7 +257,7 @@ const Newhome = () =>{
           <nav className="footer-left footer-links">
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
               <a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a>
-              <a href="/islandipsum" target="_blank">Riddim Ipsum</a>
+              <a href="/islandipsum" target="_blank">{t[language].lorem}</a>
             </nav>
 
             <div className="footer-logo"><a href="/newhome">PROOF</a></div>
