@@ -1004,6 +1004,7 @@ footer {
   .footer-container {
     padding-right: 12px;
     padding-left: 12px;
+    padding-bottom: 12px;
   }
   
   .menu-toggle {
