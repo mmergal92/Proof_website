@@ -818,11 +818,16 @@ footer {
 
 .mobile-nav li {
   margin: 1.5rem 0;
-  font-size: 2rem;
+  font-size: 48px;
+  font-family: "Alegreya", serif;
+}
+.mobile-nav li a{
+  text-decoration: none;
 }
 
 .mobile-nav .social {
-  font-size: 1rem;
+  font-size: 14px;
+  font-family: "soleil", sans-serif;
   margin-top: 2rem;
 }
 
