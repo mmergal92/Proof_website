@@ -88,10 +88,10 @@ const t = {
 } 
 
 const About = () =>{
-    const [language, setLanguage] = useState('en');
+    // const [language, setLanguage] = useState('en');
     const location = useLocation();
     const params = new URLSearchParams(location.search);
-    const lang = params.get('lang') || 'en';
+    const language = params.get('lang') || 'en';
 
   return ( 
     <div className="about-page">
