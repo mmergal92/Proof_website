@@ -771,6 +771,9 @@ footer {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
 }
 
 /* Mobile nav */
@@ -807,8 +810,8 @@ footer {
 
 .close-menu {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 5px;
+  right: 20px;
   background: none;
   border: none;
   font-size: 2rem;
