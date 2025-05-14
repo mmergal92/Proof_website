@@ -822,6 +822,15 @@ blockquote {
   text-underline-offset: 6%;
   text-underline-position: from-font;
 }
+.nav-left a:active,
+.nav-right a:active {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 4%;
+  text-underline-offset: 6%;
+  text-underline-position: from-font;
+}
 
 /* Centered logo */
 .logo {
@@ -913,6 +922,15 @@ blockquote {
   text-decoration: none;
 }
 .mobile-nav li a:hover{
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 4%;
+  text-underline-offset: 6%;
+  text-underline-position: from-font;
+}
+.mobile-nav li a:active{
   text-decoration: underline;
   text-decoration-line: underline;
   text-decoration-style: solid;
