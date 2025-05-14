@@ -240,20 +240,31 @@ const Newhome = () =>{
               <img src={previous} alt="Previous" />
             </button>
 
-            <blockquote>
-              <p className="quote-text">
-              {quote}              
+            <div className="testimonial-slider-container">
+              <div className="testimonial-slider-inner"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}  >
+                <div className="testimonial-slide">
+                  
+              <blockquote>
+                <p className="quote-text">
+                {quote}              
+                </p>
+              </blockquote>
+
+              <p className="quotation-attr">
+                {author}, {work}
               </p>
-            </blockquote>
+
+              </div>
+            </div>
+            </div>
 
             <button onClick={handleNext}>
               <img src={next} alt="Next" />
             </button>
           </div>
 
-          <p className="quotation-attr">
-                {author}, {work}
-              </p>
+
 
         </section>
       </main>
