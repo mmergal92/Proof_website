@@ -863,6 +863,9 @@ blockquote {
   font-size: 14px;
   font-family: "soleil", sans-serif;
 }
+.lang:hover{
+  text-decoration: underline;
+}
 
 .menu-toggle img{
   width: 32px;
