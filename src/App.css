@@ -725,7 +725,7 @@ blockquote {
 .quote-text {
   font-family: "alegreya", serif;
   font-weight: 400;
-  max-width: 602px;
+  max-width: 620px;
   font-size: 24px;
   letter-spacing: -0.36px;
   padding-right: 32px;
@@ -742,6 +742,7 @@ blockquote {
   font-family: "soleil", sans-serif;
   font-weight: medium;
   font-style: italic;
+  color: rgba(0, 0, 0, .7);
 }
 .quote-nav button {
   background: none;
