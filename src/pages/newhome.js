@@ -187,12 +187,12 @@ const Newhome = () =>{
        <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
-              <Link to={`/newhome?lang=${language}`}>{t[language].work}</Link>
+              <Link to={`/?lang=${language}`}>{t[language].work}</Link>
               <Link to={`/about?lang=${language}`}>{t[language].about}</Link>
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
             </nav>
 
-            <div className="logo"><a href="/newhome">PROOF</a></div>
+            <div className="logo"><Link to={`/?lang=${language}`}>PROOF</Link></div>
 
             <nav className="nav-right">
               <button onClick={toggleLanguage} className="lang">
@@ -209,7 +209,7 @@ const Newhome = () =>{
               <img src={close} alt="Close" />
             </button>
             <ul>
-              <li><Link to={`/newhome?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].work} </Link></li>
+              <li><Link to={`/?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].work} </Link></li>
               <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].about}</Link></li>
               <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
               <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
@@ -266,7 +266,7 @@ const Newhome = () =>{
               <a href="/islandipsum" target="_blank">{t[language].lorem}</a>
             </nav>
 
-            <div className="footer-logo"><a href="/newhome">PROOF</a></div>
+            <div className="footer-logo"><Link to={`/?lang=${language}`}>PROOF</Link></div>
 
             <nav className="footer-right footer-rights">
               <p className="footer-right-nav">{t[language].rights}</p>

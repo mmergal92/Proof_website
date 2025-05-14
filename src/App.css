@@ -1,13 +1,10 @@
 .App {
   text-align: center;
-  /* font-family: 'IBM Plex Sans', sans-serif; */
   font-weight: 400;
   background: var(--white);
   color: var(--black);
   min-height: 100vh;
-  /* max-height: 100vh; */
   position: relative;
-  /* overflow-y: hidden; */
 }
 * {
   box-sizing: border-box;
@@ -591,15 +588,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .newhome-page{
   background-color: #E3DCCB;
-  /* min-height: 100vh; */
-  /* position: relative !important;
-  display: flex;
-  flex-direction: column */
 }
 
 .home-content {
-  /* margin: 0 auto; */
-  /* padding: 60px 0px; */
   flex-grow: 1;
   align-content: center;
   vertical-align: middle;
@@ -655,16 +646,6 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration: none;
 
 }
-
-/* .overlay-video {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  border-radius: 8px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-} */
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
@@ -1008,13 +989,6 @@ footer {
   gap: 1rem;
 }
 
-/* .footer-links a {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #000;
-  text-decoration: none;
-  font-size: 1rem;
-} */
 
 /* Left & right navs */
 .footer-left,

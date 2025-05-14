@@ -3,7 +3,7 @@ import ReactGA from 'react-ga';
 import './App.css';
 //IMPORT ROUTE and COMPONENTS
 import {Route, Routes} from "react-router-dom";
-import Home from "./pages/home";
+// import Home from "./pages/home";
 import { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 // import Spanish from './pages/spanish';
@@ -33,11 +33,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Newhome/>}/>
-        <Route path='/newhome' element={<Newhome/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
       </Routes>
-      {/* <Footer /> */}
     </div>
   );
 }
