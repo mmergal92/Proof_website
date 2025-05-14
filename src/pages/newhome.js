@@ -189,7 +189,7 @@ const Newhome = () =>{
           <div className="nav-container">
             <nav className="nav-left">
               <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].work}</Link>
-              <Link to={`/about?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].about}</Link>
+              <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t[language].about}</Link>
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
             </nav>
 
