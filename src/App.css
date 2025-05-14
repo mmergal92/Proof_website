@@ -695,8 +695,10 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   margin-top: 48px;
   border-top: 1px solid rgba(0, 0, 0, .1);
-  padding: 80px 40px 65px;
-}
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 104px;
+  padding-bottom: 102px;}
 
 .testimonial-slider-container {
   max-width: 620px;
@@ -888,6 +890,7 @@ blockquote {
   border: none;
   cursor: pointer;
   font-size: 14px;
+  color: black;
   font-family: "soleil", sans-serif;
 }
 .lang:hover{
