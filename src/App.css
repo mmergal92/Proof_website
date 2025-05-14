@@ -108,11 +108,11 @@ color: black;
 }
 
 @media screen and (max-width: 992px){
-  .App{    
-    /* min-height: auto !important;
-    max-height: 100% !important; */
-    /* overflow-x: hidden; */
-  }
+  /* .App{    
+    min-height: auto !important;
+    max-height: 100% !important;
+    overflow-x: hidden;
+  } */
   .old-home{
     display: flex;
     height: auto !important;
