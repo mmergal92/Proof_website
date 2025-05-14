@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<NewHome/>}/>
+        <Route path='/' element={<Newhome/>}/>
         <Route path='/newhome' element={<Newhome/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
