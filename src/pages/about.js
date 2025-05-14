@@ -131,8 +131,8 @@ const About = () =>{
           <nav className="mobile-nav" id="mobileNav">
             <button className="close-menu" aria-label="Close menu"><img src={close} alt="Close" /></button>
           <ul>
-              <li><a href="/newhome">{t[language].work}</a></li>
-              <li><a href="/about">{t[language].about}</a></li>
+              <li><Link to={`/newhome?lang=${language}`}>{t[language].work}</Link></li>
+              <li><Link to={`/about?lang=${language}`}>{t[language].about}</Link></li>
               <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
               <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
               <li className="social"> <button onClick={() => setLanguage(language === "en" ? "es" : "en")} className="lang">
