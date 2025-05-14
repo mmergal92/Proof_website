@@ -243,9 +243,7 @@ const Newhome = () =>{
             <div className="testimonial-slider-container">
               <div className="testimonial-slider-inner"
                   style={{
-                    transform: `translateX(-${currentIndex * 100}%)`,
-                    width: `${testimonials[language].length * 100}%`
-                  }}>
+                    transform: `translateX(-${currentIndex * 100}%)`                  }}>
                 {testimonials[language].map((t, idx) => (
                   <div className="testimonial-slide" key={idx}>
 
