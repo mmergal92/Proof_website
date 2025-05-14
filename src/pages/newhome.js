@@ -175,6 +175,8 @@ const toggleLanguage = () => {
   navigate(`${location.pathname}?lang=${newLang}`);
 };
 
+const [showMobileNav, setShowMobileNav] = useState(false);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   // const [language, setLanguage] = useState('en');
 
@@ -210,15 +212,18 @@ const toggleLanguage = () => {
                 {t[language].lang}
               </button>
             </nav>
-
-            <button className="menu-toggle" aria-label="Open menu"><img src={menu} alt="Menu" /></button>
+            <button className="menu-toggle" onClick={() => setShowMobileNav(true)} aria-label="Open menu">
+              <img src={menu} alt="Menu" />
+            </button>
           </div>
 
-          <nav className="mobile-nav" id="mobileNav">
-            <button className="close-menu" aria-label="Close menu"><img src={close} alt="Close" /></button>
+          <nav className={`mobile-nav ${showMobileNav ? 'open' : ''}`} id="mobileNav">
+            <button className="close-menu" onClick={() => setShowMobileNav(false)} aria-label="Close menu">
+              <img src={close} alt="Close" />
+            </button>
             <ul>
-              <li><Link to={`/newhome?lang=${language}`}>{t[language].work}</Link></li>
-              <li><Link to={`/about?lang=${language}`}>{t[language].about}</Link></li>
+              <li><Link to={`/newhome?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].work} </Link></li>
+              <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].about}</Link></li>
               <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
               <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
               <li className="social"> <button onClick={() => setLanguage(language === "en" ? "es" : "en")} className="lang">
