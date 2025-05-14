@@ -132,7 +132,7 @@ const About = () =>{
             </button>          
           </div>
 
-          <nav className="mobile-nav" id="mobileNav">
+          <nav className={`mobile-nav ${showMobileNav ? 'open' : ''}`} id="mobileNav">
           <button className="close-menu" onClick={() => setShowMobileNav(false)} aria-label="Close menu">
               <img src={close} alt="Close" />
             </button>          
