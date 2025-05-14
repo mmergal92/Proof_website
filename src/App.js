@@ -3,14 +3,11 @@ import ReactGA from 'react-ga';
 import './App.css';
 //IMPORT ROUTE and COMPONENTS
 import {Route, Routes} from "react-router-dom";
-// import Home from "./pages/home";
 import { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
-// import Spanish from './pages/spanish';
 import Loremipsum from './pages/loremipsum';
 import About from './pages/about';
 import Newhome from './pages/newhome'
-// import Footer from "./components/footer";
 
 
 const MEASUREMENT_ID = 'G-4ZV4YCN0DD';
