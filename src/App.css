@@ -765,13 +765,13 @@ blockquote {
   font-style: italic;
   color: rgba(0, 0, 0, .7);
 }
-.quote-nav button {
+.quote-row button {
   background: none;
   border: none;
   padding: 0;
 }
 
-.quote-nav img {
+.quote-row img {
   width: 16px;
   height: auto;
   cursor: pointer;
@@ -788,9 +788,6 @@ blockquote {
   }
   .logo{
     top: 5px;
-  }
-  .quote-nav img {
-    width: 15px;
   }
   .nav-container {
     padding-top: 12px;
