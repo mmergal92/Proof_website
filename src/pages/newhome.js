@@ -19,7 +19,7 @@ import previous from '../assets/previous.png';
 import next from '../assets/next.png';
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 
 
@@ -247,7 +247,7 @@ const Newhome = () =>{
           </div>
 
           <p className="quotation-attr">
-                {author}, <em>{work}</em>
+                {author}, {work}
               </p>
 
         </section>
