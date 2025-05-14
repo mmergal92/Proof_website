@@ -1,11 +1,5 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import Video from '../components/video'
-import Spanish from './spanish'
-import Rotation from '../components/rotation'
-import circletext_nologo from '../assets/circletext_nologo.png'
-import pexels_mart_production from "../assets/pexels_mart_production.mp4";
-
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
 import { useLocation } from 'react-router-dom';
@@ -90,7 +84,6 @@ const t = {
 } 
 
 const About = () =>{
-    // const [language, setLanguage] = useState('en');
     const location = useLocation();
 
     const params = new URLSearchParams(location.search);
@@ -105,9 +98,8 @@ const About = () =>{
       navigate(`${location.pathname}?lang=${newLang}`);
     }; 
 
-  const [showMobileNav, setShowMobileNav] = useState(false);
+    const [showMobileNav, setShowMobileNav] = useState(false);
 
-    // const language = params.get('lang') || 'en';
 
   return ( 
     <div className="about-page">
@@ -141,9 +133,8 @@ const About = () =>{
               <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].about}</Link></li>
               <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
               <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
-              <li className="social"> <button onClick={() => setLanguage(language === "en" ? "es" : "en")} className="lang">
-                {t[language].lang}
-              </button></li>
+              <li className="social"> <button onClick={toggleLanguage} className="lang">
+                {t[language].lang}</button></li>
             </ul>
           </nav>
         </header>

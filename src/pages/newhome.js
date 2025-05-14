@@ -1,10 +1,6 @@
-// import React, {useState} from 'react';
-// import { Link } from 'react-router-dom';
-import Video from '../components/video'
-import Spanish from './spanish'
-import Rotation from '../components/rotation'
-import circletext_nologo from '../assets/circletext_nologo.png'
-import pexels_mart_production from "../assets/pexels_mart_production.mp4";
+import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { useState } from 'react';
+
 import annaliseImg from '../assets/annalisenew.png';
 import ballyhacImg from '../assets/ballyhacbg.png';
 import ballyhacTitle from '../assets/ballyhactitle.png';
@@ -19,10 +15,7 @@ import previous from '../assets/previous.png';
 import next from '../assets/next.png';
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
-// import { useLocation } from 'react-router-dom';
 
-import { useLocation, useNavigate, Link } from 'react-router-dom';
-import { useState } from 'react';
 
 const t = {
   en: {
@@ -34,7 +27,6 @@ const t = {
     rights: "2025. All Rights Reserved.",
     lang: "En español",
     lorem:"Riddim Ipsum",
-    // ...
   },
   es: {
     work: "Trabajo",
@@ -45,7 +37,6 @@ const t = {
     rights: "2025. Todos los derechos reservados.",
     lang:"In english",
     lorem:"Ritmo Ipsum",
-    // ...
   }
 }
 const projects = [
@@ -110,7 +101,6 @@ const testimonials = {
         },
   ],
 }
-
   
 function WorkTile({ img, video, overlayImg}) {
   return (
@@ -163,22 +153,21 @@ function WorkTile({ img, video, overlayImg}) {
 const Newhome = () =>{
 
   const location = useLocation();
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const params = new URLSearchParams(location.search);
-const initialLang = params.get('lang') === 'es' ? 'es' : 'en';
-const [language, setLanguage] = useState(initialLang);
+  const params = new URLSearchParams(location.search);
+  const initialLang = params.get('lang') === 'es' ? 'es' : 'en';
+  const [language, setLanguage] = useState(initialLang);
 
-const toggleLanguage = () => {
-  const newLang = language === 'en' ? 'es' : 'en';
-  setLanguage(newLang);
-  navigate(`${location.pathname}?lang=${newLang}`);
-};
+  const toggleLanguage = () => {
+    const newLang = language === 'en' ? 'es' : 'en';
+    setLanguage(newLang);
+    navigate(`${location.pathname}?lang=${newLang}`);
+  };
 
-const [showMobileNav, setShowMobileNav] = useState(false);
-
+  const [showMobileNav, setShowMobileNav] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [language, setLanguage] = useState('en');
+  const { quote, author, work } = testimonials[language][currentIndex];
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -191,8 +180,6 @@ const [showMobileNav, setShowMobileNav] = useState(false);
       prevIndex === testimonials[language].length - 1 ? 0 : prevIndex + 1
   );
   };
-
-  const { quote, author, work } = testimonials[language][currentIndex];
 
 
   return (
@@ -208,9 +195,9 @@ const [showMobileNav, setShowMobileNav] = useState(false);
             <div className="logo"><a href="/newhome">PROOF</a></div>
 
             <nav className="nav-right">
-              <button onClick={() => setLanguage(language === "en" ? "es" : "en")} className="lang">
-                {t[language].lang}
-              </button>
+              <button onClick={toggleLanguage} className="lang">
+                  {t[language].lang}
+                </button>
             </nav>
             <button className="menu-toggle" onClick={() => setShowMobileNav(true)} aria-label="Open menu">
               <img src={menu} alt="Menu" />
@@ -226,9 +213,8 @@ const [showMobileNav, setShowMobileNav] = useState(false);
               <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].about}</Link></li>
               <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
               <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
-              <li className="social"> <button onClick={() => setLanguage(language === "en" ? "es" : "en")} className="lang">
-                {t[language].lang}
-              </button></li>
+              <li className="social"> <button onClick={toggleLanguage} className="lang">
+                {t[language].lang}</button></li>
             </ul>
           </nav>
         </header>
