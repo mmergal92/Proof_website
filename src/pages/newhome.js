@@ -236,6 +236,7 @@ const Newhome = () =>{
         <section className="testimonial">
           <p className="label">{t[language].testimonials}</p>
          
+
           <div className="testimonial-slider-container">
               <div
                 className="testimonial-slider-inner"
@@ -243,6 +244,7 @@ const Newhome = () =>{
               >
                 {testimonials[language].map((t, idx) => (
                   <div className="testimonial-slide" key={idx}>
+
                     <div className="quote-row">
                       <button onClick={handlePrevious}>
                         <img src={previous} alt="Previous" />
@@ -260,6 +262,7 @@ const Newhome = () =>{
                     <p className="quotation-attr">
                       {t.author}, {t.work}
                     </p>
+                    
                   </div>
                 ))}
               </div>

@@ -695,10 +695,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   margin-top: 48px;
   border-top: 1px solid rgba(0, 0, 0, .1);
-  padding-top: 80px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 65px;
+  padding: 80px 40px 65px;
 }
 
 .testimonial-slider-container {
@@ -714,7 +711,12 @@ input[type=number]::-webkit-outer-spin-button {
   transition: transform 0.6s ease-in-out;
   will-change: transform;
 }
-
+.quote-row {
+  display: flex;
+  align-items: center; /* centers arrows with quote-text */
+  justify-content: center;
+  gap: 16px;
+}
 .testimonial-slide {
   flex: 0 0 100%;
   max-width: 100%;
@@ -738,10 +740,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 blockquote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  margin: 0;
+  flex: 1;
 }
 .quote-text {
   font-family: "alegreya", serif;
@@ -769,6 +769,8 @@ blockquote {
   background: none;
   border: none;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .quote-row img {
