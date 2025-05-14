@@ -243,20 +243,18 @@ const Newhome = () =>{
             <div className="testimonial-slider-container">
               <div className="testimonial-slider-inner"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}  >
-                <div className="testimonial-slide">
-                  
-              <blockquote>
-                <p className="quote-text">
-                {quote}              
-                </p>
-              </blockquote>
+                {testimonials[language].map((t, idx) => (
+                  <div className="testimonial-slide" key={idx}>
 
-              <p className="quotation-attr">
-                {author}, {work}
-              </p>
+                    <blockquote>
+                      <p className="quote-text">{t.quote}</p>
+                    </blockquote>
+                    
+                    <p className="quotation-attr">{t.author}, {t.work}</p>
 
+                  </div>
+                ))}
               </div>
-            </div>
             </div>
 
             <button onClick={handleNext}>
