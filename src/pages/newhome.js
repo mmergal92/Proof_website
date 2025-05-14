@@ -236,34 +236,34 @@ const Newhome = () =>{
         <section className="testimonial">
           <p className="label">{t[language].testimonials}</p>
          
-          <div className="quote-nav">
-            <button onClick={handlePrevious}>
-              <img src={previous} alt="Previous" />
-            </button>
-
-            <div className="testimonial-slider-container">
-              <div className="testimonial-slider-inner"
-                  style={{
-                    transform: `translateX(-${currentIndex * 100}%)`                  }}>
+          <div className="testimonial-slider-container">
+              <div
+                className="testimonial-slider-inner"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
                 {testimonials[language].map((t, idx) => (
                   <div className="testimonial-slide" key={idx}>
+                    <div className="quote-row">
+                      <button onClick={handlePrevious}>
+                        <img src={previous} alt="Previous" />
+                      </button>
 
-                    <blockquote>
-                      <p className="quote-text">{t.quote}</p>
-                    </blockquote>
-                    
-                    <p className="quotation-attr">{t.author}, {t.work}</p>
+                      <blockquote>
+                        <p className="quote-text">{t.quote}</p>
+                      </blockquote>
 
+                      <button onClick={handleNext}>
+                        <img src={next} alt="Next" />
+                      </button>
+                    </div>
+
+                    <p className="quotation-attr">
+                      {t.author}, {t.work}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
-
-            <button onClick={handleNext}>
-              <img src={next} alt="Next" />
-            </button>
-          </div>
-
 
 
         </section>
