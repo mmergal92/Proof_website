@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Video from '../components/video'
 import Spanish from './spanish'
 import Rotation from '../components/rotation'
