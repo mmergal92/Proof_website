@@ -85,6 +85,7 @@ const t = {
 
 const About = () =>{
     const location = useLocation();
+    const pathname = location.pathname;
 
     const params = new URLSearchParams(location.search);
     const initialLang = params.get('lang') === 'es' ? 'es' : 'en';
