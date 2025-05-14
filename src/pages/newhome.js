@@ -21,7 +21,8 @@ import menu from '../assets/menu.png';
 import close from '../assets/close.png';
 // import { useLocation } from 'react-router-dom';
 
-
+import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const t = {
   en: {
@@ -161,8 +162,21 @@ function WorkTile({ img, video, overlayImg}) {
 
 const Newhome = () =>{
 
+  const location = useLocation();
+const navigate = useNavigate();
+
+const params = new URLSearchParams(location.search);
+const initialLang = params.get('lang') === 'es' ? 'es' : 'en';
+const [language, setLanguage] = useState(initialLang);
+
+const toggleLanguage = () => {
+  const newLang = language === 'en' ? 'es' : 'en';
+  setLanguage(newLang);
+  navigate(`${location.pathname}?lang=${newLang}`);
+};
+
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [language, setLanguage] = useState('en');
+  // const [language, setLanguage] = useState('en');
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -184,8 +198,8 @@ const Newhome = () =>{
        <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
-              <a href="/newhome">{t[language].work}</a>
-              <a href={`/about?lang=${language}`}>{t[language].about}</a>
+              <Link to={`/newhome?lang=${language}`}>{t[language].work}</Link>
+              <Link to={`/about?lang=${language}`}>{t[language].about}</Link>
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
             </nav>
 
