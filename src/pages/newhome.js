@@ -154,6 +154,7 @@ const Newhome = () =>{
 
   const location = useLocation();
   const navigate = useNavigate();
+  const pathname = location.pathname;
 
   const params = new URLSearchParams(location.search);
   const initialLang = params.get('lang') === 'es' ? 'es' : 'en';
@@ -187,8 +188,8 @@ const Newhome = () =>{
        <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
-              <Link to={`/?lang=${language}`}>{t[language].work}</Link>
-              <Link to={`/about?lang=${language}`}>{t[language].about}</Link>
+              <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].work}</Link>
+              <Link to={`/about?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].about}</Link>
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
             </nav>
 

@@ -106,15 +106,15 @@ const About = () =>{
         <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
-              <Link to={`/?lang=${language}`}>{t[language].work}</Link>
-              <Link to={`/about?lang=${language}`}>{t[language].about}</Link>
+              <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].work}</Link>
+              <Link to={`/about?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].about}</Link>
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
             </nav>
 
             <div className="logo"><Link to={`/?lang=${language}`}>PROOF</Link></div>
 
             <nav className="nav-right">
-              <button onClick={toggleLanguage} className="lang">
+              <button onClick={toggleLanguage} className="lang" >
                 {t[language].lang}
               </button>
             </nav>
