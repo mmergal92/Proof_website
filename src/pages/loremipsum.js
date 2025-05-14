@@ -1,11 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { loremText } from '../components/loremtext';
 import { loremTextEs } from '../components/loremtextes';
-import Home from './home';
-import Video from '../components/video'
-import { Link } from 'react-router-dom';
-import pexels_mart_production from "../assets/pexels_mart_production.mp4";
-import circletext_nologo from "../assets/circletext_nologo.png"
 
 const colorOptions = [
     { primary: "#FFE3F1", secondary: "#DD0051" },
