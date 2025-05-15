@@ -488,7 +488,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* New About page */
 .about-page {
-  background-color: #E3DCCB;
+  background-color: #EDEAE0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -587,7 +587,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* New Home page */
 
 .newhome-page{
-  background-color: #E3DCCB;
+  background-color: #EDEAE0;
 }
 
 .home-content {
@@ -930,7 +930,7 @@ blockquote {
 .mobile-nav {
   position: fixed;
   inset: 0;
-  background-color: #E3DCCB;
+  background-color: #EDEAE0;
   display: none;
   flex-direction: column;
   align-items: center;
