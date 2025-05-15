@@ -184,8 +184,8 @@ const Newhome = () =>{
 
 
   return (
-    <div className="newhome-page fade-in">
-       <header class="site-header">
+    <div className="newhome-page ">
+       <header class="site-header fade-in">
           <div className="nav-container">
             <nav className="nav-left">
               <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].work}</Link>

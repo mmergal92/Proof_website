@@ -1122,7 +1122,7 @@ footer {
 /* Fade in animations */
 .fade-in {
   opacity: 0;
-  animation: fadeIn 3s ease-out forwards;
+  animation: fadeIn 2s ease-out forwards;
 }
 
 @keyframes fadeIn {
