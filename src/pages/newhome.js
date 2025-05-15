@@ -185,8 +185,8 @@ const Newhome = () =>{
 
   return (
     <div className="newhome-page ">
-       <header class="site-header fade-in">
-          <div className="nav-container">
+       <header class="site-header ">
+          <div className="nav-container fade-in fade-in-delay-1">
             <nav className="nav-left">
               <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].work}</Link>
               <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t[language].about}</Link>
@@ -220,7 +220,7 @@ const Newhome = () =>{
           </nav>
         </header>
 
-      <main className="home-content">
+      <main className="home-content fade-in fade-in-delay-2">
         <h1 className="headline">
         {t[language].headline}
                 </h1>
