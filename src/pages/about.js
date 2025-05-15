@@ -103,7 +103,7 @@ const About = () =>{
 
 
   return ( 
-    <div className="about-page">
+    <div className="about-page fade-in">
         <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">

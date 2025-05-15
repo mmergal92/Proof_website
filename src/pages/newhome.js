@@ -184,7 +184,7 @@ const Newhome = () =>{
 
 
   return (
-    <div className="newhome-page">
+    <div className="newhome-page fade-in">
        <header class="site-header">
           <div className="nav-container">
             <nav className="nav-left">
