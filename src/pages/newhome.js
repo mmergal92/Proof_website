@@ -66,7 +66,7 @@ const testimonials = {
   en: [
     {
       quote:
-  "Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with and made the project experience efficient and enjoyable.",
+  "Proof stood out for their professionalism, responsiveness, unique understanding of and commitment to community-based organizations. Maria and Segacy were wonderful to work with.",
   author: "Maia Dillane",
   work: "Director of Research and Evaluation at AAFSC",
   },
@@ -85,7 +85,7 @@ const testimonials = {
   ],
   es: [
     {
-      quote: "Proof se destacó por su profesionalismo, capacidad de respuesta, y su comprensión y compromiso únicos con las organizaciones comunitarias. Fue un placer trabajar con Maria y Segacy; hicieron que la experiencia del proyecto fuera eficiente y agradable.",
+      quote: "Proof se destacó por su profesionalismo, capacidad de respuesta, y su comprensión y compromiso únicos con las organizaciones comunitarias. Fue un placer trabajar con Maria y Segacy.",
       author: "Maia Dillane",
       work: "Directora de Investigación y Evaluación en AAFSC",
     },
