@@ -2,7 +2,7 @@ import './App.css';
 import ReactGA from 'react-ga';
 import './App.css';
 //IMPORT ROUTE and COMPONENTS
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, Navigate} from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import Loremipsum from './pages/loremipsum';
@@ -32,6 +32,7 @@ function App() {
         <Route path='/' element={<Newhome/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
+        <Route path="/newhome" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   );
