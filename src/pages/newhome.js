@@ -167,35 +167,43 @@ const Newhome = () =>{
   };
 
   const [showMobileNav, setShowMobileNav] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0); 
+  const [currentIndex, setCurrentIndex] = useState(1); // start on real first slide
   const [enableTransition, setEnableTransition] = useState(true);
+  
+  const total = testimonials[language].length;
+  
+  // Clone first and last for seamless loop
+  const extendedTestimonials = [
+    testimonials[language][total - 1], // clone of last
+    ...testimonials[language],
+    testimonials[language][0],        // clone of first
+  ];
   const { quote, author, work } = testimonials[language][currentIndex];
 
   const handleNext = () => {
-    if (currentIndex === testimonials[language].length - 1) {
-      // Go to first after timeout for smoothness
-      setCurrentIndex(currentIndex + 1);
-      setTimeout(() => setCurrentIndex(0), 600); // Match CSS transition duration
-    } else {
-      setCurrentIndex(currentIndex + 1);
-    }
+    setCurrentIndex((prev) => prev + 1);
   };
   
   const handlePrevious = () => {
-    if (currentIndex === 0) {
-      setCurrentIndex(-1);
-      setTimeout(() => setCurrentIndex(testimonials[language].length - 1), 600);
-    } else {
-      setCurrentIndex(currentIndex - 1);
-    }
+    setCurrentIndex((prev) => prev - 1);
   };
   useEffect(() => {
-    if (currentIndex < 0 || currentIndex >= testimonials[language].length) {
-      setEnableTransition(false);
+    if (currentIndex === 0) {
+      // From clone of last → snap to real last
+      setTimeout(() => {
+        setEnableTransition(false);
+        setCurrentIndex(total);
+      }, 600); // matches transition duration
+    } else if (currentIndex === total + 1) {
+      // From clone of first → snap to real first
+      setTimeout(() => {
+        setEnableTransition(false);
+        setCurrentIndex(1);
+      }, 600);
     } else {
       setEnableTransition(true);
     }
-  }, [currentIndex, language]);
+  }, [currentIndex, total]);
 
   return (
     <div className="newhome-page ">
