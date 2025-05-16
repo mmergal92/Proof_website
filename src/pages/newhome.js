@@ -187,23 +187,27 @@ const Newhome = () =>{
   const handlePrevious = () => {
     setCurrentIndex((prev) => prev - 1);
   };
-  useEffect(() => {
-    if (currentIndex === 0) {
-      // From clone of last → snap to real last
-      setTimeout(() => {
-        setEnableTransition(false);
-        setCurrentIndex(total);
-      }, 600); // matches transition duration
-    } else if (currentIndex === total + 1) {
-      // From clone of first → snap to real first
-      setTimeout(() => {
-        setEnableTransition(false);
-        setCurrentIndex(1);
-      }, 600);
-    } else {
-      setEnableTransition(true);
-    }
-  }, [currentIndex, total]);
+
+    useEffect(() => {
+      if (currentIndex === 0) {
+        setTimeout(() => {
+          // Wait one animation frame after transition ends before snapping
+          requestAnimationFrame(() => {
+            setEnableTransition(false);
+            setCurrentIndex(total); // real last
+          });
+        }, 600); // matches CSS transition duration
+      } else if (currentIndex === total + 1) {
+        setTimeout(() => {
+          requestAnimationFrame(() => {
+            setEnableTransition(false);
+            setCurrentIndex(1); // real first
+          });
+        }, 600);
+      } else {
+        setEnableTransition(true);
+      }
+    }, [currentIndex, total]);
 
   return (
     <div className="newhome-page ">
