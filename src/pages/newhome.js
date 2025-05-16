@@ -167,41 +167,35 @@ const Newhome = () =>{
   };
 
   const [showMobileNav, setShowMobileNav] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(1); // Start from 1, since 0 will be the clone of last
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0); 
+  const [enableTransition, setEnableTransition] = useState(true);
   const { quote, author, work } = testimonials[language][currentIndex];
 
-  const handlePrevious = () => {
-    setCurrentIndex(prev => prev + 1);
-    setIsTransitioning(true);
-  };
-
   const handleNext = () => {
-    setCurrentIndex(prev => prev + 1);
-    setIsTransitioning(true);
+    if (currentIndex === testimonials[language].length - 1) {
+      // Go to first after timeout for smoothness
+      setCurrentIndex(currentIndex + 1);
+      setTimeout(() => setCurrentIndex(0), 600); // Match CSS transition duration
+    } else {
+      setCurrentIndex(currentIndex + 1);
+    }
   };
-
+  
+  const handlePrevious = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(-1);
+      setTimeout(() => setCurrentIndex(testimonials[language].length - 1), 600);
+    } else {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
   useEffect(() => {
-    if (!isTransitioning) return;
-  
-    const slider = document.querySelector('.testimonial-slider-inner');
-    const handleTransitionEnd = () => {
-      if (currentIndex === testimonials[language].length + 1) {
-        // Jump from clone of first back to real first
-        setIsTransitioning(false);
-        setCurrentIndex(1);
-      }
-      if (currentIndex === 0) {
-        // Jump from clone of last back to real last
-        setIsTransitioning(false);
-        setCurrentIndex(testimonials[language].length);
-      }
-    };
-  
-    slider.addEventListener('transitionend', handleTransitionEnd);
-    return () => slider.removeEventListener('transitionend', handleTransitionEnd);
-  }, [currentIndex, language, isTransitioning]);
-
+    if (currentIndex < 0 || currentIndex >= testimonials[language].length) {
+      setEnableTransition(false);
+    } else {
+      setEnableTransition(true);
+    }
+  }, [currentIndex, language]);
 
   return (
     <div className="newhome-page ">
@@ -260,42 +254,33 @@ const Newhome = () =>{
           <div className="testimonial-slider-container">
               <div
                 className="testimonial-slider-inner"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                style={{ transform: `translateX(-${currentIndex * 100}%)`,    
+                transition: enableTransition ? 'transform 0.6s ease-in-out' : 'none',
+              }}
               >
-                  {/* Clone last */}
-              <div className="testimonial-slide">
-                <div className="quote-row">
-                  <button onClick={handlePrevious}><img src={previous} alt="Previous" /></button>
-                  <blockquote><p className="quote-text">{testimonials[language].at(-1).quote}</p></blockquote>
-                  <button onClick={handleNext}><img src={next} alt="Next" /></button>
-                </div>
-                <p className="quotation-attr">{testimonials[language].at(-1).author}, {testimonials[language].at(-1).work}</p>
-              </div>
+                {testimonials[language].map((t, idx) => (
+                  <div className="testimonial-slide" key={idx}>
 
-              {testimonials[language].map((t, idx) => (
-                <div className="testimonial-slide" key={idx}>
-                  <div className="quote-row">
-                    <button onClick={handlePrevious}><img src={previous} alt="Previous" /></button>
-                    <blockquote><p className="quote-text">{t.quote}</p></blockquote>
-                    <button onClick={handleNext}><img src={next} alt="Next" /></button>
-                  </div>
-                  <p className="quotation-attr">{t.author}, {t.work}</p>
-                </div>
-              ))}
+                    <div className="quote-row">
+                      <button onClick={handlePrevious}>
+                        <img src={previous} alt="Previous" />
+                      </button>
 
-          <div className="testimonial-slide">
-              <div className="quote-row">
-                <button onClick={handlePrevious}><img src={previous} alt="Previous" /></button>
-                <blockquote><p className="quote-text">{testimonials[language][0].quote}</p></blockquote>
-                <button onClick={handleNext}><img src={next} alt="Next" /></button>
-              </div>
-              <p className="quotation-attr">{testimonials[language][0].author}, {testimonials[language][0].work}</p>
-            </div>        
+                      <blockquote>
+                        <p className="quote-text">{t.quote}</p>
+                      </blockquote>
 
-                      
+                      <button onClick={handleNext}>
+                        <img src={next} alt="Next" />
+                      </button>
+                    </div>
 
+                    <p className="quotation-attr">
+                      {t.author}, {t.work}
+                    </p>
                     
-        
+                  </div>
+                ))}
               </div>
             </div>
 
