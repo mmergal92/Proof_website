@@ -178,7 +178,7 @@ const Newhome = () =>{
     ...testimonials[language],
     testimonials[language][0],        // clone of first
   ];
-  const { quote, author, work } = testimonials[language][currentIndex];
+  // const { quote, author, work } = testimonials[language][currentIndex];
 
   const handleNext = () => {
     setCurrentIndex((prev) => prev + 1);
@@ -267,28 +267,23 @@ const Newhome = () =>{
               }}
               >
                 {extendedTestimonials.map((t, idx) => (
-                  <div className="testimonial-slide" key={idx}>
-
-                    <div className="quote-row">
-                      <button onClick={handlePrevious}>
-                        <img src={previous} alt="Previous" />
-                      </button>
-
-                      <blockquote>
-                        <p className="quote-text">{t.quote}</p>
-                      </blockquote>
-
-                      <button onClick={handleNext}>
-                        <img src={next} alt="Next" />
-                      </button>
+                    <div className="testimonial-slide" key={idx}>
+                      <div className="quote-row">
+                        <button onClick={handlePrevious}>
+                          <img src={previous} alt="Previous" />
+                        </button>
+                        <blockquote>
+                          <p className="quote-text">{t.quote}</p>
+                        </blockquote>
+                        <button onClick={handleNext}>
+                          <img src={next} alt="Next" />
+                        </button>
+                      </div>
+                      <p className="quotation-attr">
+                        {t.author}, {t.work}
+                      </p>
                     </div>
-
-                    <p className="quotation-attr">
-                      {t.author}, {t.work}
-                    </p>
-                    
-                  </div>
-                ))}
+                  ))}
               </div>
             </div>
 
