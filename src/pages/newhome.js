@@ -266,7 +266,7 @@ const Newhome = () =>{
                 transition: enableTransition ? 'transform 0.6s ease-in-out' : 'none',
               }}
               >
-                {testimonials[language].map((t, idx) => (
+                {extendedTestimonials.map((t, idx) => (
                   <div className="testimonial-slide" key={idx}>
 
                     <div className="quote-row">
