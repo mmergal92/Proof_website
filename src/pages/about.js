@@ -105,7 +105,7 @@ const About = () =>{
   return ( 
     <div className="about-page ">
         <header class="site-header">
-          <div className="nav-container">
+          <div className="nav-container fade-in fade-in-delay-1">
             <nav className="nav-left">
               <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].work}</Link>
               <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t[language].about}</Link>
@@ -141,7 +141,7 @@ const About = () =>{
         </header>
 
 
-      <main className="about-content">
+      <main className="about-content fade-in fade-in-delay-2">
         <h4 className="about-header">
           {t[language].aboutHeader}
         </h4>
