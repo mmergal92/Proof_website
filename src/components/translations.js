@@ -8,6 +8,8 @@ const tData = {
       rights: "2025. All Rights Reserved.",
       lang: "En español",
       lorem: "Riddim Ipsum",
+      heading: "Oops this page doesn’t exist!",
+      text: "Return to projects",
     },
     es: {
       work: "Trabajo",
@@ -18,6 +20,8 @@ const tData = {
       rights: "2025. Todos los derechos reservados.",
       lang: "In english",
       lorem: "Ritmo Ipsum",
+      heading: "¡Perdona! Esta página no existe.",
+      text: "Volver a proyectos",
     }
   };
   
