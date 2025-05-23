@@ -1,6 +1,10 @@
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
+import Header from '../components/header.js';
+import Footer from '../components/footer.js';
+import tData from '../components/translations.js';
+
 import annaliseImg from '../assets/annalisenew.png';
 import ballyhacImg from '../assets/ballyhacbg.png';
 import ballyhacTitle from '../assets/ballyhactitle.png';
@@ -13,32 +17,10 @@ import browserImg from '../assets/browser.png';
 
 import previous from '../assets/previous.png';
 import next from '../assets/next.png';
-import menu from '../assets/menu.png';
-import close from '../assets/close.png';
 
 
-const t = {
-  en: {
-    work: "Work",
-    about: "About",
-    email: "Email us",
-    headline: "Fresh and imaginative experiences for the internet and elsewhere.",
-    testimonials: "Testimonials",
-    rights: "2025. All Rights Reserved.",
-    lang: "En español",
-    lorem:"Riddim Ipsum",
-  },
-  es: {
-    work: "Trabajo",
-    about: "Acerca de",
-    email: "Contáctanos",
-    headline: "Experiencias frescas e imaginativas para el internet y más allá.",
-    testimonials: "Testimonios",
-    rights: "2025. Todos los derechos reservados.",
-    lang:"In english",
-    lorem:"Ritmo Ipsum",
-  }
-}
+
+
 const projects = [
   {
     img: annaliseImg,
@@ -123,6 +105,7 @@ function WorkTile({ img, video, overlayImg}) {
           <img
             src={overlayImg}
             alt=""
+            loading="lazy"
             style={{
               maxWidth: '65%',
               display: 'block',
@@ -165,6 +148,8 @@ const Newhome = () =>{
     setLanguage(newLang);
     navigate(`${location.pathname}?lang=${newLang}`);
   };
+
+  const t = tData[language];
 
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(1); // start on real first slide
@@ -211,40 +196,8 @@ const Newhome = () =>{
 
   return (
     <div className="newhome-page ">
-       <header class="site-header ">
-          <div className="nav-container fade-in fade-in-delay-1">
-            <nav className="nav-left">
-              <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t[language].work}</Link>
-              <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t[language].about}</Link>
-              <a href="mailto:hello@itsproof.co">{t[language].email}</a>
-            </nav>
-
-            <div className="logo"><Link to={`/?lang=${language}`}>PROOF</Link></div>
-
-            <nav className="nav-right">
-              <button onClick={toggleLanguage} className="lang">
-                  {t[language].lang}
-                </button>
-            </nav>
-            <button className="menu-toggle" onClick={() => setShowMobileNav(true)} aria-label="Open menu">
-              <img src={menu} alt="Menu" />
-            </button>
-          </div>
-
-          <nav className={`mobile-nav ${showMobileNav ? 'open' : ''}`} id="mobileNav">
-            <button className="close-menu" onClick={() => setShowMobileNav(false)} aria-label="Close menu">
-              <img src={close} alt="Close" />
-            </button>
-            <ul>
-              <li><Link to={`/?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].work} </Link></li>
-              <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t[language].about}</Link></li>
-              <li><a href="mailto:hello@itsproof.co">{t[language].email}</a></li>
-              <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
-              <li className="social"> <button onClick={toggleLanguage} className="lang">
-                {t[language].lang}</button></li>
-            </ul>
-          </nav>
-        </header>
+       
+       <Header language={language} toggleLanguage={toggleLanguage} t={t} />
 
       <main className="home-content fade-in fade-in-delay-2">
         <h1 className="headline">
@@ -274,13 +227,13 @@ const Newhome = () =>{
                     <div className="testimonial-slide" key={idx}>
                       <div className="quote-row">
                         <button onClick={handlePrevious}>
-                          <img src={previous} alt="Previous" />
+                          <img loading="lazy" src={previous} alt="Previous" />
                         </button>
                         <blockquote>
                           <p className="quote-text">{t.quote}</p>
                         </blockquote>
                         <button onClick={handleNext}>
-                          <img src={next} alt="Next" />
+                          <img loading="lazy" src={next} alt="Next" />
                         </button>
                       </div>
                       <p className="quotation-attr">
@@ -295,22 +248,9 @@ const Newhome = () =>{
         </section>
       </main>
 
-      <footer class="site-footer">
-          <div className="footer-container">
-          <nav className="footer-left footer-links">
-              <a href="mailto:hello@itsproof.co">{t[language].email}</a>
-              <a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a>
-              <a href="/islandipsum" target="_blank">{t[language].lorem}</a>
-            </nav>
+      <Footer language={language} t={t} />
 
-            <div className="footer-logo"><Link to={`/?lang=${language}`}>PROOF</Link></div>
 
-            <nav className="footer-right footer-rights">
-              <p className="footer-right-nav">{t[language].rights}</p>
-            </nav>
-          </div>
-
-      </footer>
     </div>
   );
 }
