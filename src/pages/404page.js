@@ -48,7 +48,7 @@ const PageNotFound = () =>{
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
-    <div className="newhome-page ">
+    <div className="newhome-page error-page">
        <header class="site-header ">
           <div className="nav-container fade-in fade-in-delay-1">
             <nav className="nav-left">
@@ -84,7 +84,7 @@ const PageNotFound = () =>{
           </nav>
         </header>
 
-      <main className="home-content fade-in fade-in-delay-2">
+      <main className="home-content fade-in fade-in-delay-2 error-main">
         <h1 className="headline">
             {t[language].heading}
         </h1>
