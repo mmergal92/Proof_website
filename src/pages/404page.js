@@ -1,14 +1,10 @@
 import { useLocation, useNavigate, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
 import tData from '../components/translations.js';
-
-
-import menu from '../assets/menu.png';
-import close from '../assets/close.png';
 
 
 const PageNotFound = () =>{
@@ -28,8 +24,6 @@ const PageNotFound = () =>{
   };
 
   const t = tData[language];
-
-  const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
     <div className="newhome-page error-page">

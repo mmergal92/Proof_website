@@ -1,4 +1,4 @@
-import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import Header from '../components/header.js';
@@ -151,7 +151,6 @@ const Newhome = () =>{
 
   const t = tData[language];
 
-  const [showMobileNav, setShowMobileNav] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(1); // start on real first slide
   const [enableTransition, setEnableTransition] = useState(true);
   
