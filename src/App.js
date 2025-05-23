@@ -7,8 +7,8 @@ import { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import Loremipsum from './pages/loremipsum';
 import About from './pages/about';
-import Newhome from './pages/newhome'
-import PageNotFound from "./pages/404Page"; 
+import Newhome from './pages/newhome';
+import PageNotFound from './pages/404page';
 
 
 
