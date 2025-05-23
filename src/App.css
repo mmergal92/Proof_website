@@ -1001,7 +1001,8 @@ blockquote {
   cursor: pointer;
 }
 .error-button{
-  padding: 20px 0px;
+  padding: 40px 46px;
+  text-align: left;
 }
 .error{
   font-size: 14px;
@@ -1009,6 +1010,18 @@ blockquote {
   line-height: 115%;
   font-family: "soleil", sans-serif;
   margin-bottom: 32px;
+}
+.error-page{
+  min-height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+.error-main{
+  min-height: 85vh;
+  max-height: 85vh;
+  position: relative;
+  overflow-y: hidden;
 }
 
 
