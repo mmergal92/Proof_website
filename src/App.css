@@ -1000,6 +1000,16 @@ blockquote {
   font-size: 2rem;
   cursor: pointer;
 }
+.error-button{
+  padding: 20px 0px;
+}
+.error{
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 115%;
+  font-family: "soleil", sans-serif;
+  margin-bottom: 32px;
+}
 
 
 footer {

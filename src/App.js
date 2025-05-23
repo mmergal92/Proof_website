@@ -8,6 +8,8 @@ import { useLocation } from 'react-router-dom';
 import Loremipsum from './pages/loremipsum';
 import About from './pages/about';
 import Newhome from './pages/newhome'
+import PageNotFound from "./pages/404Page"; 
+
 
 
 const MEASUREMENT_ID = 'G-4ZV4YCN0DD';
@@ -33,6 +35,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
         <Route path="/newhome" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<PageNotFound />} /> {/* Catch-all route for 404 */}
       </Routes>
     </div>
   );
