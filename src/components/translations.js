@@ -1,4 +1,4 @@
-const t = {
+const tData = {
     en: {
       work: "Work",
       about: "About",
@@ -21,4 +21,4 @@ const t = {
     }
   };
   
-  export default t;
+  export default tData;
