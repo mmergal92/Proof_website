@@ -99,7 +99,7 @@ const PageNotFound = () =>{
       
       </main>
 
-      <footer class="site-footer">
+      <footer class="site-footer error-footer">
           <div className="footer-container">
           <nav className="footer-left footer-links">
               <a href="mailto:hello@itsproof.co">{t[language].email}</a>
