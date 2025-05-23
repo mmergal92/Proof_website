@@ -201,7 +201,7 @@ const Newhome = () =>{
 
       <main className="home-content fade-in fade-in-delay-2">
         <h1 className="headline">
-        {t[language].headline}
+        {t.headline}
                 </h1>
 
         <section className="work-grid-wrapper">
@@ -213,7 +213,7 @@ const Newhome = () =>{
         </section>       
 
         <section className="testimonial">
-          <p className="label">{t[language].testimonials}</p>
+          <p className="label">{t.testimonials}</p>
          
 
           <div className="testimonial-slider-container">
