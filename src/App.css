@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
 }
-.old-home{
+/* .old-home{
   display: flex;
   height: 100%;
   justify-content: center;
@@ -105,11 +105,11 @@ color: black;
 }
 
 @media screen and (max-width: 992px){
-  /* .App{    
+  .App{    
     min-height: auto !important;
     max-height: 100% !important;
     overflow-x: hidden;
-  } */
+  }
   .old-home{
     display: flex;
     height: auto !important;
@@ -131,7 +131,7 @@ color: black;
     width: 100% !important;
     padding-bottom: 10% !important;
   }
-}
+} */
 
 
 /*lorem page*/
@@ -141,6 +141,13 @@ color: black;
   max-height: 100vh;
   position: relative;
   overflow-y: hidden;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: "space-grotesk-variable", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 #copyOverlay {
   position: fixed;
@@ -181,15 +188,6 @@ color: black;
   font-family: 'Poppins';
   font-weight: bold;
   color: #fff;
-}
-.loremsite {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  font-family: "space-grotesk-variable", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
 }
 .main-content {
   display: flex;
@@ -272,7 +270,6 @@ color: black;
   font-style: normal;
 }
 
-
 .made-by{
   position: absolute;
   bottom: 20px; /* Adjust as needed */
@@ -305,7 +302,6 @@ color: black;
   overflow-y: scroll;
   scroll-behavior: auto;;
 }
-
 .copy-button {
   position: absolute;
   top: 20px;
@@ -729,7 +725,7 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: center;
 }
 
-.label {
+.testimonial-label {
   font-size: 14px;
   letter-spacing: 0.14px;
   line-height: 115%;
