@@ -212,7 +212,7 @@ const Newhome = () =>{
         </section>       
 
         <section className="testimonial">
-          <p className="label">{t.testimonials}</p>
+          <p className="testimonial-label ">{t.testimonials}</p>
          
 
           <div className="testimonial-slider-container">
