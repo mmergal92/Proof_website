@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-import menu from '../assets/menu.png';
+import menu from '../assets/menu.webp';
 import close from '../assets/close.png';
 
 const Header = ({ language, toggleLanguage, t }) => {

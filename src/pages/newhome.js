@@ -5,18 +5,18 @@ import Header from '../components/header.js';
 import Footer from '../components/footer.js';
 import tData from '../components/translations.js';
 
-import annaliseImg from '../assets/annalisenew.png';
-import ballyhacImg from '../assets/ballyhacbg.png';
-import ballyhacTitle from '../assets/ballyhactitle.png';
-import enclavesImg from '../assets/enclavesnew.png';
-import riddimsImg from '../assets/loremnew.png';
+import annaliseImg from '../assets/annalisenew.webp';
+import ballyhacImg from '../assets/ballyhacbg.webp';
+import ballyhacTitle from '../assets/ballyhactitle.webp';
+import enclavesImg from '../assets/enclavesnew.webp';
+import riddimsImg from '../assets/loremnew.webp';
 import annaliseVideo from '../assets/annalise.mp4';
 import enclavesVideo from '../assets/enclaves.mp4';
 import riddimsVideo from '../assets/riddims.mp4';
-import browserImg from '../assets/browser.png';
+import browserImg from '../assets/browser.webp';
 
-import previous from '../assets/previous.png';
-import next from '../assets/next.png';
+import previous from '../assets/previous.webp';
+import next from '../assets/next.webp';
 
 
 
