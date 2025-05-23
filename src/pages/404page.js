@@ -85,7 +85,7 @@ const PageNotFound = () =>{
         </header>
 
       <main className="home-content fade-in fade-in-delay-2 error-main">
-        <h1 className="headline">
+        <h1 className="headline error-headline">
             {t[language].heading}
         </h1>
 
