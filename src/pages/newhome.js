@@ -11,8 +11,8 @@ import ballyhacTitle from '../assets/ballyhactitle.webp';
 import enclavesImg from '../assets/enclavesnew.webp';
 import riddimsImg from '../assets/loremnew.webp';
 import annaliseVideo from '../assets/annalise.webm';
-import enclavesVideo from '../assets/enclaves.mp4';
-import riddimsVideo from '../assets/riddims.mp4';
+import enclavesVideo from '../assets/enclaves.webm';
+import riddimsVideo from '../assets/riddims.webm';
 import browserImg from '../assets/browser.webp';
 
 import previous from '../assets/previous.webp';
