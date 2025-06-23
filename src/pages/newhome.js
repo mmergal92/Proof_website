@@ -211,7 +211,7 @@ const Newhome = () =>{
           </div>
         </section>       
 
-        <section className="testimonial">
+        <section className="testimonial" id="testimonials">
           <p className="testimonial-label ">{t.testimonials}</p>
          
 
