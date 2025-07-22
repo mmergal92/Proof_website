@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
-import { useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+// import React, {useState} from 'react';
+// import { useLocation } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
-import Header from '../components/header.js';
-import Footer from '../components/footer.js';
-import tData from '../components/translations.js';
+import hero from '../assets/hero.jpg';
+import investment from '../assets/investment.jpg';
+
 
 const Authors = () =>{
   return ( 
     <div className="author-page">
       <section className="author-hero asection">
-        <img src="https://via.placeholder.com/1500x400" alt="Hero" />
+        <img loading="lazy" src={hero} alt="beach" />
         <h1>An obsession-worthy website in just 6 weeks</h1>
       </section>
 
@@ -51,7 +51,7 @@ const Authors = () =>{
       </section>
 
       <section className="investment asection">
-        <img src="https://via.placeholder.com/400x300" alt="Investment" />
+        <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
           <h3>Investment</h3>
           <p>Our 6-week website experience starts at $6,000 USD. Payment plans available. Let’s make your dream website a reality.</p>
