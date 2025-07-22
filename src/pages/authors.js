@@ -9,7 +9,7 @@ import investment from '../assets/investment.jpg';
 const Authors = () =>{
   return ( 
     <div className="author-page">
-      <section className="author-hero asection"> 
+      <section className="author-hero "> 
         <img loading="lazy" src={hero} alt="beach" className="hero-bg" />
           <div className="hero-content">
             <h1>An obsession-worthy website in just 6 weeks</h1>
