@@ -10,14 +10,15 @@ const Authors = () =>{
   return ( 
     <div className="author-page">
       <section className="author-hero asection">
-        <img loading="lazy" src={hero} alt="beach" />
-        <h1>An obsession-worthy website in just 6 weeks</h1>
+        <div className="hero-content">
+          <h1>An obsession-worthy website in just 6 weeks</h1>
+        </div>
       </section>
 
       <section className="author-intro asection">
         <h2>Imagine a digital experience worth sharing</h2>
-        <p>Design, development & strategy that make your website the best place online for your business.</p>
-        <a href="#" className="author-btn">Learn More</a>
+        <p>It’s time to feel proud of your website — the one place online you fully own. We craft intentional sites that make people fall in love with your business.</p>
+        <a href="#" className="author-btn">Start your project</a>
       </section>
 
       <section className="promise asection">
@@ -42,11 +43,11 @@ const Authors = () =>{
 
       <section className="fit asection">
         <h3>This is for you if...</h3>
-        <ul>
-          <li>You’re ready to look as good online as you do in real life</li>
-          <li>You’re tired of DIYing your website</li>
-          <li>You want clarity, strategy & stunning visuals</li>
-        </ul>
+        <ol>
+            <li>You’re craving a website that actually converts</li>
+            <li>You’re done DIYing and ready for expert support</li>
+            <li>You want a trusted partner to handle the process</li>
+        </ol>
         <a href="#" className="author-btn">Get Started</a>
       </section>
 
