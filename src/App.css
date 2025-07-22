@@ -1168,3 +1168,90 @@ footer {
     opacity: 1;
   }
 }
+
+
+/* AUTHOR PAGE  */
+.author-page {
+  font-family: 'Georgia', serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.author-hero img {
+  width: 100%;
+  height: auto;
+}
+
+.author-hero h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.asection {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.asection h2, .asection h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.asection p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.asection ul {
+  list-style: disc;
+  text-align: left;
+  margin: 0 auto 1rem;
+  max-width: 500px;
+  padding-left: 1.5rem;
+}
+
+.author-btn {
+  display: inline-block;
+  background: #556B2F;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.investment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.investment img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.investment-text {
+  max-width: 500px;
+}
+
+@media (min-width: 768px) {
+  .investment {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .investment img {
+    max-width: 50%;
+  }
+
+  .investment-text {
+    text-align: left;
+  }
+}
