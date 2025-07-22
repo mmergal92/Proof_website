@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import Loremipsum from './pages/loremipsum';
 import About from './pages/about';
+import Authors from './pages/authors';
 import Newhome from './pages/newhome';
 import PageNotFound from './pages/404page';
 
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Newhome/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/authors' element={<Authors/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
         <Route path="/newhome" element={<Navigate to="/" replace />} />
         <Route path="*" element={<PageNotFound />} /> {/* Catch-all route for 404 */}
