@@ -21,6 +21,7 @@ const AuthorForm = () => {
           netlify-honeypot="bot-field"
         >
           {/* hidden honeypot field for bots */}
+          <input type="hidden" name="redirect" value="/thank-you" />
           <input type="hidden" name="form-name" value="author" />
           <p hidden>
             <label>Don’t fill this out: <input name="bot-field" /></label>
