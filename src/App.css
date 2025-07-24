@@ -1173,7 +1173,7 @@ footer {
 /* AUTHOR PAGE  */
 .author-page {
   font-family: "p22-mackinac-pro", serif;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-style: normal;
   color: #49503C;
   background-color: #FFFEF8;
@@ -1216,10 +1216,12 @@ footer {
 .author-page h2 {
   font-size: 48px;
   line-height: 55.2px;
+  font-weight: 500 !important;
 }
 .author-page h3 {
   font-size: 40px;
   line-height: 52px;
+  font-weight: 500 !important;
 }
 .author-page h4 {
   font-size: 24px;
@@ -1247,7 +1249,7 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: 25.6px;
-  margin-top: 28px;
+  margin-top: 20px;
 }
 .author-intro{
   max-width: 600px;
@@ -1256,6 +1258,9 @@ footer {
 .promise{
   max-width: 600px;
   margin: 248px auto;
+}
+.promise p{
+  text-align: left !important;
 }
 .page-break {
   position: relative;
@@ -1301,8 +1306,8 @@ footer {
   color: #49503C;
   margin-top: 28px; 
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  padding: 14px 28px;
+  border-radius: 56px;
   font-weight: normal;
   font-size: 14px;
   line-height: 16.1px;
@@ -1320,8 +1325,8 @@ footer {
   color: #fff;
   margin-top: 28px; 
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  padding: 14px 28px;
+  border-radius: 56px;
   font-weight: normal;
   font-size: 14px;
   line-height: 16.1px;
