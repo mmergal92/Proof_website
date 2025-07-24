@@ -11,7 +11,7 @@ import Authors from './pages/authors';
 import Newhome from './pages/newhome';
 import PageNotFound from './pages/404page';
 import AuthorForm from './pages/authorinquiry';
-import ThankYou from './pages/ThankYou';
+import ThankYou from './pages/thanks';
 
 const MEASUREMENT_ID = 'G-4ZV4YCN0DD';
 ReactGA.initialize(MEASUREMENT_ID);
