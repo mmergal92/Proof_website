@@ -1172,7 +1172,9 @@ footer {
 
 /* AUTHOR PAGE  */
 .author-page {
-  font-family: 'Georgia', serif;
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 500;
+  font-style: normal;
   color: #49503C;
   background-color: #FFFEF8;
   line-height: 1.6;
@@ -1231,6 +1233,9 @@ ol {
 .asection p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  font-family: "neue-haas-unica", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .asection ul {
@@ -1249,6 +1254,9 @@ ol {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   font-weight: bold;
+  font-family: "anonymous-pro", monospace;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .investment {
