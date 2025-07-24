@@ -35,9 +35,9 @@ function App() {
         <Route path='/' element={<Newhome/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/authors' element={<Authors/>}/>
-        <Route path='/author-inquiry-form' element={<AuthorForm/>}/>
+        <Route path='/authorinquiryform' element={<AuthorForm/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
-        <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/thankyou" element={<ThankYou />} />
         <Route path="/newhome" element={<Navigate to="/" replace />} />
         <Route path="*" element={<PageNotFound />} /> {/* Catch-all route for 404 */}
       </Routes>

@@ -14,14 +14,14 @@ const Authors = () =>{
           <div className="hero-content">
             <h5>Three authors. Three websites. One summer only.</h5>
             <h1>An obsession-worthy <br/>website in just 6-weeks</h1>
-            <a href="https://itsproof.co/author-inquiry-form/" className="author-hero-btn">Unlock your dream site</a>
+            <a href="/authorinquiryform" className="author-hero-btn">Unlock your dream site</a>
         </div>
       </section>
 
       <section className="author-intro asection">
         <h2>Imagine a digital experience as <i>captivating</i> as your writing</h2>
         <p>What do you want for your writing career this year? What about in the next decade? A well-crafted website can help open the doors to that dream and connect you with readers, agents, and unexpected opportunities.</p>
-        <a href="https://itsproof.co/author-inquiry-form/" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
       </section>
 
 
@@ -37,7 +37,7 @@ const Authors = () =>{
           <li>Enrich the reader experience and build pure, unadulterated excitement for your next release.</li>
           <li>Most importantly, look, feel, and sound like <b>you</b>.</li>
         </ul>
-        <a href="https://itsproof.co/author-inquiry-form/" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
       </section>
 
       <section className="transformation asection">
@@ -59,7 +59,7 @@ const Authors = () =>{
           <li>Content migration for content you’d like to move over from your current site (optional).</li>
           <li>Bonus launch kit with social media templates to celebrate your new website (and upcoming book release if applicable)</li>
         </ul>
-        <a href="https://itsproof.co/author-inquiry-form/" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
       </section>
 
       <section className="fit asection">
@@ -71,7 +71,7 @@ const Authors = () =>{
             <li>You want a design partner who loves reading as much as you do.</li>
             <li>You’d rather spend your time writing than wrestling with your website.</li>
         </ol>
-        <a href="https://itsproof.co/author-inquiry-form/" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
           <div className="fit-content">
             <p>And aren’t you tired of fighting<br/> with the algorithm?</p>
         </div>
@@ -96,7 +96,7 @@ const Authors = () =>{
                 <li>It’s for a limited-time only for just  three spots. First come, first booked. : )</li>
             </ol>
         </div>
-          <a href="https://itsproof.co/author-inquiry-form/" className="author-btn">Unlock your dream website</a>
+          <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
         </div>
       </section>
 
@@ -109,7 +109,7 @@ const Authors = () =>{
         <h2>We’re only offering three spots for this pilot.</h2>
         <p>If you’re interested in being one of the three authors we partner with this summer, we’ll ask you to fill out a (truly) short questionnaire. Then, we’ll set up a 20-min call to share more about the process and see if this is the right fit for you. Once we’re aligned, we’ll kick off right away!</p>
         <p>This offer ends August 1. Let’s make this summer count.</p>
-        <a href="https://itsproof.co/author-inquiry-form/" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
       </section>
 
 
