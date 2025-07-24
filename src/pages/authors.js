@@ -24,9 +24,10 @@ const Authors = () =>{
         <a href="#" className="author-btn">Unlock your dream website</a>
       </section>
 
-      <div className="page-break">
+
+      <section className="page-break asection">
         <img loading="lazy" src={vector} alt="pagebreak" className="page-break-img" />
-    </div>
+     </section>
 
       <section className="promise asection">
         <h2>Your website is the <i>only</i> place online you own entirely.</h2>
@@ -41,8 +42,8 @@ const Authors = () =>{
 
       <section className="transformation asection">
         <div className="transformation-content">
-            <hr/>
             <p className="transformation-header">From Undiscovered To Unforgettable</p>
+            <hr/>
         </div>
         <h1 className="transformation-header">The <i>6-week</i> transformation</h1>
         <p className="transformation-header">By Fall, you’ll have your own corner of the internet that’s thoughtful, lasting, and true to your work. This 6-week process moves from strategy to launch, with most of your input needed in the first 3 weeks as we build the foundation. This package includes:</p>
@@ -99,9 +100,9 @@ const Authors = () =>{
         </div>
       </section>
 
-    <div className="page-break-2">
+     <section className="page-break asection">
         <img loading="lazy" src={vector} alt="pagebreak" className="page-break-img" />
-    </div>
+     </section>
 
       <section className="cta asection">
         <p>Ready to create something magical?</p>

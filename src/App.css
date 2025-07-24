@@ -1252,13 +1252,11 @@ footer {
 }
 .author-intro{
   max-width: 580px;
-  margin-top: 248px;
-  margin-bottom: 248px;
+  margin: 248px auto;
 }
 .promise{
   max-width: 580px;
-  margin-top: 248px;
-  margin-bottom: 248px;
+  margin: 248px auto;
 }
 .page-break-img{
   position: absolute;
@@ -1268,12 +1266,6 @@ footer {
   height: 100%;
   object-fit: contain;
   z-index: 1;
-}
-
-
-.asection {
-  margin: 4rem 0;
-  text-align: center;
 }
 .asection ol {
   list-style: decimal;
