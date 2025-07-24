@@ -1278,7 +1278,7 @@ footer {
 .asection ol {
   list-style: decimal;
   text-align: left;
-  margin-bottom: 28px;
+  margin: 0 auto;
   max-width: 500px;
   padding-left: 1.5rem;
 }
@@ -1286,14 +1286,12 @@ footer {
 .asection ul {
   list-style: disc;
   text-align: left;
-  margin-bottom: 28px;
+  margin: 0 auto;
   max-width: 500px;
   padding-left: 1.5rem;
 }
-.asection ul::marker{
+.asection ul li::marker {
     color: rgba(73, 80, 60, 0.50);
-font-size: 28px;
-
 }
 
 
