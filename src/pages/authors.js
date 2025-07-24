@@ -4,7 +4,7 @@
 
 import hero from '../assets/hero.jpg';
 import investment from '../assets/investment.jpg';
-
+import vector from '../assets/Vector.png'
 
 const Authors = () =>{
   return ( 
@@ -14,7 +14,7 @@ const Authors = () =>{
           <div className="hero-content">
             <h5>Three authors. Three websites. One summer only.</h5>
             <h1>An obsession-worthy <br/>website in just 6-weeks</h1>
-            <a href="#" className="author-btn">Unlock your dream site</a>
+            <a href="#" className="author-hero-btn">Unlock your dream site</a>
         </div>
       </section>
 
@@ -23,6 +23,10 @@ const Authors = () =>{
         <p>What do you want for your writing career this year? What about in the next decade? A well-crafted website can help open the doors to that dream and connect you with readers, agents, and unexpected opportunities.</p>
         <a href="#" className="author-btn">Unlock your dream website</a>
       </section>
+
+      <div className="page-break">
+        <img loading="lazy" src={vector} alt="pagebreak" className="page-break-img" />
+    </div>
 
       <section className="promise asection">
         <h2>Your website is the <i>only</i> place online you own entirely.</h2>
@@ -37,11 +41,12 @@ const Authors = () =>{
 
       <section className="transformation asection">
         <div className="transformation-content">
-            <p>From Undiscovered To Unforgettable</p>
+            <hr/>
+            <p className="transformation-header">From Undiscovered To Unforgettable</p>
         </div>
-        <h1>The <i>6-week</i> transformation</h1>
-        <p>By Fall, you’ll have your own corner of the internet that’s thoughtful, lasting, and true to your work. This 6-week process moves from strategy to launch, with most of your input needed in the first 3 weeks as we build the foundation. This package includes:</p>
-        <ul>
+        <h1 className="transformation-header">The <i>6-week</i> transformation</h1>
+        <p className="transformation-header">By Fall, you’ll have your own corner of the internet that’s thoughtful, lasting, and true to your work. This 6-week process moves from strategy to launch, with most of your input needed in the first 3 weeks as we build the foundation. This package includes:</p>
+        <ul className="transformation-main">
           <li>Strategic planning to clarify your vision, brand, and upcoming milestones, so our sitemap and website features support you long-term.</li>
           <li>Copywriting support that’s thoughtful, voice-driven, and tailored to every page’s goals (never with AI).</li>
           <li>Creative direction & visual identity design to set the tone with a moodboard, curated typography and color palette, and an optional type-based logo</li>
@@ -93,6 +98,10 @@ const Authors = () =>{
           <a href="#" className="author-btn">Unlock your dream website</a>
         </div>
       </section>
+
+    <div className="page-break-2">
+        <img loading="lazy" src={vector} alt="pagebreak" className="page-break-img" />
+    </div>
 
       <section className="cta asection">
         <p>Ready to create something magical?</p>
