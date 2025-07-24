@@ -1250,11 +1250,11 @@ footer {
   margin-top: 28px;
 }
 .author-intro{
-  max-width: 580px;
+  max-width: 600px;
   margin: 248px auto;
 }
 .promise{
-  max-width: 580px;
+  max-width: 600px;
   margin: 248px auto;
 }
 .page-break {
@@ -1278,16 +1278,22 @@ footer {
 .asection ol {
   list-style: decimal;
   text-align: left;
-  margin: 0 auto 1rem;
+  margin-bottom: 28px;
   max-width: 500px;
   padding-left: 1.5rem;
 }
+
 .asection ul {
   list-style: disc;
   text-align: left;
-  margin: 0 auto 1rem;
+  margin-bottom: 28px;
   max-width: 500px;
   padding-left: 1.5rem;
+}
+.asection ul::marker{
+    color: rgba(73, 80, 60, 0.50);
+font-size: 28px;
+
 }
 
 
@@ -1337,6 +1343,7 @@ footer {
 }
 .transformation-main{
  text-align: left !important;
+ align-items: right !important;;
  padding-left: 526px;
 }
 .fit{
