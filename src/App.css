@@ -1387,3 +1387,64 @@ footer {
     text-align: left;
   }
 }
+
+/* Author Inquiry Page */
+.author-inquiry-page{
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 500 !important;
+  font-style: normal;
+  color: #FFFEF8;
+  background-color: #49503C;
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+}
+.author-inquiry-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.author-inquiry-form .form-group {
+  margin-bottom: 2rem;
+}
+
+.author-inquiry-form input[type="text"],
+.author-inquiry-form input[type="email"],
+.author-inquiry-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: "Neue Haas Unica W1G";
+  font-size: 16px;
+}
+
+.author-inquiry-form input::placeholder,
+.author-inquiry-form textarea::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.author-inquiry-form p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.author-inquiry-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: "Neue Haas Unica W1G";
+}
+
+.author-inquiry-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.author-inquiry-form button {
+  align-self: center;
+}
