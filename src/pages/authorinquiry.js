@@ -14,7 +14,7 @@ const AuthorForm = () => {
         <section className="author-inquiry-form asection">
         <form 
           name="author" 
-          action="/thank-you"
+          action="https://itsproof.co/thank-you"
           method="POST" 
           data-netlify="true" 
           className="author-form"
