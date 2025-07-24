@@ -1207,8 +1207,7 @@ footer {
   padding-top: 220px;
   z-index: 2;
   color: #49503C;
-  padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .author-page h1 {
@@ -1216,7 +1215,7 @@ footer {
   line-height: 74.88px;
 }
 .author-page h2 {
-  font-size: 58px;
+  font-size: 48px;
   line-height: 55.2px;
 }
 .author-page h3 {
@@ -1243,7 +1242,20 @@ footer {
   line-height: 25.6px;
   margin-top: 28px;
 }
-.author-intro .promise{
+.asection li {
+  font-family: "Neue Haas Unica W1G";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-top: 28px;
+}
+.author-intro{
+  max-width: 580px;
+  margin-top: 248px;
+  margin-bottom: 248px;
+}
+.promise{
   max-width: 580px;
   margin-top: 248px;
   margin-bottom: 248px;
@@ -1345,10 +1357,10 @@ footer {
 .investment-text {
   max-width: 500px;
 }
-.page-break-2{
+/* .page-break-2{
   padding-top: 144px;
   padding-bottom: 144px;
-}
+} */
 @media (min-width: 768px) {
   .investment {
     flex-direction: row;
