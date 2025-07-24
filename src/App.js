@@ -10,7 +10,7 @@ import About from './pages/about';
 import Authors from './pages/authors';
 import Newhome from './pages/newhome';
 import PageNotFound from './pages/404page';
-import Authorinquiry from './pages/authorinquiry';
+import AuthorForm from './pages/authorinquiry';
 import ThankYou from './pages/ThankYou';
 
 const MEASUREMENT_ID = 'G-4ZV4YCN0DD';
@@ -35,7 +35,7 @@ function App() {
         <Route path='/' element={<Newhome/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/authors' element={<Authors/>}/>
-        <Route path='/author-inquiry-form' element={<Authorinquiry/>}/>
+        <Route path='/author-inquiry-form' element={<AuthorForm/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/newhome" element={<Navigate to="/" replace />} />
