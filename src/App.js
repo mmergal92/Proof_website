@@ -11,7 +11,7 @@ import Authors from './pages/authors';
 import Newhome from './pages/newhome';
 import PageNotFound from './pages/404page';
 import Authorinquiry from './pages/authorinquiry';
-
+import ThankYou from './pages/ThankYou';
 
 const MEASUREMENT_ID = 'G-4ZV4YCN0DD';
 ReactGA.initialize(MEASUREMENT_ID);
@@ -37,6 +37,7 @@ function App() {
         <Route path='/authors' element={<Authors/>}/>
         <Route path='/author-inquiry-form' element={<Authorinquiry/>}/>
         <Route path='/islandipsum' element={<Loremipsum/>}/>
+        <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/newhome" element={<Navigate to="/" replace />} />
         <Route path="*" element={<PageNotFound />} /> {/* Catch-all route for 404 */}
       </Routes>

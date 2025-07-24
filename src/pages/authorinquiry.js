@@ -11,8 +11,21 @@ const AuthorForm = () => {
         </div>
       </section>
 
-      <section className="author-inquiry-intro asection">
-        <form className="author-inquiry-form">
+        <section className="author-inquiry-form asection">
+        <form 
+          name="author" 
+          method="POST" 
+          data-netlify="true" 
+          netlify-honeypot="bot-field"
+          action="/thank-you"
+          className="author-form"
+        >
+          {/* hidden honeypot field for bots */}
+          <input type="hidden" name="form-name" value="author" />
+          <p hidden>
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
           <div className="form-group">
             <input type="text" name="fullName" placeholder="Full name *" required />
             <input type="email" name="email" placeholder="Email *" required />
