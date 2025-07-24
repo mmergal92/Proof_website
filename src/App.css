@@ -1290,25 +1290,7 @@ footer {
   padding-left: 1.5rem;
 }
 
-.author-btn {
-  display: inline-block;
-  background: #49503C;
-  color: #fff;
-  margin-top: 28px; 
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16.1px;
-  font-family: "anonymous-pro", monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-.author-btn:hover {
-  background: #49503C;
-  opacity: .5;
-}
+
 .author-hero-btn{
   display: inline-block;
   background: #FFFEF8;
@@ -1326,7 +1308,26 @@ footer {
 }
 .author-hero-btn:hover {
   background: #FFFEF8;
-  opacity: .5;
+  opacity: 0.5;
+}
+.author-btn {
+  display: inline-block;
+  background: #49503C;
+  color: #fff;
+  margin-top: 28px; 
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.1px;
+  font-family: "anonymous-pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.author-btn:hover {
+  background: #49503C;
+  opacity: 0.5;
 }
 .transformation{
   padding: 130px;

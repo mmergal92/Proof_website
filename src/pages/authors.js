@@ -73,7 +73,7 @@ const Authors = () =>{
         </ol>
         <a href="#" className="author-btn">Unlock your dream website</a>
           <div className="fit-content">
-            <h2>And aren’t you tired of fighting<br/> with the algorithm?</h2>
+            <p>And aren’t you tired of fighting<br/> with the algorithm?</p>
         </div>
       </section>
 
