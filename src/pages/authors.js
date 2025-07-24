@@ -12,60 +12,101 @@ const Authors = () =>{
       <section className="author-hero "> 
         <img loading="lazy" src={hero} alt="beach" className="hero-bg" />
           <div className="hero-content">
-            <h1>An obsession-worthy website in just 6 weeks</h1>
+            <h2>Three authors. Three websites. One summer only.</h2>
+            <h1>An obsession-worthy <br/>website in just 6-weeks</h1>
+            <a href="#" className="author-btn">Unlock your dream site</a>
         </div>
       </section>
 
       <section className="author-intro asection">
-        <h2>Imagine a digital experience worth sharing</h2>
-        <p>It’s time to feel proud of your website — the one place online you fully own. We craft intentional sites that make people fall in love with your business.</p>
-        <a href="#" className="author-btn">Start your project</a>
+        <h2>Imagine a digital experience as <i>captivating</i> as your writing</h2>
+        <p>What do you want for your writing career this year? What about in the next decade? A well-crafted website can help open the doors to that dream and connect you with readers, agents, and unexpected opportunities.</p>
+        <a href="#" className="author-btn">Unlock your dream website</a>
       </section>
 
       <section className="promise asection">
-        <h2>Your website is the only place nobody owns except you</h2>
-        <p>Make it work for you 24/7 with a seamless design that attracts, converts, and delights.</p>
-        <a href="#" className="author-btn">Learn More</a>
+        <h2>Your website is the <i>only</i> place online you own entirely.</h2>
+        <p>So it better do its job! An excellent website will...</p>
+         <ul>
+          <li>Give agents and publishers a sense of your voice and market positioning.</li>
+          <li>Enrich the reader experience and build pure, unadulterated excitement for your next release.</li>
+          <li>Most importantly, look, feel, and sound like <b>you</b>.</li>
+        </ul>
+        <a href="#" className="author-btn">Unlock your dream website</a>
       </section>
 
       <section className="transformation asection">
-        <h3>The 6-week transformation</h3>
-        <p>Here’s exactly how we take you from an outdated, underwhelming site to an obsession-worthy one in six weeks:</p>
+        <div className="transformation-content">
+            <h2>From Undiscovered To Unforgettable</h2>
+        </div>
+        <h3>The <i>6-week</i> transformation</h3>
+        <p>By Fall, you’ll have your own corner of the internet that’s thoughtful, lasting, and true to your work. This 6-week process moves from strategy to launch, with most of your input needed in the first 3 weeks as we build the foundation. This package includes:</p>
         <ul>
-          <li>Week 1: Deep dive strategy session</li>
-          <li>Week 2: Sitemap, wireframes & moodboard</li>
-          <li>Week 3: Initial design concepts</li>
-          <li>Week 4: Final design approval</li>
-          <li>Week 5: Development & testing</li>
-          <li>Week 6: Launch & celebration</li>
+          <li>Strategic planning to clarify your vision, brand, and upcoming milestones, so our sitemap and website features support you long-term.</li>
+          <li>Copywriting support that’s thoughtful, voice-driven, and tailored to every page’s goals (never with AI).</li>
+          <li>Creative direction & visual identity design to set the tone with a moodboard, curated typography and color palette, and an optional type-based logo</li>
+          <li>Bespoke design of up to four pages that elevates your work and excite readers, plus custom branded templates for additional pages.</li>
+          <li>A special world-building feature. Think: a behind-the-scenes moment, quiz, or glossary to enhance your work upcoming release (we can help you brainstorm!).</li>
+          <li>Responsive, mobile-friendly development that’s accessible, easy to update, and built to last.</li>
+          <li>Email integration using ConvertKit, MailerLite, Mailchimp, or any integration of choice (optional)</li>
+          <li>Backend training so you can update your site with confidence and ease.</li>
+          <li>Content migration for content you’d like to move over from your current site (optional).</li>
+          <li>Bonus launch kit with social media templates to celebrate your new website (and upcoming book release if applicable)</li>
         </ul>
-        <a href="#" className="author-btn">See the Process</a>
+        <a href="#" className="author-btn">Unlock your dream website</a>
       </section>
 
       <section className="fit asection">
         <h3>This is for you if...</h3>
         <ol>
-            <li>You’re craving a website that actually converts</li>
-            <li>You’re done DIYing and ready for expert support</li>
-            <li>You want a trusted partner to handle the process</li>
+            <li>You have a book release coming up between September 2025 and December 2026.</li>
+            <li>You want a website that feels like an extension of your voice and vision.</li>
+            <li>You’re tired of duct-taping together a Squarespace site you hate don’t love.</li>
+            <li>You want a design partner who loves reading as much as you do.</li>
+            <li>You’d rather spend your time writing than wrestling with your website.</li>
         </ol>
-        <a href="#" className="author-btn">Get Started</a>
+        <a href="#" className="author-btn">Unlock your dream website</a>
+          <div className="fit-content">
+            <h2>And aren’t you tired of fighting<br/> with the algorithm?</h2>
+        </div>
       </section>
 
       <section className="investment asection">
         <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
           <h3>Investment</h3>
-          <p>Our 6-week website experience starts at $6,000 USD. Payment plans available. Let’s make your dream website a reality.</p>
-          <a href="#" className="author-btn">Book a Call</a>
+          <h2>From Undiscovered to Unforgettable: <br/>The Six-Week Transformation</h2>
+          <div>
+            <h4>Normal price: $6,000 </h4>
+            <h4><b>Introductory rate: $4,000*</b></h4>
+          </div>
+          <p>We’re offering a one-time discount of $2,000 off for three authors with books launching between September 2025 and December 2026. You’ll get the same close collaboration, custom strategy, and thoughtful design we offer all our clients—just at a lower rate, for a few early partners.</p>
+          <div className="investment-content">
+            <h2>*Why the special rate?</h2>
+            <p>Fantastic question! It’s three-fold:</p>
+            <ol>
+                <li>We LOVE working with writers and we’d like to work with more (eventually, building a one-stop shop just for you).</li>
+                <li>We’re offering this package at a reduced rate in exchange for two things: your creative trust and permission to share your project publicly.</li>
+                <li>It’s for a limited-time only for just  three spots. First come, first booked. : )</li>
+            </ol>
+        </div>
+          <a href="#" className="author-btn">Unlock your dream website</a>
         </div>
       </section>
 
       <section className="cta asection">
-        <h3>We only offer three spots for this each month.</h3>
-        <p>Ready to claim yours?</p>
-        <a href="#" className="author-btn">Book Now</a>
+        <h4>Ready to create something magical?</h4>
+        <h3>We’re only offering three spots for this pilot.</h3>
+        <p>If you’re interested in being one of the three authors we partner with this summer, we’ll ask you to fill out a (truly) short questionnaire. Then, we’ll set up a 20-min call to share more about the process and see if this is the right fit for you. Once we’re aligned, we’ll kick off right away!</p>
+        <p>This offer ends August 1. Let’s make this summer count.</p>
+        <a href="#" className="author-btn">Unlock your dream website</a>
       </section>
+
+
+     <section className="cta asection">
+        <h4>An invitation from Segacy & Maria at Proof Agency</h4>
+        <h6>This page isn't public (yet). You're seeing this because we admire your work and think you might be interested in collaborating with us. Please feel free to share this invitation to like-minded authors in your network.</h6>
+     </section>
     </div>
   );
 };

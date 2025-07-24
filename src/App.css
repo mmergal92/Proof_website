@@ -1173,7 +1173,8 @@ footer {
 /* AUTHOR PAGE  */
 .author-page {
   font-family: 'Georgia', serif;
-  color: #333;
+  color: #49503C;
+  background-color: #FFFEF8;
   line-height: 1.6;
   margin: 0 ;
   padding: 0;
