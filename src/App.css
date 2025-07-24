@@ -1258,6 +1258,15 @@ footer {
   max-width: 580px;
   margin: 248px auto;
 }
+.page-break {
+  position: relative;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
 .page-break-img{
   position: absolute;
   top: 0;
