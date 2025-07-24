@@ -1177,14 +1177,14 @@ footer {
   font-style: normal;
   color: #49503C;
   background-color: #FFFEF8;
-  line-height: 1.6;
   margin: 0 ;
   padding: 0;
+  text-align: center;
 }
 
 .author-hero {
   position: relative;
-  height: 60vh;
+  height: 797px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1204,25 +1204,47 @@ footer {
 
 .hero-content {
   position: relative;
+  padding-top: 220px;
   z-index: 2;
-  color: white;
+  color: #49503C;
   padding: 2rem;
 }
 
-.author-hero h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 1rem;
+.author-page h1 {
+  font-size: 72px;
+  line-height: 74.88px;
 }
+.author-page h2 {
+  font-size: 58px;
+  line-height: 55.2px;
+}
+.author-page h3 {
+  font-size: 40px;
+  line-height: 52px;
+}
+.author-page h4 {
+  font-size: 24px;
+  line-height:  33.6px;
+}
+.author-page h5 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height:  24px;
+}
+
+.asection p {
+  font-family: "Neue Haas Unica W1G";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
 
 .asection {
   margin: 4rem 0;
   text-align: center;
-}
-
-.asection h2, .asection h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
 }
 
 ol {
@@ -1230,13 +1252,6 @@ ol {
 }
 
 
-.asection p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-family: "neue-haas-unica", sans-serif;
-font-weight: 400;
-font-style: normal;
-}
 
 .asection ul {
   list-style: disc;
@@ -1248,15 +1263,17 @@ font-style: normal;
 
 .author-btn {
   display: inline-block;
-  background: #556B2F;
+  background: #49503C;
   color: #fff;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.1px;
   font-family: "anonymous-pro", monospace;
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .investment {

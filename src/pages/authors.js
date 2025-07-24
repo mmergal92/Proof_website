@@ -12,7 +12,7 @@ const Authors = () =>{
       <section className="author-hero "> 
         <img loading="lazy" src={hero} alt="beach" className="hero-bg" />
           <div className="hero-content">
-            <h2>Three authors. Three websites. One summer only.</h2>
+            <h5>Three authors. Three websites. One summer only.</h5>
             <h1>An obsession-worthy <br/>website in just 6-weeks</h1>
             <a href="#" className="author-btn">Unlock your dream site</a>
         </div>
@@ -37,9 +37,9 @@ const Authors = () =>{
 
       <section className="transformation asection">
         <div className="transformation-content">
-            <h2>From Undiscovered To Unforgettable</h2>
+            <p>From Undiscovered To Unforgettable</p>
         </div>
-        <h3>The <i>6-week</i> transformation</h3>
+        <h1>The <i>6-week</i> transformation</h1>
         <p>By Fall, you’ll have your own corner of the internet that’s thoughtful, lasting, and true to your work. This 6-week process moves from strategy to launch, with most of your input needed in the first 3 weeks as we build the foundation. This package includes:</p>
         <ul>
           <li>Strategic planning to clarify your vision, brand, and upcoming milestones, so our sitemap and website features support you long-term.</li>
@@ -74,11 +74,11 @@ const Authors = () =>{
       <section className="investment asection">
         <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
-          <h3>Investment</h3>
-          <h2>From Undiscovered to Unforgettable: <br/>The Six-Week Transformation</h2>
+          <h1>Investment</h1>
+          <h4>From Undiscovered to Unforgettable: <br/>The Six-Week Transformation</h4>
           <div>
-            <h4>Normal price: $6,000 </h4>
-            <h4><b>Introductory rate: $4,000*</b></h4>
+            <p>Normal price: $6,000 </p>
+            <p><b>Introductory rate: $4,000*</b></p>
           </div>
           <p>We’re offering a one-time discount of $2,000 off for three authors with books launching between September 2025 and December 2026. You’ll get the same close collaboration, custom strategy, and thoughtful design we offer all our clients—just at a lower rate, for a few early partners.</p>
           <div className="investment-content">
@@ -95,8 +95,8 @@ const Authors = () =>{
       </section>
 
       <section className="cta asection">
-        <h4>Ready to create something magical?</h4>
-        <h3>We’re only offering three spots for this pilot.</h3>
+        <p>Ready to create something magical?</p>
+        <h2>We’re only offering three spots for this pilot.</h2>
         <p>If you’re interested in being one of the three authors we partner with this summer, we’ll ask you to fill out a (truly) short questionnaire. Then, we’ll set up a 20-min call to share more about the process and see if this is the right fit for you. Once we’re aligned, we’ll kick off right away!</p>
         <p>This offer ends August 1. Let’s make this summer count.</p>
         <a href="#" className="author-btn">Unlock your dream website</a>
