@@ -44,6 +44,41 @@
 
   gtag('config', 'G-4ZV4YCN0DD');
 </script>
+<!-- Netlify hidden form for detection -->
+<form name="author" netlify netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="author" />
+  
+  <!-- Basic fields matching your React form -->
+  <input type="text" name="fullName" />
+  <input type="email" name="email" />
+  <input type="text" name="penName" />
+  <input type="text" name="socialLinks" />
+  <input type="text" name="website" />
+  <input type="text" name="howFound" />
+
+  <!-- Example genre checkboxes -->
+  <input type="checkbox" name="genre" value="Romance" />
+  <input type="checkbox" name="genre" value="Fantasy" />
+  <input type="checkbox" name="genre" value="Horror" />
+  <input type="checkbox" name="genre" value="Mystery" />
+  <input type="checkbox" name="genre" value="Upmarket" />
+  <input type="checkbox" name="genre" value="Literary Fiction" />
+
+  <!-- Example radio groups -->
+  <input type="radio" name="representation" value="Yes" />
+  <input type="radio" name="representation" value="No" />
+
+  <input type="radio" name="release" value="Yes" />
+  <input type="radio" name="release" value="No" />
+
+  <input type="radio" name="publishing" value="Self-published" />
+  <input type="radio" name="publishing" value="Traditionally published" />
+
+  <!-- Example textareas -->
+  <textarea name="project"></textarea>
+  <textarea name="dates"></textarea>
+  <textarea name="details"></textarea>
+</form>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
