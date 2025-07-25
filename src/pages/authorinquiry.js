@@ -6,7 +6,7 @@ const AuthorForm = () => {
 
   const handleSubmit = () => {
     setTimeout(() => {
-      window.location.href = '/thankyou.html';
+      window.location.href = '/thankyou';
     }, 100);
   };
 
@@ -24,7 +24,7 @@ const AuthorForm = () => {
         <form 
           ref={formRef}
           name="author" 
-          action="/thankyou.html"
+          action="/thankyou"
           method="POST" 
           data-netlify="true" 
           className="author-form"
