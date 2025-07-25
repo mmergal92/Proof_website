@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const AuthorForm = () => {
+ 
+    const formRef = useRef();
+
+  const handleSubmit = () => {
+    setTimeout(() => {
+      window.location.href = '/thankyou.html';
+    }, 100);
+  };
+
   return (
     <div className="author-inquiry-page">
       <section className="author-inquiry-hero">
@@ -13,13 +22,14 @@ const AuthorForm = () => {
 
         <section className="author-inquiry-form asection">
         <form 
+          ref={formRef}
           name="author" 
           action="/thankyou.html"
           method="POST" 
           data-netlify="true" 
           className="author-form"
           netlify-honeypot="bot-field"
-          onSubmit={() => setTimeout(() => window.location.href = "/thankyou.html", 1000)}
+           onSubmit={handleSubmit}
         >
           {/* hidden honeypot field for bots */}
           <input type="hidden" name="form-name" value="author" />
