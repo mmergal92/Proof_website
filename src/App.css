@@ -1404,6 +1404,9 @@ font-style: normal;
   padding: 0;
   text-align: center;
 }
+.hero-inquiry-content{
+  padding-top: 220px;
+}
 .author-inquiry-form {
   max-width: 600px;
   margin: 0 auto;

@@ -37,13 +37,16 @@ const AuthorForm = () => {
             <label>Don’t fill this out: <input name="bot-field" /></label>
           </p>
 
-           <div className="form-group">
-            <label htmlFor="fullName">Full name *</label>
-            <input type="text" id="fullName" name="fullName" required />
-
-            <label htmlFor="email">Email *</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+         <div className="form-group two-col">
+            <div className="input-half">
+                <label htmlFor="fullName">Full name *</label>
+                <input type="text" id="fullName" name="fullName" required />
+            </div>
+            <div className="input-half">
+                <label htmlFor="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+         </div>
 
           <label htmlFor="penName">Pen name (if applicable)</label>
           <input type="text" id="penName" name="penName" />
@@ -130,7 +133,7 @@ const AuthorForm = () => {
 
           <button type="submit" className="author-btn">Submit</button>
         </form>
-        
+
         <p><i>An invitation from Segacy & Maria at <a href="https://itsproof.co">Proof Agency</a></i></p>
       </section>
     </div>
