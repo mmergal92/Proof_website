@@ -19,6 +19,7 @@ const AuthorForm = () => {
           data-netlify="true" 
           className="author-form"
           netlify-honeypot="bot-field"
+          onSubmit={() => setTimeout(() => window.location.href = "/thankyou.html", 1000)}
         >
           {/* hidden honeypot field for bots */}
           <input type="hidden" name="form-name" value="author" />
