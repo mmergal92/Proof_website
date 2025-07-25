@@ -1412,7 +1412,7 @@ font-style: normal;
 }
 label{
   color: #FFFEF8;
-  text-align: center;
+  text-align: left !important;
 
   /* h/6 */
   font-family: Inter;
@@ -1421,9 +1421,6 @@ label{
   font-weight: 600;
   line-height: 160%; /* 22.4px */
   letter-spacing: -0.14px;
-}
-.author-inquiry-form .form-group {
-  margin-bottom: 2rem;
 }
 .author-inquiry-form .two-col {
   display: flex;
@@ -1440,13 +1437,11 @@ label{
 .author-inquiry-form input[type="email"],
 .author-inquiry-form textarea {
   width: 100%;
-  padding: 0.75rem;
+  padding: 12px 16px;
   margin-bottom: 1rem;
-  border: 1px solid #fff;
   border-radius: 8px;
   border: 1.5px solid #FFFEF8;
   background: rgba(255, 255, 255, 0.05);
-  background: transparent;
   color: #fff;
   font-family: "Neue Haas Unica W1G";
   font-size: 16px;
