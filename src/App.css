@@ -1407,6 +1407,12 @@ font-style: normal;
 .hero-inquiry-content{
   padding-top: 220px;
   text-align: center;
+  padding-bottom: 80px;
+}
+.hero-inquiry-content h1{
+  padding-top: 220px;
+  text-align: center;
+  padding-bottom: 80px;
 }
 .author-inquiry-form {
   max-width: 600px;
@@ -1478,12 +1484,23 @@ label{
 }
 .author-submit-btn{
 display: flex;
-padding: 14px 28px;
 justify-content: center;
 align-items: center;
 gap: 8px;
 align-self: stretch;
-border-radius: 56px;
-border: 2px solid #FFFEF8;
+border: 1px solid #FFFEF8;
 background: #FFFEF8;
+  color: #49503C;
+  margin-top: 28px; 
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 56px;
+  font-size: 14px;
+  line-height: 16.1px;
+  font-family: "anonymous-pro", monospace;
+  font-weight: 700;
+}
+.author-submit-btn:hover {
+  background: #FFFEF8;
+  opacity: 0.5;
 }

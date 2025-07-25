@@ -11,7 +11,7 @@ const AuthorForm = () => {
   };
 
   return (
-    <div className="author-inquiry-page">
+    <div className="author-inquiry-page author-page">
       <section className="author-inquiry-hero">
         <div className="hero-inquiry-content">
           <h5>From Undiscoverable to Unforgettable: The 6-Week Transformation</h5>
@@ -131,7 +131,7 @@ const AuthorForm = () => {
           </label>
           <textarea id="details" name="details"></textarea>
 
-          <button type="submit" className="author-btn">Submit</button>
+          <button type="submit" className="author-submit-btn">Submit</button>
         </form>
 
         <p><i>An invitation from Segacy & Maria at <a href="https://itsproof.co">Proof Agency</a></i></p>
