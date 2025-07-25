@@ -1409,11 +1409,6 @@ font-style: normal;
   text-align: center;
   padding-bottom: 80px;
 }
-.hero-inquiry-content h1{
-  padding-top: 220px;
-  text-align: center;
-  padding-bottom: 80px;
-}
 .author-inquiry-form {
   max-width: 600px;
   margin: 0 auto;
@@ -1483,7 +1478,7 @@ label{
   align-self: center;
 }
 .author-submit-btn{
-display: flex;
+display: inline-block;
 justify-content: center;
 align-items: center;
 gap: 8px;
