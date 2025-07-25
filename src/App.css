@@ -1352,6 +1352,11 @@ footer {
 .fit{
   padding: 130px;
 }
+.fit-content p{
+  font-family: "mynerve", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 .investment {
   padding: 130px;
   display: flex;

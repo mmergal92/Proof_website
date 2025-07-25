@@ -37,50 +37,100 @@ const AuthorForm = () => {
             <label>Don’t fill this out: <input name="bot-field" /></label>
           </p>
 
-          <div className="form-group">
-            <input type="text" name="fullName" placeholder="Full name *" required />
-            <input type="email" name="email" placeholder="Email *" required />
+           <div className="form-group">
+            <label htmlFor="fullName">Full name *</label>
+            <input type="text" id="fullName" name="fullName" required />
+
+            <label htmlFor="email">Email *</label>
+            <input type="email" id="email" name="email" required />
           </div>
 
-          <input type="text" name="penName" placeholder="Pen name (if applicable)" />
-          <input type="text" name="socialLinks" placeholder="Social media links" />
-          <input type="text" name="website" placeholder="Current website" />
-          <input type="text" name="howFound" placeholder="How did you find us?" />
+          <label htmlFor="penName">Pen name (if applicable)</label>
+          <input type="text" id="penName" name="penName" />
+
+          <label htmlFor="socialLinks">
+            Social media links (separate with commas)
+          </label>
+          <input type="text" id="socialLinks" name="socialLinks" />
+
+          <label htmlFor="website">Current website (if applicable)</label>
+          <input type="text" id="website" name="website" />
+
+          <label htmlFor="howFound">How did you find us?</label>
+          <input type="text" id="howFound" name="howFound" />
 
           <div className="form-group">
-            <p>What’s your genre *</p>
-            <label><input type="checkbox" name="genre" value="Romance" /> Romance</label>
-            <label><input type="checkbox" name="genre" value="Fantasy" /> Fantasy</label>
-            <label><input type="checkbox" name="genre" value="Horror" /> Horror</label>
-            <label><input type="checkbox" name="genre" value="Mystery" /> Mystery</label>
-            <label><input type="checkbox" name="genre" value="Upmarket" /> Upmarket</label>
-            <label><input type="checkbox" name="genre" value="Literary Fiction" /> Literary fiction</label>
+            <p className="label">What’s your genre *</p>
+            <p className="sub-label">Choose any that apply</p>
+            <label>
+              <input type="checkbox" name="genre" value="Romance" /> Romance
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="Fantasy" /> Fantasy
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="Horror" /> Horror
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="Mystery" /> Mystery
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="Upmarket" /> Upmarket
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="Literary Fiction" /> Literary fiction
+            </label>
           </div>
 
           <div className="form-group">
             <p>Do you have representation? *</p>
-            <label><input type="radio" name="representation" value="Yes" required /> Yes</label>
-            <label><input type="radio" name="representation" value="No" /> No</label>
+            <label>
+              <input type="radio" name="representation" value="Yes" required /> Yes
+            </label>
+            <label>
+              <input type="radio" name="representation" value="No" /> No
+            </label>
           </div>
 
           <div className="form-group">
-            <p>Do you plan to release a new book between September 2025–December 2026? *</p>
-            <label><input type="radio" name="release" value="Yes" required /> Yes</label>
-            <label><input type="radio" name="release" value="No" /> No</label>
+            <p>
+              Do you plan to release a new book between September 2025–December
+              2026? *
+            </p>
+            <label>
+              <input type="radio" name="release" value="Yes" required /> Yes
+            </label>
+            <label>
+              <input type="radio" name="release" value="No" /> No
+            </label>
           </div>
 
           <div className="form-group">
             <p>Are you self-published or traditionally published? *</p>
-            <label><input type="radio" name="publishing" value="Self-published" required /> Self-published</label>
-            <label><input type="radio" name="publishing" value="Traditionally published" /> Traditionally published</label>
+            <label>
+              <input type="radio" name="publishing" value="Self-published" required /> Self-published
+            </label>
+            <label>
+              <input type="radio" name="publishing" value="Traditionally published" /> Traditionally published
+            </label>
           </div>
 
-          <textarea name="project" placeholder="Tell us a bit about your project"></textarea>
-          <textarea name="dates" placeholder="Are there any important dates or deadlines coming up for you we should be aware of?"></textarea>
-          <textarea name="details" placeholder="Are there any other important details we should know about you or your work?"></textarea>
+          <label htmlFor="project">Tell us a bit about your project</label>
+          <textarea id="project" name="project"></textarea>
+
+          <label htmlFor="dates">
+            Are there any important dates or deadlines coming up for you we should be aware of?
+          </label>
+          <textarea id="dates" name="dates"></textarea>
+
+          <label htmlFor="details">
+            Are there any other important details we should know about you or your work?
+          </label>
+          <textarea id="details" name="details"></textarea>
 
           <button type="submit" className="author-btn">Submit</button>
         </form>
+        
         <p><i>An invitation from Segacy & Maria at <a href="https://itsproof.co">Proof Agency</a></i></p>
       </section>
     </div>
