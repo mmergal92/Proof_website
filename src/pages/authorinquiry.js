@@ -134,7 +134,7 @@ const AuthorForm = () => {
           <button type="submit" className="author-submit-btn">Submit</button>
         </form>
 
-        <p><i>An invitation from Segacy & Maria at <a href="https://itsproof.co">Proof Agency</a></i></p>
+        <h6>An invitation from Segacy & Maria at <a href="https://itsproof.co">Proof Agency</a></h6>
       </section>
     </div>
   );
