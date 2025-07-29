@@ -1185,11 +1185,18 @@ footer {
 .author-hero {
   position: relative;
   height: 797px;
-  display: flex;
-  justify-content: center;
+ display: flex;
+  flex-direction: column;
+    justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
+}
+
+.author-hero img {
+  max-width: 100%;
+  height: 800px;
+  margin-right: 2rem;
 }
 
 .hero-content {
