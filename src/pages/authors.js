@@ -10,12 +10,12 @@ const Authors = () =>{
   return ( 
     <div className="author-page">
       <section className="author-hero "> 
-        <img loading="lazy" src={hero} alt="beach" className="hero-bg" />
-          <div className="hero-content">
+        <div className="hero-content">
             <h5>Three fiction authors. Three stunning transformations. This summer only.</h5>
             <h1>An obsession-worthy website in just 6-weeks</h1>
             <a href="#offer" className="author-hero-btn">See what's included</a>
         </div>
+        <img loading="lazy" src={hero} alt="hero" />
       </section>
 
       <section className="author-intro asection">
