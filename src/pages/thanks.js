@@ -2,7 +2,7 @@ import React from 'react';
 
 const ThankYou = () => {
   return (
-    <div className="author-page">
+    <div className="author-page-thanks">
       <section className="author-hero">
         <div className="hero-content">
           <h1>Thank you!</h1>

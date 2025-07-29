@@ -1499,3 +1499,14 @@ background: #FFFEF8;
   background: #FFFEF8;
   opacity: 0.5;
 }
+
+.author-page-thanks{
+    font-family: "p22-mackinac-pro", serif;
+  font-weight: 500 !important;
+  font-style: normal;
+  color: #FFFEF8;
+  background-color: #49503C;
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+}
