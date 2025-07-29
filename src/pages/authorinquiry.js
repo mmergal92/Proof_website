@@ -14,13 +14,13 @@ const AuthorForm = () => {
     <div className="author-inquiry-page author-page">
       <section className="author-inquiry-hero">
         <div className="hero-inquiry-content">
-          <h5>From Undiscoverable to Unforgettable: The 6-Week Transformation</h5>
+          <h5>From Good Enough to Unforgettable: The Author Platform Transformation</h5>
           <h1>Let’s begin</h1>
           <p>Once you hit submit, we’ll set up a quick 20-minute call to walk you through how we work, make sure we’re a good fit, and answer any questions.</p>
         </div>
       </section>
 
-        <section className="author-inquiry-form asection">
+      <section className="author-inquiry-form asection">
         <form 
           ref={formRef}
           name="author" 
@@ -52,7 +52,7 @@ const AuthorForm = () => {
           <input type="text" id="penName" name="penName" />
 
           <label htmlFor="socialLinks">
-            Social media links (separate with commas)
+            Social media links
           </label>
           <input type="text" id="socialLinks" name="socialLinks" />
 
@@ -85,6 +85,48 @@ const AuthorForm = () => {
             </label>
           </div>
 
+        <div className="form-group">
+            <p className="label">How many books have you published?*</p>
+            <label>
+              <input type="checkbox" name="genre" value="one" /> 1-2 books
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="some" /> 3-5 books
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="many" /> 6+ books
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="none" /> I have a completed manuscript/book deal but haven't published yet
+            </label>
+            <label>
+              <input type="checkbox" name="genre" value="other" /> Other
+            </label>
+          </div>
+
+          <div className="form-group">
+            <p>How do you publish your books? *</p>
+            <label>
+              <input type="radio" name="publishing" value="Self-published" required /> Self-published
+            </label>
+            <label>
+              <input type="radio" name="publishing" value="Traditionally published" /> Traditionally published
+            </label>
+            <label>
+              <input type="radio" name="publishing" value="Both" /> Both
+            </label>
+          </div>
+
+          <div className="form-group">
+            <p>Do you have an email newsletter? *</p>
+            <label>
+              <input type="radio" name="release" value="Yes" required /> Yes
+            </label>
+            <label>
+              <input type="radio" name="release" value="No" /> No
+            </label>
+          </div>
+
           <div className="form-group">
             <p>Do you have representation? *</p>
             <label>
@@ -95,47 +137,30 @@ const AuthorForm = () => {
             </label>
           </div>
 
-          <div className="form-group">
-            <p>
-              Do you plan to release a new book between September 2025–December
-              2026? *
-            </p>
-            <label>
-              <input type="radio" name="release" value="Yes" required /> Yes
-            </label>
-            <label>
-              <input type="radio" name="release" value="No" /> No
-            </label>
-          </div>
 
-          <div className="form-group">
-            <p>Are you self-published or traditionally published? *</p>
-            <label>
-              <input type="radio" name="publishing" value="Self-published" required /> Self-published
-            </label>
-            <label>
-              <input type="radio" name="publishing" value="Traditionally published" /> Traditionally published
-            </label>
-          </div>
 
-          <label htmlFor="project">Tell us a bit about your project</label>
+
+          <label htmlFor="project">Tell us about your author goals and what you'd love to see in your new website.</label>
           <textarea id="project" name="project"></textarea>
 
           <label htmlFor="dates">
-            Are there any important dates or deadlines coming up for you we should be aware of?
+            Any upcoming book launches or important dates we should know about?
           </label>
           <textarea id="dates" name="dates"></textarea>
 
           <label htmlFor="details">
-            Are there any other important details we should know about you or your work?
+            Are there any other important details we should know about you or your work? 
           </label>
           <textarea id="details" name="details"></textarea>
 
           <button type="submit" className="author-submit-btn">Submit</button>
         </form>
 
-        <h6>An invitation from Segacy & Maria at <a href="https://itsproof.co">Proof Agency</a></h6>
-      </section>
+        <div className="cta asection">
+            <h4>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h4>
+            <h6>This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</h6>
+        </div>      
+     </section>
     </div>
   );
 };

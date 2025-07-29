@@ -12,16 +12,16 @@ const Authors = () =>{
       <section className="author-hero "> 
         <img loading="lazy" src={hero} alt="beach" className="hero-bg" />
           <div className="hero-content">
-            <h5>Three authors. Three websites. One summer only.</h5>
-            <h1>An obsession-worthy <br/>website in just 6-weeks</h1>
-            <a href="/authorinquiryform" className="author-hero-btn">Unlock your dream site</a>
+            <h5>Three fiction authors. Three stunning transformations. This summer only.</h5>
+            <h1>An obsession-worthy website in just 6-weeks</h1>
+            <a href="/authorinquiryform" className="author-hero-btn">See what's included</a>
         </div>
       </section>
 
       <section className="author-intro asection">
-        <h2>Imagine a digital experience as <i>captivating</i> as your writing</h2>
-        <p>What do you want for your writing career this year? What about in the next decade? A well-crafted website can help open the doors to that dream and connect you with readers, agents, and unexpected opportunities.</p>
-        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
+        <h2>Imagine a digital experience as <i>captivating</i> as your storytelling</h2>
+        <p>You pour your heart into every scene, every character, every twist that keeps readers turning pages until 3am. Your website should feel just as intentional. A place where readers discover behind-the-scenes moments of their favorite books and fall in love with the storyteller behind them. Where casual visitors become the kind of fans who pre-order everything you write and recommend you to everyone they know.</p>
+        <a href="/authorinquiryform" className="author-btn">See how we do it</a>
       </section>
 
 
@@ -30,50 +30,50 @@ const Authors = () =>{
      </section>
 
       <section className="promise asection">
-        <h2>Your website is the <i>only</i> place online you own entirely.</h2>
-        <p>So it better do its job! An excellent website will...</p>
+        <h2>Your website is where readers fall in love with more than just your books</h2>
+        <p>An excellent website will...</p>
          <ul>
-          <li>Give agents and publishers a sense of your voice and market positioning.</li>
+          <li>Give readers, book influencers, and industry professionals a clear sense of your unique voice and brand positioning.</li>
           <li>Enrich the reader experience and build pure, unadulterated excitement for your next release.</li>
           <li>Most importantly, look, feel, and sound like <b>you</b>.</li>
         </ul>
-        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">See how we do it</a>
       </section>
 
       <section className="transformation asection">
         <div className="transformation-content">
-            <p className="transformation-header">From Undiscovered To Unforgettable</p>
+            <p className="transformation-header">From Good Enough To Unforgettable</p>
             <hr/>
         </div>
         <h1 className="transformation-header">The <i>6-week</i> transformation</h1>
-        <p className="transformation-header">By Fall, you’ll have your own corner of the internet that’s thoughtful, lasting, and true to your work. This 6-week process moves from strategy to launch, with most of your input needed in the first 3 weeks as we build the foundation. This package includes:</p>
+        <p className="transformation-header">By Fall, you'll have an author website that actually feels like you—the kind that makes readers stay, explore, and eagerly sign up for your newsletter. We'll transform your online presence from good enough to unforgettable in just six weeks, with most of our collaboration happening early on as we build your foundation. Here's what we'll create together:</p>
         <ul className="transformation-main">
-          <li>Strategic planning to clarify your vision, brand, and upcoming milestones, so our sitemap and website features support you long-term.</li>
-          <li>Copywriting support that’s thoughtful, voice-driven, and tailored to every page’s goals (never with AI).</li>
-          <li>Creative direction & visual identity design to set the tone with a moodboard, curated typography and color palette, and an optional type-based logo</li>
-          <li>Bespoke design of up to four pages that elevates your work and excite readers, plus custom branded templates for additional pages.</li>
-          <li>A special world-building feature. Think: a behind-the-scenes moment, quiz, or glossary to enhance your work upcoming release (we can help you brainstorm!).</li>
-          <li>Responsive, mobile-friendly development that’s accessible, easy to update, and built to last.</li>
-          <li>Email integration using ConvertKit, MailerLite, Mailchimp, or any integration of choice (optional)</li>
-          <li>Backend training so you can update your site with confidence and ease.</li>
-          <li>Content migration for content you’d like to move over from your current site (optional).</li>
-          <li>Bonus launch kit with social media templates to celebrate your new website (and upcoming book release if applicable)</li>
+          <li><b>Author brand strategy</b> to clarify your unique voice, target readers, and upcoming book milestones, so every element works toward building your readership.</li>
+          <li><b>Authentic messaging</b> that captures your personality and connects with your ideal readers on every page (written by humans who understand your genre).</li>
+          <li><b>Visual identity</b> design that reflects your author brand with a curated mood board, typography, color palette, and optional author logo.</li>
+          <li><b>Custom website design</b> of up to four pages that showcases your books, builds excitement for future releases, plus branded templates for additional content.</li>
+          <li><b>Reader engagement features</b> like author spotlights, character profiles, or series extras to give fans deeper connection to your stories.</li>
+          <li><b>Mobile-optimized development</b> that's accessible, easy for you to update, and built to grow with your publishing career.</li>
+          <li><b>Newsletter integration</b> using ConvertKit, MailerLite, Mailchimp, or your preferred platform to capture and nurture your growing readership.</li>
+          <li><b>Website training</b> so you can confidently update content, add new books, and maintain your site.</li>
+          <li><b>Content migration</b> for anything you'd like to bring over from your current site.</li>
+          <li><b>Launch kit</b> with social media templates to celebrate your new author platform and promote upcoming releases.</li>
         </ul>
-        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">Reserve my spot</a>
       </section>
 
       <section className="fit asection">
         <h3>This is for you if...</h3>
         <ol>
-            <li>You have a book release coming up between September 2025 and December 2026.</li>
-            <li>You want a website that feels like an extension of your voice and vision.</li>
-            <li>You’re tired of duct-taping together a Squarespace site you hate don’t love.</li>
-            <li>You want a design partner who loves reading as much as you do.</li>
-            <li>You’d rather spend your time writing than wrestling with your website.</li>
+            <li>You're an established fiction author ready to invest in building a professional online presence.</li>
+            <li>You want a website that feels like an extension of your voice and vision, not a generic template.</li>
+            <li>You're tired of cobbling together a DIY site that doesn't reflect the quality of your writing.</li>
+            <li>You want a design partner who understands genre fiction and genuinely loves the books you write.</li>
+            <li>You'd rather spend your time writing your next book than wrestling with website frustrations.</li>
         </ol>
-        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
+        <a href="/authorinquiryform" className="author-btn">Reserve my spot</a>
           <div className="fit-content">
-            <p>And aren’t you tired of fighting<br/> with the algorithm?</p>
+            <p>And don't you want a break from<br/>fighting with the algorithm?</p>
         </div>
       </section>
 
@@ -81,22 +81,21 @@ const Authors = () =>{
         <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
           <h1>Investment</h1>
-          <h4>From Undiscovered to Unforgettable: <br/>The Six-Week Transformation</h4>
+          <h4>From Good Enough to Unforgettable: <br/>The Author Platform Transformation</h4>
           <div>
-            <p>Normal price: $6,000 </p>
-            <p><b>Introductory rate: $4,000*</b></p>
+            <p><b>$4,000*</b></p>
+            <p>(regular rate $6,000 starting Fall 2025)</p>
           </div>
-          <p>We’re offering a one-time discount of $2,000 off for three authors with books launching between September 2025 and December 2026. You’ll get the same close collaboration, custom strategy, and thoughtful design we offer all our clients—just at a lower rate, for a few early partners.</p>
+          <p>We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients, just at founding client pricing.</p>
           <div className="investment-content">
             <h2>*Why the special rate?</h2>
-            <p>Fantastic question! It’s three-fold:</p>
+            <p>Fantastic question!</p>
             <ol>
-                <li>We LOVE working with writers and we’d like to work with more (eventually, building a one-stop shop just for you).</li>
-                <li>We’re offering this package at a reduced rate in exchange for two things: your creative trust and permission to share your project publicly.</li>
-                <li>It’s for a limited-time only for just  three spots. First come, first booked. : )</li>
+                <li>We're passionate about working with fiction authors and want to build lasting relationships in genre and upmarket fiction communities.</li>
+                <li>We want to perfect our author-specific process and create compelling case studies. You get the benefit of working with a team 100% focused on making these first projects exceptional.</li>
             </ol>
         </div>
-          <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
+          <a href="/authorinquiryform" className="author-btn">Reserve my spot</a>
         </div>
       </section>
 
@@ -106,16 +105,16 @@ const Authors = () =>{
 
       <section className="cta asection">
         <p>Ready to create something magical?</p>
-        <h2>We’re only offering three spots for this pilot.</h2>
-        <p>If you’re interested in being one of the three authors we partner with this summer, we’ll ask you to fill out a (truly) short questionnaire. Then, we’ll set up a 20-min call to share more about the process and see if this is the right fit for you. Once we’re aligned, we’ll kick off right away!</p>
-        <p>This offer ends August 1. Let’s make this summer count.</p>
-        <a href="/authorinquiryform" className="author-btn">Unlock your dream website</a>
+        <h2>We’re only offering three spots for this launch.</h2>
+        <p>Interested in being one of our three founding author clients? We'll start with a (very) quick questionnaire. Then, we'll schedule a 20-minute call to discuss the process and make sure we're the right fit for each other. Once we're aligned, we'll kick off your transformation right away!</p>
+        <p><b>Three spots only. Deadline: August 15</b></p>
+        <a href="/authorinquiryform" className="author-btn">I'm ready</a>
       </section>
 
 
      <section className="cta asection">
-        <h4>An invitation from Segacy & Maria at Proof Agency</h4>
-        <h6>This page isn't public (yet). You're seeing this because we admire your work and think you might be interested in collaborating with us. Please feel free to share this invitation to like-minded authors in your network.</h6>
+        <h4>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h4>
+        <h6>This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</h6>
      </section>
     </div>
   );
