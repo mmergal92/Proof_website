@@ -8,15 +8,16 @@ import vector from '../assets/Vector.png'
 
 const Authors = () =>{
   return ( 
-    <div className="author-page">
-      <section className="author-hero "> 
-        <div className="hero-content">
+    <div className="author-page asection">
+      <section className="author-herop investment asection"> 
+        <div className="hero-contentp investment-text ">
             <h5>Three fiction authors. Three stunning transformations. This summer only.</h5>
             <h1>An obsession-worthy website in just 6-weeks</h1>
             <a href="#offer" className="author-hero-btn">See what's included</a>
         </div>
         <img loading="lazy" src={hero} alt="hero" />
       </section>
+    
 
       <section className="author-intro asection">
         <h2>Imagine a digital experience as <i>captivating</i> as your storytelling</h2>
