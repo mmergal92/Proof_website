@@ -14,14 +14,14 @@ const Authors = () =>{
           <div className="hero-content">
             <h5>Three fiction authors. Three stunning transformations. This summer only.</h5>
             <h1>An obsession-worthy website in just 6-weeks</h1>
-            <a href="/authorinquiryform" className="author-hero-btn">See what's included</a>
+            <a href="#offer" className="author-hero-btn">See what's included</a>
         </div>
       </section>
 
       <section className="author-intro asection">
         <h2>Imagine a digital experience as <i>captivating</i> as your storytelling</h2>
         <p>You pour your heart into every scene, every character, every twist that keeps readers turning pages until 3am. Your website should feel just as intentional. A place where readers discover behind-the-scenes moments of their favorite books and fall in love with the storyteller behind them. Where casual visitors become the kind of fans who pre-order everything you write and recommend you to everyone they know.</p>
-        <a href="/authorinquiryform" className="author-btn">See how we do it</a>
+        <a href="#offer" className="author-btn">See how we do it</a>
       </section>
 
 
@@ -37,10 +37,10 @@ const Authors = () =>{
           <li>Enrich the reader experience and build pure, unadulterated excitement for your next release.</li>
           <li>Most importantly, look, feel, and sound like <b>you</b>.</li>
         </ul>
-        <a href="/authorinquiryform" className="author-btn">See how we do it</a>
+        <a href="#offer" className="author-btn">See how we do it</a>
       </section>
 
-      <section className="transformation asection">
+      <section className="transformation asection" id="offer">
         <div className="transformation-content">
             <p className="transformation-header">From Good Enough To Unforgettable</p>
             <hr/>
