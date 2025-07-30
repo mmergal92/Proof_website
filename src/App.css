@@ -1191,8 +1191,7 @@ footer {
   text-align: left;
   max-width: 100%;
   margin: 0 auto;
-  flex-wrap: wrap; 
-  padding: 96px 5%;
+  /* flex-wrap: wrap;  */
   box-sizing: border-box;
 }
 
@@ -1205,8 +1204,8 @@ footer {
 }
 
 .hero-content {
-    /* padding: 72px;
-    margin: auto; */
+    padding: 72px;
+    /* margin: auto; */
   text-align: left;
   width: 50%;
   min-width: 300px;
