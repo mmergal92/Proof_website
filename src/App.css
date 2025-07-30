@@ -1391,7 +1391,12 @@ flex-direction: row;
 .left-align{
   text-align: left !important;
 }
-
+.fit-content {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  text-align: right;
+}
 .fit-content p{
   font-family: "mynerve", sans-serif;
 font-weight: 400;
