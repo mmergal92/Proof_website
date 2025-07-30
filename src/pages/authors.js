@@ -63,7 +63,7 @@ const Authors = () =>{
           <li><b>Content migration</b> for anything you'd like to bring over from your current site.</li>
           <li><b>Launch kit</b> with social media templates to celebrate your new author platform and promote upcoming releases.</li>
         </ul>
-        <a href="/authorinquiryform" className="author-btn">Reserve my spot</a>
+        <a href="/authorinquiryform" className="author-btn left-align">Reserve my spot</a>
                 </div>
         </div>
       </section>
