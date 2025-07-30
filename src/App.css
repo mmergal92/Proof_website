@@ -1370,6 +1370,10 @@ text-align: left;
 .theader{
   max-width: 70%;
 }
+.transformation-columns{
+display: flex;
+flex-direction: row;
+}
 .transformation-hidden{
   min-width: 50%;
   max-width: 50%;
