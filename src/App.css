@@ -1368,7 +1368,7 @@ text-align: left;
  text-align: left !important;
 }
 .theader{
-  max-width: 70%;
+  max-width: 60%;
 }
 .transformation-columns{
 display: flex;
@@ -1382,7 +1382,6 @@ flex-direction: row;
 .transformation-main{
  text-align: left !important;
  align-items: right !important;;
- padding-left: 526px;
 }
 .fit{
   padding: 130px;
