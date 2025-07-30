@@ -15,7 +15,7 @@ const Authors = () =>{
             <h1>An obsession-worthy website in just 6-weeks</h1>
             <a href="#offer" className="author-btn">See what's included</a>
         </div>
-        <img loading="lazy" src={hero} alt="hero" />
+        <img src={hero} alt="hero" />
       </section>
     
 
