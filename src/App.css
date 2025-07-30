@@ -1375,17 +1375,19 @@ display: flex;
 flex-direction: row;
 }
 .transformation-hidden{
-  min-width: 50%;
-  max-width: 50%;
-  width: 50%;
+  min-width: 40%;
+  max-width: 40%;
+  width: 40%;
 }
 .transformation-main{
+  padding-top: 100px;
  text-align: left !important;
  align-items: right !important;;
 }
 .fit{
   padding: 130px;
 }
+
 .fit-content p{
   font-family: "mynerve", sans-serif;
 font-weight: 400;
