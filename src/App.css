@@ -1388,6 +1388,9 @@ flex-direction: row;
   padding: 130px;
   text-align: left !important;
 }
+.left-align{
+  text-align: left !important;
+}
 
 .fit-content p{
   font-family: "mynerve", sans-serif;
