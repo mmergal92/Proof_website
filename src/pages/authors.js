@@ -2,8 +2,8 @@
 // import { useLocation } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
-import hero from '../assets/hero.jpg';
-import investment from '../assets/investment.jpg';
+import hero from '../assets/hero.webp';
+import investment from '../assets/investment.webp';
 import vector from '../assets/Vector.png'
 
 const Authors = () =>{
