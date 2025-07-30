@@ -47,8 +47,9 @@ const Authors = () =>{
             <hr/>
         </div>
         <h1 className="transformation-header">The <i>6-week</i> transformation</h1>
-        <p className="transformation-header">By Fall, you'll have an author website that actually feels like you—the kind that makes readers stay, explore, and eagerly sign up for your newsletter. We'll transform your online presence from good enough to unforgettable in just six weeks, with most of our collaboration happening early on as we build your foundation. Here's what we'll create together:</p>
-        <ul className="transformation-main">
+        <p className="transformation-header theader">By Fall, you'll have an author website that actually feels like you—the kind that makes readers stay, explore, and eagerly sign up for your newsletter. We'll transform your online presence from good enough to unforgettable in just six weeks, with most of our collaboration happening early on as we build your foundation. Here's what we'll create together:</p>
+         <ul className="transformation-hidden">
+            </ul><ul className="transformation-main">
           <li><b>Author brand strategy</b> to clarify your unique voice, target readers, and upcoming book milestones, so every element works toward building your readership.</li>
           <li><b>Authentic messaging</b> that captures your personality and connects with your ideal readers on every page (written by humans who understand your genre).</li>
           <li><b>Visual identity</b> design that reflects your author brand with a curated mood board, typography, color palette, and optional author logo.</li>

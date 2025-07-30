@@ -1200,7 +1200,6 @@ footer {
 }
 
 .author-herop {
-  padding: 130px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -1214,8 +1213,11 @@ footer {
 
 .hero-contentp {
   /* max-width: 500px; */
-padding: 10px;
-margin: auto;
+    padding: 72px;
+    margin: auto;
+    width: 50% !important;
+    min-width: 50% !important;
+text-align: left;
 
 }
 
@@ -1356,10 +1358,22 @@ margin: auto;
   opacity: 0.5;
 }
 .transformation{
-  padding: 130px;
+  padding: 124px;
+}
+.transformation-content{
+  padding-bottom: 24px;
 }
 .transformation-header{
+    padding-top: 24px;
  text-align: left !important;
+}
+.theader{
+  max-width: 70%;
+}
+.transformation-hidden{
+  min-width: 50%;
+  max-width: 50%;
+  width: 50%;
 }
 .transformation-main{
  text-align: left !important;
