@@ -12,6 +12,11 @@ const AuthorForm = () => {
 
   return (
     <div className="author-inquiry-page author-page">
+
+        <div className="viewoffer">
+          <a href="/authors" className="author-hero-btn">View offer</a>
+        </div>
+
       <section className="author-inquiry-hero">
         <div className="hero-inquiry-content">
           <h5>From Good Enough to Unforgettable: The Author Platform Transformation</h5>
@@ -153,10 +158,10 @@ const AuthorForm = () => {
           </label>
           <textarea id="details" name="details"></textarea>
 
-          <button type="submit" className="author-submit-btn">Submit</button>
+          <button type="submit" className="author-hero-thanks-btn">Submit</button>
         </form>
 
-        <div className="footer-author asection">
+        <div className="footer-author white-footer asection">
             <h6>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h6>
             <p className="footer-author-text">This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</p>
         </div>      

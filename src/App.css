@@ -1666,13 +1666,23 @@ align-self: stretch !important;
   padding: 0;
   text-align: left;
 }
+.viewoffer{
+  padding-top: 32px;
+}
 .hero-inquiry-content{
-  padding-top: 220px;
+  padding-top: 144px;
   text-align: center;
   padding-bottom: 80px;
 }
+.hero-inquiry-content h1{
+  padding-bottom: 24px;
+}
+.hero-inquiry-content p{
+  max-width: 620px;
+}
+
 .author-inquiry-form {
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1704,7 +1714,7 @@ label{
 .author-inquiry-form input[type="email"],
 .author-inquiry-form textarea {
   width: 100%;
-  padding: 12px 16px;
+  height: 48px;
   margin: 0 0 28px 0 !important;
   border-radius: 8px;
   border: 1.5px solid #FFFEF8;
@@ -1762,6 +1772,16 @@ background: #FFFEF8;
   opacity: 0.5;
 }
 
+.white-footer h6{
+ color: #FFFEF8 !important;
+}
+.white-footer p{
+   color: #FFFEF8 !important;
+   max-width: 680px !important;
+}
+
+
+/* Thank you Page */
 .author-page-thanks{
     font-family: "p22-mackinac-pro", serif;
   font-weight: 500 !important;
