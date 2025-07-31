@@ -1521,20 +1521,12 @@ align-self: stretch !important;
 .investment-content{
   display: flex;
   margin: 40px 0px 12px 0px;
-  padding: 12px 40px 28px 40px;
+  padding: 40px;
   flex-direction: column;
   /* align-items: flex-start; */
   align-self: stretch;
   border-radius: 8px;
   background: rgba(73, 80, 60, 0.10);
-}
-.investment-content-heading{
-  font-family: "Neue Haas Unica W1G" !important;
-  font-size: 16px !important;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24.8px !important;
-  padding-bottom: 26px !important;
 }
 .investment-content p{
   font-family: "Neue Haas Unica W1G";
@@ -1544,6 +1536,14 @@ align-self: stretch !important;
   margin-top: 0 !important;
   line-height: 21px !important;
   padding-bottom: 16px !important;
+}
+.investment-content-heading{
+  font-family: "Neue Haas Unica W1G" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24.8px !important;
+  padding-bottom: 26px !important;
 }
 .investment-content ol li{
   font-family: "Neue Haas Unica W1G";
