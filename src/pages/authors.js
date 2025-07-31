@@ -111,17 +111,17 @@ const Authors = () =>{
      </section>
 
       <section className="cta asection">
-        <p>Ready to create something magical?</p>
+        <h5>Ready to create something magical?</h5>
         <h2>We’re only offering three spots for this launch.</h2>
         <p>Interested in being one of our three founding author clients? We'll start with a (very) quick questionnaire. Then, we'll schedule a 20-minute call to discuss the process and make sure we're the right fit for each other. Once we're aligned, we'll kick off your transformation right away!</p>
-        <p><b>Three spots only. Deadline: August 15</b></p>
+        <p><b>Three spots only. Deadline: August 15</b><br/>Let's make your author platform unforgettable.</p>
         <a href="/authorinquiryform" className="author-btn">I'm ready</a>
       </section>
 
 
-     <section className="cta asection">
-        <h4>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h4>
-        <h6>This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</h6>
+     <section className="footer-author asection">
+        <h6>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h6>
+        <p className="footer-author-text">This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</p>
      </section>
     </div>
   );

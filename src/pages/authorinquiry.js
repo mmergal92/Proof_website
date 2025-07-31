@@ -156,9 +156,9 @@ const AuthorForm = () => {
           <button type="submit" className="author-submit-btn">Submit</button>
         </form>
 
-        <div className="cta asection">
-            <h4>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h4>
-            <h6>This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</h6>
+        <div className="footer-author asection">
+            <h6>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h6>
+            <p className="footer-author-text">This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</p>
         </div>      
      </section>
     </div>
