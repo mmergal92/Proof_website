@@ -1721,15 +1721,31 @@ line-height: 24.8px !important;
   flex-direction: column;
 }
 .author-inquiry-form input[type="checkbox"]{
-border-radius: 4px;
+border-radius: 4px !important;
 border: 1.5px solid #FFFEF8 !important;
-background: rgba(255, 255, 255, 0.05)!important;
 width: 24px;
 height: 24px;
 padding: 12px 16px;
 align-items: center;
 gap: 8px;
+      background: white !important;
+      opacity: 0.5 !important;
+
 }
+input[type="checkbox"]:checked{
+  background-color: #EEECE3; /* Replace with your desired checked color */
+  border-color: #333;
+}
+ input[type="checkbox"]:checked::after {
+  content: "X";
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  position: absolute;
+  top: -2px;
+  left: 4px;
+}
+
 .checkboxes label{
   color: #FFFEF8;
 text-align: center;
