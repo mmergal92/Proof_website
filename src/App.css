@@ -1506,7 +1506,7 @@ align-items: end;
   margin-top: 40px;
 }
 .footer-author{
-  margin: 0 24px;
+  margin: 24px;
   max-width: 680px;
   margin: 0 auto;
 
@@ -1517,7 +1517,8 @@ align-items: end;
 .footer-author-text{
   color: #252525;
   text-align: center;
-  font-family: "Mrs Eaves OT";
+  /* font-family: "Mrs Eaves OT"; */
+  font-family: "mrs-eaves", serif;
   font-size: 14px;
   font-style: italic;
   font-weight: 400;
