@@ -1295,7 +1295,23 @@ footer {
   /* margin: 0 auto; */
   max-width: 500px;
   padding-left: 1rem;
+  list-style: none; /* Remove default numbering */
+  counter-reset: item; /* Initialize the counter */
 }
+ol li:before {
+  counter-increment: item; /* Increment the counter for each list item */
+  content: counter(item, decimal-leading-zero); /* Display the counter with leading zeros */
+  margin-right: 0.5em; /* Add some spacing between the number and the list item content */
+}
+.asection ol li::marker {
+    color: rgba(73, 80, 60, 0.50);
+font-family: "Neue Haas Unica W1G";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px;
+}
+
 
 .asection ul {
   list-style: disc;
