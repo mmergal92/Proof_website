@@ -1213,10 +1213,13 @@ footer {
   padding: 0; */
 
 }
-
+.extra-margin-top{
+  margin-top: 11px;
+}
 .author-page h1 {
   font-size: 72px;
   line-height: 74.88px;
+    font-weight: 500 !important;
 }
 .author-page h2 {
   font-size: 48px;
@@ -1258,11 +1261,11 @@ footer {
   margin-top: 20px;
 }
 .author-intro{
-  max-width: 600px;
+  max-width: 580px;
   margin: 248px auto;
 }
 .promise{
-  max-width: 600px;
+  max-width: 580px;
   margin: 248px auto;
 }
 .promise p{
@@ -1347,11 +1350,19 @@ footer {
 .transformation{
   padding: 124px;
 }
+hr{
+  width: 1px;
+  background: rgba(73, 80, 60, 0.30);
+  color: rgba(73, 80, 60, 0.30);
+}
 .transformation-content{
   padding-bottom: 24px;
 }
+.transformation-content h5{
+  padding-bottom: 24px;
+}
 .transformation-header{
-    padding-top: 24px;
+    /* padding-top: 24px; */
  text-align: left !important;
 }
 .theader{
@@ -1372,14 +1383,25 @@ flex-direction: row;
  align-items: right !important;;
 }
 .fit{
-  padding: 130px;
+  padding: 104px 124px;
   text-align: left !important;
+}
+.fit h3{
+  padding-bottom: 28px;
+}
+.less-space li{
+  margin-top: 12px !important;
+}
+.more-space{
+   padding-top: 28px;
 }
 .left-align{
   text-align: left !important;
 }
 .fit-content {
   display: flex;
+  padding-top: 82px;
+  padding-bottom: 104px;
   flex-direction: row;
   align-items: end;
   text-align: right;
@@ -1388,6 +1410,10 @@ flex-direction: row;
   font-family: "mynerve", sans-serif;
 font-weight: 400;
 font-style: normal;
+align-items: end;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
 }
 .investment {
   padding: 130px;

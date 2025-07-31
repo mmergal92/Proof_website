@@ -13,7 +13,7 @@ const Authors = () =>{
         <div className="hero-content ">
             <h5>Three fiction authors. Three stunning transformations. This summer only.</h5>
             <h1>An obsession-worthy website in just 6-weeks</h1>
-            <a href="#offer" className="author-btn">See what's included</a>
+            <a href="#offer" className="author-btn extra-margin-top">See what's included</a>
         </div>
         <img src={hero} alt="hero" />
       </section>
@@ -43,7 +43,7 @@ const Authors = () =>{
 
       <section className="transformation asection" id="offer">
         <div className="transformation-content">
-            <p className="transformation-header">From Good Enough To Unforgettable</p>
+            <h5>From Good Enough To Unforgettable</h5>
             <hr/>
         </div>
         <h1 className="transformation-header">The <i>6-week</i> transformation</h1>
@@ -70,14 +70,14 @@ const Authors = () =>{
 
       <section className="fit asection">
         <h3>This is for you if...</h3>
-        <ol>
+        <ol className="less-space">
             <li>You're an established fiction author ready to invest in building a professional online presence.</li>
             <li>You want a website that feels like an extension of your voice and vision, not a generic template.</li>
             <li>You're tired of cobbling together a DIY site that doesn't reflect the quality of your writing.</li>
             <li>You want a design partner who understands genre fiction and genuinely loves the books you write.</li>
             <li>You'd rather spend your time writing your next book than wrestling with website frustrations.</li>
         </ol>
-        <a href="/authorinquiryform" className="author-btn">Reserve my spot</a>
+        <a href="/authorinquiryform" className=" more-space author-btn">Reserve my spot</a>
           <div className="fit-content">
             <p>And don't you want a break from<br/>fighting with the algorithm?</p>
         </div>
@@ -103,6 +103,7 @@ const Authors = () =>{
         </div>
           <a href="/authorinquiryform" className="author-btn">Reserve my spot</a>
         </div>
+        <hr/>
       </section>
 
      <section className="page-break asection">
