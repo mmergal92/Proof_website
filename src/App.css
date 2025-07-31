@@ -1687,17 +1687,17 @@ align-self: stretch !important;
   display: flex;
   flex-direction: column;
 }
-label{
+
+.author-inquiry-form label{
   color: #FFFEF8;
   text-align: left !important;
-
-  /* h/6 */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 160%; /* 22.4px */
   letter-spacing: -0.14px;
+  margin-bottom: 8px !important;
 }
 .author-inquiry-form .two-col {
   display: flex;
@@ -1780,7 +1780,15 @@ background: #FFFEF8;
    max-width: 680px !important;
 }
 
-
+.sub-labe{
+text-align: center;
+font-family: "Neue Haas Unica W1G";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height:  13.8px;
+margin-bottom: 20px !important;
+}
 /* Thank you Page */
 .author-page-thanks{
     font-family: "p22-mackinac-pro", serif;
