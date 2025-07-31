@@ -1295,6 +1295,7 @@ text-decoration: none;
   line-height: 25.6px;
     padding-bottom: 40px;
     max-width: 620px !important;
+    margin: 0 auto;
 }
 .asection li {
   font-family: "Neue Haas Unica W1G";
@@ -1404,7 +1405,6 @@ line-height: 30px;
   background: #FFFEF8;
   width: 100% !important;
   color: #49503C;
-  margin-top: 28px; 
   text-decoration: none;
   padding: 14px 28px;
   border-radius: 56px;
@@ -1544,7 +1544,7 @@ font-weight: 400;
 line-height:  31.2px;
 }
 .iprice{
-  padding-bottom: 40px !important;
+  padding-bottom: 28px !important;
 }
 .investment-price-notes{
   font-family: "anonymous-pro", monospace !important;
@@ -1776,4 +1776,5 @@ background: #FFFEF8;
 
 .author-hero-thanks{
   max-width: 772px !important;
+  margin: 0 auto;
 }
