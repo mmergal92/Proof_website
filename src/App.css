@@ -1513,8 +1513,6 @@ align-items: end;
 }
 .footer-author p{
   margin-top: 8px !important;
-}
-.footer-author-text{
   color: #252525;
   text-align: center;
   /* font-family: "Mrs Eaves OT"; */
