@@ -1334,7 +1334,7 @@ ol li:before {
   content: counter(item, decimal-leading-zero);
   position: absolute;
   left: 0;
-  top: 25%;
+  top: 20%;
   color: rgba(73, 80, 60, 0.50);
   font-family: "Neue Haas Unica W1G", sans-serif;
   font-size: 20px;
