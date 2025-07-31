@@ -1720,30 +1720,45 @@ line-height: 24.8px !important;
   display: flex;
   flex-direction: column;
 }
-.author-inquiry-form input[type="checkbox"]{
-border-radius: 4px !important;
-border: 1.5px solid #FFFEF8 !important;
-width: 24px;
-height: 24px;
-padding: 12px 16px;
-align-items: center;
-gap: 8px;
-      background: white !important;
-      opacity: 0.5 !important;
+.author-inquiry-form input[type="checkbox"],
+.author-inquiry-form input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 4px;
+  border: 1.5px solid #FFFEF8;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #EEECE3;
+  border-color: #ffffff;
+}
 
-}
-input[type="checkbox"]:checked{
-  background-color: #EEECE3; /* Replace with your desired checked color */
-  border-color: #333;
-}
- input[type="checkbox"]:checked::after {
-  content: "X";
+input[type="checkbox"]:checked::after {
+  content: "✓";
   color: #000;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 14px;
   position: absolute;
-  top: -2px;
-  left: 4px;
+  top: 2px;
+  left: 6px;
+  font-weight: bold;
+}
+
+input[type="radio"]:checked::after {
+ content: "✓";
+  color: #000;
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  font-weight: bold;
 }
 
 .checkboxes label{
