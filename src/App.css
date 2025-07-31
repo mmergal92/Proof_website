@@ -1290,35 +1290,52 @@ footer {
   z-index: 1;
 }
 .asection ol {
-  list-style: decimal;
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+  max-width: 100%;
   text-align: left;
-  /* margin: 0 auto; */
-  max-width: 500px;
-  padding-left: 1rem;
-  list-style: none; /* Remove default numbering */
-  counter-reset: item; /* Initialize the counter */
+}
+.asection ol li{
+  position: relative;
+  padding-left: 2.5rem; /* space for the number */
+  margin-bottom: 1.25rem;
+  font-family: "Neue Haas Unica W1G", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(73, 80, 60, 0.50);
+  font-weight: 500;
 }
 ol li:before {
-  counter-increment: item; /* Increment the counter for each list item */
-  content: counter(item, decimal-leading-zero); /* Display the counter with leading zeros */
-  margin-right: 0.5em; /* Add some spacing between the number and the list item content */
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(73, 80, 60, 0.50);
+  font-family: "Neue Haas Unica W1G", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
 }
-.asection ol li::marker {
+/* .asection ol li::marker {
     color: rgba(73, 80, 60, 0.50);
 font-family: "Neue Haas Unica W1G";
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: 30px;
-}
-
-
+} */
 .asection ul {
   list-style: disc;
   text-align: left;
   /* margin: 0 auto; */
   /* max-width: 500px; */
   padding-left: 1rem;
+}
+.asection li{
+  position: relative;
+  padding-left: 1rem; /* Creates space between bullet and text */
 }
 .asection ul li::marker {
     color: rgba(73, 80, 60, 0.50);
