@@ -93,7 +93,7 @@ const Authors = () =>{
           </div>
           <p><span className="investment-price-notes">We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients, just at founding client pricing.</span></p>
           <div className="investment-content">
-            <h2>*Why the special rate?</h2>
+            <p><span className="investment-content-heading">*Why the special rate?</span></p>
             <p>Fantastic question!</p>
             <ol>
                 <li>We're passionate about working with fiction authors and want to build lasting relationships in genre and upmarket fiction communities.</li>
