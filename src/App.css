@@ -1482,7 +1482,7 @@ align-items: end;
   align-items: center;
       flex-direction: row;
     gap: 2rem;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 .investment img {
   max-width: 100%;
@@ -1511,18 +1511,18 @@ font-weight: 400;
 line-height:  31.2px;
 }
 .investment-price-notes{
-  font-family: "anonymous-pro", monospace;
-font-size: 12px;
+  font-family: "anonymous-pro", monospace !important;
+font-size: 12px !important;
 font-style: normal;
 font-weight: 700;
-line-height: 18px;
-align-self: stretch;
+line-height: 18px !important;
+align-self: stretch !important;
 }
 .investment-content{
   display: flex;
 margin: 40px 0px;
 flex-direction: column;
-align-items: flex-start;
+/* align-items: flex-start; */
 align-self: stretch;
 border-radius: 8px;
 background: rgba(73, 80, 60, 0.10);
