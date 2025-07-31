@@ -1543,6 +1543,9 @@ font-style: normal;
 font-weight: 400;
 line-height:  31.2px;
 }
+.iprice{
+  padding-bottom: 40px !important;
+}
 .investment-price-notes{
   font-family: "anonymous-pro", monospace !important;
 font-size: 12px !important;
@@ -1550,7 +1553,6 @@ font-style: normal;
 font-weight: 700;
 line-height: 18px !important;
 align-self: stretch !important;
-padding-top: 40px;
 }
 .investment-content{
   display: flex;
@@ -1769,6 +1771,9 @@ background: #FFFEF8;
   margin: 0 ;
   text-align: center;
   height: 100vh;
-  max-width: 772px !important;
   align-content: center !important;
+}
+
+.author-hero-thanks{
+  max-width: 772px !important;
 }
