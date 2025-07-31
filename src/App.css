@@ -1351,19 +1351,22 @@ footer {
   padding: 124px;
 }
 hr{
-  width: 1px;
-  background: rgba(73, 80, 60, 0.30);
-  color: rgba(73, 80, 60, 0.30);
+  border: none;
+    height: 1px;
+    background-color: rgba(73, 80, 60, 0.30);
 }
 .transformation-content{
   padding-bottom: 24px;
 }
 .transformation-content h5{
-  padding-bottom: 24px;
+  text-align: left !important;
 }
 .transformation-header{
     /* padding-top: 24px; */
  text-align: left !important;
+}
+.transformation-header h1{
+    padding-top: 24px;
 }
 .theader{
   max-width: 60%;
@@ -1397,6 +1400,9 @@ flex-direction: row;
 }
 .left-align{
   text-align: left !important;
+}
+.transformation-main-section{
+    text-align: left !important;
 }
 .fit-content {
   display: flex;
