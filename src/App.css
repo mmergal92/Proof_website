@@ -1784,12 +1784,11 @@ background: #FFFEF8;
 }
 
 .sub-labe{
-text-align: center;
 font-family: "Neue Haas Unica W1G";
-font-size: 12px;
+font-size: 12px !important;
 font-style: normal;
 font-weight: 500;
-line-height:  13.8px;
+line-height:  13.8px !important;
 margin-bottom: 20px !important;
 }
 /* Thank you Page */
