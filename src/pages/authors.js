@@ -81,9 +81,8 @@ const Authors = () =>{
           <div className="fit-content">
             <p>And don't you want a break from<br/>fighting with the algorithm?</p>
         </div>
-        <hr/>
       </section>
-
+<hr/>
       <section className="investment asection">
         <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
