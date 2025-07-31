@@ -1221,6 +1221,13 @@ footer {
   line-height: 74.88px;
     font-weight: 500 !important;
 }
+.hero-content-thanks h1{
+    font-size: 72px;
+  line-height: 74.88px;
+    font-weight: 500 !important;
+    padding-bottom: 24px;
+}
+
 .author-page h2 {
   font-size: 48px;
   line-height: 55.2px;
@@ -1279,6 +1286,15 @@ text-decoration: none;
   font-weight: 400;
   line-height: 25.6px;
   margin-top: 28px;
+}
+.hero-content-thanks p{
+ font-family: "Neue Haas Unica W1G";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+    padding-bottom: 40px;
+    max-width: 620px !important;
 }
 .asection li {
   font-family: "Neue Haas Unica W1G";
@@ -1381,8 +1397,26 @@ line-height: 30px;
   font-style: normal;
 }
 .author-hero-btn:hover {
+  background: #EEECE3;
+}
+.author-hero-thanks-btn{
+  display: inline-block;
   background: #FFFEF8;
-  opacity: 0.5;
+  width: 100% !important;
+  color: #49503C;
+  margin-top: 28px; 
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 56px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.1px;
+  font-family: "anonymous-pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.author-hero-thanks-btn:hover {
+  background: #EEECE3;
 }
 .author-btn {
   display: inline-block;
@@ -1735,4 +1769,6 @@ background: #FFFEF8;
   margin: 0 ;
   text-align: center;
   height: 100vh;
+  max-width: 772px !important;
+  align-content: center !important;
 }
