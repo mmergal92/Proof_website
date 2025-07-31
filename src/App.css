@@ -1667,7 +1667,9 @@ align-self: stretch !important;
   text-align: left;
 }
 .viewoffer{
-  padding-top: 32px;
+  padding-top: 4px;
+  text-align: right;
+  margin-right: 32px;
 }
 .hero-inquiry-content{
   padding-top: 144px;
@@ -1679,6 +1681,7 @@ align-self: stretch !important;
 }
 .hero-inquiry-content p{
   max-width: 620px;
+  margin: 0 auto;
 }
 
 .author-inquiry-form {
@@ -1795,7 +1798,7 @@ margin-bottom: 20px !important;
   font-weight: 500 !important;
   font-style: normal;
   color: #FFFEF8;
-  background-color: #49503C;
+  background-color: hsl(81, 14%, 27%);
   margin: 0 ;
   text-align: center;
   height: 100vh;
