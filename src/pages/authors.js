@@ -87,10 +87,9 @@ const Authors = () =>{
         <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
           <h1>Investment</h1>
-          <h4>From Good Enough to Unforgettable: <br/>The Author Platform Transformation</h4>
+          <h4><b>From Good Enough to Unforgettable:</b><br/>The Author Platform Transformation</h4>
           <div>
-            <p><b>$4,000*</b></p>
-            <p>(regular rate $6,000 starting Fall 2025)</p>
+            <p><b>$4,000*</b><br/>(regular rate $6,000 starting Fall 2025)</p>
           </div>
           <p>We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients, just at founding client pricing.</p>
           <div className="investment-content">

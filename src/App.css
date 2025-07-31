@@ -1244,6 +1244,7 @@ footer {
   font-style: normal;
 }
 .author-page h6 {
+  color: #252525;
   text-align: center;
   font-family: "P22 Mackinac Pro";
   font-size: 14px;
@@ -1491,13 +1492,15 @@ align-items: end;
   max-width: 500px;
 }
 .cta{
-  padding-top: 22px;
+  padding-top: 122px;
   max-width: 680px;
   padding-bottom: 144px;
+  margin: 0 auto;
+
 }
 .cta h5{
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 .cta p{
   margin-top: 40px;
@@ -1505,6 +1508,11 @@ align-items: end;
 .footer-author{
   margin: 0 24px;
   max-width: 680px;
+  margin: 0 auto;
+
+}
+.footer-author p{
+  margin-top: 8px !important;
 }
 .footer-author-text{
   color: #252525;
