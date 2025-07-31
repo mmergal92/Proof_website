@@ -91,7 +91,7 @@ const Authors = () =>{
           <div>
             <p><span className="investment-price">$4,000*</span><br/><span className="investment-price-subtext">(regular rate $6,000 starting Fall 2025)</span></p>
           </div>
-          <p>We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients, just at founding client pricing.</p>
+          <p><span className="investment-price-notes">We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients, just at founding client pricing.</span></p>
           <div className="investment-content">
             <h2>*Why the special rate?</h2>
             <p>Fantastic question!</p>
