@@ -132,7 +132,7 @@ const AuthorForm = () => {
             </label>
           </div>
 
-          <div className="form-group">
+          <div className="form-group checkboxes">
             <p className="label">Do you have representation? *</p>
             <label>
               <input type="radio" name="representation" value="Yes" required /> Yes
