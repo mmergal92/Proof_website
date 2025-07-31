@@ -38,7 +38,7 @@ const Authors = () =>{
           <li>Enrich the reader experience and build pure, unadulterated excitement for your next release.</li>
           <li>Most importantly, look, feel, and sound like <b>you</b>.</li>
         </ul>
-        <a href="#offer" className="author-btn left-align">See how we do it</a>
+        <a href="#offer" className="author-btn">See how we do it</a>
       </section>
 
       <section className="transformation asection" id="offer">
@@ -81,6 +81,7 @@ const Authors = () =>{
           <div className="fit-content">
             <p>And don't you want a break from<br/>fighting with the algorithm?</p>
         </div>
+        <hr/>
       </section>
 
       <section className="investment asection">
