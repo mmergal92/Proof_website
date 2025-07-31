@@ -1714,6 +1714,8 @@ line-height: 24.8px !important;
 
 .author-inquiry-form input{
   margin: 0 !important;
+  text-align: left !important;
+  padding: 5px 15px !important;
 }
 .author-inquiry-form .input-half {
   flex: 1;
@@ -1782,6 +1784,7 @@ line-height: 25.6px !important;
 .checkboxes{
   margin-bottom: 20px;
 }
+
 
 .author-inquiry-form input[type="text"],
 .author-inquiry-form input[type="email"],
