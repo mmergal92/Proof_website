@@ -1293,18 +1293,13 @@ footer {
   counter-reset: item;
   list-style: none;
   padding-left: 0;
-  max-width: 100%;
+  /* max-width: 100%; */
   text-align: left;
 }
 .asection ol li{
   position: relative;
-  padding-left: 2.5rem; /* space for the number */
-  margin-bottom: 1.25rem;
-  font-family: "Neue Haas Unica W1G", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  color: rgba(73, 80, 60, 0.50);
-  font-weight: 500;
+  padding-left: 48px; /* space for the number */
+  margin-bottom: 12px;
 }
 ol li:before {
   counter-increment: item;
@@ -1335,7 +1330,7 @@ line-height: 30px;
 }
 .asection li{
   position: relative;
-  padding-left: 1rem; /* Creates space between bullet and text */
+  padding-left: 10px; /* Creates space between bullet and text */
 }
 .asection ul li::marker {
     color: rgba(73, 80, 60, 0.50);
