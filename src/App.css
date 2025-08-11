@@ -1644,12 +1644,11 @@ align-self: stretch !important;
   margin-top: 8px !important;
   color: #252525;
   text-align: center;
-  /* font-family: "Mrs Eaves OT"; */
-  font-family: "mrs-eaves", serif;
-  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-size: 12px;
   font-style: italic;
   font-weight: 400;
-  line-height: 14.56px;
+  line-height: 16.8px;
 }
 /* .page-break-2{
   padding-top: 144px;
