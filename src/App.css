@@ -1719,6 +1719,14 @@ line-height: 24.8px !important;
     text-align: left !important;
     padding: 5px 15px;
 }
+.author-inquiry-form input[type="email"]{
+    text-align: left !important;
+    padding: 5px 15px;
+}
+.author-inquiry-form textarea{
+    text-align: left !important;
+    padding: 5px 15px;
+}
 .author-inquiry-form .input-half {
   flex: 1;
   display: flex;
@@ -1729,7 +1737,7 @@ line-height: 24.8px !important;
   appearance: none;
   -webkit-appearance: none;
   border-radius: 4px;
-  border: 1px solid #FFFEF8;
+  border: 1px solid #EEECE3;
   width: 24px;
   height: 24px;
   background-color: white;
@@ -1748,7 +1756,7 @@ input[type="radio"]:checked {
 
 input[type="checkbox"]:checked::after {
   content: "✓";
-  color: #000;
+  color: red;
   font-size: 14px;
   position: absolute;
   top: 2px;
@@ -1758,7 +1766,7 @@ input[type="checkbox"]:checked::after {
 
 input[type="radio"]:checked::after {
  content: "✓";
-  color: #000;
+  color: red;
   font-size: 14px;
   position: absolute;
   top: 2px;
