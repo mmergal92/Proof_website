@@ -90,11 +90,11 @@ const Authors = () =>{
           <h4><b>From Good Enough to Unforgettable:</b><br/>The Author Platform Transformation</h4>
           <span className="investment-price-notes">We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients—just at founding client pricing.</span>
           <div className="iprice">
-            <span className="investment-price">$4,000*</span><br/><span className="investment-price-subtext">(regular rate $6,000 starting Fall 2025)</span>
+            <span className="investment-price">$4,000*</span>
+            <span className="investment-price-subtext">(regular rate $6,000 starting Fall 2025)</span>
           </div>
           <div className="investment-content">
-            <p><span className="investment-content-heading">*Why the special rate?</span></p>
-            <p>Fantastic question!</p>
+            <p><span className="investment-content-heading">*Why the special rate? Fantastic question!</span></p>
             <ol>
                 <li>We're passionate about working with fiction authors and want to build lasting relationships in genre and upmarket fiction communities.</li>
                 <li>We want to perfect our author-specific process and create compelling case studies. You get the benefit of working with a team 100% focused on making these first projects exceptional.</li>
