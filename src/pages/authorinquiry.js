@@ -91,7 +91,7 @@ const AuthorForm = () => {
           </div>
 
         <div className="form-group checkboxes">
-            <p className="label">How many books have you published? *</p>
+            <p className="label extra-space">How many books have you published? *</p>
             <label>
               <input type="radio" name="genre" value="one" /> 1-2 books
             </label>
@@ -110,7 +110,7 @@ const AuthorForm = () => {
           </div>
 
           <div className="form-group checkboxes">
-            <p className="label">How do you publish your books? *</p>
+            <p className="label extra-space">How do you publish your books? *</p>
             <label>
               <input type="radio" name="publishing" value="Self-published" /> Self-published
             </label>
@@ -123,7 +123,7 @@ const AuthorForm = () => {
           </div>
 
           <div className="form-group checkboxes">
-            <p className="label">Do you have an email newsletter? *</p>
+            <p className="label extra-space">Do you have an email newsletter? *</p>
             <label>
               <input type="radio" name="release" value="Yes" required /> Yes
             </label>
@@ -133,7 +133,7 @@ const AuthorForm = () => {
           </div>
 
           <div className="form-group checkboxes">
-            <p className="label">Do you have representation? *</p>
+            <p className="label extra-space">Do you have representation? *</p>
             <label>
               <input type="radio" name="representation" value="Yes" /> Yes
             </label>

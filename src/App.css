@@ -1875,9 +1875,14 @@ line-height: 25.6px !important;
 font-family: "Neue Haas Unica W1G";
 font-size: 12px !important;
 font-style: normal;
-font-weight: 500;
+font-weight: 500 !important;
 line-height:  13.8px !important;
-margin-bottom: 20px !important;
+margin-bottom: 12px !important;
+color: #FFFEF8;
+opacity: 0.6 !important;
+}
+.extra-space{
+margin-bottom: 12px !important;
 }
 /* Thank you Page */
 .author-page-thanks{
