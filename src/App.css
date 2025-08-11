@@ -1646,8 +1646,8 @@ align-self: stretch !important;
   text-align: center;
   font-family: "Neue Haas Unica W1G";
   font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 400 !important;
   line-height: 16.8px;
 }
 /* .page-break-2{
