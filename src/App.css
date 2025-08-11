@@ -1643,6 +1643,7 @@ align-self: stretch !important;
 .footer-author p{
   margin-top: 8px !important;
   color: #252525;
+  opacity: 0.7 !important;
   text-align: center;
   font-family: "Neue Haas Unica W1G";
   font-size: 12px;
