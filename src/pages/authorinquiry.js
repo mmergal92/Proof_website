@@ -68,7 +68,7 @@ const AuthorForm = () => {
           <input type="text" id="howFound" name="howFound" />
 
           <div className="form-group checkboxes">
-            <p className="label">What’s your genre *</p>
+            <p className="label">What’s your genre?*</p>
             <p className="sub-label">Choose any that apply</p>
             <label>
               <input type="checkbox" name="genre" value="Romance" /> Romance
@@ -93,26 +93,26 @@ const AuthorForm = () => {
         <div className="form-group checkboxes">
             <p className="label">How many books have you published?*</p>
             <label>
-              <input type="checkbox" name="genre" value="one" /> 1-2 books
+              <input type="radio" name="genre" value="one" /> 1-2 books
             </label>
             <label>
-              <input type="checkbox" name="genre" value="some" /> 3-5 books
+              <input type="radio" name="genre" value="some" /> 3-5 books
             </label>
             <label>
-              <input type="checkbox" name="genre" value="many" /> 6+ books
+              <input type="radio" name="genre" value="many" /> 6+ books
             </label>
             <label>
-              <input type="checkbox" name="genre" value="none" /> I have a completed manuscript/book deal but haven't published yet
+              <input type="radio" name="genre" value="none" /> I have a completed manuscript/book deal but haven't published yet
             </label>
             <label>
-              <input type="checkbox" name="genre" value="other" /> Other
+              <input type="radio" name="genre" value="other" /> Other
             </label>
           </div>
 
           <div className="form-group checkboxes">
-            <p className="label">How do you publish your books? *</p>
+            <p className="label">How do you publish your books?*</p>
             <label>
-              <input type="radio" name="publishing" value="Self-published" required /> Self-published
+              <input type="radio" name="publishing" value="Self-published" /> Self-published
             </label>
             <label>
               <input type="radio" name="publishing" value="Traditionally published" /> Traditionally published
@@ -123,7 +123,7 @@ const AuthorForm = () => {
           </div>
 
           <div className="form-group checkboxes">
-            <p className="label">Do you have an email newsletter? *</p>
+            <p className="label">Do you have an email newsletter?*</p>
             <label>
               <input type="radio" name="release" value="Yes" required /> Yes
             </label>
@@ -133,9 +133,9 @@ const AuthorForm = () => {
           </div>
 
           <div className="form-group checkboxes">
-            <p className="label">Do you have representation? *</p>
+            <p className="label">Do you have representation?*</p>
             <label>
-              <input type="radio" name="representation" value="Yes" required /> Yes
+              <input type="radio" name="representation" value="Yes" /> Yes
             </label>
             <label>
               <input type="radio" name="representation" value="No" /> No
