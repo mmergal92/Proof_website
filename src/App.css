@@ -1740,7 +1740,7 @@ line-height: 24.8px !important;
   border: 1px solid #EEECE3;
   width: 24px;
   height: 24px;
-  background-color: white;
+  background: hsla(0,0%,100%,.05);
   opacity: 0.5;
   cursor: pointer;
   position: relative;
@@ -1750,13 +1750,13 @@ line-height: 24.8px !important;
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background-color: #EEECE3;
+  background: hsla(0,0%,100%,.05);
   border: 1px solid #ffffff;
 }
 
 input[type="checkbox"]:checked::after {
   content: "✓";
-  color: red;
+  color: #fff;
   font-size: 14px;
   position: absolute;
   top: 2px;
@@ -1766,7 +1766,7 @@ input[type="checkbox"]:checked::after {
 
 input[type="radio"]:checked::after {
  content: "✓";
-  color: red;
+  color: #fff;
   font-size: 14px;
   position: absolute;
   top: 2px;
