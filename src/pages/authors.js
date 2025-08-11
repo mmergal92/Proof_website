@@ -88,10 +88,10 @@ const Authors = () =>{
         <div className="investment-text">
           <h1>Investment</h1>
           <h4><b>From Good Enough to Unforgettable:</b><br/>The Author Platform Transformation</h4>
+          <span className="investment-price-notes">We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients—just at founding client pricing.</span>
           <div className="iprice">
-            <p><span className="investment-price">$4,000*</span><br/><span className="investment-price-subtext">(regular rate $6,000 starting Fall 2025)</span></p>
+            <span className="investment-price">$4,000*</span><br/><span className="investment-price-subtext">(regular rate $6,000 starting Fall 2025)</span>
           </div>
-          <span className="investment-price-notes">We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients, just at founding client pricing.</span>
           <div className="investment-content">
             <p><span className="investment-content-heading">*Why the special rate?</span></p>
             <p>Fantastic question!</p>
