@@ -504,7 +504,7 @@ input[type=number]::-webkit-outer-spin-button {
   flex-grow: 1;
   align-content: center;
   vertical-align: middle;
-  text-align: left;
+  text-align: center;
 }
 .about-header{
   font-family: "alegreya", serif;
@@ -547,7 +547,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-style: italic;
   font-weight: 500 !important;
   margin-bottom: 16px;
-  text-align: left;
+  text-align: center;
   font-family: "alegreya", serif;
   font-size: 16px;
   letter-spacing: -0.36px;
@@ -558,7 +558,7 @@ input[type=number]::-webkit-outer-spin-button {
   list-style: none;
   padding-bottom: 6px;
   margin: 0;
-  text-align: left;
+  text-align: center;
   font-family: "soleil", sans-serif;
   font-size: 14px;
   letter-spacing: 0.14px;
@@ -573,7 +573,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 0.9rem;
   font-style: italic;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
   font-family: "alegreya", serif;
   font-size: 16px;
   letter-spacing: -0.36px;
@@ -1911,8 +1911,9 @@ margin-bottom: 12px !important;
 }
 @media (max-width: 768px) {
   .author-page-thanks{
+  min-height: 100dvh !important;
   height: 100dvh !important;
-  min-height: 100svh;
+  max-height: 100dvh !important;
   padding: 1.5rem;
   }
   .author-inquiry-page {

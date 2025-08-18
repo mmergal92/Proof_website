@@ -13,8 +13,8 @@ const tData = {
       aboutHeader: (
         <>
           &nbsp;&nbsp;&nbsp;&nbsp;Proof is the design and technology practice of{" "}
-          <a href="https://segacyroberts.com/" target="_blank" className="underline">Segacy</a> and{" "}
-          <a href="https://mariamergal.dev/" target="_blank" className="underline">Maria</a>, two childhood friends from NYC.
+          <a href="https://segacyroberts.com/" target="_blank" className="underline"><i>Segacy</i></a> and{" "}
+          <a href="https://mariamergal.dev/" target="_blank" className="underline"><i>Maria</i></a>, two childhood friends from NYC.
         </>
       ),
       aboutText: (

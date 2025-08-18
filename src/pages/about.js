@@ -47,14 +47,14 @@ const About = () =>{
                   ))}
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h4>{t.capabilitiesHeading}</h4>
             <ul>
                 {t.capabilities.map((cap, idx) => (
                   <li key={idx}>{cap}</li>
                 ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <p className="wellness-note">
