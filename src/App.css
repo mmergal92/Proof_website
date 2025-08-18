@@ -595,7 +595,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* New Home page */
 
 .newhome-page{
-  background-color: #EDEAE0;
+  background-color: #FFFEF8;
 }
 
 .home-content {
@@ -944,7 +944,7 @@ blockquote {
 .mobile-nav {
   position: fixed;
   inset: 0;
-  background-color: #EDEAE0;
+  background-color: #FFFEF8;
   display: none;
   flex-direction: column;
   align-items: center;
