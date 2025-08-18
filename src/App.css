@@ -455,7 +455,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* New Proof Fonts */
 
-.alegreya {
+/* .alegreya {
   font-family: "alegreya", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -480,7 +480,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-family: "soleil", sans-serif;
   font-weight: 700;
   font-style: italic;
-}
+} */
 .p22-mackinac-pro{
   font-family: "p22-mackinac-pro", serif;
   font-weight: 500;
@@ -606,7 +606,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .headline {
-  font-family: "alegreya", serif;
+  font-family: "P22 Mackinac Pro";
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 46px;
@@ -746,9 +746,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .testimonial-label {
   font-size: 14px;
-  letter-spacing: 0.14px;
-  line-height: 115%;
-  font-family: "soleil", sans-serif;
+  line-height: 16.1px;
+  font-family: "anonymous-pro", monospace;
+  font-weight: 700;
   margin-bottom: 32px;
 }
 
@@ -764,7 +764,7 @@ blockquote {
   flex: 1;
 }
 .quote-text {
-  font-family: "alegreya", serif;
+  font-family: "P22 Mackinac Pro";
   font-weight: 400;
   /* max-width: 620px; */
   font-size: 24px;
@@ -778,12 +778,11 @@ blockquote {
 .quotation-attr {
   margin-top: 32px;
   font-size: 14px;
-  letter-spacing: 0.14px; 
-  line-height: 115%;
-  font-family: "soleil", sans-serif;
-  font-weight: medium;
-  font-style: italic;
-  color: rgba(0, 0, 0, .7);
+  line-height: 21.7px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(39, 43, 30, 0.60);
 }
 .quote-row button {
   background: none;
@@ -830,11 +829,10 @@ blockquote {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  font-family: "soleil", sans-serif;
+  font-family: "Neue Haas Unica W1G";
   font-size: 14px;
-  letter-spacing: 0.14px;
-  line-height: 115%;
-  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 16.1px;
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
@@ -850,9 +848,9 @@ blockquote {
 .nav-left a,
 .nav-right a {
   text-decoration: none;
-  color: black;
+  color: #272B1E;
   font-size: 14px;
-  font-family: "soleil", sans-serif;
+  font-family: "Neue Haas Unica W1G";
 }
 .nav-left a:hover,
 .nav-right a:hover {
@@ -908,8 +906,8 @@ blockquote {
   border: none;
   cursor: pointer;
   font-size: 14px;
-  color: black;
-  font-family: "soleil", sans-serif;
+  color: #272B1E;
+  font-family: "Neue Haas Unica W1G";
 }
 .lang:hover{
   text-decoration: underline;
@@ -968,10 +966,9 @@ blockquote {
 
 .mobile-nav li {
   margin-bottom: 8px;
-  font-size: 48px;
-  font-family: "alegreya", serif;
-  letter-spacing: -0.36px;
-  line-height: 130%;
+  font-size: 24px;
+  font-family: "P22 Mackinac Pro";
+  line-height: 26.4px;
 }
 .mobile-nav li a{
   text-decoration: none;
@@ -1000,10 +997,8 @@ blockquote {
 }
 .mobile-nav .social {
   font-size: 14px;
-  font-family: "soleil", sans-serif;
-  letter-spacing: 0.28px;
+  font-family: "Neue Haas Unica W1G";
   line-height: 115%;
-
 }
 
 .close-menu {
@@ -1021,9 +1016,8 @@ blockquote {
 }
 .error{
   font-size: 14px;
-  letter-spacing: 0.14px;
   line-height: 115%;
-  font-family: "soleil", sans-serif;
+  font-family: "Neue Haas Unica W1G";
   margin-bottom: 32px;
 }
 .error-headline{
@@ -1079,9 +1073,9 @@ footer {
   align-items: center;
   /* justify-content: space-between;
   position: relative; */
-  font-family: "soleil", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.14px;
+  font-family: "anonymous-pro", monospace;
+  font-size: 12px;
+  font-weight: 700;
   line-height: 115%;
   font-size: 0.9rem;
   padding-top: 20px;
