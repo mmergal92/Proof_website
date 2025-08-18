@@ -544,12 +544,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .about-services {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   gap: 2rem;
   color: #272B1E;
   margin-top: 64px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   max-width: 480px;
 }
 
