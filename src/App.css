@@ -688,6 +688,9 @@ input[type=number]::-webkit-outer-spin-button {
     padding-right: 12px;
     text-align: left !important;;
   }
+  .about-services h4, .about-services ul{
+    text-align: left !important;
+  }
   .overlay-video {
     width: 80%;
     bottom: 8%;
