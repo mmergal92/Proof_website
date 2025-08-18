@@ -927,7 +927,19 @@ blockquote {
   text-underline-offset: 6%;
   text-underline-position: from-font;
 }
-
+.email-button{
+  background: #272B1E;
+  padding: 14px 28px;
+  border: 1px solid #272B1E;
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #FFFEF8;
+  font-family: "Neue Haas Unica W1G";
+}
+.email-button:hover{
+  background: #000;
+}
 
 .menu-toggle img{
   width: 32px;

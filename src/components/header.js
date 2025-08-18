@@ -14,15 +14,17 @@ const Header = ({ language, toggleLanguage, t }) => {
     <header className="site-header">
       <div className="nav-container fade-in fade-in-delay-1">
         <nav className="nav-left">
-          <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t.work}</Link>
-          <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t.about}</Link>
-          <a href="mailto:hello@itsproof.co">{t.email}</a>
+          <div className="logo"><Link to={`/?lang=${language}`}>Hi! We're <b>Proof.</b></Link></div>
         </nav>
 
-        <div className="logo"><Link to={`/?lang=${language}`}>PROOF</Link></div>
+        {/* <div className="logo"><Link to={`/?lang=${language}`}>Hi! We're <b>Proof.</b></Link></div> */}
 
         <nav className="nav-right">
+          <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t.work}</Link>
+          <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t.about}</Link>
+          <a href="/islandipsum" target="_blank" rel="noopener noreferrer">{t.lorem}</a>
           <button onClick={toggleLanguage} className="lang">{t.lang}</button>
+          <a href="mailto:hello@itsproof.co" className="email-button">{t.email}</a>
         </nav>
         <button className="menu-toggle" onClick={() => setShowMobileNav(true)} aria-label="Open menu">
           <img src={menu} alt="Menu" />
@@ -36,9 +38,11 @@ const Header = ({ language, toggleLanguage, t }) => {
         <ul>
           <li><Link to={`/?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t.work}</Link></li>
           <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t.about}</Link></li>
-          <li><a href="mailto:hello@itsproof.co">{t.email}</a></li>
-          <li className="social social-first"><a href="http://instagram.com/itsproof.co" target="_blank">Instagram</a></li>
-          <li className="social"><button onClick={toggleLanguage} className="lang">{t.lang}</button></li>
+          <li><a href="/islandipsum" target="_blank" rel="noopener noreferrer">{t.lorem}</a></li>
+          <li><button onClick={toggleLanguage} className="lang">{t.lang}</button></li>
+          <li><a href="mailto:hello@itsproof.co" className="email-button">{t.email}</a></li>
+          <li><a href="http://instagram.com/itsproof.co" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="Instagram" className="instagram-icon" /></a></li>      
         </ul>
       </nav>
     </header>
