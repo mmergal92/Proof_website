@@ -1115,6 +1115,12 @@ blockquote {
   text-underline-offset: 6%;
   text-underline-position: from-font;
 }
+.instagram-icon {
+  width: 18px;            /* icon size */
+  height: 18px;
+  display: block;         /* remove descender baseline */
+  margin-right: .5rem;    /* optional spacing if you add more icons later */
+}
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
@@ -1131,6 +1137,7 @@ blockquote {
   .footer-links a {
     margin-bottom: 0;
   }
+  
 }
 
 /* Mobile styles */
