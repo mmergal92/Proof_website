@@ -550,7 +550,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #272B1E;
   margin-top: 64px;
   /* flex-wrap: wrap; */
-  max-width: 480px;
+  /* max-width: 480px; */
 }
 
 .about-services h4 {
