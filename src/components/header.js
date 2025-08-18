@@ -15,9 +15,8 @@ const Header = ({ language, toggleLanguage, t }) => {
     <header className="site-header">
       <div className="nav-container fade-in fade-in-delay-1">
         <nav className="nav-left">
-          <div className="logo"><Link to={`/?lang=${language}`}>Hi! We're <b>Proof.</b></Link></div>
+          <div><Link to={`/?lang=${language}`}>{t.proof}</Link></div>
         </nav>
-
         {/* <div className="logo"><Link to={`/?lang=${language}`}>Hi! We're <b>Proof.</b></Link></div> */}
 
         <nav className="nav-right">
