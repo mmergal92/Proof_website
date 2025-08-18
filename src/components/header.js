@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import menu from '../assets/menu.webp';
 import close from '../assets/close.png';
+import instagram from '../assets/instagram.png';
 
 const Header = ({ language, toggleLanguage, t }) => {
   const location = useLocation();
