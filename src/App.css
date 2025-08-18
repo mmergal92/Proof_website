@@ -1909,3 +1909,17 @@ margin-bottom: 12px !important;
   max-width: 772px !important;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .author-page-thanks{
+  height: 100dvh !important;
+  padding: 1.5rem;
+  }
+  .author-inquiry-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /* Reduce spacing after the “View offer” button */
+  .hero-inquiry-content {
+    padding-top: 60px;  /* or whatever feels right — currently 144px */
+  }
+}
