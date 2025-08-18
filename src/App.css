@@ -851,6 +851,7 @@ blockquote {
   color: #272B1E;
   font-size: 14px;
   font-family: "Neue Haas Unica W1G";
+  vertical-align: middle !important;;
 }
 .nav-left a:hover,
 .nav-right a:hover {
@@ -934,7 +935,7 @@ blockquote {
   border-radius: 56px;
   cursor: pointer;
   font-size: 14px;
-  color: #FFFEF8;
+  color: #FFFEF8 !important;
   font-family: "Neue Haas Unica W1G";
 }
 .email-button:hover{
