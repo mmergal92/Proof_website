@@ -1912,6 +1912,7 @@ margin-bottom: 12px !important;
 @media (max-width: 768px) {
   .author-page-thanks{
   height: 100dvh !important;
+  min-height: 100svh;
   padding: 1.5rem;
   }
   .author-inquiry-page {
@@ -1921,5 +1922,92 @@ margin-bottom: 12px !important;
   /* Reduce spacing after the “View offer” button */
   .hero-inquiry-content {
     padding-top: 60px;  /* or whatever feels right — currently 144px */
+  }
+}
+
+/* MOBILE  */
+@media (max-width: 768px) {
+  .author-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .author-hero img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero-content {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Intro / Promise sections */
+  .author-intro,
+  .promise {
+    margin: 80px auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* Transformation */
+  .transformation {
+    padding: 80px 1rem;
+    text-align: center;
+  }
+  .transformation-columns {
+    flex-direction: column;
+  }
+  .transformation-hidden {
+    display: none;
+  }
+  .transformation-main {
+    padding-top: 40px;
+    text-align: center !important;
+  }
+  .theader {
+    max-width: 100%;
+  }
+
+  /* Fit section */
+  .fit {
+    padding: 80px 1rem;
+    text-align: center !important;
+  }
+  .fit-content {
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .fit-content p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Investment section */
+  .investment {
+    padding: 80px 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .investment-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .investment-content {
+    padding: 24px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 80px 1rem;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer-author {
+    padding: 1rem;
+    text-align: center;
   }
 }
