@@ -490,7 +490,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* New About page */
 .about-page {
-  background-color: #EDEAE0;
+  background-color: #FFFEF8;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -515,6 +515,7 @@ input[type=number]::-webkit-outer-spin-button {
 .about-header{
   font-family: "p22-mackinac-pro", serif;
   font-weight: 500;
+  color: #272B1E;
   font-size: 36px;
   line-height: 43.2px;
   margin-bottom: 16px;
@@ -522,6 +523,7 @@ input[type=number]::-webkit-outer-spin-button {
 .about-text{
   font-family: "Neue Haas Unica W1G";
   font-size: 16px;
+  color: #272B1E;
   font-weight: 400;
   line-height: 24.8px;
 } 
@@ -543,6 +545,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  color: #272B1E;
   margin-top: 64px;
   flex-wrap: wrap;
   max-width: 480px;
@@ -554,6 +557,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 16px;
   text-align: center;
   font-family: "Anonymous Pro";
+  color: #272B1E;
   font-size: 16px;
   line-height: 19.2px;
 }
@@ -562,6 +566,7 @@ input[type=number]::-webkit-outer-spin-button {
   list-style: none;
   font-family: "Neue Haas Unica W1G";
   padding-bottom: 6px;
+  color: #272B1E;
   margin: 0;
   text-align: center;
   font-size: 16px;
@@ -577,7 +582,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-style: normal;
   font-weight: 700;
   text-align: center;
- font-family: "Anonymous Pro";
+  font-family: "Anonymous Pro";
+  color: #272B1E;
   font-size: 14px;
   line-height: 21px;
 }
