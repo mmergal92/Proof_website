@@ -12,7 +12,7 @@ const tData = {
       text: "Return to projects",
       aboutHeader: (
         <>
-          &nbsp;&nbsp;&nbsp;&nbsp;Proof is the design and technology practice of{" "}
+          Proof is the design and technology practice of{" "}
           <a href="https://segacyroberts.com/" target="_blank" className="underline"><i>Segacy</i></a> and{" "}
           <a href="https://mariamergal.dev/" target="_blank" className="underline"><i>Maria</i></a>, two childhood friends from NYC.
         </>
@@ -53,7 +53,7 @@ const tData = {
       text: "Volver a proyectos",
       aboutHeader: (
         <>
-          &nbsp;&nbsp;&nbsp;&nbsp;Proof es la práctica de diseño y tecnología de{" "}
+          Proof es la práctica de diseño y tecnología de{" "}
           <a href="https://segacyroberts.com/" target="_blank" className="underline">Segacy</a> y{" "}
           <a href="https://mariamergal.dev/" target="_blank" className="underline">Maria</a>, dos amigas de la infancia de Nueva York.
         </>
