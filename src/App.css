@@ -481,6 +481,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700;
   font-style: italic;
 }
+.p22-mackinac-pro{
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 /* New About page */
 .about-page {
@@ -507,18 +513,17 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 .about-header{
-  font-family: "alegreya", serif;
-  font-weight: 400;
-  font-size: 32px;
-  letter-spacing: -0.36px;
-  line-height: 125%;
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43.2px;
   margin-bottom: 16px;
 } 
 .about-text{
-  font-family: "soleil", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.14px;
-  line-height: 160%;
+  font-family: "Neue Haas Unica W1G";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.8px;
 } 
 
 .underline {
@@ -526,8 +531,8 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
-  text-decoration-thickness: 4%;
-  text-underline-offset: 6%;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
   text-underline-position: from-font;
 }
 .underline:hover {
@@ -544,25 +549,24 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .about-services h4 {
-  font-style: italic;
-  font-weight: 500 !important;
+  font-style: normal;
+  font-weight: 700 !important;
   margin-bottom: 16px;
   text-align: center;
-  font-family: "alegreya", serif;
+  font-family: "Anonymous Pro";
   font-size: 16px;
-  letter-spacing: -0.36px;
-  line-height: 130%;
+  line-height: 19.2px;
 }
 
 .about-services ul {
   list-style: none;
+  font-family: "Neue Haas Unica W1G";
   padding-bottom: 6px;
   margin: 0;
   text-align: center;
-  font-family: "soleil", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.14px;
-  line-height: 130%;
+  font-size: 16px;
+  line-height: 24.8px;
+  font-weight: 400;
 }
 
 .about-services li {
@@ -570,14 +574,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .wellness-note {
   margin-top: 64px;
-  font-size: 0.9rem;
-  font-style: italic;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 700;
   text-align: center;
-  font-family: "alegreya", serif;
-  font-size: 16px;
-  letter-spacing: -0.36px;
-  line-height: 130%;
+ font-family: "Anonymous Pro";
+  font-size: 14px;
+  line-height: 21px;
 }
 
 /* New Home page */
