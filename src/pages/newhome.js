@@ -136,9 +136,9 @@ function WorkTile({ img, video, overlayImg}) {
 }
 
 const extendedProjects = [
-  projects[projects.length - 1], // clone of last
-  ...projects,
-  projects[0],                   // clone of first
+  ...projects,      // full set clone at start
+  ...projects,      // real set
+  ...projects       // full set clone at end
 ];
 
 
@@ -175,21 +175,25 @@ const Newhome = () =>{
     const firstTile = el.querySelector('.work-tile');
     tileWidthRef.current = firstTile.offsetWidth;
 
-    // initially scroll to the REAL first slide (index 1)
-    el.scrollLeft = tileWidthRef.current;
+    
+  const setToMiddle = () => {
+    el.scrollLeft = tileWidthRef.current * projects.length; // middle set
+  };
+
+  // start in the middle set
+  setToMiddle();
     
     const handleScroll = () => {
-      const maxScroll =
-        tileWidthRef.current * (extendedProjects.length - 2);
+      const totalWidth = tileWidthRef.current * projects.length;
 
       if (el.scrollLeft <= 0) {
-        // if we've reached the cloned-first at the beginning
-        el.scrollLeft = maxScroll - tileWidthRef.current;
-      } else if (el.scrollLeft >= maxScroll) {
-        // if we've reached the cloned-last at the end
-        el.scrollLeft = tileWidthRef.current;
+        // jumped too far left → reset to middle set
+        el.scrollLeft += totalWidth;
+      } else if (el.scrollLeft >= totalWidth * 2) {
+        // jumped too far right → reset to middle set
+        el.scrollLeft -= totalWidth;
       }
-    }
+    };
 
     el.addEventListener('scroll', handleScroll);
     return () => el.removeEventListener('scroll', handleScroll);
