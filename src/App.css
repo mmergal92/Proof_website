@@ -864,9 +864,6 @@ blockquote {
   font-weight: 500 !important;
   font-family: "Neue Haas Unica W1G";
   vertical-align: middle !important;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 .nav-left a:hover,
 .nav-right a:hover, .nav-right button:hover {
@@ -999,10 +996,13 @@ blockquote {
   font-family: "P22 Mackinac Pro";
   line-height: 22px;
   letter-spacing: -0.2px;
+}
+.lang-mobile{
     background: none;
   border: none;
   cursor: pointer;
 }
+
 .mobile-nav li a, .mobile-nav li button{
   text-decoration: none;
 }
