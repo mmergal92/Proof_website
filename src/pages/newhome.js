@@ -135,11 +135,7 @@ function WorkTile({ img, video, overlayImg}) {
   );
 }
 
-const extendedProjects = [
-  projects[projects.length - 1], // clone of last
-  ...projects,
-  projects[0],                   // clone of first
-];
+const extendedProjects = [...projects, ...projects, ...projects];
 
 
 const Newhome = () =>{
@@ -179,15 +175,13 @@ const Newhome = () =>{
     el.scrollLeft = tileWidthRef.current;
     
     const handleScroll = () => {
-      const maxScroll =
-        tileWidthRef.current * (extendedProjects.length - 2);
-
-      if (el.scrollLeft <= 0) {
-        // if we've reached the cloned-first at the beginning
-        el.scrollLeft = maxScroll - tileWidthRef.current;
-      } else if (el.scrollLeft >= maxScroll) {
-        // if we've reached the cloned-last at the end
-        el.scrollLeft = tileWidthRef.current;
+     const totalWidth = tileWidthRef.current * projects.length;
+        if (el.scrollLeft >= totalWidth * 2) {
+        // user scrolled past the second copy → jump back by one full set
+        el.scrollLeft = el.scrollLeft - totalWidth;
+      } else if (el.scrollLeft <= totalWidth * 0.5) {
+        // (optional) for backwards direction – move forward by one full set
+        el.scrollLeft = el.scrollLeft + totalWidth;
       }
     }
 
