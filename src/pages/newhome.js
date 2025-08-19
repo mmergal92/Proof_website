@@ -176,7 +176,7 @@ const Newhome = () =>{
     tileWidthRef.current = firstTile.offsetWidth;
 
     // initially scroll to the REAL first slide (index 1)
-el.scrollLeft = tileWidthRef.current * projects.length;
+    el.scrollLeft = tileWidthRef.current;
     
     const handleScroll = () => {
       const maxScroll =
