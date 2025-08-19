@@ -624,16 +624,16 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
   line-height:125%;
 }
-.work-grid-wrapper {
+/* .work-grid-wrapper {
   margin: 0 auto;
-  overflow: hidden; /* prevent accidental overflow */
+  overflow: hidden; 
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Force 2 across */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 24px;
 }
 
@@ -645,7 +645,37 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 100%;
   overflow: hidden;
 
+} */
+.work-grid-wrapper {
+  overflow-x: auto;
 }
+.work-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 16px; /* adds space to avoid clipping */
+}
+
+.work-grid::-webkit-scrollbar {
+  display: none; /* optional: hide scrollbar */
+}
+
+.work-grid-wrapper {
+  padding: 0 20vw; /* NEW — adds left/right space so tile #2 is centered */
+}
+
+.work-tile {
+  flex: 0 0 50vw;          /* NEW — each tile takes half of viewport */
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: center;   
+}
+
+
 .newhome-page a{
   color: #272B1E;
 }
