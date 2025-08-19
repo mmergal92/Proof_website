@@ -1174,20 +1174,7 @@ blockquote {
   .footer-links a {
     margin-bottom: 0;
   }
-  .email-button{
-  background: #272B1E;
-  margin-left: 0px;
-  padding: 14px 28px !important;
-  border-radius: 56px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #FFFEF8 !important;
-  font-family: "Neue Haas Unica W1G";
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  text-decoration: none;
-}
+  
   
 }
 
@@ -1208,6 +1195,20 @@ blockquote {
     padding-left: 12px;
     padding-bottom: 12px;
   }
+  .email-button{
+  background: #272B1E;
+  margin-left: 0px;
+  padding: 14px 28px !important;
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #FFFEF8 !important;
+  font-family: "Neue Haas Unica W1G";
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  text-decoration: none;
+}
   
   .menu-toggle {
     display: block;
