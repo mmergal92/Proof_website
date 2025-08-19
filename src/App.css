@@ -999,6 +999,9 @@ blockquote {
   font-family: "P22 Mackinac Pro";
   line-height: 22px;
   letter-spacing: -0.2px;
+    background: none;
+  border: none;
+  cursor: pointer;
 }
 .mobile-nav li a, .mobile-nav li button{
   text-decoration: none;
