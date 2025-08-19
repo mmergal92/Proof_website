@@ -11,7 +11,7 @@ const Authors = () =>{
     <div className="author-page asection">
       <section className="author-hero  "> 
         <div className="hero-content ">
-            <h5>Three fiction authors. Three stunning transformations. This summer only.</h5>
+            <h5>Three fiction authors. Three stunning transformations. This fall only.</h5>
             <h1>An obsession-worthy website in just 6-weeks</h1>
             <a href="#offer" className="author-btn extra-margin-top">See what's included</a>
         </div>
@@ -47,7 +47,7 @@ const Authors = () =>{
             <hr/>
         </div>
         <h1 className="transformation-header">The <i>6-week</i> transformation</h1>
-        <p className="transformation-header theader">By Fall, you'll have an author website that actually feels like you—the kind that makes readers stay, explore, and eagerly sign up for your newsletter. We'll transform your online presence from good enough to unforgettable in just six weeks, with most of our collaboration happening early on as we build your foundation. Here's what we'll create together:</p>
+        <p className="transformation-header theader">Before the new year you'll have an author website that actually feels like you—one that makes readers stay, explore, and eagerly sign up for your newsletter. We'll transform your online presence from good enough to unforgettable in just six weeks, with most of our collaboration happening early on as we build your foundation. Here's what we'll create together:</p>
          <div className="transformation-columns"><div className="transformation-hidden">
             </div>
             <div className="transformation-main-section">
@@ -91,7 +91,7 @@ const Authors = () =>{
           <span className="investment-price-notes">We're launching our author specialization this summer with three founding clients. You'll get our complete transformation process—the same personalized strategy, custom design, and dedicated collaboration we'll offer all future author clients—just at founding client pricing.</span>
           <div className="iprice">
             <span className="investment-price">$4,000*</span><br/>
-            <span className="investment-price-subtext">(regular rate $6,000 starting Fall 2025)</span>
+            <span className="investment-price-subtext">(regular rate $6,000 starting 2026)</span>
           </div>
           <div className="investment-content">
             <p><span className="investment-content-heading">*Why the special rate? Fantastic question!</span></p>
@@ -113,7 +113,7 @@ const Authors = () =>{
         <h5>Ready to create something magical?</h5>
         <h2>We’re only offering three spots for this launch.</h2>
         <p>Interested in being one of our three founding author clients? We'll start with a (very) quick questionnaire. Then, we'll schedule a 20-minute call to discuss the process and make sure we're the right fit for each other. Once we're aligned, we'll kick off your transformation right away!</p>
-        <p><b>Three spots only. Deadline: August 15</b><br/>Let's make your author platform unforgettable.</p>
+        <p><b>Three spots only. Deadline: September 30th</b><br/>Let's make your author platform unforgettable.</p>
         <a href="/authorinquiryform" className="author-btn">I'm ready</a>
       </section>
 
