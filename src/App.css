@@ -668,10 +668,7 @@ input[type=number]::-webkit-outer-spin-button {
     grid-template-columns: 1fr;
   }
   .headline {
-      padding-right: 12px;
-      padding-left: 12px;
-      padding-bottom: 16px;
-      padding-top: 59px;
+      padding: 84px 12px 40px !important;
   }
   .work-grid-wrapper {
     padding-left: 12px;
@@ -681,11 +678,8 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 8px;
   }
   .testimonial {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-    margin-top: 0px;
-    padding-top: 70px !important;
-    padding-bottom: 100px !important;
+    padding: 71px 12px 100px !important;
+    margin-top: 0px !important;
   }
   .about-header{
     font-size: 28px !important;
@@ -825,6 +819,8 @@ blockquote {
   }
   .headline {
     font-size: 28px;
+    line-height: 6.4px !important;
+    letter-spacing: -0.56px !important;
   }
   .logo{
     top: 5px;
