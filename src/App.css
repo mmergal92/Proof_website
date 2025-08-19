@@ -1177,7 +1177,6 @@ blockquote {
   width: 18px;            /* icon size */
   height: 18px;
   display: block;         /* remove descender baseline */
-  margin-right: .5rem;    /* optional spacing if you add more icons later */
 }
 @media (min-width: 768px) {
   .footer-container {
