@@ -1,6 +1,11 @@
 const tData = {
     en: {
-      proof: "Hi! We're Proof.",
+      proof:(
+        <>
+          Hi! We're{" "}
+          <b>Proof.</b>
+        </>
+      ),
       work: "Work",
       about: "About",
       email: "Email us",
@@ -42,7 +47,12 @@ const tData = {
       )
     },
     es: {
-      proof: "¡Hola! Somos Proof.",
+      proof:(
+        <>
+          ¡Hola! Somos{" "}
+          <b>Proof.</b>
+        </>
+      ),
       work: "Trabajo",
       about: "Acerca de",
       email: "Contáctanos",
