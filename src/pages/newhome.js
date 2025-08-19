@@ -21,8 +21,6 @@ import previous from '../assets/previous.webp';
 import next from '../assets/next.webp';
 
 
-
-
 const projects = [
   {
     img: annaliseImg,
