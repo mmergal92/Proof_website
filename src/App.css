@@ -2060,9 +2060,15 @@ margin-bottom: 12px !important;
     max-width: 100%;
   }
   .hero-content {
-    padding: 1rem;
+    padding: 90px 16px 39px;
     width: 100%;
     text-align: center;
+  }
+  .author-page h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 49.92px;
   }
   
   /* Intro / Promise sections */
