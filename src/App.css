@@ -703,6 +703,9 @@ input[type=number]::-webkit-outer-spin-button {
   .about-services h4, .about-services ul{
     text-align: left !important;
   }
+  .about-services ul{
+    font-size: 14px !important;
+  }
   .overlay-video {
     width: 80%;
     bottom: 8%;
@@ -814,9 +817,11 @@ blockquote {
 /* Mobile styles */
 @media (max-width: 768px) {
   .quote-text{
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 20px;
     padding-left: 20px;
+    line-height:  28px;
+    letter-spacing: -0.2px;
   }
   .headline {
     font-size: 28px;
