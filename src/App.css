@@ -844,9 +844,16 @@ blockquote {
   display: inline-block;
   gap: 1rem;
 }
-
-.nav-left a,
-.nav-right a {
+.nav-left a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 400 !important;
+  color: #272B1E;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  vertical-align: middle !important;;
+}
+.nav-right a, .nav-right button {
   text-decoration: none;
   padding: 10px;
   color: #272B1E;
@@ -854,11 +861,8 @@ blockquote {
   font-family: "Neue Haas Unica W1G";
   vertical-align: middle !important;;
 }
-.nav-right button{
-  padding-right: 10px;
-}
 .nav-left a:hover,
-.nav-right a:hover {
+.nav-right a:hover, .nav-right button:hover {
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
