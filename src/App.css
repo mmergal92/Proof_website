@@ -695,10 +695,10 @@ input[type=number]::-webkit-outer-spin-button {
   .headline {
       padding: 84px 12px 40px !important;
   }
-  .work-grid-wrapper {
+  /* .work-grid-wrapper {
     padding-left: 12px;
     padding-right: 12px;
-  }
+  } */
   .work-grid {
     gap: 8px;
   }
