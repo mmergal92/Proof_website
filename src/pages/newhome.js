@@ -175,21 +175,24 @@ const Newhome = () =>{
     const firstTile = el.querySelector('.work-tile');
     tileWidthRef.current = firstTile.offsetWidth;
 
-    // initially scroll to the REAL first slide (index 1)
-    el.scrollLeft = tileWidthRef.current;
+    const totalSetWidth = tileWidthRef.current * projects.length;
+
+    // start with first project (middle set) centered
+    el.scrollLeft = totalSetWidth;
     
     const handleScroll = () => {
       const maxScroll =
         tileWidthRef.current * (extendedProjects.length - 2);
 
-      if (el.scrollLeft <= 0) {
-        // if we've reached the cloned-first at the beginning
-        el.scrollLeft = maxScroll - tileWidthRef.current;
-      } else if (el.scrollLeft >= maxScroll) {
-        // if we've reached the cloned-last at the end
-        el.scrollLeft = tileWidthRef.current;
+        if (el.scrollLeft <= 0) {
+        // jumped too far left → reset to middle set
+        el.scrollLeft += totalSetWidth;
+      } else if (el.scrollLeft >= totalSetWidth * 2) {
+        // jumped too far right → reset back
+        el.scrollLeft -= totalSetWidth;
       }
-    }
+    };
+
 
     el.addEventListener('scroll', handleScroll);
     return () => el.removeEventListener('scroll', handleScroll);
