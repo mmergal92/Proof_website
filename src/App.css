@@ -991,7 +991,7 @@ blockquote {
 
 .mobile-nav li {
   margin-bottom: 24px;
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 500;
   font-family: "P22 Mackinac Pro";
   line-height: 22px;
@@ -1028,10 +1028,10 @@ blockquote {
   line-height: 115%;
 }
 .instagram-icon-nav {
-  width: 18px;           
-  height: 18px;
+  width: 32px;           
+  height: 32px;
   text-align: center;
-  margin-top: 60px;   
+  margin-top: 50px;   
 }
 
 .close-menu {
@@ -1171,7 +1171,16 @@ blockquote {
   .footer-links a {
     margin-bottom: 0;
   }
-  
+  .email-button{
+  background: #272B1E;
+  margin-left: 10px;
+  padding: 14px 28px !important;
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #FFFEF8 !important;
+  font-family: "Neue Haas Unica W1G";
+}
   
 }
 

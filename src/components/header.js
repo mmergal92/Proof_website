@@ -39,11 +39,11 @@ const Header = ({ language, toggleLanguage, t }) => {
           <li><Link to={`/?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t.work}</Link></li>
           <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t.about}</Link></li>
           <li><a href="/islandipsum" target="_blank" rel="noopener noreferrer">{t.lorem}</a></li>
-          <li><button onClick={toggleLanguage} className="lang">{t.lang}</button></li>
-          <li><a href="mailto:hello@itsproof.co" className="email-button">{t.email}</a></li>
-          <li><a href="http://instagram.com/itsproof.co" target="_blank" rel="noopener noreferrer">
-            <img src={instagram} alt="Instagram" className="instagram-icon-nav" /></a></li>      
+          <li><button onClick={toggleLanguage}>{t.lang}</button></li>    
         </ul>
+            <a href="mailto:hello@itsproof.co" className="email-button">{t.email}</a>
+          <a href="http://instagram.com/itsproof.co" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="Instagram" className="instagram-icon-nav" /></a>
       </nav>
     </header>
   );
