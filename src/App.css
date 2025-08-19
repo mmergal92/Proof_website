@@ -1749,8 +1749,8 @@ line-height:  37.2px;
   }
   .investment-text h4{
     text-align: left;
-    font-size: 20px;
-    line-height: 31px;
+    font-size: 20px !important;
+    line-height: 31px !important;
     }
 }
 
