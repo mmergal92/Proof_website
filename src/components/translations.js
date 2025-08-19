@@ -40,10 +40,10 @@ const tData = {
       services: ["Strategy", "Web Design & Development", "App Design & Development", "Branding", "Digital Design", "Copywriting & Editing"],
       capabilities: ["Informational websites", "Editorial platforms", "Portfolios & microsites", "Pitch & tone decks", "Online shops", "Third-party integrations"],
       sundayNote: (
-        <em>
+        <>
           As a part of the Proof family, we’ve created{" "}
           <a href="https://sundaylighthouse.itsproof.co/" target="_blank" className="underline">Sunday Lighthouse</a>, dedicated to projects in the wellness space.
-        </em>
+        </>
       )
     },
     es: {
@@ -87,10 +87,10 @@ const tData = {
       services: ["Estrategia", "Diseño y desarrollo web", "Diseño y desarrollo de apps", "Branding", "Diseño digital", "Redacción y edición"],
       capabilities: ["Sitios web informativos", "Plataformas editoriales", "Portafolios y micrositios", "Presentaciones y tono", "Tiendas en línea", "Integraciones con terceros"],
       sundayNote: (
-        <em>
+         <>
           Como parte de la familia Proof, hemos creado{" "}
           <a href="https://sundaylighthouse.itsproof.co/" target="_blank" className="underline">Sunday Lighthouse</a>, dedicado a proyectos en el espacio de bienestar.
-        </em>
+        </>
       )
     }
   };
