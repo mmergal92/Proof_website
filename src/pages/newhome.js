@@ -135,7 +135,11 @@ function WorkTile({ img, video, overlayImg}) {
   );
 }
 
-const extendedProjects = [...projects, ...projects, ...projects];
+const extendedProjects = [
+  projects[projects.length - 1], // clone of last
+  ...projects,
+  projects[0],                   // clone of first
+];
 
 
 const Newhome = () =>{
@@ -161,46 +165,36 @@ const Newhome = () =>{
   
   const total = testimonials[language].length;
 
-    // work project loop
   const gridRef = useRef(null);
   const tileWidthRef = useRef(0);
 
-  useEffect(() => {
+ useEffect(() => {
     const el = gridRef.current;
     if (!el) return;
 
     const firstTile = el.querySelector('.work-tile');
-    if (!firstTile) return;
-
     tileWidthRef.current = firstTile.offsetWidth;
-    const totalWidth = tileWidthRef.current * projects.length;
 
-    // ✅ Start with project 2 centered: scroll by 1.5 tiles
-    el.scrollLeft = totalWidth + tileWidthRef.current * 1.5;
-
+    // initially scroll to the REAL first slide (index 1)
+    el.scrollLeft = tileWidthRef.current;
+    
     const handleScroll = () => {
-      if (el.scrollLeft >= totalWidth * 2) {
-        el.scrollLeft -= totalWidth;
-      } else if (el.scrollLeft <= 0) {
-        el.scrollLeft += totalWidth;
+      const maxScroll =
+        tileWidthRef.current * (extendedProjects.length - 2);
+
+      if (el.scrollLeft <= 0) {
+        // if we've reached the cloned-first at the beginning
+        el.scrollLeft = maxScroll - tileWidthRef.current;
+      } else if (el.scrollLeft >= maxScroll) {
+        // if we've reached the cloned-last at the end
+        el.scrollLeft = tileWidthRef.current;
       }
-    };
+    }
 
     el.addEventListener('scroll', handleScroll);
-
-    // ✅ enable horizontal scroll with mouse wheel
-    const handleWheel = (e) => {
-      if (e.deltaY === 0) return;
-      e.preventDefault();
-      el.scrollLeft += e.deltaY;
-    };
-    el.addEventListener('wheel', handleWheel, { passive: false });
-
-    return () => {
-      el.removeEventListener('scroll', handleScroll);
-      el.removeEventListener('wheel', handleWheel);
-    };
+    return () => el.removeEventListener('scroll', handleScroll);
   }, []);
+  
   
   // Clone first and last for seamless loop
   const extendedTestimonials = [
