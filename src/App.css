@@ -708,15 +708,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .testimonial {
   text-align: center;
-  margin-top: 48px;
-  border-top: 1px solid rgba(0, 0, 0, .1);
+  /* margin-top: 48px; */
+  /* border-top: 1px solid rgba(0, 0, 0, .1); */
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 104px;
-  padding-bottom: 102px;}
+  padding-top: 125px;
+  padding-bottom: 125px;}
 
 .testimonial-slider-container {
-  max-width: 620px;
+  max-width: 732px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -751,7 +751,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 500;
   letter-spacing: 0.72px;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .quote-nav {
@@ -766,23 +766,24 @@ blockquote {
   flex: 1;
 }
 .quote-text {
+  color: #272B1E;
   font-family: "P22 Mackinac Pro";
-  font-weight: 400;
+  font-weight: 500;
   /* max-width: 620px; */
   font-size: 24px;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.24px;
   padding-right: 32px;
   padding-left: 32px;
-  line-height: 130%;
+  line-height: 32.4px;
   margin: 0;
 }
 
 .quotation-attr {
-  margin-top: 32px;
-  font-size: 14px;
-  line-height: 21.7px;
+  margin-top: 28px;
+  font-size: 12px;
+  line-height: 13.8px;
   font-family: "Neue Haas Unica W1G";
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   color: rgba(39, 43, 30, 0.60);
 }
@@ -1072,12 +1073,13 @@ blockquote {
   border-top: 1px solid rgba(0, 0, 0, .1);
 } */
 .footer-right-nav{
-  color: black;
-  opacity: 0.5;
+  color: rgba(39, 43, 30, 0.50);
   font-size: 12px; 
+  font-weight: 700;
+  line-height: 13.8px;
 }
 /* Centered logo */
-.footer-logo {
+/* .footer-logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1086,7 +1088,7 @@ blockquote {
   font-size: 28px;
   letter-spacing: -0.36px;
   line-height: 130%;
-}
+} */
 .site-footer {
   position: relative;
 }
