@@ -42,7 +42,7 @@ const Header = ({ language, toggleLanguage, t }) => {
           <li><button onClick={toggleLanguage} className="lang">{t.lang}</button></li>
           <li><a href="mailto:hello@itsproof.co" className="email-button">{t.email}</a></li>
           <li><a href="http://instagram.com/itsproof.co" target="_blank" rel="noopener noreferrer">
-            <img src={instagram} alt="Instagram" className="instagram-icon" /></a></li>      
+            <img src={instagram} alt="Instagram" className="instagram-icon-nav" /></a></li>      
         </ul>
       </nav>
     </header>

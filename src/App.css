@@ -990,15 +990,17 @@ blockquote {
 }
 
 .mobile-nav li {
-  margin-bottom: 8px;
-  font-size: 24px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 500;
   font-family: "P22 Mackinac Pro";
-  line-height: 26.4px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
 }
-.mobile-nav li a{
+.mobile-nav li a, .mobile-nav li button{
   text-decoration: none;
 }
-.mobile-nav li a:hover{
+.mobile-nav li a:hover, .mobile-nav li button:hover{
   text-decoration: underline;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1007,7 +1009,7 @@ blockquote {
   text-underline-offset: 6%;
   text-underline-position: from-font;
 }
-.mobile-nav li a:active{
+.mobile-nav li a:active, .mobile-nav li button:active{
   text-decoration: underline;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1024,6 +1026,12 @@ blockquote {
   font-size: 14px;
   font-family: "Neue Haas Unica W1G";
   line-height: 115%;
+}
+.instagram-icon-nav {
+  width: 18px;           
+  height: 18px;
+  text-align: center;
+  margin-top: 60px;   
 }
 
 .close-menu {
@@ -1163,6 +1171,7 @@ blockquote {
   .footer-links a {
     margin-bottom: 0;
   }
+  
   
 }
 
