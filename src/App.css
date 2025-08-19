@@ -858,6 +858,7 @@ blockquote {
   padding: 10px;
   color: #272B1E;
   font-size: 14px;
+  font-weight: 500 !important;
   font-family: "Neue Haas Unica W1G";
   vertical-align: middle !important;;
 }
@@ -938,8 +939,8 @@ blockquote {
 }
 .email-button{
   background: #272B1E;
-  padding: 14px 28px;
-  border: 1px solid #272B1E;
+  margin-left: 10px;
+  padding: 14px 28px !important;
   border-radius: 56px;
   cursor: pointer;
   font-size: 14px;
