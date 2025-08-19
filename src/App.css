@@ -703,7 +703,7 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 8px;
   }
     .work-tile {
-    flex: 0 0 85vw;   /* tile takes up 75% of viewport width */
+    flex: 0 0 8g5vw;   /* tile takes up 75% of viewport width */
   }
   .testimonial {
     padding: 71px 12px 100px !important;
@@ -959,7 +959,7 @@ blockquote {
   border: none;
   cursor: pointer;
   font-size: 14px;
-  color: #272B1E;
+  color: #272B1E !important;
   font-family: "Neue Haas Unica W1G";
 }
 .lang:hover{
@@ -1046,6 +1046,7 @@ blockquote {
   font-weight: 500;
   font-family: "P22 Mackinac Pro";
   line-height: 22px;
+  color: #272B1E !important;
   letter-spacing: -0.2px;
 }
 
