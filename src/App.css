@@ -703,7 +703,7 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 8px;
   }
     .work-tile {
-    flex: 0 0 75vw;   /* tile takes up 75% of viewport width */
+    flex: 0 0 85vw;   /* tile takes up 75% of viewport width */
   }
   .testimonial {
     padding: 71px 12px 100px !important;
