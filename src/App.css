@@ -687,7 +687,7 @@ input[type=number]::-webkit-outer-spin-button {
   
   .about-content {
     margin-top: 84px;
-    margin-bottom: 78px;
+    margin-bottom: 149px;
     padding-left: 12px;
     padding-right: 12px;
     text-align: left !important;;
@@ -1197,7 +1197,7 @@ blockquote {
     display: none;
   }
   .footer-left {
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
   .footer-logo {
     bottom: 40px;
@@ -1206,6 +1206,7 @@ blockquote {
     padding-right: 12px;
     padding-left: 12px;
     padding-bottom: 12px;
+    padding-top: 0px;
   }
   .email-button{
   background: #272B1E;
