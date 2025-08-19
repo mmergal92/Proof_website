@@ -557,13 +557,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .about-services h4 {
   font-style: normal;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   margin-bottom: 16px;
   text-align: center;
-  font-family: "anonymous-pro", monospace;
+  font-family: "Neue Haas Unica W1G";
   color: #272B1E;
-  font-size: 16px;
-  line-height: 19.2px;
+  font-size: 12px;
+  line-height: 14.4px;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+
 }
 
 .about-services ul {
@@ -684,7 +687,12 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 104px;
     padding-bottom: 102px;
   }
-  
+  .about-header{
+    font-size: 28px !important;
+    line-height:  36.4px !important;
+    letter-spacing: -0.56px !important;
+    margin: 0 auto 32px;
+  } 
   .about-content {
     margin-top: 84px;
     margin-bottom: 149px !important;
@@ -704,7 +712,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: left !important;;
   }
   .about-services{
-    margin-top: 64px;
+    margin-top: 32px;
     text-align: left !important;;
   }
 }
@@ -1004,7 +1012,7 @@ blockquote {
     background: none;
   border: none;
   cursor: pointer;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
   font-size: 20px !important;
   font-weight: 500;
   font-family: "P22 Mackinac Pro";
