@@ -49,4 +49,4 @@ const Header = ({ language, toggleLanguage, t }) => {
   );
 };
 
-export default Header;g
+export default Header;
