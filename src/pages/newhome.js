@@ -245,7 +245,7 @@ const Newhome = () =>{
 
         <section className="work-grid-wrapper">
           <div className="work-grid" ref={gridRef}>
-            {projects.map((p, idx) => (
+            {extendedProjects.map((p, idx) => (
               <WorkTile key={idx} img={p.img} overlayImg={p.overlayImg} video={p.video} />
             ))}
           </div>
