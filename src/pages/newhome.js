@@ -1,5 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
+
 
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
@@ -133,6 +135,13 @@ function WorkTile({ img, video, overlayImg}) {
   );
 }
 
+const extendedProjects = [
+  projects[projects.length - 1], // clone of last
+  ...projects,
+  projects[0],                   // clone of first
+];
+
+
 const Newhome = () =>{
 
   const location = useLocation();
@@ -155,6 +164,37 @@ const Newhome = () =>{
   const [enableTransition, setEnableTransition] = useState(true);
   
   const total = testimonials[language].length;
+
+  const gridRef = useRef(null);
+  const tileWidthRef = useRef(0);
+
+ useEffect(() => {
+    const el = gridRef.current;
+    if (!el) return;
+
+    const firstTile = el.querySelector('.work-tile');
+    tileWidthRef.current = firstTile.offsetWidth;
+
+    // initially scroll to the REAL first slide (index 1)
+    el.scrollLeft = tileWidthRef.current;
+    
+    const handleScroll = () => {
+      const maxScroll =
+        tileWidthRef.current * (extendedProjects.length - 2);
+
+      if (el.scrollLeft <= 0) {
+        // if we've reached the cloned-first at the beginning
+        el.scrollLeft = maxScroll - tileWidthRef.current;
+      } else if (el.scrollLeft >= maxScroll) {
+        // if we've reached the cloned-last at the end
+        el.scrollLeft = tileWidthRef.current;
+      }
+    }
+
+    el.addEventListener('scroll', handleScroll);
+    return () => el.removeEventListener('scroll', handleScroll);
+  }, []);
+  
   
   // Clone first and last for seamless loop
   const extendedTestimonials = [
@@ -204,7 +244,7 @@ const Newhome = () =>{
                 </h1>
 
         <section className="work-grid-wrapper">
-          <div className="work-grid">
+          <div className="work-grid" ref={gridRef}>
             {projects.map((p, idx) => (
               <WorkTile key={idx} img={p.img} overlayImg={p.overlayImg} video={p.video} />
             ))}
