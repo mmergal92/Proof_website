@@ -1174,8 +1174,8 @@ blockquote {
   text-underline-position: from-font;
 }
 .instagram-icon {
-  width: 18px;            /* icon size */
-  height: 18px;
+  width: 24px;            /* icon size */
+  height: 24px;
   display: block;         /* remove descender baseline */
 }
 @media (min-width: 768px) {
