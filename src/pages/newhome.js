@@ -161,34 +161,46 @@ const Newhome = () =>{
   
   const total = testimonials[language].length;
 
+    // work project loop
   const gridRef = useRef(null);
   const tileWidthRef = useRef(0);
 
- useEffect(() => {
+  useEffect(() => {
     const el = gridRef.current;
     if (!el) return;
 
     const firstTile = el.querySelector('.work-tile');
-    tileWidthRef.current = firstTile.offsetWidth;
+    if (!firstTile) return;
 
-    // initially scroll to the REAL first slide (index 1)
-    el.scrollLeft = tileWidthRef.current;
-    
+    tileWidthRef.current = firstTile.offsetWidth;
+    const totalWidth = tileWidthRef.current * projects.length;
+
+    // ✅ Start with project 2 centered: scroll by 1.5 tiles
+    el.scrollLeft = totalWidth + tileWidthRef.current * 1.5;
+
     const handleScroll = () => {
-     const totalWidth = tileWidthRef.current * projects.length;
-        if (el.scrollLeft >= totalWidth * 2) {
-        // user scrolled past the second copy → jump back by one full set
-        el.scrollLeft = el.scrollLeft - totalWidth;
-      } else if (el.scrollLeft <= totalWidth * 0.5) {
-        // (optional) for backwards direction – move forward by one full set
-        el.scrollLeft = el.scrollLeft + totalWidth;
+      if (el.scrollLeft >= totalWidth * 2) {
+        el.scrollLeft -= totalWidth;
+      } else if (el.scrollLeft <= 0) {
+        el.scrollLeft += totalWidth;
       }
-    }
+    };
 
     el.addEventListener('scroll', handleScroll);
-    return () => el.removeEventListener('scroll', handleScroll);
+
+    // ✅ enable horizontal scroll with mouse wheel
+    const handleWheel = (e) => {
+      if (e.deltaY === 0) return;
+      e.preventDefault();
+      el.scrollLeft += e.deltaY;
+    };
+    el.addEventListener('wheel', handleWheel, { passive: false });
+
+    return () => {
+      el.removeEventListener('scroll', handleScroll);
+      el.removeEventListener('wheel', handleWheel);
+    };
   }, []);
-  
   
   // Clone first and last for seamless loop
   const extendedTestimonials = [
