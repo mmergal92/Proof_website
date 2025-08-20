@@ -979,6 +979,8 @@ blockquote {
 }
 .lang:hover{
    border: 2px solid #000;
+   color: #000;
+   text-decoration: none !important;
 }
 
 .email-button{
@@ -1041,18 +1043,6 @@ blockquote {
   line-height: 22px;
   letter-spacing: -0.2px;
 }
-.lang-mobile{
-    background: none;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 4px;
-  font-size: 20px !important;
-  font-weight: 500;
-  font-family: "P22 Mackinac Pro";
-  line-height: 22px;
-  color: #272B1E !important;
-  letter-spacing: -0.2px;
-}
 
 .mobile-nav li a, .mobile-nav li button{
   text-decoration: none;
@@ -1090,7 +1080,11 @@ blockquote {
   text-align: center;
   margin-top: 50px;   
 }
-
+.mobile-nav-flex{
+  margin-top: 65px;
+  display: flex;
+  
+}
 .close-menu {
   position: absolute;
   top: 5px;
