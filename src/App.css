@@ -896,7 +896,8 @@ blockquote {
 }
 .nav-right a, .nav-right button {
   text-decoration: none;
-  padding: 10px;
+  padding: 14px 12px;
+  margin-left: 12px;
   color: #272B1E;
   font-size: 14px;
   font-weight: 500 !important;
