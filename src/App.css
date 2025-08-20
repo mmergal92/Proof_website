@@ -1189,10 +1189,16 @@ blockquote {
 }
 
 .footer-left a,
-.footer-right a {
+.footer-right a, .footer-left button {
   text-decoration: none;
   color: #272B1E;
-  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height:  14.95px;
+  padding: 14px 12px;
+  margin-right: 12px;
 }
 .footer-left a:hover,
 .footer-right a:hover {
