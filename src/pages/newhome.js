@@ -233,31 +233,38 @@ const Newhome = () =>{
 
     //autoscroll//
 
-   const [isPaused, setIsPaused] = useState(false);
+        const [isPaused, setIsPaused] = useState(false);
 
-useEffect(() => {
-  const el = gridRef.current;
-  if (!el) return;
+      useEffect(() => {
+        const el = gridRef.current;
+        if (!el) return;
 
-  let animationFrame;
-  const speed = 0.3; // px per frame — adjust for slower/faster scroll
+        // make sure we have the tile width
+        if (!tileWidthRef.current) {
+          const firstTile = el.querySelector('.work-tile');
+          if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
+        }
 
-  const step = () => {
-    if (!isPaused && el) {
-      el.scrollLeft += speed;
+        const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
 
-      const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
-      if (el.scrollLeft >= maxScroll) {
-        el.scrollLeft = tileWidthRef.current; // loop back seamlessly
-      }
-    }
-    animationFrame = requestAnimationFrame(step);
-  };
+        let animationFrame;
+        const speed = 1; // px per frame, test with 1–2 first
 
-  animationFrame = requestAnimationFrame(step);
+        const step = () => {
+          if (!isPaused && el) {
+            el.scrollLeft += speed;
 
-  return () => cancelAnimationFrame(animationFrame);
-}, [isPaused, extendedProjects.length]);
+            if (el.scrollLeft >= maxScroll) {
+              el.scrollLeft = tileWidthRef.current; // reset to start
+            }
+          }
+          animationFrame = requestAnimationFrame(step);
+        };
+
+        animationFrame = requestAnimationFrame(step);
+
+        return () => cancelAnimationFrame(animationFrame);
+      }, [isPaused, extendedProjects.length]);
 
   return (
     <div className="newhome-page ">
