@@ -563,9 +563,9 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   font-family: "Neue Haas Unica W1G";
   color: #272B1E;
-  font-size: 13px;
-  line-height: 14.95px;
-  letter-spacing: 1.3px;
+  font-size: 10px;
+  line-height: 11.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -792,11 +792,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .testimonial-label {
-  font-size: 13px;
-  line-height: 14.95px;
+  font-size: 10px;
+  line-height: 11.5px;
   font-family: "Neue Haas Unica W1G";
   font-weight: 700;
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 28px;
 }
