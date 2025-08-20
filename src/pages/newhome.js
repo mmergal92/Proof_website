@@ -232,7 +232,6 @@ const Newhome = () =>{
     }, [currentIndex, total]);
 
     // autoscroll //
-        // const [isPaused, setIsPaused] = useState(false);
 
         useEffect(() => {
           const el = gridRef.current;
@@ -244,21 +243,18 @@ const Newhome = () =>{
             if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
           }
 
-          let timer;
           const stepPx = 0.8;   // pixels per tick (tweak: 0.3–2 for slower/faster)
           const stepMs = 16;    // ~60fps
 
-          // if (!isPaused) {
-          //   timer = setInterval(() => {
-          //     el.scrollLeft += stepPx; // continuous glide
+         const timer = setInterval(() => {
+          el.scrollLeft += stepPx; // continuous glide
 
-          //     // keep the infinite loop seamless
-          //     const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
-          //     if (el.scrollLeft >= maxScroll) {
-          //       el.scrollLeft = tileWidthRef.current; // jump back to real first (instant, hidden by clones)
-          //     }
-          //   }, stepMs);
-          // }
+          // keep the infinite loop seamless
+          const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
+          if (el.scrollLeft >= maxScroll) {
+            el.scrollLeft = tileWidthRef.current; // jump back to real first (hidden by clones)
+          }
+        }, stepMs);
 
           return () => clearInterval(timer);
         }, [extendedProjects.length]);
