@@ -703,8 +703,18 @@ input[type=number]::-webkit-outer-spin-button {
   .work-grid {
     gap: 8px;
   }
-    .work-tile {
+  .work-tile {
     flex: 0 0 85vw;   /* tile takes up 75% of viewport width */
+    aspect-ratio: 4 / 5 !important;
+  }
+  .work-tile img{
+    max-width: 75%;
+    min-width: 75% !important;
+  }
+  .work-tile video{
+    max-width: 75%;
+    min-width: 75% !important;
+
   }
   .testimonial {
     padding: 71px 12px 100px !important;
