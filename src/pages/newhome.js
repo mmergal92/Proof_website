@@ -231,6 +231,30 @@ const Newhome = () =>{
       }
     }, [currentIndex, total]);
 
+    const [isPaused, setIsPaused] = useState(false);
+useEffect(() => {
+  const el = gridRef.current;
+  if (!el) return;
+
+  let interval;
+
+  if (!isPaused) {
+    interval = setInterval(() => {
+      // Scroll right by exactly one tile
+      el.scrollBy({ left: tileWidthRef.current, behavior: "smooth" });
+
+      // Handle loop jump when we hit the clones
+      const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
+      if (el.scrollLeft >= maxScroll) {
+        // reset immediately (no smooth transition)
+        el.scrollLeft = tileWidthRef.current;
+      }
+    }, 3000); // change speed here
+  }
+
+  return () => clearInterval(interval);
+}, [isPaused, extendedProjects.length]);
+
   return (
     <div className="newhome-page ">
        
@@ -242,7 +266,11 @@ const Newhome = () =>{
                 </h1>
 
         <section className="work-grid-wrapper">
-          <div className="work-grid" ref={gridRef}>
+          <div className="work-grid" 
+               ref={gridRef}
+               onMouseEnter={() => setIsPaused(true)}
+               onMouseLeave={() => setIsPaused(false)}
+    >
             {extendedProjects.map((p, idx) => (
               <WorkTile key={idx} img={p.img} overlayImg={p.overlayImg} video={p.video} />
             ))}
