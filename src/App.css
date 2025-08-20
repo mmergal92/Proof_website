@@ -969,30 +969,18 @@ blockquote {
 }
 .lang{
   background: none;
-  border: none;
+  border: 2px solid #272B1E;
+  padding: 14px 28px !important;
+  border-radius: 56px;
   cursor: pointer;
   font-size: 14px;
   color: #272B1E !important;
   font-family: "Neue Haas Unica W1G";
 }
 .lang:hover{
-  text-decoration: underline;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 4%;
-  text-underline-offset: 6%;
-  text-underline-position: from-font;
+   border: 2px solid #000;
 }
-.lang:active{
-  text-decoration: underline;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 4%;
-  text-underline-offset: 6%;
-  text-underline-position: from-font;
-}
+
 .email-button{
   background: #272B1E;
   margin-left: 10px;
