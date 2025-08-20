@@ -261,7 +261,7 @@ const Newhome = () =>{
           // }
 
           return () => clearInterval(timer);
-        }, [ xtendedProjects.length]);
+        }, [extendedProjects.length]);
 
   return (
     <div className="newhome-page ">
