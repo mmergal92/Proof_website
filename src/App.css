@@ -1039,7 +1039,7 @@ blockquote {
 
 .mobile-nav li {
   margin-bottom: 24px;
-  font-weight: 500;
+  font-weight: 500 !important;
   line-height: 22px;
   letter-spacing: -0.2px;
   color: #272B1E;
@@ -1087,7 +1087,18 @@ blockquote {
 .mobile-nav-flex{
   margin-top: 65px;
   display: flex;
-
+  gap: 35px !important;
+}
+.mobile-nav-flex a{
+  color: #272B1E;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 15.4px;
+  letter-spacing: -0.14px;
+  text-decoration: none !important;;
 }
 .close-menu {
   position: absolute;
@@ -1259,12 +1270,14 @@ blockquote {
     font-family: "Neue Haas Unica W1G";
     display: flex;
     width: 90%;
+    margin-top: 4px;
     justify-content: center;
     text-decoration: none;
   }
   .email-button{
   background: #272B1E;
   margin-left: 0px;
+  margin-top: 8px !important;
   border-radius: 56px;
   cursor: pointer;
   font-size: 14px !important;
