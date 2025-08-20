@@ -990,6 +990,7 @@ blockquote {
   background: #272B1E;
   border: 2px solid #272B1E;
   padding: 12px 26px !important;
+  margin-top: -2px;
   border-radius: 56px;
   cursor: pointer;
   font-size: 12px;
