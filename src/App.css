@@ -973,6 +973,7 @@ blockquote {
   padding: 12px 26px !important;
   border-radius: 56px;
   cursor: pointer;
+  font-weight: 500;
   margin-left: 12px;
   font-size: 12px;
   color: #272B1E !important;
@@ -1050,7 +1051,7 @@ blockquote {
 .mobile-nav li a, .mobile-nav li button{
   text-decoration: none;
 }
-.mobile-nav li a:hover, .mobile-nav li button:hover{
+.mobile-nav li a:hover {
   text-decoration: underline;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1059,7 +1060,7 @@ blockquote {
   text-underline-offset: 6%;
   text-underline-position: from-font;
 }
-.mobile-nav li a:active, .mobile-nav li button:active{
+.mobile-nav li a:active {
   text-decoration: underline;
   text-decoration-line: underline;
   text-decoration-style: solid;
