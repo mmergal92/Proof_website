@@ -22,8 +22,6 @@ const Header = ({ language, toggleLanguage, t }) => {
         <nav className="nav-right">
           <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t.work}</Link>
           <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t.about}</Link>
-          <a href="/islandipsum" target="_blank" rel="noopener noreferrer">{t.lorem}</a>
-          <button onClick={toggleLanguage} className="lang">{t.lang}</button>
           <a href="mailto:hello@itsproof.co" className="email-button">{t.email}</a>
         </nav>
         <button className="menu-toggle" onClick={() => setShowMobileNav(true)} aria-label="Open menu">
