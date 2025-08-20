@@ -827,12 +827,12 @@ blockquote {
 
 .quotation-attr {
   margin-top: 28px;
-  font-size: 12px;
-  line-height: 13.8px;
+  font-size: 14px;
+  line-height: 21.7px;
   font-family: "Neue Haas Unica W1G";
   font-weight: 400;
   font-style: normal;
-  color: rgba(39, 43, 30, 0.60);
+  color: #272B1E;
 }
 .quote-row button {
   background: none;
