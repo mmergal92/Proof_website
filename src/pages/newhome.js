@@ -231,28 +231,32 @@ const Newhome = () =>{
       }
     }, [currentIndex, total]);
 
-    const [isPaused, setIsPaused] = useState(false);
+    //autoscroll//
+
+   const [isPaused, setIsPaused] = useState(false);
+
 useEffect(() => {
   const el = gridRef.current;
   if (!el) return;
 
-  let interval;
+  let animationFrame;
+  const speed = 0.3; // px per frame — adjust for slower/faster scroll
 
-  if (!isPaused) {
-    interval = setInterval(() => {
-      // Scroll right by exactly one tile
-      el.scrollBy({ left: tileWidthRef.current, behavior: "smooth" });
+  const step = () => {
+    if (!isPaused && el) {
+      el.scrollLeft += speed;
 
-      // Handle loop jump when we hit the clones
       const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
       if (el.scrollLeft >= maxScroll) {
-        // reset immediately (no smooth transition)
-        el.scrollLeft = tileWidthRef.current;
+        el.scrollLeft = tileWidthRef.current; // loop back seamlessly
       }
-    }, 3000); // change speed here
-  }
+    }
+    animationFrame = requestAnimationFrame(step);
+  };
 
-  return () => clearInterval(interval);
+  animationFrame = requestAnimationFrame(step);
+
+  return () => cancelAnimationFrame(animationFrame);
 }, [isPaused, extendedProjects.length]);
 
   return (
