@@ -1250,13 +1250,21 @@ blockquote {
     padding-bottom: 12px;
     padding-top: 0px !important;
   }
+  .lang{
+    margin-left: 0px;
+    font-size: 14px !important;
+    font-family: "Neue Haas Unica W1G";
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    text-decoration: none;
+  }
   .email-button{
   background: #272B1E;
   margin-left: 0px;
-  padding: 14px 28px !important;
   border-radius: 56px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 14px !important;
   color: #FFFEF8 !important;
   font-family: "Neue Haas Unica W1G";
   display: flex;
