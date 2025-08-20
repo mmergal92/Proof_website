@@ -993,6 +993,7 @@ blockquote {
 }
 .email-button:hover{
   background: #000;
+  text-decoration: none;
 }
 
 .menu-toggle img{
