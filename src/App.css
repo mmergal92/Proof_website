@@ -921,7 +921,9 @@ blockquote {
   text-underline-offset: 6%;
   text-underline-position: from-font;
 }
-
+.light-bold{
+  font-weight: 500 !important;
+}
 /* Centered logo */
 .logo {
   position: absolute;
