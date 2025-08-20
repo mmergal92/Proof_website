@@ -1279,6 +1279,7 @@ blockquote {
   margin-left: 0px;
   margin-top: 8px !important;
   border-radius: 56px;
+  font-weight: 500 !important;
   cursor: pointer;
   font-size: 14px !important;
   color: #FFFEF8 !important;
