@@ -3,7 +3,7 @@ const tData = {
       proof:(
         <>
           Hi! We're{" "}
-          <b>Proof.</b>
+          <span className="light-bold">Proof.</span>
         </>
       ),
       work: "Work",
@@ -50,7 +50,7 @@ const tData = {
       proof:(
         <>
           ¡Hola! Somos{" "}
-          <b>Proof.</b>
+          <span className="light-bold">Proof.</span>
         </>
       ),
       work: "Trabajo",

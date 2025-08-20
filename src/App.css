@@ -612,8 +612,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .headline {
   font-family: "P22 Mackinac Pro";
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 32px;
+  padding-left: 32x;
   padding-bottom: 46px;
   padding-top: 104px;
   font-weight: 400;
@@ -876,8 +876,8 @@ blockquote {
   font-weight: 500;
   line-height: 16.1px;
   padding-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 /* Left & right navs */
@@ -888,7 +888,6 @@ blockquote {
 }
 .nav-left a {
   text-decoration: none;
-  padding: 10px;
   font-weight: 400 !important;
   color: #272B1E;
   font-size: 14px;
@@ -1165,8 +1164,8 @@ blockquote {
   line-height: 115%;
   font-size: 0.9rem;
   padding-top: 20px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
   padding-bottom: 20px;
 }
 
