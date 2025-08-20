@@ -1038,11 +1038,13 @@ blockquote {
 
 .mobile-nav li {
   margin-bottom: 24px;
-  font-size: 20px !important;
   font-weight: 500;
-  font-family: "P22 Mackinac Pro";
   line-height: 22px;
   letter-spacing: -0.2px;
+  color: #272B1E;
+  font-family: "Inter", sans-serif;
+  font-size: 20px !important;
+  font-style: normal;
 }
 
 .mobile-nav li a, .mobile-nav li button{

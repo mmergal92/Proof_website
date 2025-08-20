@@ -35,8 +35,8 @@ const Header = ({ language, toggleLanguage, t }) => {
         <ul>
           <li><Link to={`/?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t.work}</Link></li>
           <li><Link to={`/about?lang=${language}`} onClick={() => setShowMobileNav(false)}>{t.about}</Link></li>
-          <li><button onClick={toggleLanguage} className="lang">{t.lang}</button></li>    
         </ul>
+        <button onClick={toggleLanguage} className="lang">{t.lang}</button>
             <a href="mailto:hello@itsproof.co" className="email-button">{t.email}</a>
           <div className = "mobile-nav-flex">
           <a href="/islandipsum" target="_blank" rel="noopener noreferrer">{t.lorem}</a>
