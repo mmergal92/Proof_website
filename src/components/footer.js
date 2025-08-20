@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import instagram from '../assets/instagram.png';
 
 const Footer = ({ language, toggleLanguage, t }) => (

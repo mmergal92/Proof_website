@@ -17,8 +17,6 @@ const Header = ({ language, toggleLanguage, t }) => {
         <nav className="nav-left">
           <div><Link to={`/?lang=${language}`}>{t.proof}</Link></div>
         </nav>
-        {/* <div className="logo"><Link to={`/?lang=${language}`}>Hi! We're <b>Proof.</b></Link></div> */}
-
         <nav className="nav-right">
           <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t.work}</Link>
           <Link to={`/about?lang=${language}`} className={pathname === '/about' ? 'active' : ''}>{t.about}</Link>
