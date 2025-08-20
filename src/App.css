@@ -557,16 +557,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .about-services h4 {
   font-style: normal;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   margin-bottom: 16px;
   text-align: center;
   font-family: "Neue Haas Unica W1G";
   color: #272B1E;
-  font-size: 12px;
-  line-height: 14.4px;
-  letter-spacing: 0.72px;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
-
 }
 
 .about-services ul {
@@ -780,11 +779,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .testimonial-label {
-  font-size: 12px;
-  line-height: 13.8px;
+  font-size: 13px;
+  line-height: 14.95px;
   font-family: "Neue Haas Unica W1G";
-  font-weight: 500;
-  letter-spacing: 0.72px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
   margin-bottom: 28px;
 }
