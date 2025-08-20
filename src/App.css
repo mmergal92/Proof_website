@@ -906,7 +906,7 @@ blockquote {
   font-family: "Neue Haas Unica W1G";
   vertical-align: middle !important;;
 }
-.nav-right a, .nav-right button {
+.nav-right a {
   text-decoration: none;
   padding: 14px 12px;
   margin-left: 12px;
@@ -917,7 +917,7 @@ blockquote {
   vertical-align: middle !important;
 }
 .nav-left a:hover,
-.nav-right a:hover, .nav-right button:hover {
+.nav-right a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
@@ -976,6 +976,7 @@ blockquote {
   font-size: 14px;
   color: #272B1E !important;
   font-family: "Neue Haas Unica W1G";
+     text-decoration: none !important;
 }
 .lang:hover{
    border: 2px solid #000;
@@ -1083,7 +1084,7 @@ blockquote {
 .mobile-nav-flex{
   margin-top: 65px;
   display: flex;
-  
+
 }
 .close-menu {
   position: absolute;
