@@ -231,30 +231,37 @@ const Newhome = () =>{
       }
     }, [currentIndex, total]);
 
-    //autoscroll//
-    const [isPaused, setIsPaused] = useState(false);
-useEffect(() => {
-  const el = gridRef.current;
-  if (!el) return;
+    // autoscroll //
+        const [isPaused, setIsPaused] = useState(false);
 
-  let interval;
+        useEffect(() => {
+          const el = gridRef.current;
+          if (!el) return;
 
-  if (!isPaused) {
-    interval = setInterval(() => {
-      // Scroll right by exactly one tile
-      el.scrollBy({ left: tileWidthRef.current, behavior: "smooth" });
+          // ensure we have a tile width
+          if (!tileWidthRef.current) {
+            const firstTile = el.querySelector('.work-tile');
+            if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
+          }
 
-      // Handle loop jump when we hit the clones
-      const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
-      if (el.scrollLeft >= maxScroll) {
-        // reset immediately (no smooth transition)
-        el.scrollLeft = tileWidthRef.current;
-      }
-    }, 3000); // change speed here
-  }
+          let timer;
+          const stepPx = 0.8;   // pixels per tick (tweak: 0.3–2 for slower/faster)
+          const stepMs = 16;    // ~60fps
 
-  return () => clearInterval(interval);
-}, [isPaused, extendedProjects.length]);
+          if (!isPaused) {
+            timer = setInterval(() => {
+              el.scrollLeft += stepPx; // continuous glide
+
+              // keep the infinite loop seamless
+              const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
+              if (el.scrollLeft >= maxScroll) {
+                el.scrollLeft = tileWidthRef.current; // jump back to real first (instant, hidden by clones)
+              }
+            }, stepMs);
+          }
+
+          return () => clearInterval(timer);
+        }, [isPaused, extendedProjects.length]);
 
   return (
     <div className="newhome-page ">
@@ -267,7 +274,7 @@ useEffect(() => {
                 </h1>
 
         <section className="work-grid-wrapper">
-          <div className="work-grid" 
+          <div className={`work-grid ${!isPaused ? 'no-snap' : ''}`}
                ref={gridRef}
                onMouseEnter={() => setIsPaused(true)}
                onMouseLeave={() => setIsPaused(false)}
