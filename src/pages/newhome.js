@@ -231,32 +231,37 @@ const Newhome = () =>{
       }
     }, [currentIndex, total]);
 
-// autoscroll //
-    useEffect(() => {
-      const el = gridRef.current;
-      if (!el) return;
+    // autoscroll //
+        // const [isPaused, setIsPaused] = useState(false);
 
-      // ensure we have a tile width
-      if (!tileWidthRef.current) {
-        const firstTile = el.querySelector('.work-tile');
-        if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
-      }
+        useEffect(() => {
+          const el = gridRef.current;
+          if (!el) return;
 
-      const stepPx = 0.8;   // pixels per tick (tweak: 0.3–2 for slower/faster)
-      const stepMs = 16;    // ~60fps
+          // ensure we have a tile width
+          if (!tileWidthRef.current) {
+            const firstTile = el.querySelector('.work-tile');
+            if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
+          }
 
-      const timer = setInterval(() => {
-        el.scrollLeft += stepPx; // continuous glide
+          let timer;
+          const stepPx = 0.8;   // pixels per tick (tweak: 0.3–2 for slower/faster)
+          const stepMs = 16;    // ~60fps
 
-        // keep the infinite loop seamless
-        const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
-        if (el.scrollLeft >= maxScroll) {
-          el.scrollLeft = tileWidthRef.current; // jump back to real first
-        }
-      }, stepMs);
+          // if (!isPaused) {
+          //   timer = setInterval(() => {
+          //     el.scrollLeft += stepPx; // continuous glide
 
-      return () => clearInterval(timer);
-    }, [extendedProjects.length]);
+          //     // keep the infinite loop seamless
+          //     const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
+          //     if (el.scrollLeft >= maxScroll) {
+          //       el.scrollLeft = tileWidthRef.current; // jump back to real first (instant, hidden by clones)
+          //     }
+          //   }, stepMs);
+          // }
+
+          return () => clearInterval(timer);
+        }, [ xtendedProjects.length]);
 
   return (
     <div className="newhome-page ">
@@ -270,7 +275,9 @@ const Newhome = () =>{
 
         <section className="work-grid-wrapper">
           <div className="work-grid"
-               ref={gridRef}>
+               ref={gridRef}
+          
+    >
             {extendedProjects.map((p, idx) => (
               <WorkTile key={idx} img={p.img} overlayImg={p.overlayImg} video={p.video} />
             ))}
