@@ -572,7 +572,6 @@ input[type=number]::-webkit-outer-spin-button {
 .about-services ul {
   list-style: none;
   font-family: "Neue Haas Unica W1G";
-  padding-bottom: 4px;
   color: #272B1E;
   margin: 0;
   text-align: center;
@@ -582,7 +581,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .about-services li {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .wellness-note{
   margin: 80px auto 0 auto;
