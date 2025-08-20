@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import instagram from '../assets/instagram.png';
 
-const Footer = ({ language, t }) => (
+const Footer = ({ language, toggleLanguage, t }) => (
   <footer className="site-footer">
     <div className="footer-container">
       <nav className="footer-left footer-links">
