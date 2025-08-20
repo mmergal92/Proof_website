@@ -17,8 +17,8 @@ import enclavesVideo from '../assets/enclaves.webm';
 import riddimsVideo from '../assets/riddims.webm';
 import browserImg from '../assets/browser.webp';
 
-import previous from '../assets/previous.webp';
-import next from '../assets/next.webp';
+import previous from '../assets/previous.png';
+import next from '../assets/next.png';
 
 
 const projects = [
