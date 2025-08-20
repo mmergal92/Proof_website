@@ -704,8 +704,8 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 8px;
   }
   .work-tile {
-    flex: 0 0 85vw;   /* tile takes up 75% of viewport width */
-    aspect-ratio: 4 / 5 !important;
+    flex: 0 0 95vw;   /* tile takes up 75% of viewport width */
+    aspect-ratio: 4 / 3 !important;
   }
   .work-tile img{
     max-width: 75%;
