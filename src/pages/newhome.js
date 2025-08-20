@@ -232,39 +232,29 @@ const Newhome = () =>{
     }, [currentIndex, total]);
 
     //autoscroll//
+    const [isPaused, setIsPaused] = useState(false);
+useEffect(() => {
+  const el = gridRef.current;
+  if (!el) return;
 
-        const [isPaused, setIsPaused] = useState(false);
+  let interval;
 
-      useEffect(() => {
-        const el = gridRef.current;
-        if (!el) return;
+  if (!isPaused) {
+    interval = setInterval(() => {
+      // Scroll right by exactly one tile
+      el.scrollBy({ left: tileWidthRef.current, behavior: "smooth" });
 
-        // make sure we have the tile width
-        if (!tileWidthRef.current) {
-          const firstTile = el.querySelector('.work-tile');
-          if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
-        }
+      // Handle loop jump when we hit the clones
+      const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
+      if (el.scrollLeft >= maxScroll) {
+        // reset immediately (no smooth transition)
+        el.scrollLeft = tileWidthRef.current;
+      }
+    }, 3000); // change speed here
+  }
 
-        const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
-
-        let animationFrame;
-        const speed = 1; // px per frame, test with 1–2 first
-
-        const step = () => {
-          if (!isPaused && el) {
-            el.scrollLeft += speed;
-
-            if (el.scrollLeft >= maxScroll) {
-              el.scrollLeft = tileWidthRef.current; // reset to start
-            }
-          }
-          animationFrame = requestAnimationFrame(step);
-        };
-
-        animationFrame = requestAnimationFrame(step);
-
-        return () => cancelAnimationFrame(animationFrame);
-      }, [isPaused, extendedProjects.length]);
+  return () => clearInterval(interval);
+}, [isPaused, extendedProjects.length]);
 
   return (
     <div className="newhome-page ">
