@@ -892,7 +892,7 @@ blockquote {
   text-decoration: none;
   font-weight: 400 !important;
   color: #272B1E;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Neue Haas Unica W1G";
   vertical-align: middle !important;;
 }
@@ -901,7 +901,7 @@ blockquote {
   padding: 14px 12px;
   margin-left: 12px;
   color: #272B1E;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500 !important;
   font-family: "Neue Haas Unica W1G";
   vertical-align: middle !important;
@@ -1195,7 +1195,7 @@ blockquote {
   text-decoration: none;
   color: #272B1E;
   font-family: "Neue Haas Unica W1G";
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height:  14.95px;
