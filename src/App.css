@@ -668,9 +668,9 @@ input[type=number]::-webkit-outer-spin-button {
   overflow: hidden;
   scroll-snap-align: center;   
 }
-.work-grid.no-snap {
+/* .work-grid.no-snap {
   scroll-snap-type: none;
-}
+} */
 
 .newhome-page a{
   color: #272B1E;

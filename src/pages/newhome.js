@@ -231,37 +231,32 @@ const Newhome = () =>{
       }
     }, [currentIndex, total]);
 
-    // autoscroll //
-        const [isPaused, setIsPaused] = useState(false);
+// autoscroll //
+    useEffect(() => {
+      const el = gridRef.current;
+      if (!el) return;
 
-        useEffect(() => {
-          const el = gridRef.current;
-          if (!el) return;
+      // ensure we have a tile width
+      if (!tileWidthRef.current) {
+        const firstTile = el.querySelector('.work-tile');
+        if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
+      }
 
-          // ensure we have a tile width
-          if (!tileWidthRef.current) {
-            const firstTile = el.querySelector('.work-tile');
-            if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
-          }
+      const stepPx = 0.8;   // pixels per tick (tweak: 0.3–2 for slower/faster)
+      const stepMs = 16;    // ~60fps
 
-          let timer;
-          const stepPx = 0.8;   // pixels per tick (tweak: 0.3–2 for slower/faster)
-          const stepMs = 16;    // ~60fps
+      const timer = setInterval(() => {
+        el.scrollLeft += stepPx; // continuous glide
 
-          if (!isPaused) {
-            timer = setInterval(() => {
-              el.scrollLeft += stepPx; // continuous glide
+        // keep the infinite loop seamless
+        const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
+        if (el.scrollLeft >= maxScroll) {
+          el.scrollLeft = tileWidthRef.current; // jump back to real first
+        }
+      }, stepMs);
 
-              // keep the infinite loop seamless
-              const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
-              if (el.scrollLeft >= maxScroll) {
-                el.scrollLeft = tileWidthRef.current; // jump back to real first (instant, hidden by clones)
-              }
-            }, stepMs);
-          }
-
-          return () => clearInterval(timer);
-        }, [isPaused, extendedProjects.length]);
+      return () => clearInterval(timer);
+    }, [extendedProjects.length]);
 
   return (
     <div className="newhome-page ">
@@ -274,11 +269,8 @@ const Newhome = () =>{
                 </h1>
 
         <section className="work-grid-wrapper">
-          <div className={`work-grid ${!isPaused ? 'no-snap' : ''}`}
-               ref={gridRef}
-               onMouseEnter={() => setIsPaused(true)}
-               onMouseLeave={() => setIsPaused(false)}
-    >
+          <div className="work-grid"
+               ref={gridRef}>
             {extendedProjects.map((p, idx) => (
               <WorkTile key={idx} img={p.img} overlayImg={p.overlayImg} video={p.video} />
             ))}
