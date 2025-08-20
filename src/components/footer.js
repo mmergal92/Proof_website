@@ -2,14 +2,14 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import instagram from '../assets/instagram.png';
 
-const Footer = ({ language, toggleLanguage, t }) => (
+const Footer = ({ language, t }) => (
   <footer className="site-footer">
     <div className="footer-container">
       <nav className="footer-left footer-links">
         {/* <a href="mailto:hello@itsproof.co">{t.email}</a> */}
         <a href="http://instagram.com/itsproof.co" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="/islandipsum" target="_blank" rel="noopener noreferrer">{t.lorem}</a>
-        <button onClick={toggleLanguage} className="lang">{t.lang}</button>
+
       </nav>
       {/* <div className="footer-logo"><Link to={`/?lang=${language}`}>PROOF</Link></div> */}
       <nav className="footer-right footer-rights">
