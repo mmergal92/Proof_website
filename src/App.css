@@ -970,7 +970,7 @@ blockquote {
 .lang{
   background: none;
   border: 2px solid #272B1E;
-  padding: 14px 28px !important;
+  padding: 12px 26px !important;
   border-radius: 56px;
   cursor: pointer;
   font-size: 14px;
@@ -983,8 +983,9 @@ blockquote {
 
 .email-button{
   background: #272B1E;
+  border: 2px solid #272B1E;
   margin-left: 10px;
-  padding: 14px 28px !important;
+  padding: 12px 26px !important;
   border-radius: 56px;
   cursor: pointer;
   font-size: 14px;
@@ -993,6 +994,7 @@ blockquote {
 }
 .email-button:hover{
   background: #000;
+  border: 2px solid #000;
   text-decoration: none !important;
 }
 
