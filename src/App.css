@@ -2116,7 +2116,7 @@ margin-bottom: 12px !important;
     padding-top: 60px;  /* or whatever feels right — currently 144px */
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 1120px) {
   .author-hero {
     flex-direction: column;
     justify-content: center;
