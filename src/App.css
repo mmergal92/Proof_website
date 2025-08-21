@@ -1352,7 +1352,7 @@ blockquote {
   visibility: visible;
 }
 
-
+/* 
 .author-hero {
   display: flex;
   align-items: center;
@@ -1362,8 +1362,21 @@ blockquote {
   text-align: left;
   max-width: 100%;
   margin: 0 auto;
-  /* flex-wrap: wrap;  */
   box-sizing: border-box;
+} */
+
+.author-hero {
+  display: flex;
+  align-items: center;     
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: left;
+  width: 100%;
+  height: 100vh;       
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;     
 }
 
 .author-hero img {
@@ -2102,18 +2115,63 @@ margin-bottom: 12px !important;
     padding-top: 60px;  /* or whatever feels right — currently 144px */
   }
 }
+@media (max-width: 1024px) {
+  .author-hero {
+    flex-direction: column;
+    justify-content: center;
+    height: auto; 
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .author-hero img {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 32px;
+  }
+}
+
 
 /* MOBILE  */
 @media (max-width: 768px) {
-  .author-hero {
+  /* .author-hero {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
-  }
-  .author-hero img {
+  } */
+  /* .author-hero img {
     width: 100%;
     max-width: 100%;
     padding: 0px 16px;
+  } */
+
+   .author-hero {
+    padding: 24px 16px;
+  }
+
+  .hero-content {
+    padding: 0; 
+  }
+
+  .author-page h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .author-page h5 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .author-hero img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
   }
   .hero-content {
     padding: 90px 16px 39px;
