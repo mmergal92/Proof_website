@@ -1339,6 +1339,10 @@ blockquote {
   margin: 0 ;
   padding: 0;
 }
+
+.author-page.bg-shift {
+  background-color: #F5F3EC; /* slightly deeper shade */
+}
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);

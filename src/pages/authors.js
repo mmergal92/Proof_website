@@ -26,8 +26,29 @@ const Authors = () =>{
 
   elements.forEach((el) => observer.observe(el));
 
-  return () => elements.forEach((el) => observer.unobserve(el));
+ const bgTarget = document.querySelector("#offer");
+  const bgObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.querySelector(".author-page").classList.add("bg-shift");
+          bgObserver.unobserve(entry.target); // ✅ stop observing so it persists
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  if (bgTarget) {
+    bgObserver.observe(bgTarget);
+  }
+
+  return () => {
+    elements.forEach((el) => observer.unobserve(el));
+    if (bgTarget) bgObserver.unobserve(bgTarget);
+  };
 }, []);
+
 
   return ( 
     <div className="author-page asection">
