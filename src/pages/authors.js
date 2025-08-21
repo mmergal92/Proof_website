@@ -32,9 +32,8 @@ const Authors = () =>{
   const handleScroll = () => {
     if (!offer || !page) return;
 
-    const rect = offer.getBoundingClientRect();
-    const offerTop = rect.top + window.scrollY; // absolute top of #offer
-    const scrollY = window.scrollY;
+    const offerTop = offer.offsetTop;   // distance from top of document
+    const scrollY = window.scrollY;     // how far user has scrolled
 
     if (scrollY >= offerTop) {
       page.classList.add("bg-shift");
