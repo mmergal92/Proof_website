@@ -2116,7 +2116,7 @@ margin-bottom: 12px !important;
     padding-top: 60px;  /* or whatever feels right — currently 144px */
   }
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .author-hero {
     flex-direction: column;
     justify-content: center;
@@ -2135,7 +2135,7 @@ margin-bottom: 12px !important;
     max-width: 700px;
     margin-top: 40px;
   }
-}
+} */
 
 
 /* MOBILE  */
