@@ -1702,33 +1702,33 @@ align-items: end;
 .investment {
   padding: 104px 130px 248px 130px;
   display: flex;
-   align-items: flex-start;
+   /* align-items: flex-start; */
       flex-direction: row;
     gap: 2rem;
+     align-items: stretch; 
     /* align-items: flex-start; */
 }
 .investment h1{
   line-height: 83.2px !important;
 }
-/* .investment img {
-  max-width: 100%;
-  height: 970px;
-  margin-right: 2rem;
-}
-.investment-text {
-  max-width: 570px;
-  text-align: left;
-} */
 .investment img {
-  flex-shrink: 0;
-  height: 970px; /* fixed height to keep taller */
-  object-fit: cover; /* crop gracefully */
-  margin-right: 2rem;
+  /* flex-shrink: 0;
+  height: 970px; 
+  object-fit: cover; 
+  margin-right: 2rem; */
+   flex: 1; 
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .investment-text {
-  max-width: 570px;
+  flex: 1; /* takes up 50% */
+  max-width: none; 
+  /* max-width: 570px; */
   padding-top: 104px;
+  padding-bottom: 104px;
   text-align: left;
   align-self: flex-start; /* prevents stretching */
 }
