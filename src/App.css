@@ -1705,8 +1705,7 @@ align-items: end;
    /* align-items: flex-start; */
       flex-direction: row;
     gap: 2rem;
-     align-items: stretch; 
-    /* align-items: flex-start; */
+    align-items: middle;
 }
 .investment h1{
   line-height: 83.2px !important;
@@ -1823,7 +1822,7 @@ line-height:  37.2px;
   }
 
   .investment img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-right: 0;
   }
