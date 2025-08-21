@@ -1698,22 +1698,34 @@ align-items: end;
 .investment {
   padding: 130px 130px 248px 130px;
   display: flex;
-  align-items: center;
+   align-items: flex-start;
       flex-direction: row;
     gap: 2rem;
     /* align-items: flex-start; */
 }
-.investment img {
+.investment h1{
+  line-height: 83.2px !important;
+}
+/* .investment img {
   max-width: 100%;
   height: 970px;
   margin-right: 2rem;
 }
-.investment h1{
-  line-height: 83.2px !important;
-}
 .investment-text {
   max-width: 570px;
   text-align: left;
+} */
+.investment img {
+  flex-shrink: 0;
+  height: 970px; /* fixed height to keep taller */
+  object-fit: cover; /* crop gracefully */
+  margin-right: 2rem;
+}
+
+.investment-text {
+  max-width: 570px;
+  text-align: left;
+  align-self: flex-start; /* prevents stretching */
 }
 .investment-text h4{
   margin-top: 28px;
