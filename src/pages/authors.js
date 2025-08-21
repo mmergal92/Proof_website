@@ -1,12 +1,34 @@
 // import React, {useState} from 'react';
 // import { useLocation } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
 
 import hero from '../assets/hero.webp';
 import investment from '../assets/investment.webp';
 import vector from '../assets/Vector.png'
 
 const Authors = () =>{
+  useEffect(() => {
+  const elements = document.querySelectorAll(".fade-in-section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          // animate only once
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => elements.forEach((el) => observer.unobserve(el));
+}, []);
+
   return ( 
     <div className="author-page asection">
       <section className="author-hero  "> 
@@ -19,7 +41,7 @@ const Authors = () =>{
       </section>
     
 
-      <section className="author-intro asection">
+      <section className="author-intro fade-in-section asection">
         <h2>Imagine a digital experience as <i>captivating</i> as your storytelling</h2>
         <p>You pour your heart into every scene, every character, and every twist that keeps readers turning pages until 3 a.m. Your website should feel just as intentional—a place where readers discover behind-the-scenes moments from their favorite books and fall in love with the storyteller behind them, where casual visitors become the kind of fans who pre-order everything you write and recommend you to everyone they know.</p>
         <a href="#offer" className="author-btn">See how we do it</a>
@@ -30,7 +52,7 @@ const Authors = () =>{
         <img loading="lazy" src={vector} alt="pagebreak" className="page-break-img" />
      </section>
 
-      <section className="promise asection">
+      <section className="promise fade-in-section asection">
         <h2>Your website is where readers fall in love with more than just your books</h2>
         <p>An excellent website will...</p>
          <ul>
@@ -41,7 +63,7 @@ const Authors = () =>{
         <a href="#offer" className="author-btn">See how we do it</a>
       </section>
 
-      <section className="transformation asection" id="offer">
+      <section className="transformation fade-in-section asection" id="offer">
         <div className="transformation-content">
             <h5>From Good Enough To Unforgettable</h5>
             <hr/>
@@ -68,7 +90,7 @@ const Authors = () =>{
         </div>
       </section>
 
-      <section className="fit asection">
+      <section className="fit fade-in-section asection">
         <h3>This is for you if...</h3>
         <ol className="less-space">
             <li>You're an established fiction author ready to invest in building a professional online presence.</li>
@@ -83,7 +105,7 @@ const Authors = () =>{
         </div>
       </section>
 <hr/>
-      <section className="investment asection">
+      <section className="investment fade-in-section asection">
         <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
           <h1>Investment</h1>
@@ -109,7 +131,7 @@ const Authors = () =>{
         <img loading="lazy" src={vector} alt="pagebreak" className="page-break-img" />
      </section>
 
-      <section className="cta asection">
+      <section className="cta fade-in-section asection">
         <h5>Ready to create something magical?</h5>
         <h2>We’re only offering three spots for this launch.</h2>
         <p>Interested in being one of our three founding author clients? We'll start with a (very) quick questionnaire. Then, we'll schedule a 20-minute call to discuss the process and make sure we're the right fit for each other. Once we're aligned, we'll kick off your transformation right away!</p>
