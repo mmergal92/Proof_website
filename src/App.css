@@ -2116,40 +2116,32 @@ margin-bottom: 12px !important;
     padding-top: 60px;  /* or whatever feels right — currently 144px */
   }
 }
-/* @media (max-width: 1200px) {
+@media (max-width: 990px) {
   .author-hero {
     flex-direction: column;
     justify-content: center;
     height: auto; 
-    padding: 40px 20px;
+    padding: 0px 16px;
+    gap: 0 !important;
     text-align: center;
   }
 
   .hero-content {
     width: 100%;
-    padding: 0 20px;
+    padding: 90px 16px 39px;
+    text-align: center;
   }
 
   .author-hero img {
     width: 100%;
-    max-width: 700px;
-    margin-top: 40px;
+      max-width: 100%;
+    margin-top: 0px;
   }
-} */
+}
 
 
 /* MOBILE  */
 @media (max-width: 768px) {
-  /* .author-hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  } */
-  /* .author-hero img {
-    width: 100%;
-    max-width: 100%;
-    padding: 0px 16px;
-  } */
 
    .author-hero {
     padding: 0px 16px;
