@@ -1832,6 +1832,7 @@ line-height:  37.2px;
 
     .investment-text{
       padding-top: 0px;
+      max-width: 100%;
     }
 }
 
