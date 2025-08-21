@@ -29,25 +29,29 @@ const Authors = () =>{
  const page = document.querySelector(".author-page");
   const offer = document.querySelector("#offer");
 
-  const handleScroll = () => {
-    if (!offer || !page) return;
+  if (!page || !offer) return () => elements.forEach((el) => observer.unobserve(el));
 
-    const offerTop = offer.offsetTop;   // distance from top of document
-    const scrollY = window.scrollY;     // how far user has scrolled
+  // If you have a fixed header, set its height here (e.g., 80)
+  const headerOffset = 0;
 
-    if (scrollY >= offerTop) {
+  const updateBg = () => {
+    const top = offer.getBoundingClientRect().top; // relative to viewport
+    if (top <= headerOffset) {
       page.classList.add("bg-shift");
     } else {
       page.classList.remove("bg-shift");
     }
   };
 
-  window.addEventListener("scroll", handleScroll);
-  handleScroll(); // run once on load
+  // run on load + on scroll/resize
+  updateBg();
+  window.addEventListener("scroll", updateBg, { passive: true });
+  window.addEventListener("resize", updateBg);
 
   return () => {
     elements.forEach((el) => observer.unobserve(el));
-    window.removeEventListener("scroll", handleScroll);
+    window.removeEventListener("scroll", updateBg);
+    window.removeEventListener("resize", updateBg);
   };
 }, []);
 
