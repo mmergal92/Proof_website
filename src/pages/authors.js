@@ -26,34 +26,31 @@ const Authors = () =>{
 
   elements.forEach((el) => observer.observe(el));
 
- const page = document.querySelector(".author-page");
-  const offer = document.querySelector("#offer");
+ const bgTarget = document.querySelector("#offer");
+  const bgObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const page = document.querySelector(".author-page");
+        if (entry.isIntersecting) {
+          page.classList.add("bg-shift");
+        } else {
+          page.classList.remove("bg-shift");
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
 
-  if (!page || !offer) return () => elements.forEach((el) => observer.unobserve(el));
-
-  // If you have a fixed header, set its height here (e.g., 80)
-  const headerOffset = 0;
-
-  const updateBg = () => {
-    const top = offer.getBoundingClientRect().top; // relative to viewport
-    if (top <= headerOffset) {
-      page.classList.add("bg-shift");
-    } else {
-      page.classList.remove("bg-shift");
-    }
-  };
-
-  // run on load + on scroll/resize
-  updateBg();
-  window.addEventListener("scroll", updateBg, { passive: true });
-  window.addEventListener("resize", updateBg);
+  if (bgTarget) {
+    bgObserver.observe(bgTarget);
+  }
 
   return () => {
     elements.forEach((el) => observer.unobserve(el));
-    window.removeEventListener("scroll", updateBg);
-    window.removeEventListener("resize", updateBg);
+    if (bgTarget) bgObserver.unobserve(bgTarget);
   };
 }, []);
+
 
   return ( 
     <div className="author-page asection">
@@ -89,7 +86,7 @@ const Authors = () =>{
         <a href="#offer" className="author-btn">See how we do it</a>
       </section>
 
-      <section className="transformation fade-in-section asection" id="offer background">
+      <section className="transformation fade-in-section asection" id="offer">
         <div className="transformation-content">
             <h5>From Good Enough To Unforgettable</h5>
             <hr/>
@@ -116,7 +113,7 @@ const Authors = () =>{
         </div>
       </section>
 
-      <section className="fit fade-in-section asection" id="background">
+      <section className="fit fade-in-section asection">
         <h3>This is for you if...</h3>
         <ol className="less-space">
             <li>You're an established fiction author ready to invest in building a professional online presence.</li>
@@ -131,7 +128,7 @@ const Authors = () =>{
         </div>
       </section>
 <hr/>
-      <section className="investment fade-in-section asection" id="background">
+      <section className="investment fade-in-section asection">
         <img loading="lazy" src={investment} alt="door" />
         <div className="investment-text">
           <h1>Investment</h1>
@@ -153,11 +150,11 @@ const Authors = () =>{
         <hr/>
       </section>
 
-     <section className="page-break asection" id="background">
+     <section className="page-break asection">
         <img loading="lazy" src={vector} alt="pagebreak" className="page-break-img" />
      </section>
 
-      <section className="cta fade-in-section asection" id="background">
+      <section className="cta fade-in-section asection">
         <h5>Ready to create something magical?</h5>
         <h2>We’re only offering three spots for this launch.</h2>
         <p>Interested in being one of our three founding author clients? We'll start with a (very) quick questionnaire. Then, we'll schedule a 20-minute call to discuss the process and make sure we're the right fit for each other. Once we're aligned, we'll kick off your transformation right away!</p>
@@ -166,7 +163,7 @@ const Authors = () =>{
       </section>
 
 
-     <section className="footer-author asection" id="background">
+     <section className="footer-author asection">
         <h6>An invitation from Segacy & Maria at <a href="https://itsproof.co/" target="_blank">Proof Agency</a></h6>
         <p className="footer-author-text">This page isn't public (yet). You're seeing it because we think you'd be a great fit for our new author program. We're hand-selecting three fiction authors whose work and vision align with our mission to create unforgettable author platforms. Feel free to share with other fiction writers you know!</p>
      </section>
