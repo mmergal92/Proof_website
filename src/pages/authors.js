@@ -30,9 +30,11 @@ const Authors = () =>{
   const bgObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+        const page = document.querySelector(".author-page");
         if (entry.isIntersecting) {
-          document.querySelector(".author-page").classList.add("bg-shift");
-          bgObserver.unobserve(entry.target); // ✅ stop observing so it persists
+          page.classList.add("bg-shift");
+        } else {
+          page.classList.remove("bg-shift");
         }
       });
     },
