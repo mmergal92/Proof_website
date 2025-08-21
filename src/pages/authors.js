@@ -26,31 +26,31 @@ const Authors = () =>{
 
   elements.forEach((el) => observer.observe(el));
 
- const bgTarget = document.querySelector("#background");
-  const bgObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const page = document.querySelector(".author-page");
-        if (entry.isIntersecting) {
-          page.classList.add("bg-shift");
-        } else {
-          page.classList.remove("bg-shift");
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
+ const page = document.querySelector(".author-page");
+  const offer = document.querySelector("#offer");
 
-  if (bgTarget) {
-    bgObserver.observe(bgTarget);
-  }
+  const handleScroll = () => {
+    if (!offer || !page) return;
+
+    const rect = offer.getBoundingClientRect();
+    const offerTop = rect.top + window.scrollY; // absolute top of #offer
+    const scrollY = window.scrollY;
+
+    if (scrollY >= offerTop) {
+      page.classList.add("bg-shift");
+    } else {
+      page.classList.remove("bg-shift");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // run once on load
 
   return () => {
     elements.forEach((el) => observer.unobserve(el));
-    if (bgTarget) bgObserver.unobserve(bgTarget);
+    window.removeEventListener("scroll", handleScroll);
   };
 }, []);
-
 
   return ( 
     <div className="author-page asection">
