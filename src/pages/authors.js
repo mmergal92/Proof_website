@@ -21,7 +21,7 @@ const Authors = () =>{
 
       <section className="author-intro asection">
         <h2>Imagine a digital experience as <i>captivating</i> as your storytelling</h2>
-        <p>You pour your heart into every scene, every character, every twist that keeps readers turning pages until 3am. Your website should feel just as intentional. A place where readers discover behind-the-scenes moments of their favorite books and fall in love with the storyteller behind them. Where casual visitors become the kind of fans who pre-order everything you write and recommend you to everyone they know.</p>
+        <p>You pour your heart into every scene, every character, and every twist that keeps readers turning pages until 3 a.m. Your website should feel just as intentional—a place where readers discover behind-the-scenes moments from their favorite books and fall in love with the storyteller behind them, where casual visitors become the kind of fans who pre-order everything you write and recommend you to everyone they know.</p>
         <a href="#offer" className="author-btn">See how we do it</a>
       </section>
 

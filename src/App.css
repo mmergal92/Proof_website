@@ -11,6 +11,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* .old-home{
   display: flex;
   height: 100%;
@@ -1373,13 +1376,13 @@ blockquote {
   margin-top: 11px;
 }
 .author-page h1 {
-  font-size: 64px;
-  line-height: 66.56px;
+  font-size: 60px;
+  line-height: 62.4px;
     font-weight: 500 !important;
 }
 .hero-content-thanks h1{
-    font-size: 64px;
-  line-height: 66.56px;
+    font-size: 60px;
+  line-height: 62.4px;
     font-weight: 500 !important;
     padding-bottom: 24px;
 }
