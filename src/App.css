@@ -1382,9 +1382,10 @@ blockquote {
 .author-hero img {
   max-width: 50%;
   width: 50%;
-  height: auto;
-  object-fit: cover;
+    height: 100%;
+  object-fit: cover; 
   flex-shrink: 0;
+
 }
 
 .hero-content {
@@ -2115,7 +2116,7 @@ margin-bottom: 12px !important;
     padding-top: 60px;  /* or whatever feels right — currently 144px */
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .author-hero {
     flex-direction: column;
     justify-content: center;
@@ -2130,9 +2131,9 @@ margin-bottom: 12px !important;
   }
 
   .author-hero img {
-    width: 80%;
-    max-width: 500px;
-    margin-top: 32px;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 40px;
   }
 }
 
@@ -2151,21 +2152,11 @@ margin-bottom: 12px !important;
   } */
 
    .author-hero {
-    padding: 24px 16px;
+    padding: 40px 16px;
   }
 
   .hero-content {
     padding: 0; 
-  }
-
-  .author-page h1 {
-    font-size: 36px;
-    line-height: 42px;
-  }
-
-  .author-page h5 {
-    font-size: 12px;
-    line-height: 16px;
   }
 
   .author-hero img {
