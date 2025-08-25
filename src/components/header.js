@@ -15,7 +15,7 @@ const Header = ({ language, toggleLanguage, t }) => {
     <header className="site-header">
       <div className="nav-container fade-in fade-in-delay-1">
         <nav className="nav-left">
-          <div><Link to={`/?lang=${language}`}>{t.proof}</Link></div>
+           <div className={`brand-text ${showMobileNav ? 'hide-mobile' : ''}`}><Link to={`/?lang=${language}`}>{t.proof}</Link></div>
         </nav>
         <nav className="nav-right">
           <Link to={`/?lang=${language}`} className={pathname === '/' ? 'active' : ''}>{t.work}</Link>
