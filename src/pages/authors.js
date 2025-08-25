@@ -30,43 +30,41 @@ useEffect(() => {
   fadeEls.forEach((el) => fadeObserver.observe(el));
 
   // --- background shift observer (one-shot) ---
-  const pageEl = pageRef.current;
-  const triggerEl = transformRef.current;
+    const pageEl = pageRef.current;
+    const triggerEl = transformRef.current;
 
-  if (!pageEl || !triggerEl) {
-    // cleanup for fadeObserver only
+    if (pageEl && triggerEl) {
+      const handleScroll = () => {
+        const triggerTop = triggerEl.offsetTop;
+        if (window.scrollY >= triggerTop) {
+          pageEl.classList.add("bg-shift");
+        } else {
+          pageEl.classList.remove("bg-shift");
+        }
+      };
+
+      // run once on mount
+      handleScroll();
+
+      window.addEventListener("scroll", handleScroll);
+      window.addEventListener("resize", handleScroll);
+
+      // cleanup
+      return () => {
+        fadeEls.forEach((el) => fadeObserver.unobserve(el));
+        fadeObserver.disconnect();
+        window.removeEventListener("scroll", handleScroll);
+        window.removeEventListener("resize", handleScroll);
+      };
+    }
+
+    // cleanup (if no triggerEl/pageEl)
     return () => {
       fadeEls.forEach((el) => fadeObserver.unobserve(el));
       fadeObserver.disconnect();
     };
-  }
-
-  const onIntersect = (entries, obs) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        pageEl.classList.add("bg-shift");
-        // lock it in for the rest of the page
-        obs.disconnect();
-      }
-    });
-  };
-
-  const bgObserver = new IntersectionObserver(onIntersect, {
-    // triggers when ~20% of the section is in view; tweak if you want earlier/later
-    threshold: 0.2,
-    rootMargin: "0px 0px -20% 0px",
-  });
-
-  bgObserver.observe(triggerEl);
-
-  // cleanup
-  return () => {
-    fadeEls.forEach((el) => fadeObserver.unobserve(el));
-    fadeObserver.disconnect();
-    bgObserver.disconnect();
-  };
-}, []);
-
+  }, []);
+  
   return ( 
     <div ref={pageRef} className="author-page asection">
       <section className="author-hero  "> 
