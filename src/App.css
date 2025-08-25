@@ -1338,6 +1338,10 @@ blockquote {
   background-color: #FFFEF8;
   margin: 0 ;
   padding: 0;
+  /* make the color change fade */
+  transition: background-color 400ms ease;
+  /* optional: tiny perf hint */
+  will-change: background-color;
 }
 
 .author-page.bg-shift {

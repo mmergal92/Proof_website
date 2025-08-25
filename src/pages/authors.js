@@ -1,16 +1,21 @@
 // import React, {useState} from 'react';
 // import { useLocation } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+
 
 import hero from '../assets/hero.webp';
 import investment from '../assets/investment.webp';
 import vector from '../assets/Vector.png'
 
 const Authors = () =>{
- useEffect(() => {
-  // fade-in observer
-  const elements = document.querySelectorAll(".fade-in-section");
+
+  const pageRef = useRef(null);
+  const transformRef = useRef(null);
+
+useEffect(() => {
+  // --- fade-in observer ---
+  const fadeEls = document.querySelectorAll(".fade-in-section");
   const fadeObserver = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach((entry) => {
@@ -22,52 +27,48 @@ const Authors = () =>{
     },
     { threshold: 0.1 }
   );
-  elements.forEach((el) => fadeObserver.observe(el));
+  fadeEls.forEach((el) => fadeObserver.observe(el));
 
-  // background shift observer
-  const page = document.querySelector(".author-page");
-  const header = document.querySelector(".transformation");
-  const footer = document.querySelector("footer");
+  // --- background shift observer (one-shot) ---
+  const pageEl = pageRef.current;
+  const triggerEl = transformRef.current;
 
-  let observer; // 👈 declare in outer scope
-
-  if (page && header && footer) {
-    observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.target === header) {
-            if (entry.isIntersecting) {
-              page.classList.add("bg-shift");
-            } else {
-              page.classList.remove("bg-shift");
-            }
-          }
-
-          if (
-            entry.target === footer &&
-            !entry.isIntersecting &&
-            entry.boundingClientRect.top > 0
-          ) {
-            page.classList.remove("bg-shift");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    observer.observe(header);
-    observer.observe(footer);
+  if (!pageEl || !triggerEl) {
+    // cleanup for fadeObserver only
+    return () => {
+      fadeEls.forEach((el) => fadeObserver.unobserve(el));
+      fadeObserver.disconnect();
+    };
   }
+
+  const onIntersect = (entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        pageEl.classList.add("bg-shift");
+        // lock it in for the rest of the page
+        obs.disconnect();
+      }
+    });
+  };
+
+  const bgObserver = new IntersectionObserver(onIntersect, {
+    // triggers when ~20% of the section is in view; tweak if you want earlier/later
+    threshold: 0.2,
+    rootMargin: "0px 0px -20% 0px",
+  });
+
+  bgObserver.observe(triggerEl);
 
   // cleanup
   return () => {
-    elements.forEach((el) => fadeObserver.unobserve(el));
-    if (observer) observer.disconnect(); // 👈 safe cleanup
+    fadeEls.forEach((el) => fadeObserver.unobserve(el));
+    fadeObserver.disconnect();
+    bgObserver.disconnect();
   };
 }, []);
 
   return ( 
-    <div className="author-page asection">
+    <div ref={pageRef} className="author-page asection">
       <section className="author-hero  "> 
         <div className="hero-content ">
             <h5>Three fiction authors. Three stunning transformations. This fall only.</h5>
@@ -100,7 +101,7 @@ const Authors = () =>{
         <a href="#offer" className="author-btn">See how we do it</a>
       </section>
 
-      <section className="transformation fade-in-section asection" id="offer">
+      <section ref={transformRef} className="transformation fade-in-section asection" id="offer">
         <div className="transformation-content">
             <h5>From Good Enough To Unforgettable</h5>
             <hr/>
