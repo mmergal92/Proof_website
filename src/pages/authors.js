@@ -8,7 +8,7 @@ import investment from '../assets/investment.webp';
 import vector from '../assets/Vector.png'
 
 const Authors = () =>{
-  useEffect(() => {
+   useEffect(() => {
     // fade-in observer
     const elements = document.querySelectorAll(".fade-in-section");
     const fadeObserver = new IntersectionObserver(
@@ -26,29 +26,35 @@ const Authors = () =>{
 
     // background shift observer
     const page = document.querySelector(".author-page");
-    const target = document.querySelector(".transformation-header");
+  const header = document.querySelector(".transformation-header");
+  const footer = document.querySelector("footer"); // adjust if your footer selector differs
 
-    const bgObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            page.classList.add("bg-shift");  // dark background
-          } else {
-            page.classList.remove("bg-shift"); // light background
-          }
-        });
-      },
-      { threshold: 0.2 } // adjust sensitivity
-    );
+  if (!page || !header || !footer) return;
 
-    if (target) bgObserver.observe(target);
+   const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        // if transformation header is visible → turn dark
+        if (entry.target === header && entry.isIntersecting) {
+          page.classList.add("bg-shift");
+        }
+
+        // if footer is leaving viewport going UP (scrolling back up) → turn light again
+        if (entry.target === footer && !entry.isIntersecting && entry.boundingClientRect.top > 0) {
+          page.classList.remove("bg-shift");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+    observer.observe(header);
+  observer.observe(footer);
 
     return () => {
       elements.forEach((el) => fadeObserver.unobserve(el));
-      if (target) bgObserver.unobserve(target);
+      observer.disconnect();
     };
   }, []);
-
   return ( 
     <div className="author-page asection">
       <section className="author-hero  "> 
