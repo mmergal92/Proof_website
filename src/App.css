@@ -1828,6 +1828,9 @@ line-height:  37.2px;
   .investment img {
     width: 100%;
     height: auto;
+    max-height: 450px !important;
+    object-fit:cover;
+    object-position: center;
     margin-right: 0;
   }
   .investment-text h4{
@@ -2181,8 +2184,12 @@ margin-bottom: 12px !important;
 
   .author-hero img {
     width: 100%;
-      max-width: 100%;
+    max-width: 100%;
     margin-top: 0px;
+    height: auto;
+    max-height: 450px !important;
+    object-fit:cover;
+    object-position: center;
   }
 }
 
