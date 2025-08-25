@@ -9,48 +9,45 @@ import vector from '../assets/Vector.png'
 
 const Authors = () =>{
   useEffect(() => {
-  const elements = document.querySelectorAll(".fade-in-section");
+    // fade-in observer
+    const elements = document.querySelectorAll(".fade-in-section");
+    const fadeObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    elements.forEach((el) => fadeObserver.observe(el));
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          // animate only once
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
+    // background shift observer
+    const page = document.querySelector(".author-page");
+    const target = document.querySelector(".transformation-header");
 
-  elements.forEach((el) => observer.observe(el));
+    const bgObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            page.classList.add("bg-shift");  // dark background
+          } else {
+            page.classList.remove("bg-shift"); // light background
+          }
+        });
+      },
+      { threshold: 0.2 } // adjust sensitivity
+    );
 
- const bgTarget = document.querySelector("#offer");
-  const bgObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const page = document.querySelector(".author-page");
-        if (entry.isIntersecting) {
-          page.classList.add("bg-shift");
-        } else {
-          page.classList.remove("bg-shift");
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
+    if (target) bgObserver.observe(target);
 
-  if (bgTarget) {
-    bgObserver.observe(bgTarget);
-  }
-
-  return () => {
-    elements.forEach((el) => observer.unobserve(el));
-    if (bgTarget) bgObserver.unobserve(bgTarget);
-  };
-}, []);
-
+    return () => {
+      elements.forEach((el) => fadeObserver.unobserve(el));
+      if (target) bgObserver.unobserve(target);
+    };
+  }, []);
 
   return ( 
     <div className="author-page asection">
