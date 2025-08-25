@@ -64,7 +64,7 @@ useEffect(() => {
       fadeObserver.disconnect();
     };
   }, []);
-  
+
   return ( 
     <div ref={pageRef} className="author-page asection">
       <section className="author-hero  "> 
@@ -160,7 +160,7 @@ useEffect(() => {
         </div>
           <a href="/authorinquiryform" className="author-btn">Reserve my spot</a>
         </div>
-        <hr/>
+        {/* <hr/> */}
       </section>
 
      <section className="page-break asection">

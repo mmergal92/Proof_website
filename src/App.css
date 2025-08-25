@@ -2171,11 +2171,44 @@ margin-bottom: 12px !important;
     flex-direction: column;
     justify-content: center;
     height: auto; 
-    padding: 0px 16px;
+    padding: 0px 64px;
     gap: 0 !important;
     text-align: center;
   }
+.author-page h1{
+  padding: 0px 100px;
 
+}
+.transformation-header{
+  padding: 0px !important;
+}
+.theader{
+  max-width: 100% !important;
+}
+.author-intro, .promise{
+  margin: 104px auto;
+  max-width: 600px !important;
+}
+.investment{
+   padding: 104px 64px 140px;
+
+}
+.investment h1{
+  padding: 0px;
+}
+.investment-text{
+  padding-bottom: 0px;
+}
+.cta{
+   padding: 140px 0px !important;
+
+}
+.transformation{
+  padding: 124px 64px !important;
+}
+.fit{
+  padding: 104px 64px !important;
+}
   .hero-content {
     width: 100%;
     padding: 90px 16px 39px;
