@@ -25,21 +25,22 @@ const Authors = () =>{
     elements.forEach((el) => fadeObserver.observe(el));
 
     // background shift observer
-    const page = document.querySelector(".author-page");
-  const header = document.querySelector(".transformation-header");
-  const footer = document.querySelector("footer"); // adjust if your footer selector differs
+  const page = document.querySelector(".author-page");
+const header = document.querySelector(".transformation"); // broader section
+const footer = document.querySelector("footer");
 
-  if (!page || !header || !footer) return;
-
-   const observer = new IntersectionObserver(
+if (page && header && footer) {
+  const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        // if transformation header is visible → turn dark
-        if (entry.target === header && entry.isIntersecting) {
-          page.classList.add("bg-shift");
+        if (entry.target === header) {
+          if (entry.isIntersecting) {
+            page.classList.add("bg-shift");
+          } else {
+            page.classList.remove("bg-shift");
+          }
         }
 
-        // if footer is leaving viewport going UP (scrolling back up) → turn light again
         if (entry.target === footer && !entry.isIntersecting && entry.boundingClientRect.top > 0) {
           page.classList.remove("bg-shift");
         }
@@ -47,8 +48,10 @@ const Authors = () =>{
     },
     { threshold: 0.1 }
   );
-    observer.observe(header);
+
+  observer.observe(header);
   observer.observe(footer);
+}
 
     return () => {
       elements.forEach((el) => fadeObserver.unobserve(el));
