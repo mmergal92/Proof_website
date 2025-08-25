@@ -1819,7 +1819,7 @@ line-height:  37.2px;
 
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1169px) {
   .investment {
      display: flex;
     flex-direction: column;
