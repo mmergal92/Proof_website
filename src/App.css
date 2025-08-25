@@ -1011,10 +1011,12 @@ blockquote {
 .menu-toggle img{
   width: 32px;
   height: auto;
+  margin-top: 16px;
 }
 .close-menu img{
   width: 32px;
   height: auto;
+  margin-top: 16px;
 }
 
 
