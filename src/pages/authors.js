@@ -8,56 +8,64 @@ import investment from '../assets/investment.webp';
 import vector from '../assets/Vector.png'
 
 const Authors = () =>{
-   useEffect(() => {
-    // fade-in observer
-    const elements = document.querySelectorAll(".fade-in-section");
-    const fadeObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    elements.forEach((el) => fadeObserver.observe(el));
-
-    // background shift observer
-  const page = document.querySelector(".author-page");
-const header = document.querySelector(".transformation"); // broader section
-const footer = document.querySelector("footer");
-
-if (page && header && footer) {
-  const observer = new IntersectionObserver(
-    (entries) => {
+ useEffect(() => {
+  // fade-in observer
+  const elements = document.querySelectorAll(".fade-in-section");
+  const fadeObserver = new IntersectionObserver(
+    (entries, obs) => {
       entries.forEach((entry) => {
-        if (entry.target === header) {
-          if (entry.isIntersecting) {
-            page.classList.add("bg-shift");
-          } else {
-            page.classList.remove("bg-shift");
-          }
-        }
-
-        if (entry.target === footer && !entry.isIntersecting && entry.boundingClientRect.top > 0) {
-          page.classList.remove("bg-shift");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target);
         }
       });
     },
     { threshold: 0.1 }
   );
+  elements.forEach((el) => fadeObserver.observe(el));
 
-  observer.observe(header);
-  observer.observe(footer);
-}
+  // background shift observer
+  const page = document.querySelector(".author-page");
+  const header = document.querySelector(".transformation");
+  const footer = document.querySelector("footer");
 
-    return () => {
-      elements.forEach((el) => fadeObserver.unobserve(el));
-      observer.disconnect();
-    };
-  }, []);
+  let observer; // 👈 declare in outer scope
+
+  if (page && header && footer) {
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target === header) {
+            if (entry.isIntersecting) {
+              page.classList.add("bg-shift");
+            } else {
+              page.classList.remove("bg-shift");
+            }
+          }
+
+          if (
+            entry.target === footer &&
+            !entry.isIntersecting &&
+            entry.boundingClientRect.top > 0
+          ) {
+            page.classList.remove("bg-shift");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(header);
+    observer.observe(footer);
+  }
+
+  // cleanup
+  return () => {
+    elements.forEach((el) => fadeObserver.unobserve(el));
+    if (observer) observer.disconnect(); // 👈 safe cleanup
+  };
+}, []);
+
   return ( 
     <div className="author-page asection">
       <section className="author-hero  "> 
