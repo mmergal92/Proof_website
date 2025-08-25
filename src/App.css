@@ -1819,53 +1819,7 @@ line-height:  37.2px;
 
 }
 
-@media (max-width: 1169px) {
-  .investment {
-     display: flex;
-    flex-direction: column;
-  }
 
-  .investment img {
-    width: 100%;
-    height: auto;
-    max-height: 450px !important;
-    object-fit:cover;
-    object-position: center;
-    margin-right: 0;
-  }
-  .investment-text h4{
-    text-align: left;
-    font-size: 20px !important;
-    line-height: 31px !important;
-    }
-
-    .investment-text{
-      padding-top: 0px;
-      max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-  .investment {
-     display: flex;
-    flex-direction: column;
-  }
-
-  .investment img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 0;
-  }
-  .investment-text h4{
-    text-align: left;
-    font-size: 20px !important;
-    line-height: 31px !important;
-    }
-
-    .investment-text{
-      padding-top: 0px;
-    }
-}
 
 .cta{
   padding-top: 248px;
@@ -2150,22 +2104,7 @@ margin-bottom: 12px !important;
   max-width: 772px !important;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
-  .author-page-thanks{
-  min-height: 100dvh !important;
-  height: 100dvh !important;
-  max-height: 100dvh !important;
-  padding: 1.5rem;
-  }
-  .author-inquiry-page {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  /* Reduce spacing after the “View offer” button */
-  .hero-inquiry-content {
-    padding-top: 60px;  /* or whatever feels right — currently 144px */
-  }
-}
+
 @media (max-width: 1169px) {
   .author-hero {
     flex-direction: column;
@@ -2224,17 +2163,61 @@ margin-bottom: 12px !important;
     object-fit:cover;
     object-position: center;
   }
+  .investment {
+     display: flex;
+    flex-direction: column;
+  }
+
+  .investment img {
+    width: 100%;
+    height: auto;
+    max-height: 450px !important;
+    object-fit:cover;
+    object-position: center;
+    margin-right: 0;
+  }
+  .investment-text h4{
+    text-align: left;
+    font-size: 20px !important;
+    line-height: 31px !important;
+    }
+
+    .investment-text{
+      padding-top: 0px;
+      max-width: 100%;
+    }
 }
 
 
 /* MOBILE  */
 @media (max-width: 768px) {
 
+  .author-page-thanks{
+  min-height: 100dvh !important;
+  height: 100dvh !important;
+  max-height: 100dvh !important;
+  padding: 1.5rem;
+  }
+  .author-inquiry-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /* Reduce spacing after the “View offer” button */
+  .hero-inquiry-content {
+    padding-top: 60px;  /* or whatever feels right — currently 144px */
+  }
+
+  .author-page h1{
+    padding: 0px !important;
+  }
    .author-hero {
     padding: 0px 16px;
     gap: 0 !important;
   }
+.author-intro, .promise{
+      padding: 0px 16px !important;
 
+}
   .hero-content {
     padding: 0; 
   }
@@ -2274,7 +2257,7 @@ margin-bottom: 12px !important;
 
   /* Transformation */
   .transformation {
-    padding: 0px 16px;
+    padding: 0px 16px !important;
     text-align: center;
   }
   .transformation-columns {
@@ -2293,7 +2276,7 @@ margin-bottom: 12px !important;
 
   /* Fit section */
   .fit {
-    padding: 80px 1rem;
+    padding: 80px 16px !important;
     text-align: left !important;
   }
   .fit-content {
@@ -2329,7 +2312,7 @@ margin-bottom: 12px !important;
 
   /* CTA */
   .cta {
-    padding: 104px 16px 144px;
+    padding: 104px 16px 144px !important;
     text-align: center;
   }
 
@@ -2338,4 +2321,25 @@ margin-bottom: 12px !important;
     padding: 16px;
     text-align: center;
   }
+
+
+   .investment {
+     display: flex;
+    flex-direction: column;
+  }
+
+  .investment img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .investment-text h4{
+    text-align: left;
+    font-size: 20px !important;
+    line-height: 31px !important;
+    }
+
+    .investment-text{
+      padding-top: 0px;
+    }
 }
