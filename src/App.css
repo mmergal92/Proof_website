@@ -1257,7 +1257,6 @@ blockquote {
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  .nav-left,
   .nav-right {
     display: none;
   }
