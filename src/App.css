@@ -706,10 +706,10 @@ font-family: "p22-mackinac-pro", serif;
   .work-grid {
     gap: 8px;
   }
-  .work-tile {
-    flex: 0 0 95vw;   /* tile takes up 75% of viewport width */
+  /* .work-tile {
+    flex: 0 0 95vw;  
     aspect-ratio: 4 / 3 !important;
-  }
+  } */
   .work-tile img{
     max-width: 75%;
     min-width: 75% !important;
