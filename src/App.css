@@ -526,7 +526,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0 auto 28px auto; /* Centers the inner element horizontally */
 } 
 .about-text{
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 16px;
   color: #272B1E;
   max-width: 684px;
@@ -564,7 +564,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700 !important;
   margin-bottom: 16px;
   text-align: center;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   color: #272B1E;
   font-size: 12px;
   line-height: 14.4px;
@@ -574,7 +574,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .about-services ul {
   list-style: none;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   color: #272B1E;
   margin: 0;
   text-align: center;
@@ -591,7 +591,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-style: normal;
   font-weight: 500;
   text-align: center;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   color: #616854;
   font-size: 14px;
   line-height: 21px;
@@ -797,7 +797,7 @@ input[type=number]::-webkit-outer-spin-button {
 .testimonial-label {
   font-size: 10px;
   line-height: 11.5px;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -832,7 +832,7 @@ blockquote {
   margin-top: 28px;
   font-size: 14px;
   line-height: 21.7px;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #272B1E;
@@ -862,7 +862,7 @@ blockquote {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.1px;
@@ -905,7 +905,7 @@ blockquote {
   font-weight: 400 !important;
   color: #272B1E;
   font-size: 12px;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   vertical-align: middle !important;;
 }
 .nav-right a {
@@ -915,7 +915,7 @@ blockquote {
   color: #272B1E;
   font-size: 12px;
   font-weight: 500 !important;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   vertical-align: middle !important;
 }
 .nav-left a:hover,
@@ -979,7 +979,7 @@ blockquote {
   margin-left: 12px;
   font-size: 12px;
   color: #272B1E !important;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
      text-decoration: none !important;
 }
 .lang:hover{
@@ -999,7 +999,7 @@ blockquote {
   cursor: pointer;
   font-size: 12px;
   color: #FFFEF8 !important;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 }
 .email-button:hover{
   background: #000;
@@ -1082,7 +1082,7 @@ blockquote {
 }
 .mobile-nav .social {
   font-size: 14px;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   line-height: 115%;
 }
 .instagram-icon-nav {
@@ -1123,7 +1123,7 @@ blockquote {
 .error{
   font-size: 14px;
   line-height: 115%;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   margin-bottom: 32px;
 }
 .error-headline{
@@ -1180,7 +1180,7 @@ blockquote {
   align-items: center;
   /* justify-content: space-between;
   position: relative; */
- font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 115%;
@@ -1212,7 +1212,7 @@ blockquote {
 .footer-right a, .footer-left button {
   text-decoration: none;
   color: #272B1E;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -1274,7 +1274,7 @@ blockquote {
   .lang{
     margin-left: 0px;
     font-size: 14px !important;
-    font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
     display: flex;
     width: 90%;
     margin-top: 4px;
@@ -1290,7 +1290,7 @@ blockquote {
   cursor: pointer;
   font-size: 14px !important;
   color: #FFFEF8 !important;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   display: flex;
   width: 90%;
   justify-content: center;
@@ -1473,7 +1473,7 @@ text-decoration: none;
 }
 
 .asection p {
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1481,7 +1481,7 @@ text-decoration: none;
   margin-top: 28px;
 }
 .hero-content-thanks p{
- font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1491,7 +1491,7 @@ text-decoration: none;
     margin: 0 auto;
 }
 .asection li {
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1546,7 +1546,7 @@ ol li:before {
   left: 0;
   top: 20%;
   color: rgba(73, 80, 60, 0.50);
-  font-family: "Neue Haas Unica W1G", sans-serif;
+font-family: "neue-haas-unica", sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
@@ -1745,21 +1745,21 @@ line-height: 37.2px !important;
   margin-top:24px;
 }
 .investment-price{
-font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height:  37.2px;
 }
 .investment-price-subtext{
-font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height:  37.2px;
 }
 .investment-price-notes{
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 16px !important;
   font-style: normal;
   font-weight: 400;
@@ -1777,7 +1777,7 @@ line-height:  37.2px;
   background: rgba(73, 80, 60, 0.10);
 }
 .investment-content p{
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 14px !important;
   font-style: normal;
   font-weight: 400;
@@ -1786,7 +1786,7 @@ line-height:  37.2px;
   padding-bottom: 16px !important;
 }
 .investment-content-heading{
-  font-family: "Neue Haas Unica W1G" !important;
+font-family: "neue-haas-unica", sans-serif !important;
   font-size: 16px !important;
   font-style: normal;
   font-weight: 700;
@@ -1794,7 +1794,7 @@ line-height:  37.2px;
   padding-bottom: 20px !important;
 }
 .investment-content ol li{
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 14px !important;
   font-style: normal;
   font-weight: 400;
@@ -1847,7 +1847,7 @@ line-height:  37.2px;
   color: #252525;
   opacity: 0.7 !important;
   text-align: center;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400 !important;
@@ -1886,7 +1886,7 @@ line-height:  37.2px;
   max-width: 620px;
   margin: 0 auto;
 text-align: center;
-font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 font-size: 16px  !important;
 font-style: normal;
 font-weight: 400;
@@ -1980,7 +1980,7 @@ input[type="radio"]:checked::after {
 .checkboxes label{
   color: #FFFEF8;
 text-align: center;
-font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 font-size: 16px !important;
 font-style: normal;
 font-weight: 400 !important;
@@ -1988,7 +1988,7 @@ line-height: 24.8px !important;
 }
 .label{
   color: #FFFEF8;
-font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 font-size: 16px !important;
 font-style: normal;
 font-weight: 500 !important;
@@ -2009,7 +2009,7 @@ line-height: 25.6px !important;
   border: 1.5px solid #FFFEF8;
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
   font-size: 16px;
 }
 
@@ -2027,7 +2027,7 @@ line-height: 25.6px !important;
 .author-inquiry-form label {
   display: block;
   margin-bottom: 8px;
-  font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 }
 
 .author-inquiry-form textarea {
@@ -2075,7 +2075,7 @@ line-height: 25.6px !important;
 }
 
 .sub-label{
-font-family: "Neue Haas Unica W1G";
+font-family: "neue-haas-unica", sans-serif;
 font-size: 12px !important;
 font-style: normal;
 font-weight: 500 !important;
