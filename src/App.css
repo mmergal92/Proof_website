@@ -614,7 +614,7 @@ font-family: "neue-haas-unica", sans-serif;
 }
 
 .headline {
-  font-family: "P22 Mackinac Pro";
+font-family: "p22-mackinac-pro", serif;
   padding-right: 32px;
   padding-left: 32px;
   padding-bottom: 46px;
@@ -817,7 +817,7 @@ blockquote {
 }
 .quote-text {
   color: #272B1E;
-  font-family: "P22 Mackinac Pro";
+font-family: "p22-mackinac-pro", serif;
   font-weight: 500;
   /* max-width: 620px; */
   font-size: 24px;
@@ -1447,7 +1447,7 @@ font-family: "neue-haas-unica", sans-serif;
 .author-page h6 {
   color: #252525;
   text-align: center;
-  font-family: "P22 Mackinac Pro";
+font-family: "p22-mackinac-pro", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1455,7 +1455,7 @@ font-family: "neue-haas-unica", sans-serif;
 }
 .author-page h6 a{
   color: #252525;
-font-family: "P22 Mackinac Pro";
+font-family: "p22-mackinac-pro", serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
