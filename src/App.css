@@ -649,13 +649,13 @@ font-family: "p22-mackinac-pro", serif;
 
 } */
 .work-grid-wrapper {
-  overflow-x: hidden; /* instead of auto */
+  overflow-x: auto;
 }
 .work-grid {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  overflow-x: hidden; /* instead of auto */
+  overflow-x: auto;
   scroll-behavior: auto; /* don’t smooth — interval handles it */
   white-space: nowrap; 
 }
