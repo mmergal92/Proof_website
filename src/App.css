@@ -650,7 +650,6 @@ font-family: "p22-mackinac-pro", serif;
 } */
 .work-grid-wrapper {
   overflow-x: hidden; /* instead of auto */
-  touch-action: none; /* prevent manual swipe on mobile */
 }
 .work-grid {
   display: flex;
