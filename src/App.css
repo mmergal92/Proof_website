@@ -708,8 +708,7 @@ font-family: "p22-mackinac-pro", serif;
     gap: 8px;
   }
   .work-tile {
-    /* flex: 0 0 95vw;   */
-      flex: 0 0 50vw; 
+    flex: 0 0 95vw;  
     aspect-ratio: 4 / 3 !important;
   }
   .work-tile img{
