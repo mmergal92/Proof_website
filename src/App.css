@@ -508,7 +508,7 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 997px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 160px;
+  margin-top: 144px;
   margin-bottom: 120px;
   flex-grow: 1;
   align-content: center;
@@ -618,7 +618,7 @@ font-family: "p22-mackinac-pro", serif;
   padding-right: 32px;
   padding-left: 32px;
   padding-bottom: 46px;
-  padding-top: 160px;
+  padding-top: 144px;
   font-weight: 500;
   font-size: 32px;
   letter-spacing: -0.72px;
