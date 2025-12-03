@@ -20,7 +20,6 @@ import browserImg from '../assets/browser.webp';
 import previous from '../assets/previous.png';
 import next from '../assets/next.png';
 
-const [isHovered, setIsHovered] = useState(false);
 
 const projects = [
   {
@@ -160,6 +159,7 @@ const Newhome = () =>{
   const location = useLocation();
   const navigate = useNavigate();
   const pathname = location.pathname;
+  const [isHovered, setIsHovered] = useState(false);
 
   const params = new URLSearchParams(location.search);
   const initialLang = params.get('lang') === 'es' ? 'es' : 'en';
