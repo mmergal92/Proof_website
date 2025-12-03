@@ -37,6 +37,7 @@ const projects = [
     img: riddimsImg,
     video: riddimsVideo,
     overlayImg: browserImg,
+    url: 'https://itsproof.co/islandipsum'
   },
   {
     img: enclavesImg,
