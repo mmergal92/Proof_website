@@ -2343,3 +2343,6 @@ margin-bottom: 12px !important;
       padding-top: 0px;
     }
 }
+.work-grid a.work-tile {
+  cursor: pointer;
+}

@@ -20,12 +20,14 @@ import browserImg from '../assets/browser.webp';
 import previous from '../assets/previous.png';
 import next from '../assets/next.png';
 
+const [isHovered, setIsHovered] = useState(false);
 
 const projects = [
   {
     img: annaliseImg,
     video: annaliseVideo,
     overlayImg: browserImg,
+    url: 'https://annaliselockhart.com/'
   },
   {
     img: ballyhacImg,
@@ -84,23 +86,36 @@ const testimonials = {
   ],
 }
   
-function WorkTile({ img, video, overlayImg}) {
-  return (
-    <div
-      className="work-tile"
-      style={{
-        backgroundImage: `url(${img})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        position: 'relative',
-        aspectRatio: '16 / 9',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        overflow: 'hidden',
-      }}
-    >
-     <div style={{ textAlign: 'center' }}>
+function WorkTile({ img, video, overlayImg, url}) {
+
+  const WrapperTag = url ? 'a' : 'div';
+
+const wrapperProps = {
+    className: 'work-tile',
+    style: {
+      backgroundImage: `url(${img})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      position: 'relative',
+      aspectRatio: '16 / 9',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      overflow: 'hidden',
+      textDecoration: 'none', // avoid underlines on links
+      color: 'inherit',
+    },
+  };
+
+  if (url) {
+    wrapperProps.href = url;
+    wrapperProps.target = '_blank';
+    wrapperProps.rel = 'noopener noreferrer';
+  }
+
+return (
+    <WrapperTag {...wrapperProps}>
+      <div style={{ textAlign: 'center' }}>
         {overlayImg && (
           <img
             src={overlayImg}
@@ -129,7 +144,7 @@ function WorkTile({ img, video, overlayImg}) {
           />
         )}
       </div>
-    </div>
+   </WrapperTag>
   );
 }
 
@@ -192,7 +207,31 @@ const Newhome = () =>{
     el.addEventListener('scroll', handleScroll);
     return () => el.removeEventListener('scroll', handleScroll);
   }, []);
-  
+  useEffect(() => {
+  const el = gridRef.current;
+  if (!el) return;
+
+  if (isHovered) return; // <-- this stops autoscroll ONLY
+
+  if (!tileWidthRef.current) {
+    const firstTile = el.querySelector('.work-tile');
+    if (firstTile) tileWidthRef.current = firstTile.offsetWidth;
+  }
+
+  const stepPx = 0.8;
+  const stepMs = 16;
+
+  const timer = setInterval(() => {
+    el.scrollLeft += stepPx;
+
+    const maxScroll = tileWidthRef.current * (extendedProjects.length - 2);
+    if (el.scrollLeft >= maxScroll) {
+      el.scrollLeft = tileWidthRef.current;
+    }
+  }, stepMs);
+
+  return () => clearInterval(timer);
+}, [isHovered, extendedProjects.length]);
   
   // Clone first and last for seamless loop
   const extendedTestimonials = [
@@ -270,15 +309,23 @@ const Newhome = () =>{
                 </h1>
 
         <section className="work-grid-wrapper">
-          <div className="work-grid"
-               ref={gridRef}
-          
-    >
+          <div
+            className="work-grid"
+            ref={gridRef}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             {extendedProjects.map((p, idx) => (
-              <WorkTile key={idx} img={p.img} overlayImg={p.overlayImg} video={p.video} />
+              <WorkTile
+                key={idx}
+                img={p.img}
+                overlayImg={p.overlayImg}
+                video={p.video}
+                url={p.url}
+              />
             ))}
           </div>
-        </section>       
+        </section>    
 
         <section className="testimonial" id="testimonials">
           <p className="testimonial-label ">{t.testimonials}</p>
